@@ -1,7 +1,7 @@
 // import Image from "next/image";
 import { FloatingNav } from "../components/ui/FloatingNavbar";
 import { Hero } from "../components/Hero";
-
+import { Experience } from "../components/Experience";
 import { navItems } from "../data"; // "@/data"
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
       {/*<h1>Hello</h1>*/}
       <FloatingNav navItems={navItems} />
       <Hero />
+      <Experience />
     </div>
 
   </main>
