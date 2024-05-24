@@ -3,6 +3,7 @@ import { FloatingNav } from "../components/ui/FloatingNavbar";
 import { Hero } from "../components/Hero";
 import { Experience } from "../components/Experience";
 import { navItems } from "../data"; // "@/data"
+import { Contact } from "../components/Contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <FloatingNav navItems={navItems} />
       <Hero />
       <Experience />
+      <Contact />
     </div>
 
   </main>
