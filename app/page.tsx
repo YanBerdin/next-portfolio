@@ -8,15 +8,15 @@ import { Contact } from "../components/Contact";
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5" >
-    <div className="max-width-7xl w-full">
-      {/*<h1>Hello</h1>*/}
-      <FloatingNav navItems={navItems} />
-      <Hero />
-      <Experience />
-      <Contact />
-    </div>
+      <div className="max-width-7xl w-full">
+        {/*<h1>Hello</h1>*/}
+        <FloatingNav navItems={navItems} />
+        <Hero />
+        <Experience />
+        <Contact />
+      </div>
 
-  </main>
+    </main>
     /*
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
