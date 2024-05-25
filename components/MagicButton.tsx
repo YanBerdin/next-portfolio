@@ -27,15 +27,15 @@ export const MagicButton = (
         otherClasses?: string;
         href?: string;
     }) => {
-        // utilisé avec l'attribut href plus besoin de l'envelopper dans <a>.
-        const LinkOrButtonComp = href ? 'a' : 'button';
-        const LinkOrButtonCompProps = href ? { href } : { onClick: handleClick, type: type || 'button' };
+    // utilisé avec l'attribut href plus besoin de l'envelopper dans <a>.
+    const LinkOrButtonComp = href ? 'a' : 'button';
+    const LinkOrButtonCompProps = href ? { href } : { onClick: handleClick, type: type || 'button' };
     return (
-        <LinkOrButtonComp 
-             {...LinkOrButtonCompProps}
-             // remove w-full md:w-60 add w-60 mt-4
-             className={`relative inline-flex h-12  w-60 mt-4 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none ${otherClasses}`}
-             >
+        <LinkOrButtonComp
+            {...LinkOrButtonCompProps}
+            // remove w-full md:w-60 add w-60 mt-4
+            className={`relative inline-flex h-12  w-60 mt-4 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none ${otherClasses}`}
+        >
 
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
             {/* remove px-3 py-1, add px-5 */}

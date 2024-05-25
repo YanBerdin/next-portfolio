@@ -4,6 +4,7 @@ import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea"
 import { cn } from "@/lib/utils/cn";
+import { FaLocationArrow } from "react-icons/fa6";
 //import {
 //  IconBrandGithub,
 //  IconBrandGoogle,
@@ -26,10 +27,10 @@ export function Contact() {
           <h3 className="w-full text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl">
             {/*  text-[40px]  lg:text-6xl */}
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Thanks{" "}
-            </span>
+              Thanks
+            </span>{" "}
             for taking the time to reach out.</h3>
-          <h4 className="my-5 text-lg md:text-2xl leading-8 text-muted-foreground">
+          <h4 className="my-5 text-lg md:text-2xl leading-8 text-foreground">
             How can I help you today ?
           </h4>
         </header>
@@ -93,7 +94,7 @@ export function Contact() {
                 //name="message"
                 id="message"
                 placeholder='Your Message...'
-                className="block w-full rounded-md border-0 px-3.5 py-2 h-20"
+                className="block w-full rounded-md border-0 px-3.5 py-2 h-20 outline-none focus:outline-none"
                 defaultValue={''}
                 required
               />
@@ -104,6 +105,7 @@ export function Contact() {
               type="submit"
             >
               Let&apos;s get in touch
+              <FaLocationArrow className="h-4 w-4 text-neutral-800 dark:text-neutral-300 ml-2 inline" />
               <BottomGradient />
             </button>
             {/*
@@ -167,7 +169,7 @@ const LabelInputContainer = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("flex flex-col space-y-2 w-full", className)}>
+    <div className={cn("flex flex-col space-y-2 w-full outline-none focus:outline-none", className)}>
       {children}
     </div>
   );
