@@ -1,25 +1,29 @@
+
+/**
+ * Represents the NavBar Links.
+ */
 export const navItems = [
-    { name: "About", link: "#about" },
+    { name: "About", link: "" },
     { name: "Projets", link: "#projets" },
-    { name: "Skills", link: "#experience" },
-    { name: "CV", link: "#cv" },
-    { name: "Github", link: "#github" },
-    { name: "Testimonials", link: "#testimonials" },
+    { name: "Skills", link: "#skills" },
+    { name: "CV", link: "" },
+    { name: "Github", link: "" },
+    // { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
   ];
   
 /**
- * Represents the pricing details for a plan.
+ * Represents the list of my skills.
  */
 interface mySkills {
 
 /**
-* The title of the plan.
+* The title of the skills.
 */
 title: string;
 
 /**
-* The list of skillss for the plan.
+* The list of skillss of the skills.
 */
   skillsList: string[];
 }

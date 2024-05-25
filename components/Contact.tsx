@@ -20,20 +20,21 @@ export function Contact() {
       id="contact"
       className="w-11/12 mx-auto"
     >
-      <div className=" px-6 py-32">
+      <div className="px-6 py-16">
 
-        <div className="mx-auto text-center">
-          <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-muted-foreground sm:text-4xl">
+        <header className="mx-auto text-center">
+          <h3 className="w-full text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl">
+            {/*  text-[40px]  lg:text-6xl */}
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               Thanks{" "}
             </span>
             for taking the time to reach out.</h3>
-          <p className="my-5 text-lg md:text-3xl leading-8 text-gray-600">
+          <h4 className="my-5 text-lg md:text-2xl leading-8 text-muted-foreground">
             How can I help you today ?
-          </p>
-        </div>
+          </h4>
+        </header>
         {/*Form*/}
-        <div className="max-w-2xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl" >
+        <div className="max-w-2xl w-full mx-auto rounded-xl md:rounded-2xl p-4 md:p-8 shadow-input bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl " >
 
           {/*Form Header*/}
           {/*}
@@ -49,39 +50,49 @@ export function Contact() {
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
               <LabelInputContainer>
                 <Label htmlFor="firstname" >First name</Label>
-                <Input id="firstname" placeholder="John" type="text" />
+                <Input id="firstname" placeholder="e.g. John" type="text" required />
               </LabelInputContainer>
               <LabelInputContainer>
                 <Label htmlFor="lastname">Last name</Label>
-                <Input id="lastname" placeholder="Doe" type="text" />
+                <Input id="lastname" placeholder="e.g. Doe" type="text" />
               </LabelInputContainer>
             </div>
             <LabelInputContainer className="mb-4">
               <Label htmlFor="email">Email Address</Label>
-              <Input id="email" placeholder="niceToMeetYou@hello.com"
+              <Input id="email" placeholder="e.g. niceToMeetYou@hello.com"
                 name="email"
-                type="email" />
+                type="email"
+                required
+              />
+
             </LabelInputContainer>
+            <div>
+              <LabelInputContainer className="mb-4">
+                <Label htmlFor="Subject">Subject</Label>
+                <Input id="Subject" placeholder="e.g. Let's Connect !" type="text" />
+              </LabelInputContainer>
+            </div>
             {/*
-        <LabelInputContainer className="mb-4">
-          <Label htmlFor="password">Password</Label>
-          <Input id="password" placeholder="••••••••" type="password" />
-        </LabelInputContainer>
-  
-        <LabelInputContainer className="mb-8">
-          <Label htmlFor="twitterpassword">Your twitter password</Label>
-          <Input
-            id="twitterpassword"
-            placeholder="••••••••"
-            type="twitterpassword"
-          />
-        </LabelInputContainer>
-        */ }
             <LabelInputContainer className="mb-4">
+              <Label htmlFor="password">Password</Label>
+              <Input id="password" placeholder="••••••••" type="password" />
+            </LabelInputContainer>
+      
+            <LabelInputContainer className="mb-8">
+              <Label htmlFor="twitterpassword">Your twitter password</Label>
+              <Input
+                id="twitterpassword"
+                placeholder="••••••••"
+                type="twitterpassword"
+              />
+            </LabelInputContainer>
+            */ }
+            <LabelInputContainer className="mb-4">
+              <Label htmlFor="message">Message</Label>
               <Textarea
-                name="message"
+                //name="message"
                 id="message"
-                placeholder='Hi...'
+                placeholder='Your Message...'
                 className="block w-full rounded-md border-0 px-3.5 py-2 h-20"
                 defaultValue={''}
                 required
@@ -89,10 +100,10 @@ export function Contact() {
             </LabelInputContainer>
 
             <button
-              className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+              className="bg-gradient-to-br relative group/btn from-black dark:from-slate-900 dark:to-slate-900 to-neutral-600 block dark:bg-slate-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--slate-800)_inset,0px_-1px_0px_0px_var(--slate-800)_inset]"
               type="submit"
             >
-              Let&apos;s talk
+              Let&apos;s get in touch
               <BottomGradient />
             </button>
             {/*

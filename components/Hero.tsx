@@ -6,7 +6,7 @@ import { MagicButton } from "./MagicButton";
 
 export const Hero = () => {
     return (
-        <div className="pb-20 pt-36">
+        <section className="pb-20 pt-36 mb-16" id="hero">
             <div>
                 <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="yellow" />
                 <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" />
@@ -57,7 +57,7 @@ export const Hero = () => {
                     />
                 </div>
             </div>
-        </div>
+        </section>
 
         /*
         <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">

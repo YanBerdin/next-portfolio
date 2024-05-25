@@ -9,24 +9,27 @@ import { Check } from "lucide-react";
 
 export const Experience = () => {
   return (
-    <div className="py-10 w-full">
+    <section
+    id="skills"
+    className="w-11/12 mx-auto px-6 py-10">
+      <div className="">
       {/*<h1 className="heading">
         My <span className="text-purple">work experience</span>
   </h1>*/}
-      <h2 className="text-2xl md:text-4xl font-bold text-center">
-        Full-Stack Developer <br />
-        Specializing in
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+      <h2 className="text-3xl md:text-4xl font-bold text-center ">
+      Specializing in
+     
+        <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text">
           {" "}
           Javascript & PHP
           {" "}
         </span>
         with a core focus on{" "}
-        <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
+        <span className="inline bg-gradient-to-r from-[#cf96f5]  to-[#8f47d2] text-transparent bg-clip-text">
           React
         </span>
       </h2>
-      <div className="w-full mt-12 grid md:grid-cols-2 lg:grid-cols-3  gap-4"> {/*remove lg:grid-cols-4*/}
+      <div className="w-full mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-4"> {/*remove lg:grid-cols-4*/}
         {mySkills.map((card) => (
           <Button
             key={card.id}
@@ -43,19 +46,19 @@ export const Experience = () => {
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
             // remove bg-white dark:bg-slate-900
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800 m-1 p-1"
           >
             <div className="flex flex-col lg:items-center p-3 py-6 md:p-5 gap-5 "> {/*remove lg:flex-raw*/}
               <img
                 src={card.thumbnail}
                 //alt={card.thumbnail}
-                alt={card.title} // Remplacé card.thumbnail par card.title pour un alt plus descriptif
+                alt={card.thumbnail} // Remplacé card.thumbnail par card.title pour un alt plus descriptif
                 className="lg:w-32 md:w-20 m-auto" // remove w-16 add m-auto
               />
               <div className="lg:ms-5 ">
-                <h1 className="text-center text-xl md:text-2xl font-bold">
+                <h3 className="text-center text-xl md:text-2xl font-bold">
                   {card.title}
-                </h1>
+                </h3>
                 {/*                  
                 <p className="text-start text-white-100 mt-3 font-semibold">
                   {card.desc}
@@ -65,7 +68,7 @@ export const Experience = () => {
                   {card.skillsList && card.skillsList.map((skills: string) => (
                     <span key={skills} className="flex">
                       <Check className="text-green-500" />{" "}
-                      <h3 className="ml-2">{skills}</h3>
+                      <p className="ml-2">{skills}</p>
                     </span>
                   ))}
                 </div>
@@ -74,7 +77,8 @@ export const Experience = () => {
           </Button>
         ))}
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
 
