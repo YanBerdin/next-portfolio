@@ -4,6 +4,7 @@ import { Hero } from "../components/Hero";
 import { Experience } from "../components/Experience";
 import { navItems } from "../data"; // "@/data"
 import { Contact } from "../components/Contact";
+import { About } from "../components/About";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <h1>Yan&apos;s Portfolio</h1>
         <FloatingNav navItems={navItems} />
         <Hero />
+        <About />
         <Experience /> {/*  pas besoin de passer en props mySkills ? */}
         <Contact />
       </div>

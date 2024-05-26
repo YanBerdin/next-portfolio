@@ -1,11 +1,8 @@
 import React from "react";
-
 import { mySkills } from "@/data";
 import { Button } from "./ui/MovingBorders";
-// https://lucide.dev/guide/packages/lucide-react
 import { Check } from "lucide-react";
-
-
+import Image from "next/image"; // Add this line
 
 export const Experience = () => {
   return (
@@ -13,12 +10,8 @@ export const Experience = () => {
       id="skills"
       className="w-11/12 mx-auto px-6 py-10">
       <div className="">
-        {/*<h1 className="heading">
-        My <span className="text-purple">work experience</span>
-  </h1>*/}
         <h2 className="text-3xl md:text-4xl font-bold text-center ">
           Specializing in
-
           <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text">
             {" "}
             Javascript & PHP
@@ -49,7 +42,7 @@ export const Experience = () => {
               className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
               <div className="flex flex-col lg:items-center p-3 py-6 md:p-5 gap-5 "> {/*remove lg:flex-raw*/}
-                <img
+                <Image
                   src={card.thumbnail}
                   //alt={card.thumbnail}
                   alt={card.thumbnail} // Remplacé card.thumbnail par card.title pour un alt plus descriptif

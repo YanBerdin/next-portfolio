@@ -3,7 +3,7 @@
  * Represents the NavBar Links.
  */
 export const navItems = [
-    { name: "About", link: "" },
+    { name: "About", link: "#about" },
     { name: "Projets", link: "#projets" },
     { name: "Skills", link: "#skills" },
     { name: "CV", link: "" },
