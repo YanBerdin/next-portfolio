@@ -9,12 +9,16 @@ import { About } from "../components/About";
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5" >
-      <div className="max-width-7xl w-full">
+      <div className="max-width-7xl w-full ">
         <h1>Yan&apos;s Portfolio</h1>
         <FloatingNav navItems={navItems} />
         <Hero />
-        <About />
-        <Experience /> {/*  pas besoin de passer en props mySkills ? */}
+        <div id="about" style={{ marginTop: "-50px", paddingTop: "20px" }}>
+          <About />
+        </div>
+        <div id="about" style={{ marginTop: "-50px", paddingTop: "20px" }}>
+          <Experience /> {/*  pas besoin de passer en props mySkills ? */}
+        </div>
         <Contact />
       </div>
 

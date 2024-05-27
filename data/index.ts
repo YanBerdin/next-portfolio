@@ -84,4 +84,20 @@ title: string;
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
+    {
+      id: 4,
+      title: "Wordpress",
+      desc: "Installation de WordPress et configuration initiale.",
+      skillsList: [
+        "Installation de WordPress et configuration initiale.",
+        "Gestion des sidebars pour personnaliser la mise en page.",
+        "Création de thèmes personnalisés.",
+        "Configuration de plugins  pour étendre les fonctionnalités de WordPress.",
+        "Modification des options de WordPress via l'interface d'administration pour adapter le site aux besoins du client.",
+      ],
+      className: "md:col-span-2", // change to md:col-span-2
+     thumbnail: "/exp3.svg",
+
+    },
+
   ];

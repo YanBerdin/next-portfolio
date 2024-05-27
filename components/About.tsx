@@ -3,10 +3,12 @@ import pilot from "../public/pilot.png";
 
 export const About = () => {
   return (
-         // bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased */}
-    <section
-      id="about"
-      className="bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl rounded-lg justify-center w-11/12 mx-auto h-full mt-32  py-8">
+    <>
+      <div id="about" className="h-10 mt-10"></div>
+      {/* bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased */}
+      <section
+        id="about"
+        className="bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl rounded-lg justify-center w-11/12 mx-auto h-full  py-8">
         <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12  lg:py-6">
           <Image
             src={pilot}
@@ -35,7 +37,7 @@ export const About = () => {
               </p>
 
               <p className="text-md lg:text-xl text-muted-foreground mt-4">
-              Today, with a rigorous Fullstack training and a determination to excel in this field, I am eager to continue honing my skills through new projects.
+                Today, with a rigorous Fullstack training and a determination to excel in this field, I am eager to continue honing my skills through new projects.
               </p>
 
             </div>
@@ -43,6 +45,7 @@ export const About = () => {
             {/*<Statistics />*/}
           </div>
         </div>
-    </section>
+      </section>
+    </>
   );
 };
