@@ -17,12 +17,13 @@ export function Contact() {
     console.log("Form submitted");
   };
   return (
+    <>
+    <div id="contact" className="md:h-10 md:mt-8"></div>
     <section
-      id="contact"
+      // id="contact"
       className="w-11/12 mx-auto"
     >
-      <div className="px-6 py-16">
-
+      <div className="px-6 py-6">
         <header className="mx-auto text-center">
           <h3 className="w-full text-2xl font-bold tracking-tight text-foreground md:text-3xl lg:text-4xl">
             {/*  text-[40px]  lg:text-6xl */}
@@ -149,6 +150,7 @@ export function Contact() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

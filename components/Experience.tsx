@@ -9,9 +9,9 @@ export const Experience = () => {
     <>
       <div id="about" className="h-10 mt-10"></div>
 
-      <section id="skills" className="w-11/12 mx-auto px-8 lg:px-20 py-10  mt-40">
+      <section id="skills" className="w-11/12 mx-auto px-8 lg:px-20 py-10 mt-40 mb-20">
         <div className="flex flex-col">
-          <h2 className="text-3xl md:text-4xl font-bold text-center ">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center lg:mt-20 lg:mb-4 ">
             Specializing in
             <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text">
               {" "}
@@ -23,7 +23,7 @@ export const Experience = () => {
               React
             </span>
           </h2>
-          <div className="w-full mt-12 grid md:grid-cols-2 gap-4">
+          <div className="w-full mt-12 grid md:grid-cols-2 gap-2 md:gap-4 lg:gap-8">
             {mySkills.map((card) => (
               <Button
                 key={card.id}
@@ -52,7 +52,7 @@ export const Experience = () => {
                     className=" md:w-20 m-auto object-cover" // remove w-16 add m-auto
                   />
                   <div className="lg:ms-5">
-                    <h3 className="text-center text-xl md:text-2xl font-bold">
+                    <h3 className="text-center text-lg md:text-2xl font-bold">
                       {card.title}
                     </h3>
                     {/*                  

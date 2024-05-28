@@ -87,6 +87,74 @@
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+
+/* Cursor shadow */
+.cursor {
+  position: absolute;
+  background: hsl(var(--foreground) / 70%);
+  /*background: rgba(255, 255, 255, 0.99); /* Set a visible background color */
+  border-radius: 50%;
+  rotate: 35deg;
+  width: 260px;
+  height: 260px;
+  filter: blur(280px);
+  /*animation: shadow-slide infinite 4s linear alternate;*/
+  transform: translate(-50%, -50%); /* Center the shadow */
+}
+/*
+@keyframes shadow-slide {
+  from {
+    background: hsl(var(--primary) / 0%);
+    right: 460px;
+  }
+  to {
+    background: hsl(var(--primary) / 50%);
+    right: 160px;
+  }
+}
+*/
+
+@media (max-width: 1024px) {
+  .cursor {
+    /*top: 70px;*/
+    width: 400px;
+    height: 400px; /* Adjust the height to match the width */
+    
+  }
+  /*
+  @keyframes shadow-slide {
+    from {
+      background: hsl(var(--primary) / 20%);
+      right: 460px;
+    }
+    to {
+      background: hsl(var(--primary) / 50%);
+      right: 160px;
+    }
+  }
+ */
+}
+
+@media (max-width: 768px) {
+  .cursor {
+    /*top: 70px;*/
+    width: 50px;
+    height: 50px; /* Adjust the height to match the width */
+    filter: blur(60px);
+  }
+  /*
+  @keyframes shadow-slide {
+    from {
+      background: hsl(var(--primary) / 20%);
+      right: 280px;
+    }
+    to {
+      background: hsl(var(--primary) / 30%);
+      right: 100px;
+    }
+  }
+  */
+}
 /*
 :root {
   --foreground-rgb: 0, 0, 0;
