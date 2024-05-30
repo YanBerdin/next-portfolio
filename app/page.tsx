@@ -6,6 +6,7 @@ import { navItems } from "../data"; // "@/data"
 import { Contact } from "../components/Contact";
 import { About } from "../components/About";
 import {Cursor} from "../components/ui/Cursor";
+import { Grid } from "../components/Grid";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <div id="hero" style={{ marginTop: "-50px", paddingTop: "20px" }}>
+          <Grid />
           <About />
         </div>
         <div id="about" style={{ marginTop: "-50px", paddingTop: "20px" }}>
