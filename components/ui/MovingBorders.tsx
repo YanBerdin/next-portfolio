@@ -1,5 +1,10 @@
 "use client";
 
+/** 
+*  UI: Moving Border
+*  Link : https://ui.aceternity.com/components/moving-border
+**/
+
 import React from "react";
 import {
   motion,

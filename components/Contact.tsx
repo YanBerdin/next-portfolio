@@ -5,12 +5,16 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea"
 import { cn } from "@/lib/utils/cn";
 import { FaLocationArrow } from "react-icons/fa6";
-//import {
+//  import {
 //  IconBrandGithub,
 //  IconBrandGoogle,
 //  IconBrandOnlyfans,
-//} from "@tabler/icons-react";
+//  } from "@tabler/icons-react";
 
+/** 
+* UI: Contact Form
+* Link : https://ui.aceternity.com/components/signup-form
+**/
 export function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

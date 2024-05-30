@@ -40,7 +40,7 @@ export const Experience = () => {
                   borderRadius: `calc(1.75rem* 0.96)`,
                 }}
                 // remove bg-white dark:bg-slate-900
-                className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800 "
+                className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800 py-8"
               >
                 <div className="flex flex-col  lg:items-center p-3 py-6 md:p-5 gap-5"> {/*remove lg:flex-raw*/}
                   <Image
