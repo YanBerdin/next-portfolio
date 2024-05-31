@@ -6,7 +6,7 @@ import { MagicButton } from "./MagicButton";
 
 export const Hero = () => {
     return (
-        <section className="pb-20 pt-36 mb-16" id="hero">
+        <section className="pb-20 pt-36 mb-44" id="hero">
             <div>
                 <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="yellow" />
                 <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" />

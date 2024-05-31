@@ -32,7 +32,7 @@ export const Projects = () => {
             </div>
           </div>
         ))}
-        <a href="/archive">See more on Dribbble</a>
+        <a href="/archive">See more</a>
       </section>
 
       <section className="projets pb-2 m-0-auto w-full" id="projets">
