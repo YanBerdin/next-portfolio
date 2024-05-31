@@ -39,7 +39,7 @@ export const Hero = () => {
                      *  change md:text-6xl, add more responsive code
                      */}
                     <TextGenerateEffect
-                        className="text-center text-[40px] md:text-5xl lg:text-6xl"
+                        className="text-center text-[30px] lg:text-4xl xl:text-5xl"
                         words="Transforming Concepts into Seamless User Experiences"
                     />
                     <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">

@@ -39,46 +39,46 @@ export const Projects = () => {
         <h2>Projets récents</h2>
         <div className="projets-grid grid-col-1">
           <article className="grid-item item-1 relative grid-col-1 span-2">
-              <Image src={pilot} alt="" />
-                <div className="item-description absolute">
-                  <h3>Titre du projet 1</h3>
-                  <p>HTML, CSS & JS</p>
-                </div>
-            </article>
+            <Image src={pilot} alt="" />
+            <div className="item-description absolute">
+              <h3>Titre du projet 1</h3>
+              <p>HTML, CSS & JS</p>
+            </div>
+          </article>
           <article className="grid-item item-2 relative grid-col-3 span-2">
             <Image src={pilot} alt="" />
-              <div className="item-description absolute">
-                <h3>Titre du projet 2</h3>
-                <p>HTML, CSS & JS</p>
-              </div>
+            <div className="item-description absolute">
+              <h3>Titre du projet 2</h3>
+              <p>HTML, CSS & JS</p>
+            </div>
           </article>
           <article className="grid-item item-3 relative">
             <Image src={pilot} alt="" />
-              <div className="item-description absolute">
-                <h3>Titre du projet 3</h3>
-                <p>HTML, CSS & JS</p>
-              </div>
+            <div className="item-description absolute">
+              <h3>Titre du projet 3</h3>
+              <p>HTML, CSS & JS</p>
+            </div>
           </article>
           <article className="grid-item item-4 relative">
-            <Image src={pilot} alt=""/>
-              <div className="item-description absolute">
-                <h3>Titre du projet 4</h3>
-                <p>HTML, CSS & JS</p>
-              </div>
+            <Image src={pilot} alt="" />
+            <div className="item-description absolute">
+              <h3>Titre du projet 4</h3>
+              <p>HTML, CSS & JS</p>
+            </div>
           </article>
           <article className="grid-item item-5 relative">
-            <Image src={pilot} alt=""/>
-              <div className="item-description absolute">
-                <h3>Titre du projet 5</h3>
-                <p>HTML, CSS & JS</p>
-              </div>
+            <Image src={pilot} alt="" />
+            <div className="item-description absolute">
+              <h3>Titre du projet 5</h3>
+              <p>HTML, CSS & JS</p>
+            </div>
           </article>
           <article className="grid-item item-6 relative">
-            <Image src={pilot} alt=""/>
-              <div className="item-description absolute">
-                <h3>Titre du projet 6</h3>
-                <p>HTML, CSS & JS</p>
-              </div>
+            <Image src={pilot} alt="" />
+            <div className="item-description absolute">
+              <h3>Titre du projet 6</h3>
+              <p>HTML, CSS & JS</p>
+            </div>
           </article>
         </div>
       </section>

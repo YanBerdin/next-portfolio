@@ -93,7 +93,8 @@ title: string;
         "Gestion des sidebars pour personnaliser la mise en page.",
         "Création de thèmes personnalisés.",
         "Configuration de plugins  pour étendre les fonctionnalités de WordPress.",
-        "Modification des options de WordPress via l'interface d'administration pour adapter le site aux besoins du client.",
+        "Modification des options de WordPress via l'interface d'administration.",
+        "Adapter le site aux besoins du client.",
       ],
       className: "md:col-span-2", // change to md:col-span-2
      thumbnail: "/exp3.svg",

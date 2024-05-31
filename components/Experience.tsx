@@ -7,11 +7,11 @@ import Image from "next/image"; // Add this line
 export const Experience = () => {
   return (
     <>
-      <div id="about" className="h-10 mt-10"></div>
+      <div id="skills" className="h-10 mt-10"></div>
 
-      <section id="skills" className="w-11/12 mx-auto px-8 lg:px-20 py-10 mt-40 mb-20">
+      <section className=" mx-auto mt-4 lg:mt-8 mb-20">
         <div className="flex flex-col">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center lg:mt-20 lg:mb-4 ">
+          <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold text-center">
             Specializing in
             <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text">
               {" "}
@@ -23,7 +23,7 @@ export const Experience = () => {
               React
             </span>
           </h2>
-          <div className="w-full mt-12 grid md:grid-cols-2 gap-2 md:gap-4 lg:gap-8">
+          <div className="w-full mt-4 md:mt-6 grid md:grid-cols-2 xl:grid-cols-4 gap-2">
             {mySkills.map((card) => (
               <Button
                 key={card.id}
@@ -40,9 +40,9 @@ export const Experience = () => {
                   borderRadius: `calc(1.75rem* 0.96)`,
                 }}
                 // remove bg-white dark:bg-slate-900
-                className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800 py-8"
+                className="flex-1 border-neutral-200 dark:border-slate-800 py-4"
               >
-                <div className="flex flex-col  lg:items-center p-3 py-6 md:p-5 gap-5"> {/*remove lg:flex-raw*/}
+                <div className="flex flex-col lg:items-center p-2 md:p-3 gap-5"> {/*remove lg:flex-raw*/}
                   <Image
                     src={card.thumbnail}
                     //alt={card.thumbnail}
@@ -51,8 +51,8 @@ export const Experience = () => {
                     height={90}
                     className=" md:w-20 m-auto object-cover" // remove w-16 add m-auto
                   />
-                  <div className="lg:ms-5">
-                    <h3 className="text-center text-lg md:text-2xl font-bold">
+                  <div className="ms-5 max-w-[430px]">
+                    <h3 className="text-center text-black dark:text-white text-xl font-bold">
                       {card.title}
                     </h3>
                     {/*                  
@@ -60,11 +60,11 @@ export const Experience = () => {
                     {card.desc}
                   </p>
                   */}
-                    <div className="space-y-4 text-start text-white-100 mt-3 font-semibold">
+                    <div className="space-y-4 text-start text-white-100 mt-6 font-semibold">
                       {card.skillsList && card.skillsList.map((skills: string) => (
                         <span key={skills} className="flex">
-                          <Check className="text-green-500 min-w-[24px]" />{" "}
-                          <p className="ml-2">{skills}</p>
+                          <Check className="text-green-500 min-w-[20px]" />{" "}
+                          <p className="ml-2 text-sm md:text-md max-w-[380px]">{skills}</p>
                         </span>
                       ))}
                     </div>
