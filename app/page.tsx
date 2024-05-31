@@ -26,7 +26,7 @@ export default function Home() {
         <div id="about" style={{ marginTop: "-50px", paddingTop: "20px" }}>
           <Experience /> {/*  pas besoin de passer en props mySkills ? */}
         </div>
-        <div id="contact" style={{ marginTop: "-40px", paddingTop: "20px" }}>
+        <div id="contact" style={{ marginTop: "-90px", paddingTop: "5px" }}>
           <Contact />
         </div>
       </div>

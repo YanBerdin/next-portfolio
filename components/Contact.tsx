@@ -22,12 +22,12 @@ export function Contact() {
   };
   return (
     <>
-      <div id="contact" className="md:h-10 md:mt-10"></div>
+      <div id="contact" className="md:h-2 md:mt-10"></div>
       <section
         // id="contact"
-        className="w-11/12 mx-auto"
+        className="w-11/12 mx-auto max-sm:mt-16"
       >
-        <div className="md:px-6 py-6">
+        <div className="md:px-8 pb-20">
           <header className="mx-auto text-center">
             {/*
             <h3 className="w-full text-2xl font-bold tracking-tight text-foreground md:text-2xl lg:text-3xl"> // text-[40px]  lg:text-6xl
@@ -62,7 +62,7 @@ export function Contact() {
             </p>
 
             <form target="" action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" method="POST" className="my-8" >
-              <div className="flex flex-col-2 md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+              <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4 gap-2">
                 <LabelInputContainer>
                   <Label htmlFor="firstname" >First name</Label>
                   <Input id="firstname" placeholder="e.g. John" type="text" required />
