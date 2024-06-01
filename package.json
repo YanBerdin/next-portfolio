@@ -11,6 +11,8 @@
   "dependencies": {
     "@nextui-org/react": "^2.3.6",
     "@radix-ui/react-label": "^2.0.2",
+    "@react-three/drei": "^9.106.0",
+    "@react-three/fiber": "^8.16.7",
     "@tabler/icons-react": "^3.5.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.4",
@@ -22,7 +24,9 @@
     "react-dom": "^18",
     "react-icons": "^5.2.1",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.165.0",
+    "three-globe": "^2.31.0"
   },
   "devDependencies": {
     "@types/node": "^20",

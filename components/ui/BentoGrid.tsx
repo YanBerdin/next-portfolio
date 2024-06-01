@@ -10,12 +10,12 @@ import { cn } from "@/lib/utils/cn";
 
 
 import { BackgroundGradientAnimation } from "./GradientBg";
-//import GridGlobe from "./GridGlobe";
+import { GridGlobe } from "./GridGlobe";
 //import animationData from "@/data/confetti.json";
 import { MagicButton } from "../MagicButton";
 
 import Image from "next/image";
-import { ImGit } from "react-icons/im";
+// import { ImGit } from "react-icons/im";
 
 export const BentoGrid = ({
     className,
@@ -149,7 +149,7 @@ export const BentoGridItem = ({
                     </div>
 
                     {/* for the github 3d globe */}
-                    {/*     {id === 2 && <GridGlobe />}       */}
+                    {id === 2 && <GridGlobe />}
 
                     {/* Tech stack list div */}
                     {id === 3 && (

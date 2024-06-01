@@ -119,9 +119,9 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "", // "I'm very flexible with time zone communications"
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[15vh] lg:min-h-[20vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[15vh] lg:min-h-[25vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
