@@ -17,7 +17,8 @@ export const Grid = () => {
                             // remove original classname condition
                             className={item.className}
                             img={item.img}
-                            //width={item.width}
+                            width={item.width}
+                            height={item.height}
                             imgClassName={item.imgClassName}
                             titleClassName={item.titleClassName}
                             spareImg={item.spareImg}

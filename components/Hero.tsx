@@ -42,7 +42,7 @@ export const Hero = () => {
                         className="text-center text-[30px] lg:text-4xl xl:text-5xl"
                         words="Transforming Concepts into Seamless User Experiences"
                     />
-                    <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                    <p className="text-center md:tracking-wider mb-4 md:mb-10 text-sm md:text-lg lg:text-2xl">
                         Hi, I&apos;m Yan, a React.js Developer based in France.
                     </p>
 
