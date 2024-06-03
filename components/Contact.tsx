@@ -65,11 +65,11 @@ export function Contact() {
               <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4 gap-2">
                 <LabelInputContainer>
                   <Label htmlFor="firstname" >First name</Label>
-                  <Input id="firstname" placeholder="e.g. John" type="text" required />
+                  <Input id="firstname" placeholder="e.g. Fred" type="text" required />
                 </LabelInputContainer>
                 <LabelInputContainer>
                   <Label htmlFor="lastname">Last name</Label>
-                  <Input id="lastname" placeholder="e.g. Doe" type="text" />
+                  <Input id="lastname" placeholder="e.g. Livrézon" type="text" />
                 </LabelInputContainer>
               </div>
               <LabelInputContainer className="mb-4">

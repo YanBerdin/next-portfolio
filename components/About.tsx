@@ -4,7 +4,7 @@ import pilot from "../public/pilot.png";
 export const About = () => {
   return (
     <>
-      <div id="about" className="h-2 md:h-10 md:mt-20"></div>
+      <div id="about" className="h-2 md:h-4 md:mt-8"></div>
       {/* bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased */}
       <section
         id="about"
