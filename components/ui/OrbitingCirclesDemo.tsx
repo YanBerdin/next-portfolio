@@ -1,8 +1,8 @@
 "use client";
 
-import OrbitingCircles from "@/components/ui/orbiting-circles";
+import OrbitingCircles from "@/components/ui/Orbiting-circles";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
-import "../app/globals.css";
+import "../../app/globals.css";
 
 export function OrbitingCirclesDemo() {
   return (
