@@ -10,25 +10,25 @@ import { Grid } from "../components/Grid";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5" >
+    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 min-h-screen " >
       <Cursor />
       <div className="max-width-7xl w-full">
 
         <h1>Yan&apos;s Portfolio</h1>
         <FloatingNav navItems={navItems} />
-        <div style={{ marginBottom:"10rem" }}>
-        <Hero />
+        <div style={{ marginBottom: "10rem" }}>
+          <Hero />
         </div>
-        <div id="projects" style={{ marginTop: "-50px", paddingTop: "20px", marginBottom:"10rem" }}>
+        <div id="projects" style={{ marginTop: "-40px", paddingTop: "40px", marginBottom: "10rem" }}>
           <Grid />
         </div>
-        <div id="about" style={{ marginTop: "-50px", paddingTop: "20px", marginBottom:"10rem" }}>
+        <div id="about" style={{ marginTop: "-50px", paddingTop: "20px", marginBottom: "10rem" }}>
           <About />
         </div>
-        <div id="skills" style={{ marginTop: "-50px", paddingTop: "20px", marginBottom:"10rem" }}>
+        <div id="skills" style={{ marginTop: "-30px", paddingTop: "10px", marginBottom: "10rem" }}>
           <Experience /> {/*  pas besoin de passer en props mySkills ? */}
         </div>
-        <div id="contact" style={{ marginTop: "-50px", paddingTop: "50px", marginBottom:"10rem" }}>
+        <div id="contact" style={{ marginTop: "-50px", paddingTop: "50px", marginBottom: "10rem" }}>
           <Contact />
         </div>
       </div>

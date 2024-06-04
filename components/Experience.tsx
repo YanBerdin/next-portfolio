@@ -9,9 +9,9 @@ import Image from "next/image"; // Add this line
 export const Experience = () => {
   return (
     <>
-      <div id="skills" className="h-2 mb-36"></div>
+      <div id="skills" className="h-2 mb-24"></div>
 
-      <section className=" mx-auto mt-4 mb-44">
+      <section className=" mx-auto mt-4 mb-24">
         <div className="flex flex-col">
           <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold text-center">
             Specializing in
