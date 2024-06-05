@@ -16,6 +16,7 @@ import { MagicButton } from "../MagicButton";
 
 import Image from "next/image";
 // import { ImGit } from "react-icons/im";
+import BackdropModal from "./BackdropModal";
 
 export const BentoGrid = ({
     className,
@@ -82,12 +83,12 @@ export const BentoGridItem = ({
         navigator.clipboard.writeText(text);
         setCopied(true);
     };
-
+    // <BackdropModal />
     return (
         <div
             className={cn(
                 // remove p-4 rounded-3xl dark:bg-black dark:border-white/[0.2] bg-white  border border-transparent, add border border-white/[0.1] overflow-hidden relative
-                "row-span-1 relative overflow-hidden rounded-xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 md:space-y-4",
+                "row-span-1 relative overflow-hidden rounded-xl border border-white/[0.1] group/bento hover:shadow-2xl hover:brightness-125 transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 md:space-y-4",
                 className
             )}
             style={{
@@ -124,6 +125,7 @@ export const BentoGridItem = ({
                             className="object-cover object-center w-full h-full"
                         />
                     )}
+
                 </div>
                 {id === 6 && (
                     // add background animation , remove the p tag
@@ -135,7 +137,7 @@ export const BentoGridItem = ({
                 <div
                     className={cn(
                         titleClassName,
-                        "group-hover/bento:scale-95 transition duration-200 relative h-full flex flex-col px-5 p-5 "
+                        "group-hover/bento:brightness-125 transition duration-200 relative h-full flex flex-col px-5 p-5 "
                     )} //  min-h-30 lg:p-10
                 >
                     {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
@@ -148,6 +150,7 @@ export const BentoGridItem = ({
                         className={`font-sans text-md max-w-96 font-bold z-10`} // lg:text-xl
                     >
                         {title}
+
                     </div>
 
                     {/* for the github 3d globe */}
@@ -197,6 +200,16 @@ export const BentoGridItem = ({
                             </div>
                         </div>
                     )}
+
+                    {(id === 1 || id === 4 || id === 5) && (
+                        <div>
+                            <BackdropModal />
+                        </div>
+                    )}
+
+
+                    {/* for the email copy */}
+
                     {id === 6 && (
                         <div className="">
                             {/* button border magic from tailwind css buttons  */}

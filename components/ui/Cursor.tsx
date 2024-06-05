@@ -1,8 +1,8 @@
 "use client";
-
+// Voir si mieux avec brightness
 import React from "react";
 import { useEffect } from 'react';
-//import 'tailwindcss/tailwind.css';
+// import 'tailwindcss/tailwind.css';
 
 export const Cursor: React.FC = () => {
 

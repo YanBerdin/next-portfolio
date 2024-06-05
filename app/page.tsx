@@ -5,13 +5,13 @@ import { Experience } from "../components/Experience";
 import { navItems } from "../data"; // "@/data"
 import { Contact } from "../components/Contact";
 import { About } from "../components/About";
-import { Cursor } from "../components/ui/Cursor";
+// import { Cursor } from "../components/ui/Cursor";
 import { Grid } from "../components/Grid";
 
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 min-h-screen " >
-      <Cursor />
+      {/*<Cursor />*/}
       <div className="max-width-7xl w-full">
 
         <h1>Yan&apos;s Portfolio</h1>
