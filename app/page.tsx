@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <div id="contact" style={{ marginTop: "-50px", paddingTop: "50px", marginBottom: "10rem" }}>
           <Contact />
-          <OrbitingCirclesDemo/>
+          <OrbitingCirclesDemo />
         </div>
       </div>
 

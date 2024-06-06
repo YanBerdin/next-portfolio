@@ -11,17 +11,23 @@ import { gridItems } from "../../data/index";
 export default function BackdropModal({ id }: { id: number }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [backdrop, setBackdrop] = React.useState<"blur" | "transparent" | "opaque" | "backdrop-blur-md" | undefined>('transparent') as any[];
+  const [size, setSize] = React.useState('xl')
+  const sizes = ["xs", "sm", "md", "lg", "xl", "2xl", "3xl", "4xl", "5xl", "full"];
+
   const [title, settitle] = React.useState("");
   const [description, setDescription] = React.useState("");
+  const [explanationList, setexplanationList] = React.useState<string[]>([]); // Explicitly type the 'explanationList' state as an array of strings
 
   const backdrops = ["blur"];
 
-  const handleOpen = (backdrop: string, id: number) => { // Explicitly type the 'backdrop' parameter as a string
+  const handleOpen = (backdrop: string, id: number, size: string) => { // Explicitly type the 'backdrop' parameter as a string
     setBackdrop(backdrop);
+    setSize(size);
     const item = gridItems.find(item => item.id === id);
     if (item) {
       settitle(item.title);
       setDescription(item.description);
+      setexplanationList(item.explanationList ?? []);
     }
     onOpen();
   }
@@ -34,7 +40,7 @@ export default function BackdropModal({ id }: { id: number }) {
             key={b}
             variant="flat"
             color="warning"
-            onPress={() => handleOpen(b, id)} // Pass both 'b' and 'id' as parameters
+            onPress={() => handleOpen(b, id, size)} // Pass both 'b' and 'id' as parameters
             className="capitalize text-sm"
           >
             {/*{b}*/}
@@ -42,7 +48,7 @@ export default function BackdropModal({ id }: { id: number }) {
           </Button>
         ))}
       </div>
-      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose}>
+      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose} size={size as "lg" | "xs" | "sm" | "md" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "full"} placement="center" className="max-w-[80vw] max-h-[98vh]" >
         <ModalContent
           style={{
             //   add these two
@@ -54,7 +60,7 @@ export default function BackdropModal({ id }: { id: number }) {
             borderRadius: `calc(1.75rem* 0.96)`,
           }}
           // remove bg-white dark:bg-slate-900
-          className=" border-neutral-200 dark:border-slate-800"
+          className=" border-neutral-200 dark:border-slate-800 m-4"
         >
           {(onClose) => (
             <>
@@ -62,16 +68,10 @@ export default function BackdropModal({ id }: { id: number }) {
                 <h2 className="mt-2">{title}</h2>
               </ModalHeader>
               <ModalBody>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
+                <h3>{description}</h3>
+                {explanationList.map((explanation, index) => (
+                  <p key={index}>{explanation}</p>
+                ))}
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>

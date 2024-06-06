@@ -59,7 +59,7 @@ export const BentoGridItem = ({
     height?: number;
 }) => {
     const leftLists = ["React.js", "Next.js", "Express", "Node.js"];
-    const rightLists = ["Javascript", "Typescript", "Svelte", "Vite.js"];
+    const rightLists = ["Javascript", "Typescript", "Svelte", "Redux"];
     const centerLists = ["PHP", "SQL", "Laravel", "Tailwind"];
 
 
@@ -137,13 +137,13 @@ export const BentoGridItem = ({
                     )} //  min-h-30 lg:p-10
                 >
                     {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-                    <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+                    <div className="font-sans font-extralight w-max text-base text-[#C1C2D3] z-10"> 
                         {description}
                     </div>
                     {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
-                    {/* remove mb-2 mt-2 */}
+                    {/* remove mb-2 mt-2 md:text-xs md:max-w-32 */}
                     <div
-                        className={`font-sans text-md max-w-96 font-bold z-10`} // lg:text-xl
+                        className={`font-sans text-base max-w-96 font-bold z-10`} // text-md lg:text-xl
                     >
                         {title}
 
