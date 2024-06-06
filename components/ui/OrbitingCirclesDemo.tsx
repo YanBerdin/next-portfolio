@@ -4,6 +4,10 @@ import OrbitingCircles from "@/components/ui/Orbiting-circles";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
 import "../../app/globals.css";
 
+/**
+ * UI : Orbiting Circles
+ * Link :  https://magicui.design/docs/components/orbiting-circles
+ */
 export function OrbitingCirclesDemo() {
   return (
     <div className="relative flex h-[500px] w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">

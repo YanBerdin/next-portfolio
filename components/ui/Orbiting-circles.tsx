@@ -1,5 +1,9 @@
 import { cn } from "@/lib/utils/cn";
 
+/**
+ * UI : Orbiting Circles
+ * Link :  https://magicui.design/docs/components/orbiting-circles
+ */
 export default function OrbitingCircles({
   className,
   children,

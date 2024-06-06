@@ -4,7 +4,10 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 import { gridItems } from "../../data/index";
 // afficher le contenu de gridItems dans la modal 
 
-
+/**
+ * UI : Backdrop Modal
+ * Link : https://nextui.org/docs/components/modal#backdrop
+ */
 export default function BackdropModal({ id }: { id: number }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [backdrop, setBackdrop] = React.useState<"blur" | "transparent" | "opaque" | "backdrop-blur-md" | undefined>('transparent') as any[];
