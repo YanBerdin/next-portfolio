@@ -101,6 +101,24 @@
   /*animation: shadow-slide infinite 4s linear alternate;*/
   transform: translate(-50%, -50%); /* Center the shadow */
 }
+
+.scrollbar::-webkit-scrollbar {
+  width: 2px;
+  /*height: 20px;*/
+}
+.scrollbar::-webkit-scrollbar-track {
+  /* border-radius: 100vh; */
+  background: #f7f4ed;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  /* background: #e0cbcb; */
+  border-radius: 100vh;
+  /* border: 3px solid #f6f7ed; */
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+ background: #c0a0b9;
+}
+
 /*
 @keyframes shadow-slide {
   from {

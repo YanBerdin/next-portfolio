@@ -2,6 +2,8 @@ import React from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 
 import { gridItems } from "../../data/index";
+import { BackgroundGradient } from "./background-gradient";
+
 // afficher le contenu de gridItems dans la modal 
 
 /**
@@ -13,6 +15,7 @@ export default function BackdropModal({ id }: { id: number }) {
   const [backdrop, setBackdrop] = React.useState<"blur" | "transparent" | "opaque" | "backdrop-blur-md" | undefined>('transparent') as any[];
   const [size, setSize] = React.useState('xl')
   const sizes = ["xs", "sm", "md", "lg", "xl", "2xl", "3xl", "4xl", "5xl", "full"];
+  const [scrollBehavior, setScrollBehavior] = React.useState("inside");
 
   const [title, settitle] = React.useState("");
   const [description, setDescription] = React.useState("");
@@ -23,6 +26,7 @@ export default function BackdropModal({ id }: { id: number }) {
   const handleOpen = (backdrop: string, id: number, size: string) => { // Explicitly type the 'backdrop' parameter as a string
     setBackdrop(backdrop);
     setSize(size);
+
     const item = gridItems.find(item => item.id === id);
     if (item) {
       settitle(item.title);
@@ -33,8 +37,8 @@ export default function BackdropModal({ id }: { id: number }) {
   }
 
   return (
-    <>
-      <div className="flex flex-wrap gap-3">
+    <article className="">
+      <div className="flex flex-wrap gap-2">
         {backdrops.map((b) => (
           <Button
             key={b}
@@ -48,7 +52,8 @@ export default function BackdropModal({ id }: { id: number }) {
           </Button>
         ))}
       </div>
-      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose} size={size as "lg" | "xs" | "sm" | "md" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "full"} placement="center" className="max-w-[80vw] max-h-[98vh]" >
+
+      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose} size={size as "lg" | "xs" | "sm" | "md" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "full"} placement="center" className="" scrollBehavior={"inside"}>
         <ModalContent
           style={{
             //   add these two
@@ -60,17 +65,17 @@ export default function BackdropModal({ id }: { id: number }) {
             borderRadius: `calc(1.75rem* 0.96)`,
           }}
           // remove bg-white dark:bg-slate-900
-          className=" border-neutral-200 dark:border-slate-800 m-4"
+          className=" border-neutral-200 dark:border-slate-800 w-10/12 md:max-w-[80vw] max-h-[10/12] xl:max-h-max "
         >
           {(onClose) => (
-            <>
-              <ModalHeader className="flex flex-col gap-1">
-                <h2 className="mt-2">{title}</h2>
+            <BackgroundGradient className="rounded-[22px] bg-white dark:bg-zinc-900 p-3 text-md">
+              <ModalHeader className="flex flex-col py-2">
+                <h2 className="lg:text-lg ">{title}</h2>
               </ModalHeader>
-              <ModalBody>
-                <h3>{description}</h3>
+              <ModalBody className="max-h-[70vh] max-lg:overflow-y-auto text-ellipsis gap-1 scrollbar">
+                <h3 className="mb-2">{description}</h3>
                 {explanationList.map((explanation, index) => (
-                  <p key={index}>{explanation}</p>
+                  <p className="" key={index}>{explanation}</p>
                 ))}
               </ModalBody>
               <ModalFooter>
@@ -81,10 +86,11 @@ export default function BackdropModal({ id }: { id: number }) {
                   Action
                 </Button>
               </ModalFooter>
-            </>
+            </BackgroundGradient>
           )}
         </ModalContent>
       </Modal>
-    </>
+
+    </article>
   );
 }
