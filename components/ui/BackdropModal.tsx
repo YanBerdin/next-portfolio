@@ -3,6 +3,7 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 
 import { gridItems } from "../../data/index";
 import { BackgroundGradient } from "./background-gradient";
+//import { ButtonsCard } from "./tailwindcss-buttons";
 
 // afficher le contenu de gridItems dans la modal 
 
@@ -65,26 +66,39 @@ export default function BackdropModal({ id }: { id: number }) {
             borderRadius: `calc(1.75rem* 0.96)`,
           }}
           // remove bg-white dark:bg-slate-900
-          className=" border-neutral-200 dark:border-slate-800 w-10/12 md:max-w-[80vw] max-h-[10/12] xl:max-h-max "
+          className=" border-neutral-200 dark:border-slate-800 w-10/12 md:max-w-[80vw] lg:max-w-[70vw] max-h-[10/12] xl:max-h-max "
         >
           {(onClose) => (
             <BackgroundGradient className="rounded-[22px] bg-white dark:bg-zinc-900 p-3 text-md">
-              <ModalHeader className="flex flex-col py-2">
-                <h2 className="lg:text-lg ">{title}</h2>
+              <ModalHeader className="flex flex-col py-2 px-3">
+                <h2 className="text-2xl">{title}</h2>
               </ModalHeader>
-              <ModalBody className="max-h-[70vh] max-lg:overflow-y-auto text-ellipsis gap-1 scrollbar">
+              <ModalBody className="max-h-[70vh] max-lg:overflow-y-auto gap-1 scrollbar max-sm:px-3 max-sm:text-sm">
                 <h3 className="mb-2">{description}</h3>
                 {explanationList.map((explanation, index) => (
                   <p className="" key={index}>{explanation}</p>
                 ))}
               </ModalBody>
-              <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+              <ModalFooter className="max-sm:px-2">
+                <button className="shadow-[0_0_0_2px_#581010_inset] px-4 py-1 bg-transparent border border-red-800 dark:border-red-800 dark:text-red-400 text-red-400 rounded-lg transform hover:scale-90 transition duration-200 font-medium max-md:px-3 max-md:py-1 max-sm:text-sm" >{/*onClick={}   max-md:pt-1 max-md:pb-1*/}
+                  X
+                </button>
+                {/*
+                *---------------------- A SUPPRIMER ------------------------
+                
+                <button className="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-red-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-red-50">
                   Close
-                </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
-                </Button>
+                </button>
+                */}
+                {/*
+                *---------------------- FIN DE A SUPPRIMER ------------------------
+                */}
+                <button className="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-300 transform hover:scale-90 max-sm:text-sm">{/*onClick={} max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
+                  Démo
+                </button>
+                <button className="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-300 transform hover:scale-90 max-sm:text-sm">{/*onClick={} max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
+                  Code
+                </button>
               </ModalFooter>
             </BackgroundGradient>
           )}

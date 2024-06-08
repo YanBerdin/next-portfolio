@@ -110,7 +110,12 @@ export const gridItems = [
     title: "DiscO'tech",
     description: "React | Vite | Javascript | Redux | Hooks",
       explanationList: ["DiscO'tech, un hommage à l'école O’clock, est une application de référencement musical conçue en mobile first pour répondre aux habitudes de consommation de musique à l'ère numérique.",
-      "Les utilisateurs peuvent rechercher des artistes ou des albums, explorer différents genres musicaux, créer leurs propres playlists et centraliser leur bibliothèque musicale sur une seule application.",
+      "Les utilisateurs peuvent :",
+      "- Rechercher des artistes ou des albums,",
+      "- Explorer différents genres musicaux,",
+      "- Créer leurs propres playlists",
+      "- Centraliser leur bibliothèque musicale sur une seule application.",
+      " ",
       "🔒 Validation des données provenant de l’utilisateur et du serveur. Même principe de double-validation que côté serveur.",
       "🔒 Sécurisation des formulaires et des méthodes d’écriture des données par jeton de synchronisation (aléatoire et à usage unique), dont l’accès est protégé par CORS",
       "🔒 Protection contre les attaques CSRF (Cross-Site Request Forgery)",
@@ -126,7 +131,7 @@ export const gridItems = [
     },
     {
       id: 2,
-      title: "", // "I'm very flexible with time zone communications"
+      title: "Projets récents", // "I'm very flexible with time zone communications"
       description: "",
     explanation: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[10vh] lg:min-h-[20vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3",
@@ -139,8 +144,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "My stack", //  tech 
+    description: "", // "I constantly try to improve"
     explanation: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[17vh] md:min-h-[19vh] lg:min-h-[21vh]", //"lg:col-span-3 lg:raw-span-3 md:col-span-3 md:row-span-3",
     imgClassName: "",
@@ -152,7 +157,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Github Explorer 🔎",
+    title: "Github Explorer",
     description: "React | Axios | Semantic UI | React-router-dom | PropTypes",
     explanationList: ["Intégration interactive, dynamique et responsive pour offrir une expérience utilisateur optimale sur les appareils mobiles et les ordinateurs de bureau.",
     "",
@@ -161,6 +166,7 @@ export const gridItems = [
       "",
       "- Prise en main d'Axios, une bibliothèque JavaScript populaire pour effectuer des requêtes HTTP.",
       "- Prise en main de Semantic UI, un framework CSS.",
+      "- Prise en main de l'API de GitHub.",
     ],
     className: "lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[16vh] md:min-h-[20vh]",//"lg:col-span-2 lg:raw-span-3 md:col-span-3 md:row-span-2",
     imgClassName: "object-cover",
@@ -173,7 +179,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Shoes-Shop 👠 with BackOffice",
+    title: "Shoes-Shop Site avec son API et son BackOffice",
     description: "PHP | MySQL | Composer | Apache | Singleton | Active Record | Bootstrap",
     explanationList: [ " ",
     "Intégration de l'interface utilisateur d'un site e-commerce de vente de chaussures.",
@@ -185,7 +191,6 @@ export const gridItems = [
     "- La possibilité de filtrer par nom, note, ou prix.",
     " ",
     "BackOffice :",
-    "Zone réservée aux administrateurs métier et techniques du site.",
     "- Gestion des catégories / produits / types / marques",
     "- Gestion des catégories présentées en page d'accueil",
     " 🔒  Encryptage des données utilisateur.",
