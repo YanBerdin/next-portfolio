@@ -1,5 +1,6 @@
 import Image from "next/image";
-import pilot from "../public/pilot.png";
+// import pilot from "../public/pilot.png";
+import portrait from "../public/portrait.png";
 
 export const About = () => {
   return (
@@ -11,9 +12,9 @@ export const About = () => {
         className="bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl rounded-lg justify-center w-11/12 mx-auto h-full py-8 mt-24 mb-20">
         <div className="px-6 flex flex-col lg:flex-row gap-8 md:gap-12 lg:py-6"> {/* flex-col-reverse*/}
           <Image
-            src={pilot}
-            alt=""
-            className="w-[250px] object-contain rounded-lg mx-auto"
+            src={portrait}
+            alt="portrait de Yan souriant"
+            className="w-[250px] max-sm:w-[100px] max-md:w-[150px] max-lg:w-[200px] object-cover rounded-lg mx-auto my-auto flex-shrink-2" /**/
           />
           <div className="bg-green-0 flex flex-col justify-around">
             <div className="pb-6">
