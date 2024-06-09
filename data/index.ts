@@ -124,7 +124,7 @@ export const gridItems = [
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 md:min-h-[20vh]",//"lg:col-span-2 lg:row-span-3 md:col-span-6 md:row-span-3", // change lg:col-span-3 md:row-span-4 
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "/DiscotechV2.jpg", // "/b1.svg",
       width: 320,
       height: 100,
       spareImg: "",
@@ -174,7 +174,7 @@ export const gridItems = [
     img: "/grid.svg",
     width: 320,
     height: 100,
-    spareImg: "/b4.svg",
+    spareImg:"/codeEditorGithub.png",  // "/b4.svg",
   },
 
   {

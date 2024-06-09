@@ -109,7 +109,7 @@ export const BentoGridItem = ({
                     )}
                 </div>
                 <div
-                    className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
+                    className={`absolute right-4 bottom-2 ${id === 5 && "w-full opacity-80" // right-0 -bottom-5
                         } `}
                 >
                     {spareImg && (
@@ -143,7 +143,7 @@ export const BentoGridItem = ({
                     {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
                     {/* remove mb-2 mt-2 md:text-xs md:max-w-32 */}
                     <div
-                        className={`font-sans max-w-96 font-bold z-10`} // text-md lg:text-xl
+                        className={`font-sans max-w-96 font-bold z-10 mt-1`} // text-md lg:text-xl
                     >
                         {title}
 

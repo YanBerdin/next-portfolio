@@ -10,7 +10,7 @@ export const About = () => {
       <section
         id="about"
         className="bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl rounded-lg justify-center w-11/12 mx-auto h-full py-8 mt-24 mb-20">
-        <div className="px-6 flex flex-col lg:flex-row gap-8 md:gap-12 lg:py-6"> {/* flex-col-reverse*/}
+        <div className="px-24 flex flex-col lg:flex-row gap-8 md:gap-12 lg:py-6"> {/* flex-col-reverse px-6*/}
           <Image
             src={portrait}
             alt="portrait de Yan souriant"
@@ -25,7 +25,7 @@ export const About = () => {
                 </span>
                 MYSELF
               </h2>
-              <p className="max-sm:text-sm text-md text-muted-foreground mt-4">
+              <p className="max-sm:text-sm text-lg text-muted-foreground mt-4">
                 Fascinated by programming from a young age thanks to my architect brother, who also became my mentor, I recently undertook a bold career change. After 20 years of experience in commerce and e-commerce, I decided to follow my passion for web development.
               </p>
 
