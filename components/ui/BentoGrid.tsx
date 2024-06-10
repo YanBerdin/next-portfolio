@@ -133,8 +133,8 @@ export const BentoGridItem = ({
                 <div
                     className={cn(
                         titleClassName,
-                        "group-hover/bento:brightness-125 transition duration-200 relative h-full flex flex-col px-5 p-3 sm:p-5 text-md md:text-lg lg:text-2xl"
-                    )} //  min-h-30 lg:p-10
+                        "group-hover/bento:brightness-125 transition duration-200 relative h-full flex flex-col px-5 p-3 sm:p-5"
+                    )} //  min-h-30 lg:p-10  [text-md md:text-lg lg:text-2xl] => moved to index.ts
                 >
                     {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
                     <div className="font-sans font-light w-full text-[#C1C2D3] z-10 text-xs md:text-sm lg:text-base">
@@ -213,7 +213,7 @@ export const BentoGridItem = ({
                             {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
                             {/* add handleCopy() for the copy the text */}
                             <div
-                                className={`absolute bottom-4 right-0 ${copied ? "block" : "block"
+                                className={`absolute bottom-3 right-0 ${copied ? "block" : "block"
                                     }`}
                             >
                                 {/* <img src="/confetti.gif" alt="confetti" /> */}
