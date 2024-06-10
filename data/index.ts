@@ -121,7 +121,7 @@ export const gridItems = [
       "🔒 Protection contre les attaques CSRF (Cross-Site Request Forgery)",
       "🔒 Protection contre les attaques par injection SQL",
       "🔒 Protection contre les vulnérabilités XSS (Cross Site Scripting)"],
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 md:min-h-[20vh]",//"lg:col-span-2 lg:row-span-3 md:col-span-6 md:row-span-3", // change lg:col-span-3 md:row-span-4 
+      className: "lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] md:min-h-[25vh] lg:h-full",//"lg:col-span-2 lg:row-span-3 md:col-span-6 md:row-span-3", // change lg:col-span-3 md:row-span-4 
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
       img: "/DiscotechV2.jpg", // "/b1.svg",
@@ -168,8 +168,8 @@ export const gridItems = [
       "- Prise en main de Semantic UI, un framework CSS.",
       "- Prise en main de l'API de GitHub.",
     ],
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[16vh] md:min-h-[20vh]",//"lg:col-span-2 lg:raw-span-3 md:col-span-3 md:row-span-2",
-    imgClassName: "object-cover",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1 md:min-h-[20vh]",// lg:raw-span-3 md:col-span-3 md:row-span-2",
+    imgClassName: "object-cover absolute w-24",
     titleClassName: "justify-start",
     img: "/grid.svg",
     width: 320,
@@ -179,7 +179,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Shoes-Shop Site avec son API et son BackOffice",
+    title: "Shoes-Shop & BackOffice",
     description: "PHP | MySQL | Composer | Apache | Singleton | Active Record | Bootstrap",
     explanationList: [ " ",
     "Intégration de l'interface utilisateur d'un site e-commerce de vente de chaussures.",
@@ -198,10 +198,10 @@ export const gridItems = [
     " 🔒  Gestion de l'authentification de la session et des permissions des utilisateurs",
     " 🔒  Protection contre les injections SQL, les attaques XSS et CSRF."],
     className: "md:col-span-3 md:row-span-2", //"md:col-span-3 md:row-span-2 lg:raw-span-2 lg:col-span-2",
-    imgClassName: "absolute right-0 -bottom-1 md:w-3/5 w-60", // bottom-0
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    width: 320,
+    imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:-bottom-1 md:w-3/6 lg:w-3/5 sm:w-40 w-32 lg:right-0 xl:right-1 xl:-bottom-4", // bottom-0
+    titleClassName: "justify-center md:justify-start ",
+    img: "/codeEditor-oshop-front1-s.png", // b5.svg
+    width: 220,
     height: 100,
     spareImg: "/grid.svg",
   },
@@ -210,7 +210,7 @@ export const gridItems = [
     title: "",
     description: "",
     explanation: [""],
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1 max-sm:h-[10vh] lg:min-h-[20vh]",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1 h-[9vh] lg:min-h-[17vh]",
     imgClassName: "",
     titleClassName: "justify-center w-full text-center", // md:max-w-full
     img: "",

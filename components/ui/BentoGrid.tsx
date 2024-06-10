@@ -84,7 +84,7 @@ export const BentoGridItem = ({
         <div
             className={cn(
                 // remove p-4 rounded-3xl dark:bg-black dark:border-white/[0.2] bg-white  border border-transparent, add border border-white/[0.1] overflow-hidden relative
-                "row-span-1 relative overflow-hidden rounded-xl border border-white/[0.1] group/bento hover:shadow-2xl hover:brightness-125 transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 md:space-y-4",
+                "row-span-1 relative overflow-hidden rounded-xl border border-white/[0.1] group/bento hover:shadow-2xl hover:brightness-125 transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
                 className
             )}
             style={{
@@ -97,7 +97,7 @@ export const BentoGridItem = ({
         >
             {/* add img divs */}
             <div className={`${id === 6 && "flex justify-center"} h-full`}>
-                <div className="w-full h-full absolute">
+                <div className="w-full h-full absolute ">
                     {img && (
                         <Image
                             src={img}
@@ -109,7 +109,7 @@ export const BentoGridItem = ({
                     )}
                 </div>
                 <div
-                    className={`absolute right-4 bottom-2 ${id === 5 && "w-full opacity-80" // right-0 -bottom-5
+                    className={`absolute right-0 sm:right-4 bottom-0 sm:bottom-2 ${id === 5 && "w-full " // opacity-80 right-0 -bottom-5
                         } `}
                 >
                     {spareImg && (
@@ -118,7 +118,7 @@ export const BentoGridItem = ({
                             alt={spareImg}
                             width={width}
                             height={height}
-                            className="object-cover object-center w-full h-full"
+                            className="object-cover object-center w-full h-full "
                         />
                     )}
 
@@ -133,11 +133,11 @@ export const BentoGridItem = ({
                 <div
                     className={cn(
                         titleClassName,
-                        "group-hover/bento:brightness-125 transition duration-200 relative h-full flex flex-col px-5 p-5 text-xl lg:text-2xl"
+                        "group-hover/bento:brightness-125 transition duration-200 relative h-full flex flex-col px-5 p-3 sm:p-5 text-md md:text-lg lg:text-2xl"
                     )} //  min-h-30 lg:p-10
                 >
                     {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-                    <div className="font-sans font-light w-full text-base text-[#C1C2D3] z-10 "> 
+                    <div className="font-sans font-light w-full text-[#C1C2D3] z-10 text-xs md:text-sm lg:text-base">
                         {description}
                     </div>
                     {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
@@ -198,7 +198,7 @@ export const BentoGridItem = ({
                     )}
 
                     {(id === 1 || id === 4 || id === 5) && (
-                        <div className="mt-4">
+                        <div className="mt-2">
                             <BackdropModal id={id} />
                         </div>
                     )}
