@@ -121,12 +121,12 @@ export const gridItems = [
       "🔒 Protection contre les attaques CSRF (Cross-Site Request Forgery)",
       "🔒 Protection contre les attaques par injection SQL",
       "🔒 Protection contre les vulnérabilités XSS (Cross Site Scripting)"],
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] md:min-h-[25vh] lg:h-full",//"lg:col-span-2 lg:row-span-3 md:col-span-6 md:row-span-3", // change lg:col-span-3 md:row-span-4 
-      imgClassName: "w-full h-full",
+      className: "lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",//"lg:col-span-2 lg:row-span-3 md:col-span-6 md:row-span-3", // change lg:col-span-3 md:row-span-4 
+      imgClassName: "w-full h-full h-auto object-cover", // "h-auto object-cover",
       titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
       img: "/DiscotechV2.jpg", // "/b1.svg",
       width: 320,
-      height: 100,
+      height: 200,
       spareImg: "",
     },
     {
@@ -134,8 +134,8 @@ export const gridItems = [
       title: "Projets récents", // "I'm very flexible with time zone communications"
       description: "",
     explanation: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[14vh] lg:min-h-[20vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3",
-    imgClassName: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 h-auto min-h-[12vh] md:min-h-[15vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3",
+    imgClassName: "h-auto",
     titleClassName: "text-xl md:text-3xl justify-start",
     img: "",
     width: 320,
@@ -147,8 +147,8 @@ export const gridItems = [
     title: "My stack", //  tech 
     description: "", // "I constantly try to improve"
     explanation: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[16vh] md:min-h-[19vh] lg:min-h-[21vh]", //"lg:col-span-3 lg:raw-span-3 md:col-span-3 md:row-span-3",
-    imgClassName: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 h-auto min-h-[15vh] md:min-h-[20vh] lg:min-h-[18vh]", //"lg:col-span-3 lg:raw-span-3 md:col-span-3 md:row-span-3",
+    imgClassName: "h-auto",
     titleClassName: "text-xl md:text-3xl justify-center",
     img: "",
     width : 350,
@@ -168,8 +168,8 @@ export const gridItems = [
       "- Prise en main de Semantic UI, un framework CSS.",
       "- Prise en main de l'API de GitHub.",
     ],
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[17vh] md:min-h-[20vh]",// lg:raw-span-3 md:col-span-3 md:row-span-2",
-    imgClassName: "object-cover absolute w-24",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[17vh] md:min-h-[20vh] lg:min-h-[27vh]",// lg:raw-span-3 md:col-span-3 md:row-span-2",
+    imgClassName: "object-cover absolute min-w-24 h-auto",
     titleClassName: "text-md md:text-lg lg:text-2xl justify-start",
     img: "/grid.svg",
     width: 320,
@@ -180,7 +180,7 @@ export const gridItems = [
   {
     id: 5,
     title: "Shoes-Shop & BackOffice",
-    description: "PHP | MySQL | Composer | Apache | Singleton | Active Record | Bootstrap",
+    description: "PHP | MySQL | Apache | Singleton | Active Record | Bootstrap",
     explanationList: [ " ",
     "Intégration de l'interface utilisateur d'un site e-commerce de vente de chaussures.",
     " ",
@@ -198,7 +198,7 @@ export const gridItems = [
     " 🔒  Gestion de l'authentification de la session et des permissions des utilisateurs",
     " 🔒  Protection contre les injections SQL, les attaques XSS et CSRF."],
     className: "md:col-span-3 md:row-span-2", //"md:col-span-3 md:row-span-2 lg:raw-span-2 lg:col-span-2",
-    imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:-bottom-1 md:w-3/6 lg:w-3/5 sm:w-40 w-32 lg:right-0 xl:right-1 xl:-bottom-4", // bottom-0
+    imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 lg:w-3/5 w-32 lg:right-10 xl:right-1 xl:-bottom-4 h-auto", // bottom-0
     titleClassName: "text-md md:text-lg lg:text-2xl justify-center md:justify-start ",
     img: "/codeEditor-oshop-front1-s.png", // b5.svg
     width: 220,
