@@ -42,10 +42,10 @@ export default function BackdropModal({ id }: { id: number }) {
   }
 
   const handleCodeClick = () => {
-    window.open(githubLink, "_blank");
+    window.open(githubLink, "_blank", 'noopener noreferrer');
   }
   const handleDemoClick = () => {
-    window.open(demoLink, "_blank");
+    window.open(demoLink, "_blank", 'noopener noreferrer');
   }
   
 

@@ -1,4 +1,3 @@
-
 /**
  * Represents the NavBar Links.
  */
@@ -6,8 +5,9 @@ export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Skills", link: "#skills" },
-    { name: "CV", link: "" },
-    { name: "Github", link: "" },
+    { name: "CV", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
+    //https://YanBerdin.github.io/resume 
+    { name: "Github", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer" },
     // { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
   ];
@@ -148,7 +148,7 @@ export const gridItems = [
 
   {
     id: 3,
-    title: "Technologies", //  tech 
+    title: "Dev Tools", //  tech 
     description: "", // "I constantly try to improve"
     explanation: "",
     className: "-order-1 lg:order-3 lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[15vh] md:min-h-[20vh] lg:min-h-[18vh]", //"lg:col-span-3 lg:raw-span-3 md:col-span-3 md:row-span-3" added -order-1
@@ -174,7 +174,7 @@ export const gridItems = [
       "- Utilisation de l'API de GitHub.",
     ],
     className: "order-4 lg:order-5 lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[17vh] md:min-h-[20vh] lg:min-h-[27vh]",// lg:raw-span-3 md:col-span-3 md:row-span-2", added order-4 lg:order-5
-    imgClassName: " absolute h-auto min-w-3/5", // object-cover
+    imgClassName: " absolute h-auto", // object-cover
     titleClassName: "text-md md:text-lg lg:text-2xl justify-start h-auto",
     img: "/grid.svg",
     width: 320,
