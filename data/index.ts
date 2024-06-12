@@ -128,22 +128,24 @@ export const gridItems = [
       width: 320,
       height: 200,
       spareImg: "",
-      demoLink: "https://discotech.netlify.app/",
-      githubLink: " ",
-    },
-    {
+      demoLink: "https://discotech-git-master-yanberdins-projects.vercel.app/",
+      githubLink: "https://github.com/YanBerdin/discOtech",
+  },
+
+  {
       id: 2,
       title: "Projets", // "I'm very flexible with time zone communications"
       description: "",
-    explanation: "",
-    className: "order-first lg:col-span-2 md:col-span-3 md:row-span-2 h-auto min-h-[10vh] md:min-h-[15vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3 " added order-first
-    imgClassName: "h-auto",
-    titleClassName: "text-3xl justify-start",
-    img: "",
-    width: 0,
-    height: 0,
-    spareImg: "",
+      explanation: "",
+      className: "order-first lg:col-span-2 md:col-span-3 md:row-span-2 h-auto min-h-[10vh] md:min-h-[15vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3 " added order-first
+      imgClassName: "h-auto",
+      titleClassName: "text-3xl justify-start",
+      img: "",
+      width: 0,
+      height: 0,
+      spareImg: "",
   },
+
   {
     id: 3,
     title: "Technologies", //  tech 
@@ -157,6 +159,7 @@ export const gridItems = [
     height: 200,
     spareImg: "",
   },
+
   {
     id: 4,
     title: "Github Explorer",
@@ -171,12 +174,14 @@ export const gridItems = [
       "- Utilisation de l'API de GitHub.",
     ],
     className: "order-4 lg:order-5 lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[17vh] md:min-h-[20vh] lg:min-h-[27vh]",// lg:raw-span-3 md:col-span-3 md:row-span-2", added order-4 lg:order-5
-    imgClassName: "object-cover absolute w-12 h-auto",
+    imgClassName: " absolute h-auto min-w-3/5", // object-cover
     titleClassName: "text-md md:text-lg lg:text-2xl justify-start h-auto",
     img: "/grid.svg",
     width: 320,
-    height: 100,
+    height: 200,
     spareImg:"/codeEditorGithub.png",  // "/b4.svg",
+    demoLink:"https://new-react-github-explorer.vercel.app/",
+    githubLink:"https://github.com/YanBerdin/create-react-github-explorer",
   },
 
   {
@@ -200,13 +205,16 @@ export const gridItems = [
     " 🔒  Gestion de l'authentification de la session et des permissions des utilisateurs",
     " 🔒  Protection contre les injections SQL, les attaques XSS et CSRF."],
     className: "order-5 lg:order-4 md:col-span-3 md:row-span-2", //"md:col-span-3 md:row-span-2 lg:raw-span-2 lg:col-span-2", added order-5 lg:order-4 
-    imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 lg:w-3/5 w-32 lg:right-10 xl:right-1 xl:-bottom-4 h-auto max-h-15vh", // bottom-0
+    imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 w-32 lg:right-10 xl:right-1 xl:-bottom-1 h-auto max-h-15vh", // bottom-0
     titleClassName: "text-md md:text-lg lg:text-2xl justify-center md:justify-start ",
     img: "/codeEditor-oshop-front1-s.png", // b5.svg
     width: 220,
     height: 100,
     spareImg: "/grid.svg",
+    demoLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php",
+    githubLink: "https://github.com/YanBerdin/shoes-shop-frontoffice-php",
   },
+  
   {
     id: 6,
     title: "",
