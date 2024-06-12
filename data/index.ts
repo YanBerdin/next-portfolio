@@ -121,7 +121,7 @@ export const gridItems = [
       "🔒 Protection contre les attaques CSRF (Cross-Site Request Forgery)",
       "🔒 Protection contre les attaques par injection SQL",
       "🔒 Protection contre les vulnérabilités XSS (Cross Site Scripting)"],
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",//"lg:col-span-2 lg:row-span-3 md:col-span-6 md:row-span-3", // change lg:col-span-3 md:row-span-4 
+      className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",//"lg:col-span-2 lg:row-span-3 md:col-span-6 md:row-span-3", // change lg:col-span-3 md:row-span-4 order-3 lg:order-2
       imgClassName: "w-full h-full object-cover h-auto", // "h-auto object-cover",
       titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
       img: "/DiscotechV2.jpg", // "/b1.svg",
@@ -136,7 +136,7 @@ export const gridItems = [
       title: "Projets", // "I'm very flexible with time zone communications"
       description: "",
     explanation: "",
-    className: " lg:col-span-2 md:col-span-3 md:row-span-2 h-auto min-h-[12vh] md:min-h-[15vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3",
+    className: "order-first lg:col-span-2 md:col-span-3 md:row-span-2 h-auto min-h-[10vh] md:min-h-[15vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3 " added order-first
     imgClassName: "h-auto",
     titleClassName: "text-3xl justify-start",
     img: "",
@@ -149,7 +149,7 @@ export const gridItems = [
     title: "Technologies", //  tech 
     description: "", // "I constantly try to improve"
     explanation: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[15vh] md:min-h-[20vh] lg:min-h-[18vh]", //"lg:col-span-3 lg:raw-span-3 md:col-span-3 md:row-span-3",
+    className: "-order-1 lg:order-3 lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[15vh] md:min-h-[20vh] lg:min-h-[18vh]", //"lg:col-span-3 lg:raw-span-3 md:col-span-3 md:row-span-3" added -order-1
     imgClassName: "h-auto",
     titleClassName: "text-md md:text-lg lg:text-2xl justify-center",
     img: "",
@@ -170,7 +170,7 @@ export const gridItems = [
       "- Prise en main de Semantic UI, un framework CSS.",
       "- Utilisation de l'API de GitHub.",
     ],
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[17vh] md:min-h-[20vh] lg:min-h-[27vh]",// lg:raw-span-3 md:col-span-3 md:row-span-2",
+    className: "order-4 lg:order-5 lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[17vh] md:min-h-[20vh] lg:min-h-[27vh]",// lg:raw-span-3 md:col-span-3 md:row-span-2", added order-4 lg:order-5
     imgClassName: "object-cover absolute w-12 h-auto",
     titleClassName: "text-md md:text-lg lg:text-2xl justify-start h-auto",
     img: "/grid.svg",
@@ -199,7 +199,7 @@ export const gridItems = [
     " 🔒  Sécurisation des méthodes d’écriture de données par jeton de synchronisation (aléatoire et à usage unique), dont l’accès est protégé par CORS.",
     " 🔒  Gestion de l'authentification de la session et des permissions des utilisateurs",
     " 🔒  Protection contre les injections SQL, les attaques XSS et CSRF."],
-    className: "md:col-span-3 md:row-span-2", //"md:col-span-3 md:row-span-2 lg:raw-span-2 lg:col-span-2",
+    className: "order-5 lg:order-4 md:col-span-3 md:row-span-2", //"md:col-span-3 md:row-span-2 lg:raw-span-2 lg:col-span-2", added order-5 lg:order-4 
     imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 lg:w-3/5 w-32 lg:right-10 xl:right-1 xl:-bottom-4 h-auto max-h-15vh", // bottom-0
     titleClassName: "text-md md:text-lg lg:text-2xl justify-center md:justify-start ",
     img: "/codeEditor-oshop-front1-s.png", // b5.svg
@@ -212,7 +212,7 @@ export const gridItems = [
     title: "",
     description: "",
     explanation: [""],
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[7vh] md:min-h-[14vh] lg:min-h-[17vh]",
+    className: "order-6 lg:order-last lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[7vh] md:min-h-[14vh] lg:min-h-[17vh]", // added order-6 lg:order-last
     imgClassName: "h-auto",
     titleClassName: "justify-center w-full text-center", // md:max-w-full
     img: "",

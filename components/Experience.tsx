@@ -9,11 +9,11 @@ import Image from "next/image"; // Add this line
 export const Experience = () => {
   return (
     <>
-      <div id="skills" className="h-2 mb-24"></div>
+      <div id="skills" className="h-10 md:h-20"></div>
 
-      <section className=" mx-auto mt-4 mb-24">
+      <section className="mx-auto max-sm:w-11/12 mb-24">
         <div className="flex flex-col">
-          <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold text-center">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center">
             Specializing in
             <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text">
               {" "}
