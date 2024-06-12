@@ -154,7 +154,7 @@ export const BentoGridItem = ({
 
                     {/* Tech stack list div */}
                     {id === 3 && (
-                        <div className="flex gap-1 lg:gap-3 w-fit absolute right-3 lg:mr-2 py-6">
+                        <div className="flex gap-1 lg:gap-3 w-fit absolute right-3 lg:mr-2">
                             {/* tech stack lists */}
                             <div className="flex flex-col gap-1 md:gap-2">
                                 {leftLists.map((item, i) => (
@@ -166,7 +166,7 @@ export const BentoGridItem = ({
                                         {item}
                                     </span>
                                 ))}
-                                <span className="py-1 px-2 rounded-sm text-center bg-[#10132E]"></span>
+                                <span className="py-1 px1 rounded-sm text-center bg-[#10132E]"></span>
                             </div>
 
                             <div className="flex flex-col gap-1 md:gap-2">
@@ -174,7 +174,7 @@ export const BentoGridItem = ({
                                 {rightLists.map((item, i) => (
                                     <span
                                         key={i}
-                                        className=" py-1 px-2 text-xs opacity-50 
+                                        className=" py-1 px-1 text-xs opacity-50 
                     lg:opacity-100 rounded-xs text-center bg-[#10132E]"
                                     >
                                         {item}
@@ -186,13 +186,13 @@ export const BentoGridItem = ({
                                 {centerLists.map((item, i) => (
                                     <span
                                         key={i}
-                                        className="py-1 px-2 text-xs opacity-50 
+                                        className="py-1 px-1 text-xs opacity-50 
                     lg:opacity-100 rounded-xs text-center bg-[#10132E]" // lg:py-2 lg:px-3 
                                     > {/* rounded-lg */}
                                         {item}
                                     </span>
                                 ))}
-                                <span className="py-1 px-2 rounded-sm text-center bg-[#10132E]"></span>
+                                <span className="py-1 px-1 rounded-sm text-center bg-[#10132E]"></span>
                             </div>
                         </div>
                     )}

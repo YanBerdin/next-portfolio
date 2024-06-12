@@ -5,16 +5,16 @@ import portrait from "../public/portrait.png";
 export const About = () => {
   return (
     <>
-      <div id="about" className="h-2 md:h-4 max-md:mt-6"></div>
+      <div id="about" className="h-2 md:h-4"></div>
       {/* bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased */}
       <section
         id="about"
-        className="bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl rounded-lg justify-center w-11/12 mx-auto h-full p-6 sm:p-14 md:p-16 lg:p-18 xl:p-20 mt-4 sm:mt-10 mb-10 md:mt-20">
+        className="bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl rounded-lg justify-center w-11/12 mx-auto h-full p-4 sm:p-14 md:p-16 lg:p-18 xl:p-20 mt-1 sm:mt-10 mb-10 md:mt-20">
         <div className=" flex flex-col lg:flex-row gap-4 md:gap-12"> {/* flex-col-reverse px-6*/}
           <Image
             src={portrait}
             alt="portrait de Yan souriant"
-            className=" max-w-[80px] md:max-w-[130px] lg:max-w-[180px] xl:max-w-[200px] object-cover rounded-lg mx-auto my-auto flex-shrink-2" /**/
+            className=" max-w-[80px] md:max-w-[130px] lg:max-w-[180px] xl:max-w-[200px] object-cover rounded-lg mx-auto max-h-[90px] md:max-h-[150px] lg:max-h-[207px] xl:max-h-[230px] my-auto flex-shrink-2" /**/
           />
           <div className="bg-green-0 flex flex-col justify-around">
             <div className="">

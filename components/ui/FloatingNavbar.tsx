@@ -8,7 +8,7 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import Link from "next/link";
-import { cn } from "../../lib/utils/cn"; // "@/lib/utils"
+import { cn } from "@/lib/utils/cn";
 
 /** 
 *  UI: Floating Navbar

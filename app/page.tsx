@@ -21,10 +21,10 @@ export default function Home() {
         <div style={{ marginBottom: "10rem" }}>
           <Hero />
         </div>
-        <div id="projects" style={{ marginTop: "-40px", paddingTop: "40px", marginBottom: "10rem" }}>
+        <div id="projects" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
           <Grid />
         </div>
-        <div id="about" style={{ marginTop: "-50px", paddingTop: "20px", marginBottom: "10rem" }}>
+        <div id="about" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
           <About />
         </div>
         <div id="skills" style={{ marginTop: "-30px", paddingTop: "10px", marginBottom: "10rem" }}>
