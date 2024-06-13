@@ -1,30 +1,25 @@
-/**
- * Represents the NavBar Links.
- */
+
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Skills", link: "#skills" },
-    { name: "CV", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
-    //https://YanBerdin.github.io/resume 
-    { name: "Github", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer" },
-    // { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
-  ];
+  { name: "A propos", link: "#about" },
+  { name: "Skills", link: "#skills" },
+  { name: "Projets", link: "#projects" },
+  { name: "Contact", link: "#contact" },
+  { name: "CV", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
+  //https://YanBerdin.github.io/resume 
+  { name: "Github", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer" },
+  // { name: "Testimonials", link: "#testimonials" },
+];
   
-/**
- * Represents the list of my skills.
- */
 interface mySkills {
 
-/**
-* The title of the skills.
-*/
-title: string;
+  /**
+  * The title of the skills.
+  */
+  title: string;
 
-/**
-* The list of skillss of the skills.
-*/
+  /**
+  * The list of skillss of the skills.
+  */
   skillsList: string[];
 }
 
@@ -100,9 +95,7 @@ title: string;
      thumbnail: "/exp3.svg",
 
     },
-
   ];
-
 
 export const gridItems = [
   {

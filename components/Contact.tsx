@@ -22,10 +22,10 @@ export function Contact() {
   };
   return (
     <>
-      <div id="contact" className="md:h-2 md:mt-10"></div>
+      <div id="contact" className="h-10 lg:h-20 mt-24"></div>
       <section
         // id="contact"
-        className="w-11/12 mx-auto max-sm:mt-16"
+        className="w-11/12 mx-auto mt-10"
       >
         <div className="md:px-8 pb-20">
           <header className="mx-auto text-center">
@@ -48,9 +48,9 @@ export function Contact() {
 
             {/*Form Header*/}
 
-            <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
+            <h2 className="font-bold text-lg text-neutral-800 dark:text-neutral-200">
               <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                Thanks
+              Thanks
               </span>{" "}
               for taking the time to reach out.
             </h2>
