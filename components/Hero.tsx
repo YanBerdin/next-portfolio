@@ -3,6 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { MagicButton } from "./MagicButton";
+import { OrbitingCirclesDemo } from "./ui/OrbitingCirclesDemo";
 
 export const Hero = () => {
     return (
@@ -28,8 +29,8 @@ export const Hero = () => {
                 />
 
             </div>
-            <div className="flex justify-center relative my-20 z-10">
-                <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+            <div className="flex justify-between gap-10 relative my-20 z-10"> {/*justify-center*/}
+                <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-start justify-center">
                     <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
                     </p>
@@ -39,10 +40,10 @@ export const Hero = () => {
                      *  change md:text-6xl, add more responsive code
                      */}
                     <TextGenerateEffect
-                        className="text-center text-[30px] lg:text-4xl xl:text-5xl"
+                        className="text-[30px] lg:text-4xl xl:text-5xl" // text-center 
                         words="Transforming Concepts into Seamless User Experiences"
                     />
-                    <p className="text-center md:tracking-wider mb-4 md:mb-10 text-sm md:text-lg lg:text-2xl">
+                    <p className="md:tracking-wider mb-4 md:mb-10 text-sm md:text-lg lg:text-2xl"> {/*text-center */}
                         Hi, I&apos;m Yan, a React.js Developer based in France.
                     </p>
 
@@ -55,6 +56,9 @@ export const Hero = () => {
                         otherClasses="custom-class"
                         href="#projects"
                     />
+                </div>
+                <div className="w-full max-w-[450px]">
+                    <OrbitingCirclesDemo />
                 </div>
             </div>
         </section>

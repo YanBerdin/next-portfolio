@@ -7,8 +7,6 @@ import { Contact } from "../components/Contact";
 import { About } from "../components/About";
 // import { Cursor } from "../components/ui/Cursor";
 import { Grid } from "../components/Grid";
-import { OrbitingCirclesDemo } from "@/components/ui/OrbitingCirclesDemo";
-
 
 export default function Home() {
   return (
@@ -32,7 +30,6 @@ export default function Home() {
         </div>
         <div id="contact" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
           <Contact />
-          <OrbitingCirclesDemo />
         </div>
       </div>
 

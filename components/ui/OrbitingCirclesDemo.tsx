@@ -10,14 +10,14 @@ import "../../app/globals.css";
  */
 export function OrbitingCirclesDemo() {
   return (
-    <div className="relative flex h-[500px] w-full max-w-[500px] items-center justify-center overflow-hidden rounded-lg border  md:shadow-xl"> {/*bg-background  */}
+    <div className="relative flex h-[450px] w-full max-w-[450px] items-center justify-center overflow-hidden rounded-lg border-none md:shadow-xl right-8"> {/*bg-background  h-[500px] max-w-[500px] border*/}
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-        {/*Circles*/} Yan
+        {/*Hello*/}
       </span>
 
       {/* Inner Circles */}
       <OrbitingCircles
-        className="h-[30px] w-[30px] border-none bg-transparent"
+        className="h-[40px] w-[40px] border-none bg-transparent" // Icon-size
         duration={20}
         delay={20}
         radius={80}
@@ -25,7 +25,7 @@ export function OrbitingCirclesDemo() {
         <Icons.whatsapp />
       </OrbitingCircles>
       <OrbitingCircles
-        className="h-[30px] w-[30px] border-none bg-transparent"
+        className="h-[40px] w-[40px] border-none bg-transparent" // Icon-size
         duration={20}
         delay={10}
         radius={80}
@@ -35,7 +35,7 @@ export function OrbitingCirclesDemo() {
 
       {/* Outer Circles (reverse) */}
       <OrbitingCircles
-        className="h-[50px] w-[50px] border-none bg-transparent"
+        className="h-[40px] w-[40px] border-none bg-transparent" // Icon-size
         reverse
         radius={190}
         duration={20}
@@ -43,7 +43,7 @@ export function OrbitingCirclesDemo() {
         <Icons.googleDrive />
       </OrbitingCircles>
       <OrbitingCircles
-        className="h-[50px] w-[50px] border-none bg-transparent"
+        className="h-[40px] w-[40px] border-none bg-transparent" // Icon-size
         reverse
         radius={190}
         duration={20}
