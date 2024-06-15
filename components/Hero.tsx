@@ -53,7 +53,7 @@ export const Hero = () => {
                         icon={<FaLocationArrow />}
                         position="right"
                         // handleClick={() => console.log('Button clicked!')}
-                        otherClasses="custom-class transform hover:brightness-130"
+                        otherClasses="custom-class hover:opacity-90"
                         href="#projects"
                     />
                 </div>
