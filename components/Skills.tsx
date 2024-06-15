@@ -1,12 +1,10 @@
-// test 
-
 import React from "react";
 import { mySkills } from "@/data";
 import { Button } from "./ui/MovingBorders";
 import { Check } from "lucide-react";
-import Image from "next/image"; // Add this line
+import Image from "next/image";
 
-export const Experience = () => {
+export const Skills = () => {
   return (
     <>
       <div id="skills" className="h-20"></div>
@@ -81,4 +79,4 @@ export const Experience = () => {
   );
 };
 
-// export default Experience;
+// export default Skills;

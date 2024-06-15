@@ -3,7 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { MagicButton } from "./MagicButton";
-import { OrbitingCirclesDemo } from "./ui/OrbitingCirclesDemo";
+// import { OrbitingCirclesLg } from "./ui/OrbitingCirclesLg";
 
 export const Hero = () => {
     return (
@@ -29,21 +29,21 @@ export const Hero = () => {
                 />
 
             </div>
-            <div className="flex justify-between gap-10 relative my-20 z-10"> {/*justify-center*/}
-                <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-start justify-center">
-                    <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+            <div className="flex justify-center gap-32 lg:gap-10 relative my-20 lg:my-10 z-10 "> {/*flex-wrap md:justify-around*/}
+                <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[45vw] xl:m-w-[60vw] flex flex-col items-center justify-center">
+                    {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
-                    </p>
+                    </p>*/}
                     {/**
                      *  Link: https://ui.aceternity.com/components/text-generate-effect
                      *
                      *  change md:text-6xl, add more responsive code
                      */}
                     <TextGenerateEffect
-                        className="text-[30px] lg:text-4xl xl:text-5xl" // text-center 
+                        className="text-2xl sm:text-3xl lg:text-3xl xl:text-5xl max-w-[610px] text-center" // remove text-center text-[30px]
                         words="Transforming Concepts into Seamless User Experiences"
                     />
-                    <p className="md:tracking-wider mb-4 md:mb-10 text-sm md:text-lg lg:text-2xl"> {/*text-center */}
+                    <p className="md:tracking-wider mb-4 md:mb-10 text-sm md:text-lg lg:text-2xl text-center"> {/*text-center */}
                         Hi, I&apos;m Yan, a React.js Developer based in France.
                     </p>
 
@@ -53,13 +53,16 @@ export const Hero = () => {
                         icon={<FaLocationArrow />}
                         position="right"
                         // handleClick={() => console.log('Button clicked!')}
-                        otherClasses="custom-class"
+                        otherClasses="custom-class transform hover:brightness-130"
                         href="#projects"
                     />
                 </div>
-                <div className="w-full max-w-[450px]">
-                    <OrbitingCirclesDemo />
+                {/* 
+                <div className="max-sm:hidden sm:min-w-[414px] sm:max-w-[450px]"> */}{/* max-sm:hidden  */}
+                   {/* <OrbitingCirclesLg /> */}
+                {/*
                 </div>
+                */}
             </div>
         </section>
 

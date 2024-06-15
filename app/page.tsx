@@ -1,7 +1,7 @@
 // import Image from "next/image";
 import { FloatingNav } from "../components/ui/FloatingNavbar";
 import { Hero } from "../components/Hero";
-import { Experience } from "../components/Experience";
+import { Skills } from "../components/Skills";
 import { navItems } from "../data"; // "@/data"
 import { Contact } from "../components/Contact";
 import { About } from "../components/About";
@@ -23,7 +23,7 @@ export default function Home() {
           <About />
         </div>
         <div id="skills" style={{ marginTop: "-30px", paddingTop: "-30px", marginBottom: "10rem" }}>
-          <Experience /> {/*  pas besoin de passer en props mySkills ? */}
+          <Skills /> {/*  pas besoin de passer en props mySkills ? */}
         </div>
         <div id="projects" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
           <Grid />
