@@ -35,7 +35,7 @@ interface mySkills {
         "Skilled in functional and declarative programming.",
         "Advanced knowledge of ES6+.",
         "Skilled in state management libraries (Redux).",
-        "Creation, installation, and activation of WordPress themes.",
+        // "Creation, installation, and activation of WordPress themes.",
     ],
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
@@ -101,7 +101,7 @@ export const gridItems = [
   {
     id: 1,
     title: "DiscO'tech",
-    description: "React | Vite | Javascript | Redux | Axios",
+    description: "React.js | Redux | Axios | Rest API | PropTypes",
       explanationList: ["DiscO'tech, un hommage à l'école O’clock, est une application de référencement musical conçue en mobile first pour répondre aux habitudes de consommation de musique à l'ère numérique.",
       " ", 
       "Les utilisateurs peuvent :",
@@ -128,7 +128,7 @@ export const gridItems = [
 
   {
       id: 2,
-      title: "Projets", // "I'm very flexible with time zone communications"
+      title: "Réalisations", // "I'm very flexible with time zone communications"
       description: "",
       explanation: "",
       className: "order-first lg:col-span-2 md:col-span-3 md:row-span-2 h-auto min-h-[10vh] md:min-h-[15vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3 " added order-first
