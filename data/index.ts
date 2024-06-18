@@ -3,9 +3,10 @@ export const navItems = [
   { name: "A propos", link: "#about" },
   { name: "Skills", link: "#skills" },
   { name: "Projets", link: "#projects" },
-  { name: "Contact", link: "#contact" },
-  { name: "CV", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
+  { name: "Experience", link: "#experience" },
+  // { name: "Experience", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
   //https://YanBerdin.github.io/resume 
+  { name: "Contact", link: "#contact" },
   { name: "Github", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer" },
   // { name: "Testimonials", link: "#testimonials" },
 ];
