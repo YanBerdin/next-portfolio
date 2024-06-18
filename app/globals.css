@@ -154,9 +154,11 @@
   }
 }
 
+
 .container {
-animation: movedown 1s linear forwards;
+/*animation: movedown 1s linear forwards;*/
 }
+
 
 .timeline::after {
 content: "";
@@ -195,22 +197,27 @@ z-index: -1;
 }
 
 .container:nth-child(1) {
-animation-delay: 0s;
-}
-.container:nth-child(2) {
 animation-delay: 1s;
 }
-.container:nth-child(3) {
+.container:nth-child(2) {
 animation-delay: 2s;
 }
-.container:nth-child(4) {
+.container:nth-child(3) {
 animation-delay: 3s;
 }
-.container:nth-child(5) {
+.container:nth-child(4) {
 animation-delay: 4s;
 }
-.container:nth-child(6) {
+.container:nth-child(5) {
 animation-delay: 5s;
+}
+.container:nth-child(6) {
+animation-delay: 6s;
+}
+
+.animate {
+  background-color: yellow; /* For browsers that do not support gradients */
+  animation: movedown 1s linear forwards;
 }
 
 @media screen and (max-width: 600px) {

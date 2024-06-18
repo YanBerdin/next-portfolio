@@ -1,15 +1,51 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 const Timeline = () => {
+    //  const containerRefs = useRef([]);
+    const containerRefs = useRef<HTMLDivElement[]>([]);
+
+    useEffect(() => {
+        const currentRefs = containerRefs.current;
+
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    // Si l'élément est visible à l'écran
+                    if (entry.isIntersecting) {
+                        // Ajoutez la classe pour déclencher l'animation
+                        entry.target.classList.add('animate');
+                    }
+                });
+            },
+            {
+                // L'animation se déclenche lorsque 75% de l'élément est visible
+                threshold: 0.35
+            }
+        );
+
+        containerRefs.current.forEach(container => {
+            observer.observe(container);
+        });
+
+        // Utiliser la variable dans la fonction de nettoyage
+        // Nettoyer l'observateur lorsque le composant est démonté
+        return () => {
+            currentRefs.forEach(container => {
+                observer.unobserve(container);
+            });
+        };
+    }, []);
+
+
     return (
-        <>
+        <section>
             <div id="experience" className="h-12 md:h-20"></div>
             <div className="timeline relative max-w-screen-xl bg-green-300 max-sm:m-12 mx-auto px-3">
 
-                <div className="container left-container relative w-1/2 bg-pink-500 lg:bg-red-800 xl:bg-blue-500 rounded-xl py-2.5 px-12 sm:-left-1/4  opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 z-10">
+                <div ref={ref => { containerRefs.current.push(ref!); }} className="container left-container relative w-1/2 bg-pink-500 lg:bg-red-800 xl:bg-blue-500 rounded-xl py-2.5 px-12 sm:-left-1/4  opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 z-10">
                     <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -right-5 top-8 rounded-full z-10 max-sm:left-2.5" />
                     <div className="text-box relative py-5 px-7 rounded-lg bg-white-100 left-0">
 
@@ -25,7 +61,7 @@ const Timeline = () => {
                 </div>
 
 
-                <div className="container right-container relative w-1/2 bg-red-800 rounded-lg py-2.5 px-12 -right-1/4 opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 max-sm:left-0 z-10">
+                <div ref={ref => { containerRefs.current.push(ref!); }} className="container right-container relative w-1/2 bg-red-800 rounded-lg py-2.5 px-12 -right-1/4 opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 max-sm:left-0 z-10">
                     <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -left-5 top-8 rounded-full z-10 max-sm:left-2.5" />
                     <div className="text-box relative py-5 px-8 rounded-lg bg-white-100">
 
@@ -40,7 +76,7 @@ const Timeline = () => {
                     </div>
                 </div>
 
-                <div className="container left-container relative w-1/2 bg-red-800 rounded-xl py-2.5 px-12 sm:-left-1/4 opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 z-10">
+                <div ref={ref => { containerRefs.current.push(ref!); }} className="container left-container relative w-1/2 bg-red-800 rounded-xl py-2.5 px-12 sm:-left-1/4 opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 z-10">
                     <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -right-5 top-8 rounded-full z-10 max-sm:left-2.5" />
                     <div className="text-box relative py-5 px-7 rounded-lg bg-white-100 left-0">
 
@@ -56,7 +92,7 @@ const Timeline = () => {
                 </div>
 
 
-                <div className="container right-container relative w-1/2 bg-red-800 rounded-lg py-2.5 px-12 -right-1/4 opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 max-sm:left-0 z-10">
+                <div ref={ref => { containerRefs.current.push(ref!); }} className="container right-container relative w-1/2 bg-red-800 rounded-lg py-2.5 px-12 -right-1/4 opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 max-sm:left-0 z-10">
                     <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -left-5 top-8 rounded-full z-10 max-sm:left-2.5" />
                     <div className="text-box relative py-5 px-8 rounded-lg bg-white-100">
 
@@ -71,7 +107,7 @@ const Timeline = () => {
                     </div>
                 </div>
 
-                <div className="container left-container relative w-1/2 bg-red-800 rounded-xl py-2.5 px-12 sm:-left-1/4 opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 z-10">
+                <div ref={ref => { containerRefs.current.push(ref!); }} className="container left-container relative w-1/2 bg-red-800 rounded-xl py-2.5 px-12 sm:-left-1/4 opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 z-10">
                     <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -right-5 top-8 rounded-full z-10 max-sm:left-2.5" />
                     <div className="text-box relative py-5 px-7 rounded-lg bg-white-100 left-0">
 
@@ -87,7 +123,7 @@ const Timeline = () => {
                 </div>
 
 
-                <div className="container right-container relative w-1/2 bg-red-800 rounded-lg py-2.5 px-12 -right-1/4 opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 max-sm:left-0 z-10">
+                <div ref={ref => { containerRefs.current.push(ref!); }} className="container right-container relative w-1/2 bg-red-800 rounded-lg py-2.5 px-12 -right-1/4 opacity-0 max-sm:w-full max-sm:pl-20 max-sm:pr-6 max-sm:left-0 z-10">
                     <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -left-5 top-8 rounded-full z-10 max-sm:left-2.5" />
                     <div className="text-box relative py-5 px-8 rounded-lg bg-white-100">
 
@@ -108,7 +144,7 @@ const Timeline = () => {
                  `}
                 </style>
             </div>
-        </>
+        </section>
     );
 };
 
