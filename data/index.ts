@@ -1,3 +1,4 @@
+import { GithubIcon } from '@/components/ui/Icon';
 
 export const navItems = [
   { name: "A propos", link: "#about" },
@@ -7,7 +8,7 @@ export const navItems = [
   // { name: "Experience", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
   //https://YanBerdin.github.io/resume 
   { name: "Contact", link: "#contact" },
-  { name: "Github", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer" },
+  { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon, },
   // { name: "Testimonials", link: "#testimonials" },
 ];
   

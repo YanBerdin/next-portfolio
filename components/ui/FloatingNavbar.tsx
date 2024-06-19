@@ -9,6 +9,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils/cn";
+import { GithubIcon, Icon } from './Icon';
 
 /** 
 *  UI: Floating Navbar
@@ -88,6 +89,7 @@ export const FloatingNav = ({
             target={navItem.target}
             rel="noopener noreferrer"
           >
+            {navItem.icon && <Icon icon={navItem.icon} />}
             <span className="block sm:hidden">{navItem.icon}</span>
             {/* add !cursor-pointer */}
             {/* remove hidden sm:block for the mobile responsive */}
