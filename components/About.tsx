@@ -28,8 +28,8 @@ export const About = () => {
             <Image
             src={portrait}
             alt="portrait de Yan souriant"
-            className=" max-w-[100px] md:max-w-[130px] lg:max-w-[180px] xl:max-w-[200px] object-cover rounded-lg mx-auto max-h-[108px] md:max-h-[150px] lg:max-h-[207px] xl:max-h-[230px] my-4 flex-shrink-2 float-start mr-4" /**/
-          />
+            className=" max-w-[100px] md:max-w-[130px] object-cover rounded-lg mx-auto max-h-[108px] md:max-h-[150px] my-4 flex-shrink-2 float-start mr-4" /**/
+          /> {/**  lg:max-w-[180px] xl:max-w-[200px] lg:max-h-[207px] xl:max-h-[212px] */}
 
               <p className="text-sm md:text-md lg:text-lg text-muted-foreground mt-4">
               Fort d&apos;une récente reconversion en développement web, mon parcours professionnel s&apos;est enrichi d&apos;une expertise technique en conception et sécurité web, acquise en téléprésentiel chez École O&apos;clock. 

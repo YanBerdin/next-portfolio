@@ -12,7 +12,7 @@ import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 min-h-screen " > {/*px-5*/}
+    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto px-2 sm:px-10 min-h-screen min-w-screen" > {/*px-5*/}
       {/*<Cursor />*/}
       <div className="max-width-7xl w-full">
 

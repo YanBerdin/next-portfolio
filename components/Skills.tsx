@@ -40,7 +40,7 @@ export const Skills = () => {
                   borderRadius: `calc(1.75rem* 0.96)`,
                 }}
                 // remove bg-white dark:bg-slate-900
-                className="flex-1 border-neutral-200 dark:border-slate-800 py-4"
+                className="flex-1 border-neutral-200 dark:border-slate-800 p-4"
               >
                 <div className="flex flex-col lg:items-center p-2 md:p-3 gap-5"> {/*remove lg:flex-raw*/}
                   <Image
@@ -51,7 +51,7 @@ export const Skills = () => {
                     height={90}
                     className=" md:w-20 m-auto object-cover" // remove w-16 add m-auto
                   />
-                  <div className="ms-5 max-w-[430px]">
+                  <div className="max-w-[430px]"> {/*ms-5*/}
                     <h3 className="text-center text-black dark:text-white text-xl font-bold">
                       {card.title}
                     </h3>
