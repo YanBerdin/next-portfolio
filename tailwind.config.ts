@@ -28,7 +28,7 @@ const config = {
     "./src/**/*.{ts,tsx}",
     "./data/**/*.{ts,tsx}",
   ],
-  prefix: "",
+  // prefix: "",
   theme: {
     container: {
       center: true,

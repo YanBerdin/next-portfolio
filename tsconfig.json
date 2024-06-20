@@ -12,6 +12,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "forceConsistentCasingInFileNames": true, // éviter les problèmes liés à la casse des noms de fichiers sur différents systèmes d'exploitation
     "plugins": [
       {
         "name": "next"

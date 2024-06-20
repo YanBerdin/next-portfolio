@@ -15,14 +15,14 @@ const Timeline = () => {
                 entries.forEach(entry => {
                     // Si l'élément est visible à l'écran
                     if (entry.isIntersecting) {
-                        // Ajoutez la classe pour déclencher l'animation
+                        // Ajoute la classe pour déclencher l'animation
                         entry.target.classList.add('animate');
                     }
                 });
             },
             {
                 // L'animation se déclenche lorsque 75% de l'élément est visible
-                threshold: 0.35
+                threshold: 0.75
             }
         );
 

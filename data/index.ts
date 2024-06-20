@@ -227,3 +227,49 @@ export const gridItems = [
     spareImg: "",
   },
 ];
+
+
+export const timelineData = [
+  {
+      id: 1,
+      company: 'Alphabet Inc.',
+      period: '2018 - 2019',
+      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
+      imageUrl: '/next.svg'
+  },
+  {
+      id: 2,
+      company: 'Alphabet Inc.',
+      period: '2018 - 2019',
+      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
+      imageUrl: '/next.svg'
+  },
+  {
+      id: 3,
+      company: 'Alphabet Inc.',
+      period: '2018 - 2019',
+      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
+      imageUrl: '/next.svg'
+  },
+  {
+      id: 4,
+      company: 'Alphabet Inc.',
+      period: '2018 - 2019',
+      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
+      imageUrl: '/next.svg'
+  },
+  {
+      id: 5,
+      company: 'Alphabet Inc.',
+      period: '2018 - 2019',
+      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
+      imageUrl: '/next.svg'
+  },
+  {
+      id: 6,
+      company: 'Alphabet Inc.',
+      period: '2018 - 2019',
+      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
+      imageUrl: '/next.svg'
+  },
+];

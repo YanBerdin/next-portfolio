@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, SVGProps } from "react";
 import {
   motion,
   AnimatePresence,
@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils/cn";
-import { GithubIcon, Icon } from './Icon';
+import { Icon } from './Icon';
 
 /** 
 *  UI: Floating Navbar
@@ -20,11 +20,7 @@ export const FloatingNav = ({
   navItems, // "@/data"
   className,
 }: {
-  navItems: {
-    name: string;
-    link: string;
-    icon?: JSX.Element;
-  }[];
+  navItems: { name: string; link: string; icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element | undefined; }[];
   className?: string;
   target?: string;
 }) => {

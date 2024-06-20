@@ -8,7 +8,7 @@ import { About } from "../components/About";
 // import { Cursor } from "../components/ui/Cursor";
 import { Grid } from "../components/Grid";
 import Timeline from "@/components/Timeline";
-
+import TimelineRefacto from "@/components/TimelineRefacto";
 
 export default function Home() {
   return (
@@ -32,6 +32,7 @@ export default function Home() {
         </div>
         <div id="experience" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
           <Timeline />
+          <TimelineRefacto />
         </div>
         <div id="contact" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
           <Contact />
