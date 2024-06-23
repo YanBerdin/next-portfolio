@@ -48,14 +48,14 @@ export function Contact() {
 
             {/*Form Header*/}
 
-            <h2 className="font-bold text-lg text-neutral-800 dark:text-neutral-200">
+            <h2 className="font-bold text-lg lg:text-2xl text-neutral-800 dark:text-neutral-200">
               <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Thanks
+                Thanks
               </span>{" "}
               for taking the time to reach out.
             </h2>
 
-            <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-300">
+            <p className="text-neutral-600 text-md lg:text-xl max-w-sm mt-2 dark:text-neutral-300">
               How can I help you today ?
               {/*} Login to aceternity if you can because we don&apos;t have a login flow
               yet */}
@@ -115,11 +115,11 @@ export function Contact() {
               </LabelInputContainer>
 
               <button
-                className="bg-gradient-to-br relative group/btn from-black dark:from-slate-900 dark:to-slate-900 to-neutral-600 block dark:bg-slate-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--slate-800)_inset,0px_-1px_0px_0px_var(--slate-800)_inset]"
+                className="bg-gradient-to-br relative group/btn from-black dark:from-slate-900 dark:to-slate-900 to-neutral-600 block dark:bg-slate-800 w-full text-white rounded-md h-10 font-medium lg:text-lg shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--slate-800)_inset,0px_-1px_0px_0px_var(--slate-800)_inset]"
                 type="submit"
               >
                 Let&apos;s get in touch
-                <FaLocationArrow className="h-4 w-4 text-neutral-800 dark:text-neutral-300 ml-2 inline" />
+                <FaLocationArrow className="h-4 w-4 text-neutral-800 dark:text-neutral-300 ml-2 inline bold" />
                 <BottomGradient />
               </button>
               {/*

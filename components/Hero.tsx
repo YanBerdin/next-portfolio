@@ -59,7 +59,7 @@ export const Hero = () => {
                 </div>
                 {/* 
                 <div className="max-sm:hidden sm:min-w-[414px] sm:max-w-[450px]"> */}{/* max-sm:hidden  */}
-                   {/* <OrbitingCirclesLg /> */}
+                {/* <OrbitingCirclesLg /> */}
                 {/*
                 </div>
                 */}

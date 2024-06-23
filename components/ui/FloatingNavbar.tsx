@@ -80,7 +80,7 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-0.5 sm:space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              "relative dark:text-neutral-50 items-center flex space-x-0.5 sm:space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 hover:scale-90"
             )}
             target={navItem.target}
             rel="noopener noreferrer"
@@ -89,7 +89,7 @@ export const FloatingNav = ({
             <span className="block sm:hidden">{navItem.icon}</span>
             {/* add !cursor-pointer */}
             {/* remove hidden sm:block for the mobile responsive */}
-            <span className=" text-xs sm:text-sm !cursor-pointer">{navItem.name}</span>
+            <span className=" text-xs sm:text-sm md:text-md !cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
         {/* remove this login btn */}

@@ -228,7 +228,7 @@ animation-delay: 6s;
 }
 
 .animate {
-  background-color: yellow; /* For browsers that do not support gradients */
+  /*background-color: yellow;*/ /* test animation */
   animation: movedown 1s linear forwards;
 }
 

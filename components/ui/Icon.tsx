@@ -16,8 +16,8 @@ export const Icon = ({ icon, className = '', ...rest }: IconProps) => {
 const GithubIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1.3rem"
-    height="1.3rem"
+    width="1.5rem"
+    height="1.5rem"
     viewBox="0 0 512 512"
     {...props}
   >

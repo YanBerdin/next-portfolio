@@ -4,7 +4,7 @@ export const navItems = [
   { name: "A propos", link: "#about" },
   { name: "Skills", link: "#skills" },
   { name: "Projets", link: "#projects" },
-  { name: "Experience", link: "#experience" },
+  { name: "CV", link: "#experience" },
   // { name: "Experience", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
   //https://YanBerdin.github.io/resume 
   { name: "Contact", link: "#contact" },
@@ -235,41 +235,41 @@ export const timelineData = [
       company: 'Alphabet Inc.',
       period: '2018 - 2019',
       description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
-      imageUrl: '/next.svg'
+      imageUrl: '/levis_logo.png'
   },
   {
       id: 2,
       company: 'Alphabet Inc.',
       period: '2018 - 2019',
       description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
-      imageUrl: '/next.svg'
+      imageUrl: '/maa-logo-300.png'
   },
   {
       id: 3,
       company: 'Alphabet Inc.',
       period: '2018 - 2019',
       description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
-      imageUrl: '/next.svg'
+      imageUrl: '/ebay-logo-208.jpeg'
   },
   {
       id: 4,
       company: 'Alphabet Inc.',
       period: '2018 - 2019',
       description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
-      imageUrl: '/next.svg'
+      imageUrl: '/dafy-logo-300.png'
   },
   {
       id: 5,
       company: 'Alphabet Inc.',
       period: '2018 - 2019',
       description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
-      imageUrl: '/next.svg'
+      imageUrl: '/levis_logo.png'
   },
   {
       id: 6,
       company: 'Alphabet Inc.',
       period: '2018 - 2019',
       description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
-      imageUrl: '/next.svg'
+      imageUrl: '/levis_logo.png'
   },
 ];

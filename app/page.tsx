@@ -7,7 +7,7 @@ import { Contact } from "../components/Contact";
 import { About } from "../components/About";
 // import { Cursor } from "../components/ui/Cursor";
 import { Grid } from "../components/Grid";
-import Timeline from "@/components/Timeline";
+// import Timeline from "@/components/Timeline";
 import TimelineRefacto from "@/components/TimelineRefacto";
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
           <Grid />
         </div>
         <div id="experience" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
-          <Timeline />
+          {/*<Timeline />*/}
           <TimelineRefacto />
         </div>
         <div id="contact" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
