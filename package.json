@@ -26,6 +26,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-element-to-jsx-string": "^15.0.0",
+    "react-icon-cloud": "^4.1.4",
     "react-icons": "^5.2.1",
     "sonner": "^1.4.41",
     "tailwind-merge": "^2.3.0",
