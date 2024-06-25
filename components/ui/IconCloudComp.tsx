@@ -17,6 +17,7 @@ const slugs = [
     "visualstudiocode",
     "figma",
     "php",
+    "apache",
     "laravel",
     "wordpress",
     "prettier",
@@ -25,10 +26,6 @@ const slugs = [
     "bootstrap",
     "materialui",
     "sass",
-    "rest",
-    "websockets",
-    "mysql",
-    "next",
 ];
 // "dart",
 // "java",

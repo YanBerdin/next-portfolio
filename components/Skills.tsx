@@ -11,11 +11,11 @@ export const Skills = () => {
 
       <section className="mx-auto max-sm:w-11/12 mb-24">
         <div className="flex flex-col">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center">
+          <h2 className="text-2xl lg:text-4xl font-bold text-center">
             Specializing in
             <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text">
               {" "}
-              Javascript & PHP
+              PHP & Javascript
               {" "}
             </span>
             with a core focus on{" "}
@@ -52,7 +52,7 @@ export const Skills = () => {
                     className=" md:w-20 m-auto object-cover" // remove w-16 add m-auto
                   />
                   <div className="max-w-[430px]"> {/*ms-5*/}
-                    <h3 className="text-center text-black dark:text-white text-xl font-bold">
+                    <h3 className="text-center text-black dark:text-white text-xl lg:text-2xl font-bold">
                       {card.title}
                     </h3>
                     {/*                  
@@ -64,7 +64,7 @@ export const Skills = () => {
                       {card.skillsList && card.skillsList.map((skills: string) => (
                         <span key={skills} className="flex">
                           <Check className="text-green-500 min-w-[20px]" />{" "}
-                          <p className="ml-2 text-sm md:text-md max-w-[380px]">{skills}</p>
+                          <p className="ml-2 text-md md:text-md lg:text-lg  max-w-[380px]">{skills}</p>
                         </span>
                       ))}
                     </div>
