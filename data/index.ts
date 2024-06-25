@@ -11,7 +11,7 @@ export const navItems = [
   { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon, },
   // { name: "Testimonials", link: "#testimonials" },
 ];
-  
+
 interface mySkills {
 
   /**
@@ -38,6 +38,7 @@ interface mySkills {
         "Programmation fonctionnelle et déclarative.",
         "Utilisation avancée d'ES6+.",
         "Gestion du state avec Redux.",
+        "Résolution efficace d'algorithmes.",
         // "Creation, installation, and activation of WordPress themes.",
     ],
       className: "md:col-span-2",
@@ -70,7 +71,6 @@ interface mySkills {
       title: "Transverse",
       desc: "Developed and maintained user-facing features using modern frontend technologies.",
       skillsList: [
-        "Résolution efficace d'algorithmes.",
         "Connaissance approfondie des normes d'accessibilité web (WCAG) et des bonnes pratiques SEO.",
         "Respect des normes de sécurité des données (RGPD) et des meilleures pratiques de sécurité des applications web (OWASP).",
         "Expérience avec le Shell et les commandes SSH.",

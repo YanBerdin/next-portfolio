@@ -48,15 +48,15 @@ export function Contact() {
 
             {/*Form Header*/}
 
-            <h2 className="font-bold text-lg lg:text-2xl text-neutral-800 dark:text-neutral-200">
+            <h2 className="font-bold text-lg lg:text-xl text-neutral-800 dark:text-neutral-200">
               <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                Thanks
+  
               </span>{" "}
-              for taking the time to reach out.
+              Je suis impatient d’en apprendre davantage sur votre projet.
             </h2>
 
-            <p className="text-neutral-600 text-md lg:text-xl max-w-sm mt-2 dark:text-neutral-300">
-              How can I help you today ?
+            <p className="text-neutral-600 text-md lg:text-lg max-w-sm mt-2 dark:text-neutral-300">
+              Comment puis-je vous aider ?
               {/*} Login to aceternity if you can because we don&apos;t have a login flow
               yet */}
             </p>
@@ -64,16 +64,16 @@ export function Contact() {
             <form target="" action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" method="POST" className="my-8" >
               <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4 gap-2">
                 <LabelInputContainer>
-                  <Label htmlFor="firstname" >First name</Label>
+                  <Label htmlFor="firstname" >Prénom</Label>
                   <Input id="firstname" placeholder="e.g. Fred" type="text" required />
                 </LabelInputContainer>
                 <LabelInputContainer>
-                  <Label htmlFor="lastname">Last name</Label>
+                  <Label htmlFor="lastname">Nom</Label>
                   <Input id="lastname" placeholder="e.g. Livrézon" type="text" />
                 </LabelInputContainer>
               </div>
               <LabelInputContainer className="mb-4">
-                <Label htmlFor="email">Email Address</Label>
+                <Label htmlFor="email">Email</Label>
                 <Input id="email" placeholder="e.g. niceToMeetYou@hello.com"
                   name="email"
                   type="email"
@@ -83,7 +83,7 @@ export function Contact() {
               </LabelInputContainer>
               <div>
                 <LabelInputContainer className="mb-4">
-                  <Label htmlFor="Subject">Subject</Label>
+                  <Label htmlFor="Subject">Objet</Label>
                   <Input id="Subject" placeholder="e.g. Let's Connect !" type="text" />
                 </LabelInputContainer>
               </div>
@@ -107,7 +107,7 @@ export function Contact() {
                 <Textarea
                   //name="message"
                   id="message"
-                  placeholder='Your Message...'
+                  placeholder='...'
                   className="block w-full rounded-md border-0 px-3.5 py-2 h-20 outline-none focus:outline-none"
                   defaultValue={''}
                   required
@@ -118,7 +118,7 @@ export function Contact() {
                 className="bg-gradient-to-br relative group/btn from-black dark:from-slate-900 dark:to-slate-900 to-neutral-600 block dark:bg-slate-800 w-full text-white rounded-md h-10 font-medium lg:text-lg shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--slate-800)_inset,0px_-1px_0px_0px_var(--slate-800)_inset]"
                 type="submit"
               >
-                Let&apos;s get in touch
+                Envoyer
                 <FaLocationArrow className="h-4 w-4 text-neutral-800 dark:text-neutral-300 ml-2 inline bold" />
                 <BottomGradient />
               </button>

@@ -10,6 +10,11 @@ import {
     SimpleIcon,
 } from "react-icon-cloud";
 
+/**
+ *  UI: Interactive Icon Cloud
+ *  Link: https://magicui.design/docs/components/icon-cloud#iconcloud
+ */
+
 export const cloudProps: Omit<ICloud, "children"> = {
     containerProps: {
         style: {
