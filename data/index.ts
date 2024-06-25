@@ -231,44 +231,51 @@ export const gridItems = [
 export const timelineData = [
   {
       id: 1,
-      company: 'Alphabet Inc.',
-      period: '2018 - 2019',
-      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
+      company: "Développeur React.js - O'clock",
+      period: 'Juin 2023 - Juill. 2023',
+      description: "Conception du site Disc'Otech, articulé autour de React. Implémentation de fonctionnalités utilisateur Incluant la gestion de profil et la personnalisation des favoris. Protection contre attaques potentielles.",
       imageUrl: '/levis_logo.png'
   },
   {
       id: 2,
-      company: 'Alphabet Inc.',
-      period: '2018 - 2019',
-      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
+      company: 'Vendeur Atelier - Dafy Moto',
+      period: 'Janv. 2022 - Avr. 2022',
+      description: 'Booste les ventes entretien/réparation/accessoires.',
       imageUrl: '/maa-logo-300.png'
   },
   {
       id: 3,
-      company: 'Alphabet Inc.',
-      period: '2018 - 2019',
-      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
+      company: 'Vendeur Web - Holding de Marché aux Affaires',
+      period: 'Janv. 2017 - Avr. 2017',
+      description: 'Expertise en vente sur eBay & Amazon.',
       imageUrl: '/ebay-logo-208.jpeg'
   },
   {
       id: 4,
-      company: 'Alphabet Inc.',
-      period: '2018 - 2019',
-      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
+      company: 'Gérant e-commerce - eBay & Amazon',
+      period: 'Janv. 2010 - Mars 2017',
+      description: 'Gestion de 15k commandes/an.',
       imageUrl: '/dafy-logo-300.png'
   },
   {
-      id: 5,
-      company: 'Alphabet Inc.',
-      period: '2018 - 2019',
-      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
+    id: 5,
+    company: 'Responsable - Levi’s Store',
+    period: 'Mars 2006 - Mars 2009',
+    description: "Leadership proactif d'une équipe de 8 collaborateurs, axé sur la performance.",
+    imageUrl: '/levis_logo.png'
+},
+  {
+      id: 6,
+      company: 'Cogérant - Blackmoon Records',
+      period: 'Janv. 2000 - Févr. 2003',
+      description: 'Spécialiste en import de vinyles musique électronique.',
       imageUrl: '/levis_logo.png'
   },
   {
-      id: 6,
-      company: 'Alphabet Inc.',
-      period: '2018 - 2019',
-      description: 'The success of every website depends on search engine optimisation and digital marketing strategy. If you are on the first page of all major search ...',
-      imageUrl: '/levis_logo.png'
-  },
+    id: 7,
+    company: 'Assistant Responsable - Levi’s Store',
+    period: 'Janv. 1998 - Févr. 2006',
+    description: "Dynamisation et leadership d'une équipe de 8 collaborateurs.",
+    imageUrl: '/levis_logo.png'
+},
 ];
