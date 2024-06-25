@@ -22,8 +22,9 @@ export function Contact() {
   };
   return (
     <>
-      <div id="contact" className="h-10 lg:h-20 mt-24"></div>
+      <div id="contact" className="h-10 md:h-44 lg:h-24"></div>
       <section
+
         // id="contact"
         className="w-11/12 mx-auto mt-10"
       >
@@ -74,7 +75,7 @@ export function Contact() {
               </div>
               <LabelInputContainer className="mb-4">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" placeholder="e.g. niceToMeetYou@hello.com"
+                <Input id="email" placeholder="e.g. fred@hello.com"
                   name="email"
                   type="email"
                   required
@@ -163,6 +164,7 @@ export function Contact() {
           </div>
         </div>
       </section>
+      <div className="h-10 md:h-32"></div>
     </>
   );
 }

@@ -234,28 +234,28 @@ export const timelineData = [
       company: "Développeur React.js - O'clock",
       period: 'Juin 2023 - Juill. 2023',
       description: "Conception du site Disc'Otech, articulé autour de React. Implémentation de fonctionnalités utilisateur Incluant la gestion de profil et la personnalisation des favoris. Protection contre attaques potentielles.",
-      imageUrl: '/levis_logo.png'
+      imageUrl: '/Logo.png'
   },
   {
       id: 2,
       company: 'Vendeur Atelier - Dafy Moto',
       period: 'Janv. 2022 - Avr. 2022',
       description: 'Booste les ventes entretien/réparation/accessoires.',
-      imageUrl: '/maa-logo-300.png'
+      imageUrl: '/dafy-logo-300.png'
   },
   {
       id: 3,
       company: 'Vendeur Web - Holding de Marché aux Affaires',
       period: 'Janv. 2017 - Avr. 2017',
       description: 'Expertise en vente sur eBay & Amazon.',
-      imageUrl: '/ebay-logo-208.jpeg'
+      imageUrl: '/maa-logo-300.png'
   },
   {
       id: 4,
       company: 'Gérant e-commerce - eBay & Amazon',
       period: 'Janv. 2010 - Mars 2017',
       description: 'Gestion de 15k commandes/an.',
-      imageUrl: '/dafy-logo-300.png'
+      imageUrl: '/ebay-logo-208.jpeg'
   },
   {
     id: 5,

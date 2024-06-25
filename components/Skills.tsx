@@ -52,7 +52,7 @@ export const Skills = () => {
                     className=" md:w-20 m-auto object-cover" // remove w-16 add m-auto
                   />
                   <div className="max-w-[430px]"> {/*ms-5*/}
-                    <h3 className="text-center text-black dark:text-white text-xl xl:text-2xl font-bold">
+                    <h3 className="text-center text-black dark:text-white text-lg font-bold">
                       {card.title}
                     </h3>
                     {/*                  

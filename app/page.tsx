@@ -18,19 +18,19 @@ export default function Home() {
 
         <h1>Yan&apos;s Portfolio</h1>
         <FloatingNav navItems={navItems} />
-        <div style={{ marginBottom: "10rem" }}>
+        <div style={{ marginBottom: "30rem" }}>
           <Hero />
         </div>
-        <div id="about" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
+        <div id="about" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "30rem" }}>
           <About />
         </div>
-        <div id="skills" style={{ marginTop: "-30px", paddingTop: "-30px", marginBottom: "10rem" }}>
+        <div id="skills" style={{ marginTop: "-30px", paddingTop: "-30px", marginBottom: "30rem" }}>
           <Skills /> {/*  pas besoin de passer en props mySkills ? */}
         </div>
-        <div id="projects" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
+        <div id="projects" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "30rem" }}>
           <Grid />
         </div>
-        <div id="experience" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
+        <div id="experience" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "30rem" }}>
           {/*<Timeline />*/}
           <TimelineRefacto />
         </div>

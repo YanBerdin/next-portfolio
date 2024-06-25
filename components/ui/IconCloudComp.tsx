@@ -26,6 +26,7 @@ const slugs = [
     "bootstrap",
     "materialui",
     "sass",
+    "mysql",
 ];
 // "dart",
 // "java",
@@ -51,7 +52,7 @@ const slugs = [
 
 export function IconCloudComp() {
     return (
-        <div className="flex h-full w-full max-w-[34rem] items-center justify-center overflow-hidden bg-transparent p-8 md:max-w-[26rem] min-w-[18rem] md:min-w-[24rem] xl:min-w-[30rem] my-auto mx-auto"> {/*flex rounded-lg border*/}
+        <div className="flex h-full w-full max-w-[34rem] items-center justify-center overflow-hidden bg-transparent p-4 md:max-w-[26rem] min-w-[18rem] md:min-w-[24rem] xl:min-w-[30rem] my-auto mx-auto pt-0"> {/*flex rounded-lg border*/}
             <IconCloud iconSlugs={slugs} />
         </div>
     );
