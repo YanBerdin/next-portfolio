@@ -233,7 +233,7 @@ export const timelineData = [
       id: 1,
       company: "Développeur React.js - O'clock",
       period: 'Juin 2023 - Juill. 2023',
-      description: "Conception du site Disc'Otech, articulé autour de React. Implémentation de fonctionnalités utilisateur Incluant la gestion de profil et la personnalisation des favoris. Protection contre attaques potentielles.",
+      description: "Conception du site Disc'Otech. Implémentation de fonctionnalités utilisateur Incluant la gestion de profil et la personnalisation des favoris. Protection contre attaques potentielles.",
       imageUrl: '/Logo.png'
   },
   {

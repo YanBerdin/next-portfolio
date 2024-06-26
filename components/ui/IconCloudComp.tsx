@@ -27,6 +27,7 @@ const slugs = [
     "materialui",
     "sass",
     "mysql",
+    "redux",
 ];
 // "dart",
 // "java",

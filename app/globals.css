@@ -218,13 +218,13 @@ animation-delay: 1s;
 animation-delay: 1.5s;
 }
 .container:nth-child(4) {
-animation-delay: 2s;
+animation-delay: 1.75s;
 }
 .container:nth-child(5) {
-animation-delay: 2.5s;
+animation-delay: 2s;
 }
 .container:nth-child(6) {
-animation-delay: 3s;
+animation-delay: 2.5s;
 }
 
 .animate {

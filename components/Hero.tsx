@@ -40,8 +40,8 @@ export const Hero = () => {
                      *  change md:text-6xl, add more responsive code
                      */}
                     <TextGenerateEffect
-                        className="text-2xl sm:text-3xl lg:text-4xl max-w-[610px] text-center" // remove text-center text-[30px]
-                        words="Créateur d'Expériences Web élégantes et intuitives"
+                        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[650px] text-center" // remove text-center text-[30px]
+                        words="Créateur d'expériences Web élégantes et intuitives"
                     />
                     <p className="md:tracking-wider mb-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center"> {/*text-center */}
                         Bienvenue, je suis Yan, développeur Php et React.js.

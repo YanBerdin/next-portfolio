@@ -22,19 +22,19 @@ export const About = () => {
                 className=" max-w-[100px] md:max-w-[130px] object-cover rounded-lg mx-auto max-h-[108px] md:max-h-[150px] my-4 flex-shrink-2 float-start mr-4 flex" /**/
               /> {/**  lg:max-w-[180px] xl:max-w-[200px] lg:max-h-[207px] xl:max-h-[212px] */}
 
-              <p className="text-sm sm:text-base text-muted-foreground mt-4">
+              <p className="text-sm sm:text-base xl:text-lg  text-muted-foreground mt-4">
                 Fort d&apos;une récente reconversion en développement web, mon parcours professionnel s&apos;est enrichi d&apos;une expertise technique en conception et sécurité web, acquise en téléprésentiel chez École O&apos;clock.
               </p>
 
-              <p className="text-sm sm:text-base text-muted-foreground mt-4 ">
+              <p className="text-sm sm:text-base xl:text-lg text-muted-foreground mt-4 ">
                 Mon profil Fullstack s&apos;est consolidé par la pratique, grâce à l&apos;implémentation de fonctionnalités utilisateur avancées côté client et à la sécurisation contre diverses attaques en ligne côté serveur, témoignant de ma capacité à créer des solutions digitales robustes et fonctionnelles.
               </p>
 
-              <p className="text-sm sm:text-base text-muted-foreground mt-4">
+              <p className="text-sm sm:text-base xl:text-lg text-muted-foreground mt-4">
                 Parallèlement, mon expérience précédente dans la vente et le e-commerce a façonné mon approche centrée sur les utilisateurs, me permettant de comprendre et de répondre efficacement aux besoins des clients dans des environnements variés.
               </p>
 
-              <p className="text-sm sm:text-base text-muted-foreground mt-4">
+              <p className="text-sm sm:text-base xl:text-lg text-muted-foreground mt-4">
                 Ma transition vers le développement web est guidée par une passion pour la programmation, inspirée par mon frère architecte, ainsi que par un engagement à contribuer positivement aux projets d&apos;équipe et aux objectifs de l&apos;entreprise.
               </p>
 

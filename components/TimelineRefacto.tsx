@@ -69,9 +69,9 @@ const TimelineRefacto = () => {
                             className={`text-box relative py-3 px-5 lg:py-5 lg:px-8 rounded-lg border border-slate-800  bg-slate-900/[0.9] backdrop-brightness-200 ${index % 2 === 0 ? 'left-0' : 'right-0'
                                 }`}
                         >
-                            <h2 className="text-sm sm:text-md md:text-lg font-bold text-white">{item.company}</h2>
-                            <small className="text-xs lg:text-md text-white mb-1">{item.period}</small>
-                            <p className="text-xs sm:text-sm md:text-md text-white">{item.description}</p>
+                            <h2 className="text-sm sm:text-base md:text-lg font-bold text-white">{item.company}</h2>
+                            <small className="text-xs lg:text-sm text-white mb-1">{item.period}</small>
+                            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white">{item.description}</p>
                             <span
                                 className={`${index % 2 === 0 ? 'left-container-arrow' : 'right-container-arrow'
                                     } max-sm:border-r-[15px] max-sm:border-l-0 max-sm:-left-[15px] absolute border-solid border-transparent top-6 w-0 h-0 z-1 border-t-[15px] border-b-[15px] ${index % 2 === 0 ? 'max-sm:-left-4 md:-right-4 md:border-l-[15px] md:border-l-slate-800 max-sm:border-r-[15px] max-sm:border-r-slate-800' : '-left-4 border-r-[15px] border-r-slate-800'
