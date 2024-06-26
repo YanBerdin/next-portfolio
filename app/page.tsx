@@ -9,6 +9,7 @@ import { About } from "../components/About";
 import { Grid } from "../components/Grid";
 // import Timeline from "@/components/Timeline";
 import TimelineRefacto from "@/components/TimelineRefacto";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -34,8 +35,11 @@ export default function Home() {
           {/*<Timeline />*/}
           <TimelineRefacto />
         </div>
-        <div id="contact" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "10rem" }}>
+        <div id="contact" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "25rem" }}>
           <Contact />
+        </div>
+        <div id="footer" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "" }}>
+          <Footer />
         </div>
       </div>
 

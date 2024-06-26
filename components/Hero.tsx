@@ -11,7 +11,7 @@ export const Hero = () => {
             <div>
                 <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
                 <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" />
-                <Spotlight className="-top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+                <Spotlight className="-top-28 left-75 h-[80vh] w-[40vw]" fill="blue" />
             </div>
 
             {/*
@@ -30,7 +30,7 @@ export const Hero = () => {
 
             </div>
             <div className="flex justify-center gap-32 lg:gap-10 relative my-28 md:my-60 lg:my-36 z-10 "> {/*flex-wrap md:justify-around*/}
-                <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[45vw] xl:m-w-[60vw] flex flex-col items-center justify-center">
+                <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[50vw] flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
                     </p>*/}
@@ -40,7 +40,7 @@ export const Hero = () => {
                      *  change md:text-6xl, add more responsive code
                      */}
                     <TextGenerateEffect
-                        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[650px] text-center" // remove text-center text-[30px]
+                        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center" // remove text-[30px]
                         words="Créateur d'expériences Web élégantes et intuitives"
                     />
                     <p className="md:tracking-wider mb-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center"> {/*text-center */}

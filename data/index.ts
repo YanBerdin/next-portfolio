@@ -49,7 +49,7 @@ interface mySkills {
       title: "Développement Backend",
       desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
       skillsList: [
-        "Création de l'infrastructure back-end sécurisé d'applications web",
+        "Création de l'infrastructure back-end sécurisée d'applications web",
         "Modélisation de base de données en fonction des besoins de l'application.",
         "Gestion de bases de données et développement de composants d'accès aux données.",
         "Maîtrise des frameworks Laravel et Express.",
@@ -278,4 +278,19 @@ export const timelineData = [
     description: "Dynamisation et leadership d'une équipe de 8 collaborateurs.",
     imageUrl: '/levis_logo.png'
 },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/git.svg",
+  },
+  {
+    id: 2,
+    img: "/twit.svg",
+  },
+  {
+    id: 3,
+    img: "/link.svg",
+  },
 ];

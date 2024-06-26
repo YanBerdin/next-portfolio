@@ -56,7 +56,7 @@ export function Contact() {
               Je suis impatient d’en apprendre davantage sur votre projet.
             </h2>
 
-            <p className="text-neutral-600 text-md lg:text-lg max-w-sm mt-2 dark:text-neutral-300">
+            <p className="text-neutral-600 text-md lg:text-lg max-w-sm mt-4 dark:text-neutral-300">
               Comment puis-je vous aider ?
               {/*} Login to aceternity if you can because we don&apos;t have a login flow
               yet */}
