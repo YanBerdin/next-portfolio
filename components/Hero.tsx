@@ -30,7 +30,7 @@ export const Hero = () => {
 
             </div>
             <div className="flex justify-center gap-32 lg:gap-10 relative my-28 md:my-60 lg:my-36 z-10 "> {/*flex-wrap md:justify-around*/}
-                <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[50vw] flex flex-col items-center justify-center">
+                <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
                     </p>*/}
@@ -41,7 +41,7 @@ export const Hero = () => {
                      */}
                     <TextGenerateEffect
                         className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center" // remove text-[30px]
-                        words="Créateur d'expériences Web élégantes et intuitives"
+                        words="Créateur d'expériences Web Elégantes et intuitives"
                     />
                     <p className="md:tracking-wider mb-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center"> {/*text-center */}
                         Bienvenue, je suis Yan, développeur Php et React.js.

@@ -1,14 +1,15 @@
-import { GithubIcon } from '@/components/ui/Icon';
+import { GithubIcon2 } from '@/components/ui/Icon';
 
 export const navItems = [
-  { name: "A propos", link: "#about" },
+
   { name: "Skills", link: "#skills" },
   { name: "Réalisations", link: "#projects" },
+  { name: "A propos", link: "#about" },
   { name: "CV", link: "#experience" },
   // { name: "Experience", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
   //https://YanBerdin.github.io/resume 
   { name: "Contact", link: "#contact" },
-  { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon, },
+  { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon2, },
   // { name: "Testimonials", link: "#testimonials" },
 ];
 
@@ -233,7 +234,7 @@ export const timelineData = [
       id: 1,
       company: "Développeur React.js - O'clock",
       period: 'Juin 2023 - Juill. 2023',
-      description: "Conception du site Disc'Otech. Implémentation de fonctionnalités utilisateur Incluant la gestion de profil et la personnalisation des favoris. Protection contre attaques potentielles.",
+      description: "Conception du site Disc'Otech. Implémentation de fonctionnalités utilisateur Incluant la gestion de profil et la personnalisation des favoris.",
       imageUrl: '/Logo.png'
   },
   {

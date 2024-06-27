@@ -42,7 +42,7 @@ const TimelineRefacto = () => {
     return (
         <section>
             <div id="experience" className="h-12"></div>
-            <div className="timeline relative max-w-screen-2xl mx-auto">
+            <div className="timeline relative w-11/12 mx-auto"> {/*max-w-screen-2xl*/}
                 {timelineData.map((item, index) => (
                     <div
                         key={item.id}
@@ -82,7 +82,7 @@ const TimelineRefacto = () => {
                 ))}
 
             </div>
-            <div className="max-w-screen-2xl flex justify-center mt-8 relative max-sm:left-6">
+            <div className="w-11/12 flex justify-center mt-8 relative max-sm:left-6 mx-auto"> {/*max-w-screen-2xl*/}
                 <MagicButton
                     title="Télécharger mon CV"
                     icon={<FaLocationArrow />}

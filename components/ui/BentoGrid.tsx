@@ -13,6 +13,7 @@ import { MagicButton } from "../MagicButton";
 import Image from "next/image";
 // import { ImGit } from "react-icons/im";
 import BackdropModal from "./BackdropModal";
+import { GithubIcon2 } from "./Icon";
 
 export const BentoGrid = ({
     className,
@@ -79,6 +80,11 @@ export const BentoGridItem = ({
         navigator.clipboard.writeText(text);
         setCopied(true);
     };
+
+    const handleClick = () => {
+        window.open("https://github.com/YanBerdin", "_blank", 'noopener noreferrer');
+    }
+
     // <BackdropModal />
     return (
         <div
@@ -220,11 +226,18 @@ export const BentoGridItem = ({
                                 {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
                             </div>
 
-                            <MagicButton
+                            {/*   <MagicButton
                                 title={copied ? "Email is Copied!" : "Copy my email address"}
                                 icon={<IoCopyOutline />}
                                 position="left"
                                 handleClick={handleCopy}
+                                otherClasses="!bg-[#161A31]"
+                            /> */}
+                            <MagicButton
+                                title="Visitez mon Github"
+                                icon={<GithubIcon2 />}
+                                position="right"
+                                handleClick={handleClick}
                                 otherClasses="!bg-[#161A31]"
                             />
                         </div>

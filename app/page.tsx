@@ -22,14 +22,15 @@ export default function Home() {
         <div style={{ marginBottom: "20rem" }}>
           <Hero />
         </div>
-        <div id="about" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
-          <About />
-        </div>
+
         <div id="skills" style={{ marginTop: "-30px", paddingTop: "-30px", marginBottom: "20rem" }}>
           <Skills /> {/*  pas besoin de passer en props mySkills ? */}
         </div>
         <div id="projects" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
           <Grid />
+        </div>
+        <div id="about" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
+          <About />
         </div>
         <div id="experience" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
           {/*<Timeline />*/}

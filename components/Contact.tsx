@@ -62,7 +62,7 @@ export function Contact() {
               yet */}
             </p>
 
-            <form target="" action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" method="POST" className="my-8" >
+            <form target="" action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" method="POST" className="my-8" > {/** action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" */}
               <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4 gap-2">
                 <LabelInputContainer>
                   <Label htmlFor="firstname" >Prénom</Label>
@@ -88,6 +88,17 @@ export function Contact() {
                   <Input id="Subject" placeholder="e.g. Let's Connect !" type="text" />
                 </LabelInputContainer>
               </div>
+              <LabelInputContainer className="mb-4">
+                <Label htmlFor="message">Message</Label>
+                <Textarea
+                  name="message"
+                  //id="message"
+                  placeholder='...'
+                  className="block w-full rounded-md border-0 px-3.5 py-2 h-20 outline-none focus:outline-none"
+                  defaultValue={''}
+                  required
+                />
+              </LabelInputContainer>
               {/*
               <LabelInputContainer className="mb-4">
               <Label htmlFor="password">Password</Label>
@@ -103,18 +114,6 @@ export function Contact() {
               />
               </LabelInputContainer>
               */ }
-              <LabelInputContainer className="mb-4">
-                <Label htmlFor="message">Message</Label>
-                <Textarea
-                  //name="message"
-                  id="message"
-                  placeholder='...'
-                  className="block w-full rounded-md border-0 px-3.5 py-2 h-20 outline-none focus:outline-none"
-                  defaultValue={''}
-                  required
-                />
-              </LabelInputContainer>
-
               <button
                 className="bg-gradient-to-br relative group/btn from-black dark:from-slate-900 dark:to-slate-900 to-neutral-600 block dark:bg-slate-800 w-full text-white rounded-md h-10 font-medium lg:text-lg shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--slate-800)_inset,0px_-1px_0px_0px_var(--slate-800)_inset]"
                 type="submit"
@@ -164,7 +163,7 @@ export function Contact() {
           </div>
         </div>
       </section>
-      <div className="h-10 md:h-32"></div>
+      <div className="h-10 md:h-72"></div>
     </>
   );
 }
