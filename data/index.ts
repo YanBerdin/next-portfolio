@@ -284,14 +284,14 @@ export const timelineData = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/githubicon.svg",
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
   },
+ /*{
+    id: 3,
+    img: "/twit.svg",
+  },*/
 ];
