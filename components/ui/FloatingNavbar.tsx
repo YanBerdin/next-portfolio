@@ -84,6 +84,7 @@ export const FloatingNav = ({
             )}
             target={navItem.target}
             rel="noopener noreferrer"
+            title={navItem.title}
           >
             {navItem.icon && <Icon icon={navItem.icon} />}
             {/** navItem.icon est une référence à un composant (GithubIcon2), et non une instance d’un composant. Je ne peux pas l’utiliser directement comme un enfant dans JSX.*/}

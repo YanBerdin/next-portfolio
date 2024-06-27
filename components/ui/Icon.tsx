@@ -50,5 +50,45 @@ const GithubIcon2 = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+const DemoIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    className='icon icon-tabler icon-tabler-external-link'
+    width='24'
+    height='24'
+    viewBox='0 0 24 24'
+    stroke-width='2'
+    stroke='currentColor'
+    fill='none'
+    stroke-linecap='round'
+    stroke-linejoin='round'
+  >
+    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+    <path d='M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5' />
+    <line x1='10' y1='14' x2='20' y2='4' />
+    <polyline points='15 4 20 4 20 9' />
+  </svg>
+);
 
-export { GithubIcon, GithubIcon2 };
+const ResumeIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    className='icon icon-tabler icon-tabler-file-certificate'
+    width='24'
+    height='24'
+    viewBox='0 0 24 24'
+    stroke-width='2'
+    stroke='currentColor'
+    fill='none'
+    stroke-linecap='round'
+    stroke-linejoin='round'
+  >
+    <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+    <path d='M14 3v4a1 1 0 0 0 1 1h4'></path>
+    <path d='M5 8v-3a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5'></path>
+    <circle cx='6' cy='14' r='3'></circle>
+    <path d='M4.5 17l-1.5 5l3 -1.5l3 1.5l-1.5 -5'></path>
+  </svg>
+);
+
+export { GithubIcon, GithubIcon2, DemoIcon, ResumeIcon };

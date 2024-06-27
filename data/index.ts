@@ -1,15 +1,15 @@
-import { GithubIcon2 } from '@/components/ui/Icon';
+import { GithubIcon2, ResumeIcon } from '@/components/ui/Icon';
 
 export const navItems = [
 
   { name: "Skills", link: "#skills" },
   { name: "Réalisations", link: "#projects" },
   { name: "A propos", link: "#about" },
-  { name: "CV", link: "#experience" },
+  { name: "Contact", link: "#contact" },
+  { name: "", link: "#experience", icon: ResumeIcon, title:"CV" },
   // { name: "Experience", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
   //https://YanBerdin.github.io/resume 
-  { name: "Contact", link: "#contact" },
-  { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon2, },
+  { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon2, title:"Github" },
   // { name: "Testimonials", link: "#testimonials" },
 ];
 
@@ -285,13 +285,22 @@ export const socialMedia = [
   {
     id: 1,
     img: "/githubicon.svg",
+    link: "https://github.com/YanBerdin",
+    target: "_blank",
+    rel: "noopener noreferrer"
   },
   {
     id: 2,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/yan-berdin",
+    target: "_blank",
+    rel: "noopener noreferrer"
   },
  /*{
     id: 3,
     img: "/twit.svg",
+    link: "https://twitter.com/YanBerdin",
+    target: "_blank",
+    rel: "noopener noreferrer"
   },*/
 ];

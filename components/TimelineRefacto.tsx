@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useEffect, useRef } from 'react';
-import { FaLocationArrow } from 'react-icons/fa';
+// import { FaLocationArrow } from 'react-icons/fa';
 import Image from 'next/image';
 import { timelineData } from '@/data';
 import { MagicButton } from './MagicButton';
+import { ResumeIcon } from './ui/Icon';
 
 
 const TimelineRefacto = () => {
@@ -85,7 +86,7 @@ const TimelineRefacto = () => {
             <div className="w-11/12 flex justify-center mt-8 relative max-sm:left-6 mx-auto"> {/*max-w-screen-2xl*/}
                 <MagicButton
                     title="Télécharger mon CV"
-                    icon={<FaLocationArrow />}
+                    icon={<ResumeIcon />}
                     position="right"
                     otherClasses="custom-class hover:opacity-90"
                     href="https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx"

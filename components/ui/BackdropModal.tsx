@@ -3,6 +3,7 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 
 import { gridItems } from "../../data/index";
 import { BackgroundGradient } from "./background-gradient";
+import { DemoIcon, GithubIcon2 } from "./Icon";
 //import { ButtonsCard } from "./tailwindcss-buttons";
 
 // Afficher le contenu de gridItems dans un modal 
@@ -47,7 +48,7 @@ export default function BackdropModal({ id }: { id: number }) {
   const handleDemoClick = () => {
     window.open(demoLink, "_blank", 'noopener noreferrer');
   }
-  
+
 
   return (
     <article className="">
@@ -106,10 +107,13 @@ export default function BackdropModal({ id }: { id: number }) {
                 *---------------------- FIN DE A SUPPRIMER ------------------------
                 */}
                 <button className="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-300 transform hover:scale-90 max-sm:text-sm" onClick={handleDemoClick}>{/* max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
-                  Démo 
+                  <span className="mr-2">
+                    Démo
+                  </span>
+                  <DemoIcon />
                 </button>
                 <button className="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-300 transform hover:scale-90 max-sm:text-sm" onClick={handleCodeClick}>{/* max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
-                  Code
+                  <span className="mr-2">Code</span> <GithubIcon2 />
                 </button>
               </ModalFooter>
             </BackgroundGradient>
