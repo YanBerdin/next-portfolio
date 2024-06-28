@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Label } from "./ui/label";
+import  {Label}  from "./ui/label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea"
 import { cn } from "@/lib/utils/cn";
