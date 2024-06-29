@@ -1,8 +1,9 @@
 "use client";
+
 import React from "react";
-import  {Label}  from "./ui/label";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea"
+import { Label }  from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea"
 import { cn } from "@/lib/utils/cn";
 import { FaLocationArrow } from "react-icons/fa6";
 // import {
@@ -16,10 +17,10 @@ import { FaLocationArrow } from "react-icons/fa6";
 * Link : https://ui.aceternity.com/components/signup-form
 **/
 export function Contact() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
+//  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+//    e.preventDefault();
+//    console.log("Form submitted");
+//  };
   return (
     <>
       <div id="contact" className="h-10 md:h-44 lg:h-24"></div>
@@ -117,6 +118,7 @@ export function Contact() {
               <button
                 className="bg-gradient-to-br relative group/btn from-black dark:from-slate-900 dark:to-slate-900 to-neutral-600 block dark:bg-slate-800 w-full text-white rounded-md h-10 font-medium lg:text-lg shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--slate-800)_inset,0px_-1px_0px_0px_var(--slate-800)_inset]"
                 type="submit"
+           
               >
                 Envoyer
                 <FaLocationArrow className="h-4 w-4 text-neutral-800 dark:text-neutral-300 ml-2 inline bold" />
