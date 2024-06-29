@@ -14,8 +14,8 @@ const Footer = () => {
           src="/footer-grid.svg"
           alt="grid"
           className="w-full opacity-50"
-           width="473"
-           height="228"
+           width="331"
+           height="156"
         />
       </div>
 
@@ -33,7 +33,7 @@ const Footer = () => {
           />
 
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row flex-col-reverse justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2024 Yan Berdin
         </p>
@@ -45,7 +45,7 @@ const Footer = () => {
               href={info.link}
               target={info.target}
               rel={info.rel}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-50 bg-black-200 rounded-lg border border-black-300"
+              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-50 bg-black-200 rounded-lg border border-black-300  hover:scale-95 hover:brightness-150"
             >
               <Image src={info.img} alt="icons" width={24} height={24} />
             </Link>

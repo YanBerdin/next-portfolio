@@ -4,7 +4,7 @@ export const navItems = [
 
   { name: "Skills", link: "#skills" },
   { name: "Réalisations", link: "#projects" },
-  { name: "A propos", link: "#about" },
+  { name: "A-propos", link: "#about" },
   { name: "Contact", link: "#contact" },
   { name: "", link: "#experience", icon: ResumeIcon, title:"CV" },
   // { name: "Experience", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
@@ -241,7 +241,7 @@ export const timelineData = [
       id: 2,
       company: 'Vendeur Atelier - Dafy Moto',
       period: 'Janv. 2022 - Avr. 2022',
-      description: 'Booste les ventes entretien/réparation/accessoires.',
+      description: 'Booste les ventes entretien réparation.',
       imageUrl: '/dafy-logo-300.png'
   },
   {
