@@ -1,4 +1,9 @@
 {
+  "extends": ["next", "prettier"]
+}
+
+/*
+{
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
       "ecmaVersion": 2020,
@@ -20,7 +25,6 @@
       "next/core-web-vitals"
     ],
     "plugins": [
-      "@typescript-eslint",
       "react",
       "prettier"
     ],
@@ -41,4 +45,4 @@
       ]
     }
   }
-
+*/

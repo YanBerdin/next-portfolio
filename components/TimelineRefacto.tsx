@@ -12,6 +12,7 @@ const TimelineRefacto = () => {
     const containerRefs = useRef<HTMLDivElement[]>([]);
 
     useEffect(() => {
+        const currentContainer = containerRefs.current;
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -28,13 +29,13 @@ const TimelineRefacto = () => {
         );
 
         // Observer chaque conteneur
-        containerRefs.current.forEach((container) => {
+        currentContainer.forEach((container) => {
             observer.observe(container);
         });
 
         // Nettoyer l'observateur lorsque le composant est affiché (ou démonté)
         return () => {
-            containerRefs.current.forEach((container) => {
+            currentContainer.forEach((container) => {
                 observer.unobserve(container);
             });
         };
