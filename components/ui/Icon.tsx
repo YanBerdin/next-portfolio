@@ -34,8 +34,8 @@ const GithubIcon2 = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     className='icon icon-tabler icon-tabler-brand-github'
-    width='24'
-    height='24'
+    width='22'
+    height='22'
     viewBox='0 0 24 24'
     strokeWidth='2'
     stroke='currentColor'
@@ -54,8 +54,8 @@ const DemoIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     className='icon icon-tabler icon-tabler-external-link'
-    width='24'
-    height='24'
+    width='22'
+    height='22'
     viewBox='0 0 24 24'
     strokeWidth='2'
     stroke='currentColor'
