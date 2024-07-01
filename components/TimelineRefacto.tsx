@@ -90,7 +90,7 @@ const TimelineRefacto = () => {
                     icon={<ResumeIcon />}
                     position="right"
                     otherClasses="custom-class hover:opacity-90"
-                    href="https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx"
+                    href="https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/Yan_Berdin.docx"
                 />
             </div>
         </section>
