@@ -13,13 +13,13 @@ export const Skills = () => {
         <div className="flex flex-col">
           <h2 className="text-2xl lg:text-3xl font-bold text-center mb-4">
           Spécialisé en
-            <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text">
+            <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
               {" "}
               PHP & Javascript
               {" "}
             </span>
             avec un focus sur{" "}
-            <span className="inline bg-gradient-to-r from-[#cf96f5]  to-[#8f47d2] text-transparent bg-clip-text">
+            <span className="inline bg-gradient-to-r from-[#cf96f5]  to-[#8f47d2] text-transparent bg-clip-text edge:text-purple">
               React.js
             </span>
           </h2>
