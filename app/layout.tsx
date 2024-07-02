@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Yan's Portfolio",
-  description: "Web Developper",
+  description: "Developper",
   metadataBase: new URL('https://yanberdin.com'),
   alternates: {
     canonical: '/',
