@@ -43,9 +43,9 @@ export const Hero = () => {
                         className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center" // remove text-[30px]
                         words="Créateur d'expériences Web Elégantes et intuitives"
                     />
-                    <p className="md:tracking-wider mb-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center"> {/*text-center */}
+                    <h1 className="md:tracking-wider mb-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center"> {/*text-center */}
                         Bienvenue, je suis Yan, développeur Php et React.js.
-                    </p>
+                    </h1>
 
 
                     <MagicButton

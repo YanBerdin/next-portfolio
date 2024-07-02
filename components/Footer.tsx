@@ -22,9 +22,9 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <h1 className="heading max-w-[70vw] lg:max-w-[32vw]">
+          <h2 className="heading max-w-[70vw] lg:max-w-[32vw]">
             Ma passion et mon expertise <span className="text-purple"> A votre service</span>
-          </h1>
+          </h2>
           <p className="text-white-200 md:mt-10 my-5 text-center"></p>
 
           <MagicButton

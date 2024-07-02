@@ -17,7 +17,7 @@ export default function Home() {
       {/*<Cursor />*/}
       <div className="max-width-7xl w-full">
 
-        <h1>Yan&apos;s Portfolio</h1>
+        {/*<h1>Yan&apos;s Portfolio</h1>*/}
         <FloatingNav navItems={navItems} />
         <div style={{ marginBottom: "20rem" }}>
           <Hero />
