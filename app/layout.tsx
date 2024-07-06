@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   keywords: ['Next.js', 'React', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'Yan Berdin', 'Portfolio'],
   authors: [{ name: 'Yan Berdin', url: 'https://yanberdin.com' }],
   creator: 'Yan Berdin',
+  publisher: 'Yan Berdin',
+  generator: 'Next.js',
+
 };
 
 export default function RootLayout({
