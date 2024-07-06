@@ -7,11 +7,11 @@ import { MagicButton } from "./MagicButton";
 
 export const Hero = () => {
     return (
-        <section className="pb-20 pt-36" id="hero">
+        <section className="pb-20 pt-36">
             <div>
-                <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
+                <Spotlight className="-top-10 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
                 <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" />
-                <Spotlight className="-top-28 left-75 h-[80vh] w-[40vw]" fill="blue" />
+                <Spotlight className="top-28 left-75 h-[80vh] w-[40vw]" fill="blue" />
             </div>
 
             {/*
@@ -20,7 +20,7 @@ export const Hero = () => {
             *  0.2 to 0.03
             */}
 
-            <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+            <div className="min-h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
 
                 {/* Radial gradient for the container to give a faded look */}
 
@@ -29,7 +29,7 @@ export const Hero = () => {
                 />
 
             </div>
-            <div className="flex justify-center gap-32 lg:gap-10 relative my-28 md:my-60 lg:my-36 z-10 "> {/*flex-wrap md:justify-around*/}
+            <div className="flex justify-center gap-32 lg:gap-10 relative my-28 md:my-60 lg:my-36 z-10"> {/*flex-wrap md:justify-around*/}
                 <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js

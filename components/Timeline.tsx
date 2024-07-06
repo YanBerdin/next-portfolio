@@ -42,7 +42,7 @@ const Timeline = () => {
 
     return (
         <section>
-            <div id="experience" className="h-12 md:h-20"></div>
+            <div className="h-12 md:h-20"></div>
             <div className="timeline relative max-w-screen-2xl bg-green-300 sm:bg-green-700 lg:bg-green-950 mx-auto">
 
                 <div ref={ref => { containerRefs.current.push(ref!); }} className="container left-container relative w-1/2 bg-pink-500 lg:bg-red-800 xl:bg-blue-500 rounded-xl py-2.5 sm:pr-12 pl-2 lg:pl-6 sm:-left-1/4  opacity-0 max-sm:w-full max-sm:pl-[74px] max-sm:pr-2 z-10">

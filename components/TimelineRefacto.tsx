@@ -43,7 +43,7 @@ const TimelineRefacto = () => {
 
     return (
         <section>
-            <div id="experience" className="h-12"></div>
+            <div className="h-12"></div>
             <div className="timeline relative w-11/12 mx-auto"> {/*max-w-screen-2xl*/}
                 {timelineData.map((item, index) => (
                     <div

@@ -23,7 +23,7 @@ export function Contact() {
 //  };
   return (
     <>
-      <div id="contact" className="h-10 md:h-44 lg:h-24"></div>
+      <div className="h-10 md:h-44 lg:h-24"></div>
       <section
 
         // id="contact"

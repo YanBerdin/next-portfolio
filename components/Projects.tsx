@@ -35,7 +35,7 @@ export const Projects = () => {
         <a href="/archive">See more</a>
       </section>
 
-      <section className="projets pb-2 m-0-auto w-full" id="projets">
+      <section className="projets pb-2 m-0-auto w-full">
         <h2>Projets récents</h2>
         <div className="projets-grid grid-col-1">
           <article className="grid-item item-1 relative grid-col-1 span-2">
