@@ -169,6 +169,7 @@
 
 .container {
 /*animation: movedown 1s linear forwards;*/
+will-change: transform; /* Promote elements that I plan to animate */
 }
 
 
@@ -229,7 +230,7 @@ animation-delay: 2.4s;
 
 .animate {
   /*background-color: yellow;*/ /* test animation */
-  animation: movedown 0.3s linear forwards;
+  animation: movedown 0.4s linear forwards;
 }
 
 @media screen and (max-width: 600px) {
