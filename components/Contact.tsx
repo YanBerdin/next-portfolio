@@ -89,11 +89,11 @@ export function Contact() {
                   <Input id="Subject" placeholder="e.g. Let's Connect !" type="text" />
                 </LabelInputContainer>
               </div>
-              <LabelInputContainer className="mb-4">
+              <LabelInputContainer className="mb-4" aria-labelledby="message">
                 <Label htmlFor="message">Message</Label>
                 <Textarea
                   name="message"
-                  //id="message"
+                  id="message"
                   placeholder='...'
                   className="block w-full rounded-md border-0 px-3.5 py-2 h-20 outline-none focus:outline-none"
                   defaultValue={''}

@@ -64,6 +64,7 @@ const TimelineRefacto = () => {
                             height={40}
                             className={`absolute ${index % 2 === 0 ? '-right-5' : '-left-5'
                                 } top-8 rounded-full z-10 max-sm:left-2.5`}
+                            loading="lazy"
                         />
                         <div
 

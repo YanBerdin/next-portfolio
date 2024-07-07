@@ -46,7 +46,7 @@ const Timeline = () => {
             <div className="timeline relative max-w-screen-2xl bg-green-300 sm:bg-green-700 lg:bg-green-950 mx-auto">
 
                 <div ref={ref => { containerRefs.current.push(ref!); }} className="container left-container relative w-1/2 bg-pink-500 lg:bg-red-800 xl:bg-blue-500 rounded-xl py-2.5 sm:pr-12 pl-2 lg:pl-6 sm:-left-1/4  opacity-0 max-sm:w-full max-sm:pl-[74px] max-sm:pr-2 z-10">
-                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -right-5 top-8 rounded-full z-10 max-sm:left-2.5" />
+                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -right-5 top-8 rounded-full z-10 max-sm:left-2.5" loading="lazy"/>
                     <div className="text-box relative py-3 px-5 lg:py-5 lg:px-8 rounded-lg bg-white-100 left-0">
 
                         <h2 className="text-sm sm:text-md lg:text-lg font-bold">Alphabet Inc.</h2>
@@ -62,7 +62,7 @@ const Timeline = () => {
 
 
                 <div ref={ref => { containerRefs.current.push(ref!); }} className="container right-container relative w-1/2 bg-red-800 rounded-lg py-2.5 sm:pl-12 -right-1/4 opacity-0 max-sm:w-full max-sm:pl-[74px] pr-2 lg:pr-6 max-sm:left-0 z-10">
-                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -left-5 top-8 rounded-full z-10 max-sm:left-2.5" />
+                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -left-5 top-8 rounded-full z-10 max-sm:left-2.5" loading="lazy" />
                     <div className="text-box relative py-3 px-5 lg:py-5 lg:px-8 rounded-lg bg-white-100">
 
                         <h2 className="text-sm sm:text-md lg:text-lg font-bold">Alphabet Inc.</h2>
@@ -77,7 +77,7 @@ const Timeline = () => {
                 </div>
 
                 <div ref={ref => { containerRefs.current.push(ref!); }} className="container left-container relative w-1/2 bg-pink-500 lg:bg-red-800 xl:bg-blue-500 rounded-xl py-2.5 sm:pr-12 pl-2 lg:pl-6 sm:-left-1/4  opacity-0 max-sm:w-full max-sm:pl-[74px] max-sm:pr-2 z-10">
-                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -right-5 top-8 rounded-full z-10 max-sm:left-2.5" />
+                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -right-5 top-8 rounded-full z-10 max-sm:left-2.5" loading="lazy" />
                     <div className="text-box relative py-3 px-5 lg:py-5 lg:px-8 rounded-lg bg-white-100 left-0">
 
                         <h2 className="text-sm sm:text-md lg:text-lg font-bold">Alphabet Inc.</h2>
@@ -93,7 +93,7 @@ const Timeline = () => {
 
 
                 <div ref={ref => { containerRefs.current.push(ref!); }} className="container right-container relative w-1/2 bg-red-800 rounded-lg py-2.5 sm:pl-12 -right-1/4 opacity-0 max-sm:w-full max-sm:pl-[74px] pr-2 lg:pr-6 max-sm:left-0 z-10">
-                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -left-5 top-8 rounded-full z-10 max-sm:left-2.5" />
+                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -left-5 top-8 rounded-full z-10 max-sm:left-2.5" loading="lazy" />
                     <div className="text-box relative py-3 px-5 lg:py-5 lg:px-8 rounded-lg bg-white-100">
 
                         <h2 className="text-sm sm:text-md lg:text-lg font-bold">Alphabet Inc.</h2>
@@ -108,7 +108,7 @@ const Timeline = () => {
                 </div>
 
                 <div ref={ref => { containerRefs.current.push(ref!); }} className="container left-container relative w-1/2 bg-pink-500 lg:bg-red-800 xl:bg-blue-500 rounded-xl py-2.5 sm:pr-12 pl-2 lg:pl-6 sm:-left-1/4  opacity-0 max-sm:w-full max-sm:pl-[74px] max-sm:pr-2 z-10">
-                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -right-5 top-8 rounded-full z-10 max-sm:left-2.5" />
+                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -right-5 top-8 rounded-full z-10 max-sm:left-2.5" loading="lazy" />
                     <div className="text-box relative py-3 px-5 lg:py-5 lg:px-8 rounded-lg bg-white-100 left-0">
 
                         <h2 className="text-sm sm:text-md lg:text-lg font-bold">Alphabet Inc.</h2>
@@ -124,7 +124,7 @@ const Timeline = () => {
 
 
                 <div ref={ref => { containerRefs.current.push(ref!); }} className="container right-container relative w-1/2 bg-red-800 rounded-lg py-2.5 sm:pl-12 -right-1/4 opacity-0 max-sm:w-full max-sm:pl-[74px] pr-2 lg:pr-6 max-sm:left-0 z-10">
-                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -left-5 top-8 rounded-full z-10 max-sm:left-2.5" />
+                    <Image src="/next.svg" alt="Google Logo" width={40} height={40} className="absolute -left-5 top-8 rounded-full z-10 max-sm:left-2.5" loading="lazy" />
                     <div className="text-box relative py-3 px-5 lg:py-5 lg:px-8 rounded-lg bg-white-100">
 
                         <h2 className="text-sm sm:text-md lg:text-lg font-bold">Alphabet Inc.</h2>

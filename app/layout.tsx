@@ -18,8 +18,6 @@ export const metadata: Metadata = {
   authors: [{ name: 'Yan Berdin', url: 'https://yanberdin.com' }],
   creator: 'Yan Berdin',
   publisher: 'Yan Berdin',
-  generator: 'Next.js',
-
 };
 
 export default function RootLayout({
