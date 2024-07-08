@@ -154,17 +154,6 @@
   }
 }
 
-@keyframes movedown {
-  0% {
-    opacity: 1;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
 .container {
   animation: movedown 1s linear forwards;
   will-change: transform; /* Promote elements that I plan to animate */
@@ -190,6 +179,22 @@
 }
 .container:nth-child(7) {
   animation-delay: 4.5s;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.animate {
+  /*background-color: yellow;*/ /* test animation */
+  animation: movedown 1s linear forwards;
 }
 
 .timeline::after {
@@ -225,11 +230,6 @@
   left: 50%;
   margin-left: -3px;
   z-index: -1;
-}
-
-.animate {
-  /*background-color: yellow;*/ /* test animation */
-  animation: movedown 1s linear forwards;
 }
 
 @media screen and (max-width: 600px) {
