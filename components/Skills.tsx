@@ -2,7 +2,8 @@ import React from "react";
 import { mySkills } from "@/data";
 import { Button } from "./ui/MovingBorders";
 import { Check } from "lucide-react";
-import Image from "next/image";
+// import Image from "next/image";
+import BlurImage from './ui/BlurImage';
 
 export const Skills = () => {
   return (
@@ -12,7 +13,7 @@ export const Skills = () => {
       <section className="mx-auto max-sm:w-11/12 mb-24">
         <div className="flex flex-col">
           <h2 className="text-2xl lg:text-3xl font-bold text-center mb-4">
-          Spécialisé en
+            Spécialisé en
             <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
               {" "}
               PHP & Javascript
@@ -43,13 +44,17 @@ export const Skills = () => {
                 className="flex-1 border-neutral-200 dark:border-slate-800 p-4"
               >
                 <div className="flex flex-col lg:items-center p-2 md:p-3 gap-5"> {/*remove lg:flex-raw*/}
-                  <Image
+                  <BlurImage
                     src={card.thumbnail}
                     //alt={card.thumbnail}
                     alt={card.thumbnail} // Remplacé card.thumbnail par card.title pour un alt plus descriptif
                     width={90}
                     height={90}
                     className=" md:w-20 m-auto object-cover" // remove w-16 add m-auto
+                    loading="lazy"
+                  // fill={true} //! Error: Image with src "/exp1.svg" has both "width" and "fill" properties. Only one should be used.
+                  // placeholder={"blur"} // This option only supports local images
+                  // blurDataURL={card.thumbnail} // For dynamic images, provide the blurDataURL
                   />
                   <div className="max-w-[430px]"> {/*ms-5*/}
                     <h3 className="text-center text-black dark:text-white text-lg font-bold">
