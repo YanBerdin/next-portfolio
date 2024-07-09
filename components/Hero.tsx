@@ -41,7 +41,7 @@ export const Hero = () => {
                      */}
                     <TextGenerateEffect
                         className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center" // remove text-[30px]
-                        words="Créateur d'expériences Web Elégantes et intuitives"
+                        words="Créateur de solutions Web Elégantes et intuitives"
                     />
                     <h1 className="md:tracking-wider mb-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center"> {/*text-center */}
                         Bienvenue, je suis Yan, développeur Php et React.js.

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
-import { cn } from  "@/lib/utils/cn";
+import { cn } from "@/lib/utils/cn";
 
 export const TextGenerateEffect = ({
   words,
@@ -24,7 +24,7 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       }
     );
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scope.current]);
 
   const renderWords = () => {
@@ -34,8 +34,10 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              // change here if idx is greater than 3, change the text color to #CBACF9
-              className={` ${idx > 2 ? "bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple" : "dark:text-white text-white"
+              //change here if idx is greater than 3, change the text color to #CBACF9
+              // from-bg-violet-400 to-bg-violet-700
+              // className="dark:text-white text-white opacity-0"
+              className={` ${idx > 3 ? "bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text" : "dark:text-white text-white"
                 } opacity-0`}
             >
               {word}{" "}
