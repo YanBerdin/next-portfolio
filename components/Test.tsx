@@ -1,4 +1,5 @@
 // rafce + tab
+/*
 import React from 'react'
 
 export const Test = () => {
@@ -6,9 +7,9 @@ export const Test = () => {
     <div>Test</div>
   )
 }
-
+*/
 // export default Test
-"use client";
+//"use client";
 {/*
 import React from "react";
 import { useEffect, useRef } from 'react';

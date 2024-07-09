@@ -1,21 +1,29 @@
-"use client";
+/*"use client";
 
 import OrbitingCircles from "@/components/ui/Orbiting-circles";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
 import "../../app/globals.css";
-
+*/
 /**
  * UI : Orbiting Circles
  * Link :  https://magicui.design/docs/components/orbiting-circles
  */
+
+/** 
 export function OrbitingCirclesLg() {
   return (
-    <div className="relative flex h-[450px] w-full max-w-[450px] items-center justify-center overflow-hidden rounded-lg border-none md:shadow-xl"> {/*bg-background  h-[500px] max-w-[500px] border*/}
+    <div className="relative flex h-[450px] w-full max-w-[450px] items-center justify-center overflow-hidden rounded-lg border-none md:shadow-xl">
+    */
+      {/*bg-background  h-[500px] max-w-[500px] border*/}
+      /*
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+      */
         {/*Hello*/}
-      </span>
+
+      /*</span>*/
 
       {/* Inner Circles */}
+      /*
       <OrbitingCircles
         className="h-[40px] w-[40px] border-none bg-transparent" // Icon-size
         duration={20}
@@ -32,8 +40,10 @@ export function OrbitingCirclesLg() {
       >
         <Icons.notion />
       </OrbitingCircles>
+*/
 
       {/* Outer Circles (reverse) */}
+      /*
       <OrbitingCircles
         className="h-[40px] w-[40px] border-none bg-transparent" // Icon-size
         reverse
@@ -172,3 +182,5 @@ const Icons = {
     </svg>
   ),
 };
+
+*/
