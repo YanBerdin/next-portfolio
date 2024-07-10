@@ -8,9 +8,9 @@ function cn(...classes: string[]) {
 }
 
 interface BlurImageProps {
-    src: string;
-    [key: string]: any;
-  }
+  src: string;
+  [key: string]: any;
+}
 
 function BlurImage({ src, ...props }: BlurImageProps) {
   const [isLoading, setLoading] = useState(true);

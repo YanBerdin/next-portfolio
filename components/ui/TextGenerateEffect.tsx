@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils/cn";
@@ -6,11 +7,11 @@ import { cn } from "@/lib/utils/cn";
 export const TextGenerateEffect = ({
   words,
   className,
-  gradientClass,
+  //gradientClass,
 }: {
   words: string;
   className?: string;
-  gradientClass?: string;
+  //gradientClass?: string;
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
@@ -41,9 +42,9 @@ export const TextGenerateEffect = ({
               // className="dark:text-white text-white opacity-0"
 
               //! Move the gradient style to the parent component < Hero />  
-              //className={` ${idx > 3 ? "bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text" : "dark:text-white text-white"
-              //  } opacity-0`}
-              className={`opacity-0 ${gradientClass}`}
+              className={` ${idx > 3 ? "bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text" : "dark:text-white-100 text-white-100"
+                } opacity-0`}
+            //className={`opacity-0 ${gradientClass}`}
 
             >
               {word}{" "}

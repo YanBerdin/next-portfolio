@@ -41,15 +41,17 @@ export const Hero = () => {
                      */}
                     <TextGenerateEffect
                         className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center" // remove text-[30px]
-                        words="Créateur de solutions Web"
+                        words="Créateur de solutions Web Elégantes et intuitives"
                     />
+                    {   /**
                     <TextGenerateEffect
-                        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center " // remove text-[30px]
+                        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center" // remove text-[30px]
                         words="Elégantes et intuitives"
-                        gradientClass="bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text"
+                        // gradientClass="bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text"
                     />
-                    <h1 className="md:tracking-wider mb-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center"> {/*text-center */}
-                        Bienvenue, je suis Yan, développeur Php et React.js.
+                     */}
+                    <h1 className="md:tracking-wider my-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center"> {/*text-center */}
+                        Bienvenue, je suis Yan, développeur Php Javascript & React.js
                     </h1>
 
 
