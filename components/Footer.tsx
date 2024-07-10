@@ -3,7 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
 import { MagicButton } from "./MagicButton";
 import Link from "next/link";
-// import Image from "next/image";
+import Image from "next/image";
 import BlurImage from "./ui/BlurImage";
 
 const Footer = () => {
@@ -13,13 +13,14 @@ const Footer = () => {
       <footer className="w-full pt-10 pb-10">
         {/* background grid */}
         <div className="w-full h-auto absolute left-0 -bottom-4 min-h-96 mt-10"> {/*  max-h-[900px]*/}
-          <BlurImage
+          <Image
             src="/footer-grid.svg"
             alt="grid"
             className="w-full opacity-50"
             width="331"
             height="156"
             loading="lazy"
+            // priority={true}
           />
         </div>
 
@@ -51,7 +52,12 @@ const Footer = () => {
                 rel={info.rel}
                 className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-50 bg-black-200 rounded-lg border border-black-300  hover:scale-95 hover:brightness-150"
               >
-                <BlurImage src={info.img} alt="social-icons" width={24} height={24} fetchpriority="high" rel="preload" />
+                <BlurImage
+                  src={info.img} alt="social-icons"
+                  width={24}
+                  height={24}
+                  fetchpriority="high"
+                  rel="preload" />
               </Link>
             ))}
           </div>

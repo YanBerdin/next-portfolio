@@ -1,12 +1,12 @@
-"use client"
+// "use client"
 
 import Image from 'next/image';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 function cn(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
-
+/*
 interface BlurImageProps {
   src: string;
   [key: string]: any;
@@ -29,6 +29,32 @@ function BlurImage({ src, ...props }: BlurImageProps) {
           : 'grayscale-0 blur-0 scale-100'
       )}
       onLoadingComplete={() => setLoading(false)}
+    />
+  );
+}
+*/
+
+interface BlurImageProps {
+  src: string;
+  alt?: string;
+  width: number;
+  height: number;
+  [key: string]: any;
+}
+
+function BlurImage({ src, alt = '', width, height, ...props }: BlurImageProps) {
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      {...props}
+      width={width}
+      height={height}
+      // fill={true}
+      objectFit="cover"
+      className={cn(
+        'duration-700 ease-in-out grayscale-0 blur-0 scale-100'
+      )}
     />
   );
 }
