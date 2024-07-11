@@ -20,12 +20,12 @@ const Footer = () => {
             width="331"
             height="156"
             loading="lazy"
-            // priority={true}
+          // priority={true}
           />
         </div>
 
         <div className="flex flex-col items-center">
-          <h2 className="heading ">
+          <h2 className="heading text-white-100">
             Ma passion et mon expertise <br /> <span className="text-purple"> A votre service  </span>
           </h2>
           <p className="text-white-200 md:mt-10 my-5 text-center"></p>
@@ -56,8 +56,10 @@ const Footer = () => {
                   src={info.img} alt="social-icons"
                   width={24}
                   height={24}
-                  fetchpriority="high"
-                  rel="preload" />
+                  loading="lazy"
+                // fetchPriority="high"
+                // rel="preload"
+                />
               </Link>
             ))}
           </div>

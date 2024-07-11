@@ -51,7 +51,7 @@ function BlurImage({ src, alt = '', width, height, ...props }: BlurImageProps) {
       width={width}
       height={height}
       // fill={true}
-      objectFit="cover"
+      // objectFit="cover" // deprecated
       className={cn(
         'duration-700 ease-in-out grayscale-0 blur-0 scale-100'
       )}
