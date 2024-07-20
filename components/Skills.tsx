@@ -52,9 +52,10 @@ export const Skills = () => {
                     height={90}
                     className=" md:w-20 m-auto object-cover" // remove w-16 add m-auto
                     loading="lazy"
-                  // fill={true} //! Error: Image with src "/exp1.svg" has both "width" and "fill" properties. Only one should be used.
-                  // placeholder={"blur"} // This option only supports local images
-                  // blurDataURL={card.thumbnail} // For dynamic images, provide the blurDataURL
+                    // fill={true} //* => Error: Image with src "/exp1.svg" has both "width" and "fill" properties. Only one should be used.
+                    // placeholder={"blur"} // This option only supports local images
+                    // blurDataURL={card.thumbnail} // For dynamic images, provide the blurDataURL
+                    aria-hidden="true"
                   />
                   <div className="max-w-[430px]"> {/*ms-5*/}
                     <h3 className="text-center text-black dark:text-white text-lg font-bold">

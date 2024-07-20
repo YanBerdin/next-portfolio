@@ -2,14 +2,14 @@ import { GithubIcon2, ResumeIcon } from '@/components/ui/Icon';
 
 export const navItems = [
 
-  { name: "Skills", link: "#skills" },
-  { name: "Réalisations", link: "#projects" },
-  { name: "A-propos", link: "#about" },
+  { name: "Skills", link: "#skills", title:"Voir mes compétences" },
+  { name: "Réalisations", link: "#projects", title:"Voir mes réalisations" },
+  { name: "A-propos", link: "#about", title:"Voir ma présentation" },
   { name: "Contact", link: "#contact" },
-  { name: "", link: "#experience", icon: ResumeIcon, title:"CV" },
+  { name: "", link: "#experience", icon: ResumeIcon, title:"Mon CV" },
   // { name: "Experience", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
   //https://YanBerdin.github.io/resume 
-  { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon2, title:"Github" },
+  { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon2, title:"Mon Github" },
   // { name: "Testimonials", link: "#testimonials" },
 ];
 
@@ -121,6 +121,7 @@ export const gridItems = [
       imgClassName: "w-full h-full object-cover h-auto", // "h-auto object-cover",
       titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
       img: "/DiscotechV2.jpg", // "/b1.svg",
+      alt:"illustrations des styles musicaux sur fond de palmiers au crépuscule",
       width: 320,
       height: 200,
       spareImg: "",
@@ -137,6 +138,7 @@ export const gridItems = [
       imgClassName: "h-auto",
       titleClassName: "text-3xl justify-start",
       img: "",
+      alt: "",
       width: 0,
       height: 0,
       spareImg: "",
@@ -151,6 +153,7 @@ export const gridItems = [
     imgClassName: "h-auto",
     titleClassName: "text-md md:text-lg lg:text-2xl justify-center",
     img: "",
+    alt: "liste des technologies et outils de développement web",
     width : 350,
     height: 200,
     spareImg: "",
@@ -173,6 +176,7 @@ export const gridItems = [
     imgClassName: " absolute h-auto", // object-cover
     titleClassName: "text-md md:text-lg lg:text-2xl justify-start h-auto",
     img: "/grid.svg",
+    alt: "Page d'acceuil avec grille d'affichage des repositories GitHub",
     width: 320,
     height: 200,
     spareImg:"/codeEditorGithub.png",  // "/b4.svg",
@@ -206,6 +210,7 @@ export const gridItems = [
     imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 w-32 lg:right-10 xl:right-1 xl:-bottom-1 h-auto max-h-15vh", // bottom-0
     titleClassName: "text-md md:text-lg lg:text-2xl justify-center md:justify-start ",
     img: "/codeEditor-oshop-front1-s.png", // b5.svg
+    alt:"page d'acceuil du site avec 3 chaussures en gros plan",
     width: 220,
     height: 100,
     spareImg: "/grid.svg",
@@ -222,6 +227,7 @@ export const gridItems = [
     imgClassName: "h-auto",
     titleClassName: "justify-center w-full text-center", // md:max-w-full
     img: "",
+    alt: "Arriere-plan de sphères lumineuses",
     width: 320,
     height: 100,
     spareImg: "",
@@ -235,49 +241,57 @@ export const timelineData = [
       company: "Développeur React.js - O'clock",
       period: 'Juin 2023 - Juill. 2023',
       description: "Conception du site Disc'Otech. Implémentation de fonctionnalités utilisateur Incluant la gestion de profil et la personnalisation des favoris.",
-      imageUrl: '/Logo.png'
+      imageUrl: '/Logo.png',
+      alt:"Logo du site DiscO'tech"
   },
   {
       id: 2,
       company: 'Vendeur Atelier - Dafy Moto',
       period: 'Janv. 2022 - Avr. 2022',
       description: 'Booste les ventes entretien réparation.',
-      imageUrl: '/dafy-logo-300.png'
+      imageUrl: '/dafy-logo-300.png',
+      alt:"Logo de la marque Dafy Moto"
   },
   {
       id: 3,
       company: 'Vendeur Web - Holding de Marché aux Affaires',
       period: 'Janv. 2017 - Avr. 2017',
       description: 'Expertise en vente sur eBay & Amazon.',
-      imageUrl: '/maa-logo-300.png'
+      imageUrl: '/maa-logo-300.png',
+      alt:"Logo de la marque Marché aux Affaires"
   },
   {
       id: 4,
       company: 'Gérant e-commerce - eBay & Amazon',
       period: 'Janv. 2010 - Mars 2017',
       description: 'Gestion de 15k commandes/an.',
-      imageUrl: '/ebay-logo-208.jpeg'
+      imageUrl: '/ebay-logo-208.jpeg',
+      alt:"Logo de la marque eBay"
   },
   {
     id: 5,
     company: 'Responsable - Levi’s Store',
     period: 'Mars 2006 - Mars 2009',
     description: "Leadership proactif d'une équipe de 8 collaborateurs, axé sur la performance.",
-    imageUrl: '/levis_logo.png'
+    imageUrl: '/levis_logo.png',
+      alt:"Logo de la marque Levi's"
 },
   {
       id: 6,
       company: 'Cogérant - Blackmoon Records',
       period: 'Janv. 2000 - Févr. 2003',
       description: 'Spécialiste en import de vinyles musique électronique.',
-      imageUrl: '/levis_logo.png'
+      imageUrl: '/levis_logo.png',
+      alt:"Logo de la marque Levi's"
+
   },
   {
     id: 7,
     company: 'Assistant Responsable - Levi’s Store',
     period: 'Janv. 1998 - Févr. 2006',
     description: "Dynamisation et leadership d'une équipe de 8 collaborateurs.",
-    imageUrl: '/levis_logo.png'
+    imageUrl: '/levis_logo.png',
+    alt:"Logo de la marque Levi's"
 },
 ];
 
@@ -285,6 +299,8 @@ export const socialMedia = [
   {
     id: 1,
     img: "/githubicon.svg",
+    alt:"Icone de Github ",
+    title: "lien vers le profil Github de Yan",
     link: "https://github.com/YanBerdin",
     target: "_blank",
     rel: "noopener noreferrer"
@@ -292,6 +308,8 @@ export const socialMedia = [
   {
     id: 2,
     img: "/link.svg",
+    alt:"Icone de Linkedin",
+    title: "lien vers le profil Linkedin de Yan",
     link: "https://www.linkedin.com/in/yan-berdin",
     target: "_blank",
     rel: "noopener noreferrer"

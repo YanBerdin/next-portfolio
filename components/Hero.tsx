@@ -9,9 +9,9 @@ export const Hero = () => {
     return (
         <section className="pb-20 pt-36">
             <div>
-                <Spotlight className="-top-10 -left-10 md:-left-32 md:-top-20 h-svh" fill="white" /> {/** h-screen */}
-                <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" />
-                <Spotlight className="top-28 left-75 h-[80vh] w-[40vw]" fill="blue" />
+                <Spotlight className="-top-10 -left-10 md:-left-32 md:-top-20 h-svh" fill="white" aria-hidden="true"/> {/** h-screen */}
+                <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" aria-hidden="true"/>
+                <Spotlight className="top-28 left-75 h-[80vh] w-[40vw]" fill="blue" aria-hidden="true"/>
             </div>
 
             {/*
@@ -20,7 +20,7 @@ export const Hero = () => {
             *  0.2 to 0.03
             */}
 
-            <div className="min-h-svh w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0"> {/** min-h-screen */}
+            <div className="min-h-svh w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0" aria-hidden="true"> {/** min-h-screen */}
 
                 {/* Radial gradient for the container to give a faded look */}
 

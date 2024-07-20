@@ -20,7 +20,8 @@ const Footer = () => {
             width="331"
             height="156"
             loading="lazy"
-          // priority={true}
+            // priority={true}
+            aria-hidden="true"
           />
         </div>
 
@@ -51,14 +52,17 @@ const Footer = () => {
                 target={info.target}
                 rel={info.rel}
                 className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-50 bg-black-200 rounded-lg border border-black-300  hover:scale-95 hover:brightness-150"
+                title={info.title}
               >
                 <BlurImage
-                  src={info.img} alt="social-icons"
+                  src={info.img}
+                  alt={info.alt}
                   width={24}
                   height={24}
                   loading="lazy"
-                // fetchPriority="high"
-                // rel="preload"
+                  // fetchPriority="high"
+                  // rel="preload"
+                  aria-hidden="true"
                 />
               </Link>
             ))}

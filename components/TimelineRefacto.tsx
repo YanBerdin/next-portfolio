@@ -59,7 +59,7 @@ const TimelineRefacto = () => {
                     >
                         <Image
                             src={item.imageUrl}
-                            alt="Company Logo"
+                            alt={item.alt}
                             width={40}
                             height={40}
                             className={`absolute ${index % 2 === 0 ? '-right-5' : '-left-5'

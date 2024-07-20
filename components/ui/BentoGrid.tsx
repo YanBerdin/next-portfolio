@@ -47,6 +47,7 @@ export const BentoGridItem = ({
     spareImg,
     width,
     height,
+    alt,
 }: {
     className?: string;
     id: number;
@@ -58,6 +59,7 @@ export const BentoGridItem = ({
     spareImg?: string;
     width?: number;
     height?: number;
+    alt?: string;
 }) => {
     const leftLists = ["React.js", "Next.js", "Express", "Node.js"];
     const rightLists = ["Javascript", "Typescript", "Svelte", "Redux"];
@@ -107,7 +109,7 @@ export const BentoGridItem = ({
                     {img && (
                         <Image
                             src={img}
-                            alt={img}
+                            alt={alt || ""}
                             width={width}
                             height={height}
                             className={cn(imgClassName, "object-cover object-center ")}
@@ -118,11 +120,12 @@ export const BentoGridItem = ({
                 <div
                     className={`absolute right-0 sm:right-4 bottom-0 sm:bottom-2 ${id === 5 && "w-full" // opacity-80 right-0 -bottom-5
                         } `}
+                    aria-haspopup="true"
                 >
                     {spareImg && (
                         <Image
                             src={spareImg}
-                            alt={spareImg}
+                            alt={alt || ""}
                             width={width}
                             height={height}
                             className="object-cover object-center max-w-[150px] lg:max-w-[180px] xl:max-w-[250px]"
@@ -133,7 +136,7 @@ export const BentoGridItem = ({
                 </div>
                 {id === 6 && (
                     // add background animation , remove the p tag
-                    <BackgroundGradientAnimation>
+                    <BackgroundGradientAnimation aria-hidden="true">
                         <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-2 pointer-events-none text-center"></div> {/*  text-xl md:text-xl lg:text-2xl lg:text-7xl */}
                     </BackgroundGradientAnimation>
                 )}
@@ -158,12 +161,12 @@ export const BentoGridItem = ({
                     </div>
 
                     {/* for the github 3d globe */}
-                    {id === 2 && <GridGlobe />}
+                    {id === 2 && <GridGlobe aria-hidden="true" />}
                     {/** {id === 2 }*/}
 
                     {/* Tech stack list div */}
                     {id === 3 && (
-                        <div className="flex gap-1 lg:gap-3 w-fit absolute right-3 lg:mr-2">
+                        <div className="flex gap-1 lg:gap-3 w-fit absolute right-3 lg:mr-2" aria-haspopup="true">
                             {/* tech stack lists */}
                             <div className="flex flex-col gap-1 md:gap-2">
                                 {leftLists.map((item, i) => (
@@ -207,7 +210,7 @@ export const BentoGridItem = ({
                     )}
 
                     {(id === 1 || id === 4 || id === 5) && (
-                        <div className="mt-2">
+                        <div className="mt-2" >
                             <BackdropModal id={id} />
                         </div>
                     )}
@@ -221,13 +224,15 @@ export const BentoGridItem = ({
                             {/* add rounded-md h-8 md:h-8, remove rounded-full */}
                             {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
                             {/* add handleCopy() for the copy the text */}
+                            {/*
                             <div
                                 className={`absolute bottom-3 right-0 ${copied ? "block" : "block"
                                     }`}
                             >
-                                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
-                            </div>
+                                */}
+                            {/* <img src="/confetti.gif" alt="confetti" /> */}
+                            {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
+                            {/*</div>*/}
 
                             {/*   <MagicButton
                                 title={copied ? "Email is Copied!" : "Copy my email address"}
