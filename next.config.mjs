@@ -24,12 +24,16 @@ const nextConfig = {
             value: 'nosniff', // Empêche le navigateur d'interpréter incorrectement les types MIME
           },
           {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on',
+          },
+          {
             key: 'Referrer-Policy',
-            value: 'no-referrer', // Ne pas envoyer de référent
+            value: 'origin-when-cross-origin',
           },
           {
             key: 'Strict-Transport-Security',
-            value: 'max-age=63072000; includeSubDomains; preload', // HSTS avec une durée de 2 ans, inclure les sous-domaines et précharger
+            value: 'max-age=31536000; includeSubDomains; preload', // HSTS avec une durée de 2 ans, inclure les sous-domaines et précharger
           },
           {
             key: 'X-XSS-Protection',
