@@ -5,37 +5,35 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/(.*)', // Appliquer les headers à toutes les routes
+        source: '/(.*)', // Appliquer les en-têtes à toutes les routes
         headers: [
           {
             key: 'Access-Control-Allow-Origin',
-            value: 'https://www.yanberdin.com', // Autoriser les requêtes depuis ce domaine
+            value: 'https://www.yanberdin.com', // Autoriser les requêtes depuis ce domaine spécifique
           },
           {
             key: 'X-Frame-Options',
-            value: 'DENY', // Empêche le clickjacking
+            value: 'DENY', // Empêche les attaques de type clickjacking
           },
           {
             key: 'Content-Security-Policy',
-            value:
-              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://cdn.jsdelivr.net https://raw.githubusercontent.com https://vercel.live; frame-src 'self' https://vercel.live; object-src 'self' data:;",
-            // Politique de sécurité du contenu
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live; style-src 'self' 'unsafe-inline' https://vercel.live; img-src 'self' data: https://cdn.jsdelivr.net https://vercel.com; connect-src 'self' https://cdn.jsdelivr.net https://raw.githubusercontent.com https://vercel.live https://vercel.com; frame-src 'self' https://vercel.live; object-src 'self' data:;", // Politique de sécurité du contenu
           },
           {
             key: 'X-Content-Type-Options',
-            value: 'nosniff', // Empêche l'analyse des types MIME
+            value: 'nosniff', // Empêche le navigateur d'interpréter incorrectement les types MIME
           },
           {
             key: 'Referrer-Policy',
-            value: 'no-referrer', // Politique de référent
+            value: 'no-referrer', // Ne pas envoyer de référent
           },
           {
             key: 'Strict-Transport-Security',
-            value: 'max-age=63072000; includeSubDomains; preload', // HSTS
+            value: 'max-age=63072000; includeSubDomains; preload', // HSTS avec une durée de 2 ans, inclure les sous-domaines et précharger
           },
           {
             key: 'X-XSS-Protection',
-            value: '1; mode=block', // Protection contre les attaques XSS
+            value: '1; mode=block', // Activer la protection XSS
           },
         ],
       },
