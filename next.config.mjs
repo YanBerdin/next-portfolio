@@ -17,7 +17,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live; style-src 'self' 'unsafe-inline' https://vercel.live; img-src 'self' data: https://cdn.jsdelivr.net https://vercel.com; connect-src 'self' https://cdn.jsdelivr.net https://raw.githubusercontent.com https://vercel.live https://vercel.com; frame-src 'self' https://vercel.live; object-src 'self' data:;", // Politique de sécurité du contenu
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live; style-src 'self' 'unsafe-inline' https://vercel.live; img-src 'self' data: https://cdn.jsdelivr.net https://vercel.com; connect-src 'self' https://cdn.jsdelivr.net https://raw.githubusercontent.com https://vercel.live https://vercel.com wss://ws-us3.pusher.com https://sockjs-us3.pusher.com; frame-src 'self' https://vercel.live; object-src 'self' data:;", // Politique de sécurité du contenu
           },
           {
             key: 'X-Content-Type-Options',
