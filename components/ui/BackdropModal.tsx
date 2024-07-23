@@ -83,7 +83,7 @@ export default function BackdropModal({ id }: { id: number }) {
         >
           {(onClose) => (
             <BackgroundGradient className="rounded-[22px] bg-white dark:bg-zinc-900 p-3 text-md">
-              <ModalHeader className="flex flex-col py-2 px-3">
+              <ModalHeader className="flex flex-col py-4 px-4">
                 <h2 className="text-xl">{title}</h2>
               </ModalHeader>
               <ModalBody className="max-h-[70vh] max-lg:overflow-y-auto gap-1 scrollbar max-sm:px-3 max-sm:text-sm">
