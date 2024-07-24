@@ -109,7 +109,7 @@ export const gridItems = [
       "Les utilisateurs peuvent : Rechercher des artistes ou des albums, Explorer différents genres musicaux, Créer leurs propres playlists.",
       " ",
       "🚨 La sécurisation de notre application s’attache à 6 aspects :",
-      "🔒 L’authentification, Le contrôle d’accès, L’intégrité des données, La confidentialité des données, La non-répudiation (envoi et la réception d’un message incontestables), La protection contre l’analyse du trafic",
+      "🔒 L’authentification, Le contrôle d’accès, L’intégrité des données, La confidentialité des données, La non-répudiation (envoi et réception de messages incontestables), La protection contre l’analyse du trafic",
       " ",
       "🚧 Défi : Gérer efficacement l'état global de l'application pour synchroniser les données entre les différents composants.",
       "✅ Utilisation Redux pour centraliser la gestion de l'état, ce qui a permis de synchroniser les données entre les composants de manière efficace.",
