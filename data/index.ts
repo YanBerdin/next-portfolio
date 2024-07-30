@@ -102,13 +102,13 @@ interface mySkills {
 export const gridItems = [
   {
     id: 1,
-    title: "DiscO'tech",
-    description: "React.js | Redux | Axios | Interceptor | Rest API | PropTypes",
-      explanationList: ["DiscO'tech 💿, un hommage à l'école O’clock, est une application de référencement musical.",
+    title: "DiscO'tech 💿",
+    description: "🛠️ Technologies Utilisées : React.js | Redux | Axios | Interceptor | Rest API | PropTypes",
+      explanationList: ["🎙️ Description : DiscO'tech, un hommage à l'école O’clock, est une application de référencement musical.",
       " ",
       "Les utilisateurs peuvent : Rechercher des artistes ou des albums, Explorer différents genres musicaux, Créer leurs propres playlists.",
       " ",
-      "🚨 La sécurisation de notre application s’attache à 6 aspects :",
+      "💡 La sécurisation de notre application s’attache à 6 aspects :",
       "🔒 L’authentification, Le contrôle d’accès, L’intégrité des données, La confidentialité des données, La non-répudiation (envoi et réception de messages incontestables), La protection contre l’analyse du trafic",
       " ",
       "🚧 Défi : Gérer efficacement l'état global de l'application pour synchroniser les données entre les différents composants.",
@@ -117,12 +117,14 @@ export const gridItems = [
       "🚧 Défi : Assurer la validation des données provenant des utilisateurs et du serveur pour éviter les erreurs et les comportements inattendus.",
       "✅ Utilisation de PropTypes pour valider les types de données dans les composants et mis en place une validation pour garantir l'intégrité des données.",
       " ",
-      "🚨 Défi : Protéger l'application contre diverses vulnérabilités de sécurité. 🚨",
-      "🔒 Protection contre les attaques XSS par une double validation des données (côté client et serveur) et interdiction du stockage de Password et Login en clair dans le state.",
-      "🔒 Utilisation de tokens de synchronisation, aléatoires et à usage unique, pour sécuriser les formulaires et les méthodes d'écriture de données.",
-      "🔒 Configuration de CORS pour contrôler l'accès aux ressources.",
-      "🔒 Sécurisation de la connexion à l'API en utilisant des variables d'environnement (.env).",
-      "🔒 Implémentation d'une approche par token JWT pour l'authentification, avec utilisation d'interceptors Axios pour gérer automatiquement les tokens, évitant de passer l’id de l’utilisateur connecté.",
+      "🚨 Défi : Protéger l'application contre diverses vulnérabilités de sécurité.",
+      " 🔒 Protection contre les attaques XSS par une double validation des données (côté client et serveur) et interdiction du stockage de Password et Login en clair dans le state.",
+      " 🔒 Utilisation de tokens de synchronisation, aléatoires et à usage unique, pour sécuriser les formulaires et les méthodes d'écriture de données.",
+      " 🔒 Configuration de CORS pour contrôler l'accès aux ressources.",
+      " 🔒 Sécurisation de la connexion à l'API en utilisant des variables d'environnement (.env).",
+      " 🔒 Implémentation d'une approche par token JWT pour l'authentification, avec utilisation d'interceptors Axios pour gérer automatiquement les tokens, évitant de passer l’id de l’utilisateur connecté.",
+      " ",
+      "🎯 Résultat Obtenu : Implémentation réussie des fonctionnalités utilisateur, sécurisation de l’application et optimisation pour le référencement et l’accessibilité.. La gestion de l'état global avec Redux a permis de synchroniser efficacement les données entre les composants. La sécurité de l'application est garantie.",
     ],
       className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",//"lg:col-span-2 lg:row-span-3 md:col-span-6 md:row-span-3", // change lg:col-span-3 md:row-span-4 order-3 lg:order-2
       imgClassName: "w-full h-full object-cover h-auto", // "h-auto object-cover",
@@ -138,7 +140,7 @@ export const gridItems = [
 
   {
       id: 2,
-      title: "Réalisations", // "I'm very flexible with time zone communications"
+      title: "🛠️ Réalisations", // "I'm very flexible with time zone communications"
       description: "",
       explanation: "",
       className: "order-first lg:col-span-2 md:col-span-3 md:row-span-2 h-auto min-h-[10vh] md:min-h-[15vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3 " added order-first
@@ -153,7 +155,7 @@ export const gridItems = [
 
   {
     id: 3,
-    title: "Dev Tools", //  tech 
+    title: "🛠️ Dev Tools", //  tech 
     description: "", // "I constantly try to improve"
     explanation: "",
     className: "-order-1 lg:order-3 lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[15vh] md:min-h-[20vh] lg:min-h-[18vh]", //"lg:col-span-3 lg:raw-span-3 md:col-span-3 md:row-span-3" added -order-1
@@ -168,28 +170,30 @@ export const gridItems = [
 
   {
     id: 4,
-    title: "Github Explorer",
-    description: "React | Axios | Semantic UI | React-router-dom | PropTypes",
-    explanationList: ["Intégration interactive, dynamique et responsive pour offrir une expérience utilisateur optimale sur les appareils mobiles et les ordinateurs de bureau.",
+    title: "Github Explorer 🔎",
+    description: "🛠️	Technologies Utilisées : React | Axios | Semantic UI | React-router-dom | PropTypes",
+    explanationList: ["🎙️ Description : Github Explorer permet de rechercher et d’explorer les dépôts GitHub..",
     "",
     "🚧 Défi : Développer une interface utilisateur responsive.",
     "✅ J'ai utilisé Semantic UI et testé l'application sur différents appareils et résolutions pour m'assurer qu'elle s'adapte correctement à toutes les tailles d'écran.",
     "",
-    "",
     "🚧 Défi : Gérer efficacement l'affichage d'un grand nombre de résultats de l'API GitHub tout en maintenant de bonnes performances et une expérience utilisateur fluide.",
     "",
-    "✅ Requêtes API dynamiques : J'ai configuré les requêtes Axios pour inclure les paramètres de pagination (page et per_page) lors des appels à l'API GitHub, permettant de récupérer les données appropriées pour chaque page.",
-    "✅ Optimisation des performances : J'ai utilisé useEffect pour déclencher de nouvelles requêtes API uniquement lorsque la page actuelle change, évitant ainsi des appels API inutiles.",
-    "✅ Gestion du chargement : J'ai implémenté un indicateur de chargement pour informer l'utilisateur lorsque de nouvelles données sont en cours de récupération.",
-    "✅ Gestion des erreurs : J'ai mis en place un système de gestion des erreurs pour afficher des messages appropriés en cas de problème avec l'API.",
+    " ✅ Requêtes API dynamiques : J'ai configuré les requêtes Axios pour inclure les paramètres de pagination (page et per_page) lors des appels à l'API GitHub, permettant de récupérer les données appropriées pour chaque page.",
     "",
+    " ✅ Optimisation des performances : J'ai utilisé useEffect pour déclencher de nouvelles requêtes API uniquement lorsque la page actuelle change, évitant ainsi des appels API inutiles.",
+    "",
+    " ✅ Gestion du chargement : J'ai implémenté un indicateur de chargement pour informer l'utilisateur lorsque de nouvelles données sont en cours de récupération.",
+    "",
+    " ✅ Gestion des erreurs : J'ai mis en place un système de gestion des erreurs pour afficher des messages appropriés en cas de problème avec l'API.",
     "",
     "🚧 Défi : Valider les données provenant des utilisateurs et du serveur pour éviter les erreurs et les comportements inattendus.",
     "✅ J'ai utilisé PropTypes pour valider les types de données dans les composants React et j'ai mis en place des validations supplémentaires côté serveur pour garantir l'intégrité des données.",
     "",
+    "🔒 La sécurité de l'application contre les attaques XSS (Cross Site Scripting) est garantie grâce aux techniques de validation et d'échappement des données fournies par React.",
+    "🔒 Côté serveur, c’est l’API de Github qui se charge de valider l’intégrité des données reçues et empêcher l'injection de scripts malveillants.",
     "",
-    "🚨 Défi : Assurer la sécurité de l'application contre les attaques XSS (Cross Site Scripting). 🚨",
-    "🔒 Solution : J'ai utilisé des techniques de validation et d'échappement des données à la fois du côté client et du côté serveur. J'ai également mis en place des politiques de sécurité strictes pour empêcher l'injection de scripts malveillants.",
+    "🎯 Résultat Obtenu : Interface dynamique et responsive. Les utilisateurs peuvent rechercher des dépôts, afficher les informations essentielles et accéder directement aux dépôts sur GitHub. La pagination permet de gérer efficacement un grand nombre de résultats."
 
     ],
     className: "order-4 lg:order-5 lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[17vh] md:min-h-[20vh] lg:min-h-[27vh]",// lg:raw-span-3 md:col-span-3 md:row-span-2", added order-4 lg:order-5
@@ -206,31 +210,31 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Shoes-Shop & BackOffice",
-    description: "PHP | MySQL | Apache | Singleton | Active Record | Bootstrap",
+    title: "Shoes-Shop & BackOffice 👠",
+    description: "🛠️	Technologies Utilisées : PHP | MySQL | Apache | Singleton | Active Record | Bootstrap",
     explanationList: [ " ",
-    "Intégration de l'interface utilisateur d'un site e-commerce de vente de chaussures.",
+    "🎙️ Description : Site e-commerce de vente de chaussures & BackOffice.",
     " ",
-    "➡️ Navigation principale :",
+    "⚓ Navigation principale :",
     "Accueil | Catégories | Types de produits | Marques | Catalogue",
-    "Page d'accueil avec 5 catégories mises en avant, Page du détail d'un produit, Page des produits + pagination pour chaque catégorie / type / marque.",
+    "🏠 Page d'accueil avec 5 catégories mises en avant, Page du détail d'un produit, Page des produits + pagination pour chaque catégorie / type / marque.",
     " ",
-    "➡️ BackOffice :",
+    "🏭 BackOffice :",
     "Gestion des catégories / produits / types / marques / catégories présentées en page d'accueil",
     " ",
     "🚧 Défi : Implémenter une architecture MVC pour un projet e-commerce.",
     "✅ J'ai mis en place une structure modulaire avec des classes abstraites et l'utilisation de namespaces pour une meilleure organisation du code.",
     " ",
-    "🚨 Défi : Assurer la protection des informations sensibles des utilisateurs. 🚨",
+    "🚨 Défi : Assurer la protection des informations sensibles des utilisateurs.",
     "🔒 Solution : J'ai implémenté un système d'encryptage des données utilisateur et mis en place des jetons de synchronisation à usage unique, dont l’accès est protégé par CORS, pour sécuriser les méthodes d'écriture de données.",
     " ",
-    "🚨 Défi : Mettre en place un système d'authentification et de gestion des permissions. 🚨",
+    "🚨 Défi : Mettre en place un système d'authentification et de gestion des permissions.",
     "🔒 Solution : J'ai développé un système de rôles et de permissions, en utilisant des sessions sécurisées et en implémentant des contrôles d'accès sur chaque route sensible.",
     " ",
-    "🚨 Défi : Sécuriser l'application contre les injections SQL, XSS et CSRF. 🚨",
+    "🚨 Défi : Sécuriser l'application contre les injections SQL, XSS et CSRF.",
     "🔒 Solution : J'ai mis en place des pratiques de codage sécurisé, notamment l'utilisation de requêtes préparées, l'échappement des données utilisateur et l'implémentation de tokens CSRF.",
     " ",
-    "Résultat :  j'ai amélioré mes compétences en développement PHP, en architecture logicielle et en sécurité web."],
+    "🎯 Résultat : Navigation facile entre les catégories, les types de produits et les marques. Le BackOffice offre une gestion efficace des données. Les mesures de sécurité mises en place, telles que le hachage des données et la gestion des permissions, ont renforcé la fiabilité de l’application. De plus, j'ai amélioré mes compétences en développement PHP, en architecture logicielle et en sécurité web."],
     className: "order-5 lg:order-4 md:col-span-3 md:row-span-2", //"md:col-span-3 md:row-span-2 lg:raw-span-2 lg:col-span-2", added order-5 lg:order-4 
     imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 w-32 lg:right-10 xl:right-1 xl:-bottom-1 h-auto max-h-15vh", // bottom-0
     titleClassName: "text-md md:text-lg lg:text-2xl justify-center md:justify-start ",
