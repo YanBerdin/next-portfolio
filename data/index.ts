@@ -117,7 +117,7 @@ export const gridItems = [
       "🚧 Défi : Assurer la validation des données provenant des utilisateurs et du serveur pour éviter les erreurs et les comportements inattendus.",
       "✅ Utilisation de PropTypes pour valider les types de données dans les composants et mis en place une validation pour garantir l'intégrité des données.",
       " ",
-      "🚨 Défi : Protéger l'application contre diverses vulnérabilités de sécurité.",
+      "🚧 Défi : Protéger l'application contre diverses vulnérabilités de sécurité.",
       " 🔒 Protection contre les attaques XSS par une double validation des données (côté client et serveur) et interdiction du stockage de Password et Login en clair dans le state.",
       " 🔒 Utilisation de tokens de synchronisation, aléatoires et à usage unique, pour sécuriser les formulaires et les méthodes d'écriture de données.",
       " 🔒 Configuration de CORS pour contrôler l'accès aux ressources.",
@@ -140,7 +140,7 @@ export const gridItems = [
 
   {
       id: 2,
-      title: "🏗️ Réalisations",
+      title: "Réalisations 🏗️",
       description: "",
       explanation: "",
       className: "order-first lg:col-span-2 md:col-span-3 md:row-span-2 h-auto min-h-[10vh] md:min-h-[15vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3 " added order-first
@@ -155,7 +155,7 @@ export const gridItems = [
 
   {
     id: 3,
-    title: "🧰 Dev Tools", //  stack 
+    title: "Dev Tools 🧰", //  stack 
     description: "",
     explanation: "",
     className: "-order-1 lg:order-3 lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[15vh] md:min-h-[20vh] lg:min-h-[18vh]", //"lg:col-span-3 lg:raw-span-3 md:col-span-3 md:row-span-3" added -order-1
@@ -217,21 +217,22 @@ export const gridItems = [
     " ",
     "⚓ Navigation principale :",
     "Accueil | Catégories | Types de produits | Marques | Catalogue",
+    " ",
     "🏠 Page d'accueil avec 5 catégories mises en avant, Page du détail d'un produit, Page des produits + pagination pour chaque catégorie / type / marque.",
     " ",
     "🏭 BackOffice :",
-    "Gestion des catégories / produits / types / marques / catégories présentées en page d'accueil",
+    " Gestion des catégories / produits / types / marques / catégories présentées en page d'accueil",
     " ",
     "🚧 Défi : Implémenter une architecture MVC pour un projet e-commerce.",
     "✅ J'ai mis en place une structure modulaire avec des classes abstraites et l'utilisation de namespaces pour une meilleure organisation du code.",
     " ",
-    "🚨 Défi : Assurer la protection des informations sensibles des utilisateurs.",
+    "🚧 Défi : Assurer la protection des informations sensibles des utilisateurs.",
     "🔒 Solution : J'ai implémenté un système d'encryptage des données utilisateur et mis en place des jetons de synchronisation à usage unique, dont l’accès est protégé par CORS, pour sécuriser les méthodes d'écriture de données.",
     " ",
-    "🚨 Défi : Mettre en place un système d'authentification et de gestion des permissions.",
+    "🚧 Défi : Mettre en place un système d'authentification et de gestion des permissions.",
     "🔒 Solution : J'ai développé un système de rôles et de permissions, en utilisant des sessions sécurisées et en implémentant des contrôles d'accès sur chaque route sensible.",
     " ",
-    "🚨 Défi : Sécuriser l'application contre les injections SQL, XSS et CSRF.",
+    "🚧 Défi : Sécuriser l'application contre les injections SQL, XSS et CSRF.",
     "🔒 Solution : J'ai mis en place des pratiques de codage sécurisé, notamment l'utilisation de requêtes préparées, l'échappement des données utilisateur et l'implémentation de tokens CSRF.",
     " ",
     "🎯 Résultat : Navigation facile entre les catégories, les types de produits et les marques. Le BackOffice offre une gestion efficace des données. Les mesures de sécurité mises en place ont renforcé la fiabilité de l’application. De plus, j'ai amélioré mes compétences en développement PHP, en architecture logicielle et en sécurité web."],

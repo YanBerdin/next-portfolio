@@ -61,9 +61,9 @@ export const BentoGridItem = ({
     height?: number;
     alt?: string;
 }) => {
-    const leftLists = ["React.js", "Next.js", "Express", "Node.js"];
-    const rightLists = ["Javascript", "Typescript", "Svelte", "Redux"];
-    const centerLists = ["PHP", "SQL", "Laravel", "Tailwind"];
+    const leftList = ["React.js", "Next.js", "Express", "Node.js"];
+    const rightList = ["Javascript", "Typescript", "Redux", "Tailwind"];
+    const centerList = ["PHP", "SQL", "MariaDB", "Laravel"];
 
 
     const [copied, setCopied] = useState(false);
@@ -169,10 +169,10 @@ export const BentoGridItem = ({
                         <div className="flex gap-1 lg:gap-3 w-fit absolute right-3 lg:mr-2" aria-haspopup="true">
                             {/* tech stack lists */}
                             <div className="flex flex-col gap-1 md:gap-2">
-                                {leftLists.map((item, i) => (
+                                {leftList.map((item, i) => (
                                     <span
                                         key={i}
-                                        className="py-1 px-2 text-xs opacity-50 
+                                        className="py-1 px-2 text-sm opacity-50 
                     lg:opacity-100 rounded-xs text-center bg-[#10132E]" // lg:py-2 lg:px-3 
                                     > {/* rounded-lg */}
                                         {item}
@@ -183,10 +183,10 @@ export const BentoGridItem = ({
 
                             <div className="flex flex-col gap-1 md:gap-2">
                                 <span className=" py-1 px-2  rounded-sm text-center bg-[#10132E]"></span>
-                                {rightLists.map((item, i) => (
+                                {rightList.map((item, i) => (
                                     <span
                                         key={i}
-                                        className=" py-1 px-1 text-xs opacity-50 
+                                        className=" py-1 px-1 text-sm opacity-50 
                     lg:opacity-100 rounded-xs text-center bg-[#10132E]"
                                     >
                                         {item}
@@ -195,10 +195,10 @@ export const BentoGridItem = ({
                             </div>
 
                             <div className="flex flex-col gap-1 md:gap-2">
-                                {centerLists.map((item, i) => (
+                                {centerList.map((item, i) => (
                                     <span
                                         key={i}
-                                        className="py-1 px-1 text-xs opacity-50 
+                                        className="py-1 px-1 text-sm opacity-50 
                     lg:opacity-100 rounded-xs text-center bg-[#10132E]" // lg:py-2 lg:px-3 
                                     > {/* rounded-lg */}
                                         {item}
