@@ -128,7 +128,7 @@ export const BentoGridItem = ({
                             alt={alt || ""}
                             width={width}
                             height={height}
-                            className="object-cover object-center max-w-[150px] lg:max-w-[180px] xl:max-w-[250px]"
+                            className="object-cover max-w-[150px] lg:max-w-[180px] xl:max-w-[250px]"
                             loading="lazy"
                         /> //  w-full h-full
                     )}
