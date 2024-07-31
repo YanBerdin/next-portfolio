@@ -1,2 +1,3 @@
 userAgent: *
+Disallow:
 Sitemap: https://www.yanberdin.com/sitemap.xml
