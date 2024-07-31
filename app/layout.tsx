@@ -27,6 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
+      {/* Pour conserver votre statut de propriétaire confirmé, ne supprimez pas la balise Meta, même une fois la validation effectuée. */}
+      <meta name="google-site-verification" content="WfxuUOst7rjSzsaVH9-W1Dx999cD3iR16wqwHGjSLb4" />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

@@ -1,4 +1,5 @@
 userAgent: *
 Allow: /
 Disallow: /private/
+
 Sitemap: https://www.yanberdin.com/sitemap.xml
