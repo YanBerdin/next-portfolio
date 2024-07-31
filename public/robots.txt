@@ -1,0 +1,2 @@
+userAgent: *
+Sitemap: https://www.yanberdin.com/sitemap.xml

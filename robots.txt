@@ -1,5 +1,0 @@
-userAgent: *
-allow: /
-disallow: /private/
-
-Sitemap: https://www.yanberdin.com/sitemap-file.xml
