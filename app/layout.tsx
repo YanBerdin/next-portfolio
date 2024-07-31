@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Yan's Portfolio",
-  description: "Fort d'une récente reconversion en développement web, mon parcours professionnel s'est enrichi d'une expertise technique en conception et sécurité web, acquise en téléprésentiel auprès de l'école O'clock.",
+  description: "Fort d'une formation Fullstack de niveau 5 (Bac+2) et d'une expérience pratique acquise à travers plusieurs projets, j'ai réorienté ma carrière du e-commerce vers le développement web...",
   metadataBase: new URL('https://yanberdin.com'),
   alternates: {
     canonical: '/',
