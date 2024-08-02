@@ -183,6 +183,8 @@ export const gridItems = [
     "",
     " ✅ Optimisation des performances : J'ai utilisé useEffect pour déclencher de nouvelles requêtes API uniquement lorsque la page actuelle change, évitant ainsi des appels API inutiles.",
     "",
+    " ✅ Pagination : J'ai mis en place un système de pagination pour gérer efficacement un grand nombre de résultats..",
+    "",
     " ✅ Gestion du chargement : J'ai implémenté un indicateur de chargement pour informer l'utilisateur lorsque de nouvelles données sont en cours de récupération.",
     "",
     " ✅ Gestion des erreurs : J'ai mis en place un système de gestion des erreurs pour afficher des messages appropriés en cas de problème avec l'API.",
@@ -193,7 +195,7 @@ export const gridItems = [
     "🔒 La sécurité de l'application contre les attaques XSS (Cross Site Scripting) est garantie grâce aux techniques de validation et d'échappement des données fournies par React.",
     "🔒 Côté serveur, c’est l’API de Github qui se charge de valider l’intégrité des données reçues et empêcher l'injection de scripts malveillants.",
     "",
-    "🎯 Résultat : Interface dynamique et responsive. Les utilisateurs peuvent rechercher des dépôts, afficher les informations essentielles et accéder directement aux dépôts sur GitHub. La pagination permet de gérer efficacement un grand nombre de résultats."
+    "🎯 Résultat : Interface dynamique et responsive. Les utilisateurs peuvent rechercher des dépôts, afficher les informations essentielles et accéder directement aux dépôts sur GitHub."
 
     ],
     className: "order-4 lg:order-5 lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[17vh] md:min-h-[20vh] lg:min-h-[27vh]",// lg:raw-span-3 md:col-span-3 md:row-span-2", added order-4 lg:order-5
