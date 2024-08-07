@@ -1,3 +1,4 @@
+/*
 "use client";
 
 import React, { useEffect, useRef } from 'react';
@@ -149,3 +150,4 @@ const Timeline = () => {
 };
 
 export default Timeline;
+*/
