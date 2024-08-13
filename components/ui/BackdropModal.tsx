@@ -2,7 +2,7 @@ import React from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 
 import { gridItems } from "../../data/index";
-import { BackgroundGradient } from "./background-gradient";
+import { BackgroundGradient } from "./Background-gradient";
 import { DemoIcon, GithubIcon2 } from "./Icon";
 //import { ButtonsCard } from "./tailwindcss-buttons";
 
