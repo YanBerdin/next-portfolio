@@ -8,14 +8,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Yan's Portfolio",
   description: "Fort d'une formation Fullstack de niveau 5 (Bac+2) et d'une expérience pratique acquise à travers plusieurs projets, j'ai réorienté ma carrière du e-commerce vers le développement web...",
-  metadataBase: new URL('https://yanberdin.com'),
+  metadataBase: new URL('https://www.yanberdin.com'),
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.yanberdin.com/',
   },
   referrer: 'origin-when-cross-origin',
   robots: 'index, follow',
   keywords: ['Next.js', 'React', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'Yan Berdin', 'Portfolio'],
-  authors: [{ name: 'Yan Berdin', url: 'https://yanberdin.com' }],
+  authors: [{ name: 'Yan Berdin', url: 'https://www.yanberdin.com' }],
   creator: 'Yan Berdin',
   publisher: 'Yan Berdin',
 };

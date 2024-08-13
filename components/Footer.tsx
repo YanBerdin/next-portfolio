@@ -53,6 +53,7 @@ const Footer = () => {
                 rel={info.rel}
                 className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-50 bg-black-200 rounded-lg border border-black-300  hover:scale-95 hover:brightness-150"
                 title={info.title}
+                aria-label={info.alt}
               >
                 <BlurImage
                   src={info.img}
@@ -62,7 +63,7 @@ const Footer = () => {
                   loading="lazy"
                   // fetchPriority="high"
                   // rel="preload"
-                  aria-hidden="true"
+                  // aria-hidden="true"
                 />
               </Link>
             ))}

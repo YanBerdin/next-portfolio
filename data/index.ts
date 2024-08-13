@@ -140,7 +140,7 @@ export const gridItems = [
 
   {
       id: 2,
-      title: "Réalisations 🏗️",
+      title: "Réalisations",
       description: "",
       explanation: "",
       className: "order-first lg:col-span-2 md:col-span-3 md:row-span-2 h-auto min-h-[10vh] md:min-h-[15vh]", //"lg:col-span-3 md:col-span-3 md:row-span-2 lg::row-span-3 " added order-first
@@ -155,7 +155,7 @@ export const gridItems = [
 
   {
     id: 3,
-    title: "Dev Tools 🧰", //  stack 
+    title: "Dev Tools", //  stack 
     description: "",
     explanation: "",
     className: "-order-1 lg:order-3 lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[15vh] md:min-h-[20vh] lg:min-h-[18vh]", //"lg:col-span-3 lg:raw-span-3 md:col-span-3 md:row-span-3" added -order-1
