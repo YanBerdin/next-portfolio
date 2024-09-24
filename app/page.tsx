@@ -2,7 +2,7 @@
 import { FloatingNav } from "../components/ui/FloatingNavbar";
 import { Hero } from "../components/Hero";
 import { Skills } from "../components/Skills";
-import { navItems } from "../data"; // "@/data"
+import { navItems } from "@/data/index"; // "@/data"
 import { Contact } from "../components/Contact";
 import { About } from "../components/About";
 // import { Cursor } from "../components/ui/Cursor";
@@ -10,6 +10,8 @@ import { Grid } from "../components/Grid";
 // import Timeline from "@/components/Timeline";
 import TimelineRefacto from "@/components/TimelineRefacto";
 import Footer from "@/components/Footer";
+import Projects from "@/components/Projects";
+import { ProjectsRefactorButton } from "@/components/ui/ProjectsRefactorButton";
 
 export default function Home() {
   return (
@@ -40,6 +42,8 @@ export default function Home() {
           <Contact />
         </div>
         <div id="footer" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "" }}>
+          <ProjectsRefactorButton />
+          <Projects />
           <Footer />
         </div>
       </div>

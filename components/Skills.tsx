@@ -1,5 +1,5 @@
 import React from "react";
-import { mySkills } from "@/data";
+import { mySkills } from "@/data/index";
 import { Button } from "./ui/MovingBorders";
 import { Check } from "lucide-react";
 import Image from "next/image";

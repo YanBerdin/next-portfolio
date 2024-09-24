@@ -1,92 +1,46 @@
-/*
 "use client";
 
-import Image from 'next/image'
-import pilot from "../public/pilot.png";
+import { useState } from "react";
+import ProjectCard from "./ui/ProjectCard";
+import ProjectsNavbar from "./ui/ProjectsNavbar";
+import { projects as projectsData } from "../data";
+import { Category } from "../types";
 
-export const Projects = () => {
-  const projects = [
-    {
-      title: 'WF DESIGN & BUILD',
-      description: 'Description du projet WF DESIGN & BUILD.',
-      image: '/path/to/image.jpg',
-      codeLink: 'https://github.com/user/project',
-      liveLink: 'https://www.project-live-link.com'
-    },
-    // Ajoutez plus de projets ici...
-  ]
+const Projects = () => {
+  const [projects, setProjects] = useState(projectsData);
+  const [active, setActive] = useState("all");
+
+  const handlerFilterCategory = (category: Category | "all") => {
+    if (category === "all") {
+      setProjects(projectsData);
+      setActive(category);
+      return;
+    }
+
+    const newArray = projectsData.filter((project) =>
+      project.category.includes(category)
+    );
+    setProjects(newArray);
+    setActive(category);
+  };
 
   return (
-    <>
-      <section>
-        <h2>My Recent Work</h2>
-        {projects.map((project, index) => (
-          <div key={index} className="project relative">
-            <div className="project-image w-full h-full">
-              <Image src={pilot} alt={project.title} width={500} height={300} />
-            </div>
-            <div className="project-details absolute w-full h-full flex flex-col justify-center align-center opacity-0" style={{ background: 'rgba(0, 0, 0, 0.5)' }}>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <a href={project.codeLink}>Code</a>
-              <a href={project.liveLink}>View Project</a>
-            </div>
+    <div className="px-5 py-2 overflow-y-scroll custom-height">
+      <ProjectsNavbar
+        handlerFilterCategory={handlerFilterCategory}
+        active={active}
+      />
+
+      <div className="relative grid grid-cols-12 gap-4 my-3" >
+        {projects.map((project) => (
+          // eslint-disable-next-line react/jsx-key
+          <div className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200" key={project.name} >
+            <ProjectCard project={project} />
           </div>
         ))}
-        <a href="/archive">See more</a>
-      </section>
+      </div>
+    </div>
+  );
+};
 
-      <section className="projets pb-2 m-0-auto w-full">
-        <h2>Projets récents</h2>
-        <div className="projets-grid grid-col-1">
-          <article className="grid-item item-1 relative grid-col-1 span-2">
-            <Image src={pilot} alt="" />
-            <div className="item-description absolute">
-              <h3>Titre du projet 1</h3>
-              <p>HTML, CSS & JS</p>
-            </div>
-          </article>
-          <article className="grid-item item-2 relative grid-col-3 span-2">
-            <Image src={pilot} alt="" />
-            <div className="item-description absolute">
-              <h3>Titre du projet 2</h3>
-              <p>HTML, CSS & JS</p>
-            </div>
-          </article>
-          <article className="grid-item item-3 relative">
-            <Image src={pilot} alt="" />
-            <div className="item-description absolute">
-              <h3>Titre du projet 3</h3>
-              <p>HTML, CSS & JS</p>
-            </div>
-          </article>
-          <article className="grid-item item-4 relative">
-            <Image src={pilot} alt="" />
-            <div className="item-description absolute">
-              <h3>Titre du projet 4</h3>
-              <p>HTML, CSS & JS</p>
-            </div>
-          </article>
-          <article className="grid-item item-5 relative">
-            <Image src={pilot} alt="" />
-            <div className="item-description absolute">
-              <h3>Titre du projet 5</h3>
-              <p>HTML, CSS & JS</p>
-            </div>
-          </article>
-          <article className="grid-item item-6 relative">
-            <Image src={pilot} alt="" />
-            <div className="item-description absolute">
-              <h3>Titre du projet 6</h3>
-              <p>HTML, CSS & JS</p>
-            </div>
-          </article>
-        </div>
-      </section>
-    </>
-
-  )
-
-}
-  
-*/
+export default Projects;

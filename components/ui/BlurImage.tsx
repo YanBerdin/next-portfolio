@@ -21,6 +21,7 @@ function BlurImage({ src, ...props }: BlurImageProps) {
       src={src}
       alt='Blur Image'
       //layout="fill"
+      fill
       objectFit="cover"
       className={cn(
         'duration-700 ease-in-out',

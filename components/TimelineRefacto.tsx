@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 // import { FaLocationArrow } from 'react-icons/fa';
 import Image from 'next/image';
-import { timelineData } from '@/data';
+import { timelineData } from '@/data/index';
 import { MagicButton } from './MagicButton';
 import { ResumeIcon } from './ui/Icon';
 
