@@ -11,7 +11,7 @@ import { Grid } from "../components/Grid";
 import TimelineRefacto from "@/components/TimelineRefacto";
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
-import { ProjectsRefactorButton } from "@/components/ui/ProjectsRefactorButton";
+import ProjectsRefactor from "@/components/ProjectsRefactor";
 
 export default function Home() {
   return (
@@ -42,7 +42,7 @@ export default function Home() {
           <Contact />
         </div>
         <div id="footer" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "" }}>
-          <ProjectsRefactorButton />
+          <ProjectsRefactor />
           <Projects />
           <Footer />
         </div>

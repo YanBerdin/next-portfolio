@@ -19,7 +19,7 @@ const Sidebar = () => {
         className="mx-auto border rounded-full "
         height={128}
         width={128}
-        //layout="intrinsic"
+        layout="intrinsic"
         quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">

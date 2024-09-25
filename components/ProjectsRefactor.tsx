@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { ProjectsRefactorButton } from "@/components/ui/ProjectsRefactorButton"
@@ -23,7 +25,7 @@ const mockRepositories: Repository[] = [
     {
         id: 1,
         title: 'Portfolio',
-        image: '@/github-explorer-xs.jpeg',
+        image: '/github-explorer-xs.jpeg',
         codeLink: '',
         websiteLink: '',
         detailsLink: '',
@@ -32,7 +34,7 @@ const mockRepositories: Repository[] = [
     {
         id: 2,
         title: 'Portfolio',
-        image: '@/github-explorer-xs.jpeg',
+        image: '/github-explorer-xs.jpeg',
         codeLink: '',
         websiteLink: '',
         detailsLink: '',
@@ -41,7 +43,7 @@ const mockRepositories: Repository[] = [
     {
         id: 3,
         title: 'Portfolio',
-        image: '@/github-explorer-xs.jpeg',
+        image: '/github-explorer-xs.jpeg',
         codeLink: '',
         websiteLink: '',
         detailsLink: '',
@@ -50,7 +52,7 @@ const mockRepositories: Repository[] = [
     {
         id: 4,
         title: 'Portfolio',
-        image: '@/github-explorer-xs.jpeg',
+        image: '/github-explorer-xs.jpeg',
         codeLink: '',
         websiteLink: '',
         detailsLink: '',
@@ -59,7 +61,7 @@ const mockRepositories: Repository[] = [
     {
         id: 5,
         title: 'Portfolio',
-        image: '@/github-explorer-xs.jpeg',
+        image: '/github-explorer-xs.jpeg',
         codeLink: '',
         websiteLink: '',
         detailsLink: '',
@@ -68,7 +70,7 @@ const mockRepositories: Repository[] = [
     {
         id: 6,
         title: 'Portfolio',
-        image: '@/github-explorer-xs.jpeg',
+        image: '/github-explorer-xs.jpeg',
         codeLink: '',
         websiteLink: '',
         detailsLink: '',
@@ -96,7 +98,7 @@ export default function ProjectsRefactor() {
                     {technologies.map(tech => (
                         <li key={tech}>
                             <ProjectsRefactorButton
-                                className={`btn ${selectedTech === tech ? "btn-default" : "btn-outline"}`}
+                                variant={selectedTech === tech ? "default" : "outline"}
                                 onClick={() => setSelectedTech(tech)}
                             >
                                 {tech}
@@ -115,7 +117,7 @@ export default function ProjectsRefactor() {
                                 alt={repo.title}
                                 //layout="fill"
                                 fill
-                                objectFit="cover"
+                                //objectFit="cover"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className="space-x-4">
