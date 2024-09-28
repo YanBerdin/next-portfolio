@@ -17,7 +17,9 @@
     "@react-three/drei": "^9.106.0",
     "@react-three/fiber": "^8.16.7",
     "@tabler/icons-react": "^3.7.0",
+    "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
+    "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.12",
     "init": "^0.1.2",
@@ -40,6 +42,8 @@
     "three-globe": "^2.31.0"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/classnames": "^2.3.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

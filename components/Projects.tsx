@@ -1,4 +1,4 @@
-
+/*
 "use client";
 
 import { useState } from "react";
@@ -45,3 +45,4 @@ const Projects = () => {
 };
 
 export default Projects;
+*/

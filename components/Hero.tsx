@@ -50,7 +50,7 @@ export const Hero = () => {
                         // gradientClass="bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text"
                     />
                      */}
-                    <h1 className="md:tracking-wider my-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center"> {/*text-center */}
+                    <h1 className="md:tracking-wider my-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center">
                         Bienvenue, je suis Yan, développeur Php Javascript & React.js
                     </h1>
 

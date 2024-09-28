@@ -17,8 +17,8 @@ const Footer = () => {
             src="/footer-grid.svg"
             alt="grid"
             className="w-full opacity-50"
-            width="331"
-            height="156"
+            width={331}
+            height={156}
             loading="lazy"
             // priority={true}
             aria-hidden="true"

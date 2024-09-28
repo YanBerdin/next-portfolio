@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
+import cn from 'classnames'
 import Image from 'next/image'
 import { ProjectsRefactorButton } from "@/components/ui/ProjectsRefactorButton"
 //import { DemoIcon, GithubIcon2 } from "./ui/Icon";
@@ -25,7 +26,7 @@ const mockRepositories: Repository[] = [
     {
         id: 1,
         title: 'Portfolio',
-        image: '/github-explorer-xs.jpeg',
+        image: '/github-explorer.jpeg',
         codeLink: '',
         websiteLink: '',
         detailsLink: '',
@@ -78,7 +79,7 @@ const mockRepositories: Repository[] = [
     },
 ]
 
-
+// 
 export default function ProjectsRefactor() {
     const [selectedTech, setSelectedTech] = useState<Technology | null>(null)
     const [visibleRepos, setVisibleRepos] = useState(6)
@@ -110,14 +111,19 @@ export default function ProjectsRefactor() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredRepos.slice(0, visibleRepos).map(repo => (
-                    <div key={repo.id} className="bg-gray-800 rounded-lg overflow-hidden">
+                    <div key={repo.id} className="bg-gray-800 rounded-lg overflow-hidden  max-w-[300px]  mx-auto">
                         <div className="relative h-48 group">
                             <Image
                                 src={repo.image}
                                 alt={repo.title}
-                                //layout="fill"
-                                fill
+                                fill={true}
                                 //objectFit="cover"
+                                //width={500}
+                                //height={300}
+                                loading="lazy"
+                                className={cn(
+                                    'object-cover'
+                                  )}
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <div className="space-x-4">
