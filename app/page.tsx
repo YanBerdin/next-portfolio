@@ -12,7 +12,7 @@ import TimelineRefacto from "@/components/TimelineRefacto";
 import Footer from "@/components/Footer";
 //import Projects from "@/components/Projects";
 import ProjectsRefactor from "@/components/ProjectsRefactor";
-import  WeatherWidget  from "@/components/WeatherWidget";
+
 
 export default function Home() {
   return (
@@ -43,10 +43,10 @@ export default function Home() {
           <Contact />
         </div>
         <div id="footer" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "" }}>
-          
-          <WeatherWidget />
-          <ProjectsRefactor />
-         {/* <Projects /> */}
+
+          <div style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "40rem" }}><ProjectsRefactor /></div>
+
+          {/* <Projects /> */}
           <Footer />
         </div>
       </div>

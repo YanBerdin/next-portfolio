@@ -166,7 +166,7 @@ export const Repositories = [
     {
       id: 5,
       title: "Portfolio 📁",
-      description: "🛠️	Technologies Utilisées : Typescript | React | Next | Tailwind | Framer-Motion | Axios | PostCss | Aceternity | JS",
+      description: "🛠️	Technologies Utilisées : Typescript | React | Next | Tailwind | Framer-Motion | Axios | PostCss | Shadcn | Aceternity | JS",
       explanationList: [
         "🎙️ Description : Portfolio personnel pour présenter mes projets et compétences.",
         "",
@@ -177,7 +177,7 @@ export const Repositories = [
         "✅ J'ai ajouté des balises sémantiques et des attributs ARIA pour améliorer l'accessibilité et l'indexation par les moteurs de recherche.",
         "",
         "🚧 Défi : Créer une interface utilisateur intuitive et interactive.",
-        "✅ J'ai utilisé Framer Motion pour ajouter des animations fluides et interactives, améliorant ainsi l'expérience utilisateur.",
+        "✅ J'ai utilisé Framer Motion pour ajouter des animations fluides et interactives.",
         "",
         "🎯 Résultat : Portfolio moderne, responsive et interactif. Les visiteurs peuvent naviguer facilement entre les différentes sections et découvrir mes projets et compétences de manière intuitive."
       ],
@@ -191,7 +191,7 @@ export const Repositories = [
       spareImg: "/grid.svg",
       demoLink: "https://yanberdins-projects.vercel.app/",
       githubLink: "",
-      technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind', 'Typescript' , 'Framer-Motion' , 'Axios' , 'PostCss' , 'Aceternity'],
+      technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind', 'Typescript' , 'Framer-Motion' , 'Axios' , 'PostCss' , 'Aceternity', 'Shadcn'],
       },
    
     {
@@ -277,7 +277,7 @@ export const Repositories = [
     {
       id: 8,
       title: "Pokedex MVC 📚",
-      description: "🛠️ Technologies Utilisées : PHP | MySQL | Html | Css | Composer | AltoRouter | Bootstrap",
+      description: "🛠️ Technologies Utilisées Apache | PHP | MySQL | Html | Css | Composer | AltoRouter | Bootstrap",
       explanationList: [
           "🎙️ Description : Cette application est un Pokédex interactif développé à des fins éducatives.",
           " ",
@@ -310,7 +310,7 @@ export const Repositories = [
       spareImg: "",
       demoLink: "https://pokedex-demo-link.com",
       githubLink: "https://github.com/username/pokedex",
-      technologies: ['PHP', 'MySQL', 'Html', 'Css', 'Composer', 'AltoRouter', 'Bootstrap']
+      technologies: ['Apache', 'PHP', 'MySQL', 'Html', 'Css', 'Composer', 'AltoRouter', 'Bootstrap']
     },
 
     {
@@ -339,7 +339,7 @@ export const Repositories = [
       className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
       imgClassName: "w-full h-full object-cover h-auto",
       titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-      img: "/AudioAPITextToSpeech.jpg",
+      img: "",
       alt: "illustration de l'application Audio API Text to Speech",
       width: 320,
       height: 200,
@@ -373,7 +373,7 @@ export const Repositories = [
       className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
       imgClassName: "w-full h-full object-cover h-auto",
       titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-      img: "/MixingTable.jpg",
+      img: "",
       alt: "illustration de l'application Table de Mixage Sonore",
       width: 320,
       height: 200,
@@ -424,7 +424,7 @@ export const Repositories = [
   },
 
   {
-    id: 10,
+    id: 12,
     title: "Task-Manager 📝",
     description: "🛠️ Technologies Utilisées : HTML | CSS | JS | Laravel | PHP | Eloquent | MySQL | Rest API",
     explanationList: [
