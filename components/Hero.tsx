@@ -4,14 +4,15 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { MagicButton } from "./MagicButton";
 // import { OrbitingCirclesLg } from "./ui/OrbitingCirclesLg";
+// import Title from "./ui/Title";
 
 export const Hero = () => {
     return (
         <section className="pb-20 pt-36">
             <div>
-                <Spotlight className="-top-10 -left-10 md:-left-32 md:-top-20 h-svh" fill="white" aria-hidden="true"/> {/** h-screen */}
-                <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" aria-hidden="true"/>
-                <Spotlight className="top-28 left-75 h-[80vh] w-[40vw]" fill="blue" aria-hidden="true"/>
+                <Spotlight className="-top-10 -left-10 md:-left-32 md:-top-20 h-svh" fill="white" aria-hidden="true" /> {/** h-screen */}
+                <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" aria-hidden="true" />
+                <Spotlight className="top-28 left-75 h-[80vh] w-[40vw]" fill="blue" aria-hidden="true" />
             </div>
 
             {/*
@@ -63,7 +64,9 @@ export const Hero = () => {
                         otherClasses="custom-class hover:opacity-90"
                         href="#projects"
                     />
+                    {/*<Title />*/}
                 </div>
+
                 {/* 
                 <div className="max-sm:hidden sm:min-w-[414px] sm:max-w-[450px]"> */}{/* max-sm:hidden  */}
                 {/* <OrbitingCirclesLg /> */}

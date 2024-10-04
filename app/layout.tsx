@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Yan's Portfolio",
-  description: "Fort d'une formation Fullstack de niveau 5 (Bac+2) et d'une expérience pratique acquise à travers plusieurs projets, j'ai réorienté ma carrière du e-commerce vers le développement web...",
+  description: "Fort d'une formation Fullstack et d'une expérience pratique acquise à travers plusieurs projets, j'ai réorienté ma carrière du e-commerce vers le développement web...",
   metadataBase: new URL('https://www.yanberdin.com'),
   alternates: {
     canonical: 'https://www.yanberdin.com/',

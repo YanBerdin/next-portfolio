@@ -1,3 +1,4 @@
+//! data from test with Projects.tsx
 //import { FunctionComponent } from "react";
 import { IconType } from "react-icons";
 export interface Service {
@@ -23,3 +24,5 @@ export interface IProject {
 }
 
 export type Category = "react" | "node" | "express" | "django" | "mongo";
+
+export type Technology = 'Html' | 'Css' | 'JS' | 'PHP' | 'Singleton' | 'Typescript' | 'React' | 'Next' | 'Laravel' | 'Symfony' | 'Node.js' | 'Tailwind' | 'Sql' | 'MariaDb' | 'Mysql' | 'Redis' | 'Firebase' | 'React Native' | 'DigitalOcean' | 'Heroku' | 'Vercel'

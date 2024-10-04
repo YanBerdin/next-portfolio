@@ -1,7 +1,8 @@
 import React from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 
-import { gridItems } from "../../data/index";
+// import { gridItems } from "../../data/index"; //TODO @/data/index
+import {Repositories} from "../../data/projectRefactoData";
 import { BackgroundGradient } from "./Background-gradient";
 import { DemoIcon, GithubIcon2 } from "./Icon";
 //import { ButtonsCard } from "./tailwindcss-buttons";
@@ -31,7 +32,8 @@ export default function BackdropModal({ id }: { id: number }) {
     setBackdrop(backdrop);
     setSize(size);
 
-    const item = gridItems.find(item => item.id === id);
+    // const item = gridItems.find(item => item.id === id);
+    const item = Repositories.find(item => item.id === id);
     if (item) {
       settitle(item.title);
       setDescription(item.description);
@@ -59,10 +61,10 @@ export default function BackdropModal({ id }: { id: number }) {
             variant="flat"
             color="warning"
             onPress={() => handleOpen(b, id, size)} // Pass both 'b' and 'id' as parameters
-            className="capitalize text-sm"
+            className="capitalize text-xs md:text-sm px-1"
           >
             {/*{b}*/}
-            En savoir +
+            Details
           </Button>
         ))}
       </div>
@@ -86,7 +88,7 @@ export default function BackdropModal({ id }: { id: number }) {
               <ModalHeader className="flex flex-col py-4 px-4">
                 <h2 className="text-xl">{title}</h2>
               </ModalHeader>
-              <ModalBody className="max-h-[70vh] max-lg:overflow-y-auto gap-1 scrollbar max-sm:px-3 max-sm:text-sm">
+              <ModalBody className="max-h-[70vh] overflow-y-auto gap-1 scrollbar max-sm:px-3 max-sm:text-sm">
                 <h3 className="mb-2 text-md">{description}</h3>
                 {explanationList.map((explanation, index) => (
                   <p className="text-xs md:text-sm lg:text-base" key={index}>{explanation}</p>

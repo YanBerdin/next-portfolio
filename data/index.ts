@@ -136,6 +136,7 @@ export const gridItems = [
       spareImg: "",
       demoLink: "https://discotech-git-master-yanberdins-projects.vercel.app/",
       githubLink: "https://github.com/YanBerdin/discOtech",
+      technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind'],
   },
 
   {
@@ -151,6 +152,7 @@ export const gridItems = [
       width: 0,
       height: 0,
       spareImg: "",
+      technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind'],
   },
 
   {
@@ -166,6 +168,7 @@ export const gridItems = [
     width : 350,
     height: 200,
     spareImg: "",
+    technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind'],
   },
 
   {

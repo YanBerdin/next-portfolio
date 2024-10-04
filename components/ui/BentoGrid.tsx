@@ -49,7 +49,7 @@ export const BentoGridItem = ({
     height,
     alt,
 }: {
-    className?: string;
+    className?: string; //TODO check 
     id: number;
     title?: string | React.ReactNode;
     description?: string | React.ReactNode;

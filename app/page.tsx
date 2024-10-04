@@ -43,6 +43,7 @@ export default function Home() {
           <Contact />
         </div>
         <div id="footer" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "" }}>
+          
           <WeatherWidget />
           <ProjectsRefactor />
          {/* <Projects /> */}
