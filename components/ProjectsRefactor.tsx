@@ -34,69 +34,9 @@ interface Repository {
     technologies: string[]
 }
 
-const technologies: Technology[] = ['Html', 'Css', 'JS', 'PHP', 'Singleton', 'Typescript', 'React', 'Next', 'Laravel', 'Symfony', 'Node.js', 'Tailwind', 'Shadcn', 'MySQL', 'Heroku', 'Vercel', 'Aceternity', 'PostCss', 'Framer-Motion', 'Sass', 'DOMPurify', 'Axios', 'Composer', 'Bootstrap', 'Apache', 'Active Record', 'Eloquent', 'Semantic UI' , 'PropTypes', 'Rest API', 'Redux', 'AltoRouter', 'Styled-components', 'Vite']
+const technologies: Technology[] = ['Html', 'Css', 'JS', 'PHP', 'Singleton', 'Typescript', 'React', 'Next', 'Laravel', 'Symfony', 'Node.js', 'Tailwind', 'Shadcn', 'MySQL', 'Heroku', 'Vercel', 'Aceternity', 'PostCss', 'Framer-Motion', 'Sass', 'DOMPurify', 'Axios', 'Composer', 'Bootstrap', 'Apache', 'Active Record', 'Eloquent', 'Semantic UI', 'PropTypes', 'Rest API', 'Redux', 'AltoRouter', 'Styled-components', 'Vite']
 
-// Mock data for repositories
 
-/*
-const mockRepositories: Repository[] = [
-    // Add mock data here
-    {
-        id: 1,
-        title: 'Portfolio',
-        image: '/DiscotechV2.jpg',
-        codeLink: '',
-        websiteLink: '',
-        //detailsLink: '',
-        technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind'],
-    },
-    {
-        id: 2,
-        title: 'Portfolio',
-        image: '/github-explorer.jpeg',
-        codeLink: '',
-        websiteLink: '',
-        //detailsLink: '',
-        technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind'],
-    },
-    {
-        id: 3,
-        title: 'Portfolio',
-        image: '/github-explorer.jpeg',
-        codeLink: '',
-        websiteLink: '',
-        //detailsLink: '',
-        technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind'],
-    },
-    {
-        id: 4,
-        title: 'Portfolio',
-        image: '/github-explorer.jpeg',
-        codeLink: '',
-        websiteLink: '',
-        //detailsLink: '',
-        technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind'],
-    },
-    {
-        id: 5,
-        title: 'Portfolio',
-        image: '/github-explorer.jpeg',
-        codeLink: '',
-        websiteLink: '',
-        //detailsLink: '',
-        technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind'],
-    },
-    {
-        id: 6,
-        title: 'Portfolio',
-        image: '/github-explorer.jpeg',
-        codeLink: '',
-        websiteLink: '',
-        //detailsLink: '',
-        technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind'],
-    },
-]
-*/
 const myRepositories: Repository[] = Repositories.map(repo => ({
     ...repo,
     technologies: repo.technologies ?? []
@@ -121,7 +61,7 @@ export default function ProjectsRefactor() {
     }
 
     return (
-            <div className="min-h-screen bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl rounded-lg text-white p-8">
+            <div className="min-h-screen w-10/12 bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl rounded-lg text-white p-8 mx-auto">
 
                 <nav className="mb-8">
                     <ul className="flex flex-wrap gap-2">
@@ -140,15 +80,15 @@ export default function ProjectsRefactor() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                     {filteredRepos.slice(0, visibleRepos).map(repo => (
-                        <div key={repo.id} className="bg-gray-800 rounded-lg overflow-hidden max-w-[280px] md:max-w-[300px] lg:max-w-[360px] mx-auto">
+                        <div key={repo.id} className="bg-gray-800 rounded-lg overflow-hidden min-w-[200px] max-w-[280px] lg:max-w-[300px] mx-auto">
                             <div className="relative h-48 md:h-64 lg:h-72 group">
                                 <Image
                                     src={repo.img}
                                     alt={repo.title}
-                                    fill={true}
+                                    fill={false}
                                     //objectFit="cover"
-                                    //width={500}
-                                    //height={300}
+                                    width={540}
+                                    height={420}
                                     loading="lazy"
                                     className={cn(
                                         'object-cover max-sm:p-2 p-3 shrink-1'

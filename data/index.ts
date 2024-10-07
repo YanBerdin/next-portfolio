@@ -129,7 +129,7 @@ export const gridItems = [
       className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",//"lg:col-span-2 lg:row-span-3 md:col-span-6 md:row-span-3", // change lg:col-span-3 md:row-span-4 order-3 lg:order-2
       imgClassName: "w-full h-full object-cover h-auto", // "h-auto object-cover",
       titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-      img: "/DiscotechV2.jpg", // "/b1.svg",
+      img: "/gridItems-assets/DiscotechV2.jpg", // "/b1.svg",
       alt:"illustrations des styles musicaux sur fond de palmiers au crépuscule",
       width: 320,
       height: 200,
@@ -204,11 +204,11 @@ export const gridItems = [
     className: "order-4 lg:order-5 lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[17vh] md:min-h-[20vh] lg:min-h-[27vh]",// lg:raw-span-3 md:col-span-3 md:row-span-2", added order-4 lg:order-5
     imgClassName: " absolute h-auto", // object-cover
     titleClassName: "text-md md:text-lg lg:text-2xl justify-start h-auto",
-    img: "/grid.svg",
+    img: "/gridItems-assets/grid.svg",
     alt: "Page d'acceuil avec grille d'affichage des repositories GitHub",
     width: 320,
     height: 200,
-    spareImg:"/codeEditorGithub.png",  // "/b4.svg",
+    spareImg:"/gridItems-assets/codeEditorGithub.png",  // "/b4.svg",
     demoLink:"https://new-react-github-explorer.vercel.app/",
     githubLink:"https://github.com/YanBerdin/create-react-github-explorer",
   },
@@ -244,11 +244,11 @@ export const gridItems = [
     className: "order-5 lg:order-4 md:col-span-3 md:row-span-2", //"md:col-span-3 md:row-span-2 lg:raw-span-2 lg:col-span-2", added order-5 lg:order-4 
     imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 w-32 lg:right-10 xl:right-1 xl:-bottom-1 h-auto max-h-15vh", // bottom-0
     titleClassName: "text-md md:text-lg lg:text-2xl justify-center md:justify-start ",
-    img: "/codeEditor-oshop-front1-s.png", // b5.svg
+    img: "/gridItems-assets/codeEditor-oshop-front1-s.png", // b5.svg
     alt:"page d'acceuil du site avec 3 chaussures en gros plan",
     width: 220,
     height: 100,
-    spareImg: "/grid.svg",
+    spareImg: "/gridItems-assets/grid.svg",
     demoLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php",
     githubLink: "https://github.com/YanBerdin/shoes-shop-frontoffice-php",
   },

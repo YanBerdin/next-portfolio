@@ -26,10 +26,10 @@ export const Repositories = [
         " ",
         "🎯 Résultat : Implémentation réussie des fonctionnalités utilisateur, sécurisation de l’application et optimisation pour le référencement et l’accessibilité. La gestion de l'état global avec Redux a permis de synchroniser efficacement les données entre les composants.",
       ],
-        className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",//"lg:col-span-2 lg:row-span-3 md:col-span-6 md:row-span-3", // change lg:col-span-3 md:row-span-4 order-3 lg:order-2
-        imgClassName: "w-full h-full object-cover h-auto", // "h-auto object-cover",
+        className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
+        imgClassName: "w-full h-full object-cover h-auto",
         titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-        img: "/projectRefactor-assets/DiscotechV2.jpg", // "/b1.svg",
+        img: "/projectRefactor-assets/discotech-676x526.png",
         alt:"illustrations des styles musicaux sur fond de palmiers au crépuscule",
         width: 320,
         height: 200,
@@ -38,7 +38,6 @@ export const Repositories = [
         githubLink: "https://github.com/YanBerdin/discOtech",
         technologies: ['Html', 'Css', 'JS', 'React', 'Redux', 'Axios', 'Interceptor', 'Rest API', 'PropTypes'],
     },
-  
   
     {
       id: 2,
@@ -71,13 +70,13 @@ export const Repositories = [
         "🎯 Résultat : Interface dynamique et responsive. Les utilisateurs peuvent rechercher des dépôts, afficher les informations essentielles et accéder directement aux dépôts sur GitHub."
       ],
       className: "",
-      imgClassName: " absolute h-auto", // object-cover
+      imgClassName: " absolute h-auto",
       titleClassName: "text-md md:text-lg lg:text-2xl justify-start h-auto",
-      img: "/projectRefactor-assets/codeEditorGithub.png",
+      img: "/projectRefactor-assets/github-explorer-676x526.png",
       alt: "Page d'acceuil avec grille d'affichage des repositories GitHub",
       width: 320,
       height: 200,
-      spareImg:"",  // "/b4.svg",
+      spareImg:"",
       demoLink:"https://new-react-github-explorer.vercel.app/",
       githubLink:"https://github.com/YanBerdin/create-react-github-explorer",
       technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'Semantic UI', 'PropTypes', 'Sass'],
@@ -108,14 +107,14 @@ export const Repositories = [
       "🔒 Solution : J'ai mis en place des pratiques de codage sécurisé, notamment l'utilisation de requêtes préparées, l'échappement des données utilisateur et l'implémentation de tokens CSRF.",
       " ",
       "🎯 Résultat : Navigation facile entre les catégories, les types de produits et les marques. Le BackOffice offre une gestion efficace des données. Les mesures de sécurité mises en place ont renforcé la fiabilité de l’application. De plus, j'ai amélioré mes compétences en développement PHP, en architecture logicielle et en sécurité web."],
-      className: "order-5 lg:order-4 md:col-span-3 md:row-span-2", //"md:col-span-3 md:row-span-2 lg:raw-span-2 lg:col-span-2", added order-5 lg:order-4 
-      imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 w-32 lg:right-10 xl:right-1 xl:-bottom-1 h-auto max-h-15vh", // bottom-0
+      className: "order-5 lg:order-4 md:col-span-3 md:row-span-2",
+      imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 w-32 lg:right-10 xl:right-1 xl:-bottom-1 h-auto max-h-15vh",
       titleClassName: "text-md md:text-lg lg:text-2xl justify-center md:justify-start ",
-      img: "/projectRefactor-assets/codeEditor-oshop-front1-s.png", // b5.svg
+      img: "/projectRefactor-assets/oshop-front1-md-676x526.png",
       alt:"page d'acceuil du site avec 3 chaussures en gros plan",
       width: 220,
       height: 100,
-      spareImg: "/grid.svg",
+      spareImg: "/gridItems-assets/grid.svg",
       demoLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php",
       githubLink: "https://github.com/YanBerdin/shoes-shop-frontoffice-php",
       technologies: ['Html', 'Css', 'JS', 'PHP', 'Composer', 'Bootstrap', 'Apache', 'Singleton', 'Active Record'],
@@ -150,10 +149,10 @@ export const Repositories = [
       "🔒 Solution : J'ai mis en place des pratiques de codage sécurisé, notamment l'utilisation de requêtes préparées, l'échappement des données utilisateur et l'implémentation de tokens CSRF.",
       " ",
       "🎯 Résultat : Navigation facile entre les catégories, les types de produits et les marques. Le BackOffice offre une gestion efficace des données. Les mesures de sécurité mises en place ont renforcé la fiabilité de l’application. De plus, j'ai amélioré mes compétences en développement PHP, en architecture logicielle et en sécurité web."],
-      className: "order-5 lg:order-4 md:col-span-3 md:row-span-2", //"md:col-span-3 md:row-span-2 lg:raw-span-2 lg:col-span-2", added order-5 lg:order-4 
+      className: "order-5 lg:order-4 md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 sm:right-3 md:right-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 w-32 lg:right-10 xl:right-1 xl:-bottom-1 h-auto max-h-15vh", // bottom-0
       titleClassName: "text-md md:text-lg lg:text-2xl justify-center md:justify-start ",
-      img: "/projectRefactor-assets/codeEditor-oshop-back2.png", // b5.svg
+      img: "/projectRefactor-assets/oshop-back2-676x526.png", // b5.svg
       alt:"page d'acceuil du site avec 3 chaussures en gros plan",
       width: 220,
       height: 100,
@@ -181,14 +180,14 @@ export const Repositories = [
         "",
         "🎯 Résultat : Portfolio moderne, responsive et interactif. Les visiteurs peuvent naviguer facilement entre les différentes sections et découvrir mes projets et compétences de manière intuitive."
       ],
-      className: "order-2 lg:order-3 lg:col-span-3 md:col-span-3 md:row-span-2", //lg:col-span-3 md:row-span-2", added order-2 lg:order-3
-      imgClassName: "absolute left-0 sm:left-3 md:left-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 w-32 lg:left-10 xl:left-1 xl:-bottom-1 h-auto max-h-15vh", // bottom-0
+      className: "order-2 lg:order-3 lg:col-span-3 md:col-span-3 md:row-span-2",
+      imgClassName: "absolute left-0 sm:left-3 md:left-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 w-32 lg:left-10 xl:left-1 xl:-bottom-1 h-auto max-h-15vh",
       titleClassName: "text-md md:text-lg lg:text-2xl justify-center md:justify-start",
-      img: "", // "/b2.svg",
+      img: "/projectRefactor-assets/portfolio-676x526.png",
       alt:"page d'acceuil du site avec 3 chaussures en gros plan",
       width: 220,
       height: 100,
-      spareImg: "/grid.svg",
+      spareImg: "/gridItems-assets/grid.svg",
       demoLink: "https://yanberdins-projects.vercel.app/",
       githubLink: "",
       technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind', 'Typescript' , 'Framer-Motion' , 'Axios' , 'PostCss' , 'Aceternity', 'Shadcn'],
@@ -220,10 +219,10 @@ export const Repositories = [
         " ",
         "🎯 Résultat : Widget météo moderne, responsive et interactif. Les visiteurs peuvent consulter les prévisions météo actuelles et à venir de manière intuitive."
       ],
-      className: "order-2 lg:order-3 lg:col-span-3 md:col-span-3 md:row-span-2", //lg:col-span-3 md:row-span-2", added order-2 lg:order-3
+      className: "order-2 lg:order-3 lg:col-span-3 md:col-span-3 md:row-span-2",
       imgClassName: "absolute left-0 sm:left-3 md:left-5 bottom-0 sm:bottom-1 md:bottom-4 lg:bottom-5 sm:w-40 md:w-3/6 w-32 lg:left-10 xl:left-1 xl:-bottom-1 h-auto max-h-15vh", // bottom-0
       titleClassName: "text-md md:text-lg lg:text-2xl justify-center md:justify-start",
-      img: "", // "/b2.svg",
+      img: "/projectRefactor-assets/meteo-widget-676x526.png",
       alt:"page d'acceuil du site avec 3 chaussures en gros plan",
       width: 220,
       height: 100,
@@ -264,7 +263,7 @@ export const Repositories = [
       className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
       imgClassName: "w-full h-full object-cover h-auto",
       titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-      img: "",
+      img: "/projectRefactor-assets/script-runner-game-676x526.png",
       alt: "illustration du jeu Script Runner",
       width: 320,
       height: 200,
@@ -303,7 +302,7 @@ export const Repositories = [
       className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
       imgClassName: "w-full h-full object-cover h-auto",
       titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-      img: "",
+      img: "/projectRefactor-assets/pokedex-676x526.png",
       alt: "illustration de l'application Pokedex",
       width: 320,
       height: 200,
@@ -339,7 +338,7 @@ export const Repositories = [
       className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
       imgClassName: "w-full h-full object-cover h-auto",
       titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-      img: "",
+      img: "/projectRefactor-assets/textToSpeech-676x526.png",
       alt: "illustration de l'application Audio API Text to Speech",
       width: 320,
       height: 200,
@@ -373,7 +372,7 @@ export const Repositories = [
       className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
       imgClassName: "w-full h-full object-cover h-auto",
       titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-      img: "",
+      img: "/projectRefactor-assets/sound-pad-676x526.png",
       alt: "illustration de l'application Table de Mixage Sonore",
       width: 320,
       height: 200,
@@ -413,7 +412,7 @@ export const Repositories = [
     className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
     imgClassName: "w-full h-full object-cover h-auto",
     titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-    img: "",
+    img: "/projectRefactor-assets/spotify-home-pag-676x526.png",
     alt: "illustration de l'application Spotify-Controller",
     width: 320,
     height: 200,
@@ -449,7 +448,7 @@ export const Repositories = [
     className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
     imgClassName: "w-full h-full object-cover h-auto",
     titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-    img: "",
+    img: "/projectRefactor-assets/task-manager-676x526.png",
     alt: "illustration de l'application Task-Manager",
     width: 320,
     height: 200,
