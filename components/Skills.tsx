@@ -47,13 +47,13 @@ export const Skills = () => {
                   <Image
                     src={card.thumbnail}
                     //alt={card.thumbnail}
-                    alt={card.thumbnail} // Remplacé card.thumbnail par card.title pour un alt plus descriptif
+                    alt={card.thumbnail} // Remplacer card.thumbnail par card.title pour un alt plus descriptif 
                     width={90}
                     height={90}
                     className=" md:w-20 m-auto object-cover" // remove w-16 add m-auto
                     loading="lazy"
-                    // fill={true} //* => Error: Image with src "/exp1.svg" has both "width" and "fill" properties. Only one should be used.
-                    // placeholder={"blur"} // This option only supports local images
+                    fill={false}
+                    //TODO placeholder={"blur"} // This option only supports local images
                     // blurDataURL={card.thumbnail} // For dynamic images, provide the blurDataURL
                     aria-hidden="true"
                   />
