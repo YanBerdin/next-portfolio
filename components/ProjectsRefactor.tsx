@@ -68,7 +68,7 @@ export default function ProjectsRefactor() {
                     {technologies.map(tech => (
                         <li key={tech}>
                             <ProjectsRefactorButton
-                                variant={selectedTech === tech ? "default" : "outline"}
+                                variant={selectedTech === tech ? "default" : "secondary"}
                                 onClick={() => setSelectedTech(tech)}
                             >
                                 {tech}
@@ -80,7 +80,7 @@ export default function ProjectsRefactor() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {filteredRepos.slice(0, visibleRepos).map(repo => (
-                    <div key={repo.id} className="bg-blue-950/[0.9] border border-blue-800 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[270px] lg:max-w-[300px] mx-auto">
+                    <div key={repo.id} className="bg-blue-950/[0.8] border border-blue-800 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[280px] lg:max-w-[310px] mx-auto">
                         <div className="relative group"> {/* min-h-36 md:h-64 lg:h-72 */}
                             <Image
                                 src={repo.img}
@@ -91,12 +91,12 @@ export default function ProjectsRefactor() {
                                 height={420}
                                 loading="lazy"
                                 className={cn(
-                                    'object-cover px-3 shrink-1'
+                                    'object-cover px-4 shrink-1'
                                 )}
                             />
-                            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div className="absolute inset-0 bg-blue-200 bg-opacity-50 opacity-0  origin-center group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-lg p-2"> {/*  hover:scale-95 bug-shaked-border */}
 
-                                <div className="space-x-4 text-xs">
+                                <div className="space-x-1 inline-flex shrink-1">
                                     <ProjectsRefactorButton variant="secondary" asChild>
                                         <a href={repo.githubLink} target="_blank" rel="noopener noreferrer">Code</a>
                                     </ProjectsRefactorButton>
@@ -112,10 +112,10 @@ export default function ProjectsRefactor() {
                             </div>
                         </div>
                         <div className="p-4">
-                            <h3 className="max-sm:text-sm text-xl font-semibold mb-4">{repo.title}</h3>
+                            <h3 className="max-sm:text-sm text-xl font-semibold mb-4 text-white-100">{repo.title}</h3>
                             <div className="flex flex-wrap gap-2">
                                 {(repo.technologies ?? []).map(tech => (
-                                    <span key={tech} className="text-xs lg:text-sm bg-gray-700 max-sm:px-3 max-sm:py-1 px-5 py-1.5 rounded">
+                                    <span key={tech} className="text-xs lg:text-sm bg-slate-700 max-sm:px-3 max-sm:py-1 px-4 py-1.5 rounded">
                                         {tech}
                                     </span>
                                 ))}
