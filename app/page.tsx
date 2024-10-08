@@ -6,9 +6,9 @@ import { navItems } from "@/data/index"; // "@/data"
 import { Contact } from "../components/Contact";
 import { About } from "../components/About";
 // import { Cursor } from "../components/ui/Cursor";
-import { Grid } from "../components/Grid";
+//?import { Grid } from "../components/Grid";
 // import Timeline from "@/components/Timeline";
-import TimelineRefacto from "@/components/TimelineRefacto";
+//?import TimelineRefacto from "@/components/TimelineRefacto";
 import Footer from "@/components/Footer";
 //import Projects from "@/components/Projects";
 import ProjectsRefactor from "@/components/ProjectsRefactor";
@@ -26,26 +26,32 @@ export default function Home() {
           <Hero />
         </div>
 
-        <div id="skills" style={{ marginTop: "-30px", paddingTop: "-30px", marginBottom: "20rem" }}>
+        <div id="skills" style={{ marginTop: "30px", paddingTop: "-30px", marginBottom: "20rem" }}>
           <Skills /> {/*  pas besoin de passer en props mySkills ? */}
         </div>
-        <div id="projects" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
+
+        <div id="projects" style={{ marginTop: "-30px", paddingTop: "-40px", marginBottom: "40rem" }}>
+          <ProjectsRefactor />
+        </div>
+        {/*
+        <div id="projects" style={{ marginTop: "-40px", paddingTop: "-40px",  marginBottom:"20rem" }}>
           <Grid />
         </div>
+*/}
         <div id="about" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
           <About />
         </div>
+        {/*<Timeline />*/}
+        {/*
         <div id="experience" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
-          {/*<Timeline />*/}
+          
           <TimelineRefacto />
         </div>
+        */}
         <div id="contact" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "25rem" }}>
           <Contact />
         </div>
         <div id="footer" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "" }}>
-
-          <div style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "40rem" }}><ProjectsRefactor /></div>
-
           {/* <Projects /> */}
           <Footer />
         </div>

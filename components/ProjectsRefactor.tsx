@@ -61,75 +61,91 @@ export default function ProjectsRefactor() {
     }
 
     return (
-        <div className="min-h-screen w-10/12 bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl rounded-lg text-white p-8 mx-auto">
+        <>
+            <div className="h-12 md:h-20"></div>
 
-            <nav className="mb-8">
-                <ul className="flex flex-wrap gap-2">
-                    {technologies.map(tech => (
-                        <li key={tech}>
-                            <ProjectsRefactorButton
-                                variant={selectedTech === tech ? "default" : "secondary"}
-                                onClick={() => setSelectedTech(tech)}
-                            >
-                                {tech}
-                            </ProjectsRefactorButton>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+            <div className="flex flex-col pointer-events-none">
+                <h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mt-3 mb-10 text-white-100">
+                    Découvrez
+                    <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
+                        {" "}
+                        mes projets
+                        {" "}
+                    </span>
+                    récents
+                </h2>
+            </ div>
+            <div className="min-h-screen w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-white p-8 mx-auto">
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                {filteredRepos.slice(0, visibleRepos).map(repo => (
-                    <div key={repo.id} className="bg-blue-950/[0.8] border border-blue-800 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[280px] lg:max-w-[310px] mx-auto">
-                        <div className="relative group"> {/* min-h-36 md:h-64 lg:h-72 */}
-                            <Image
-                                src={repo.img}
-                                alt={repo.title}
-                                fill={false}
-                                //objectFit="cover"
-                                width={520}
-                                height={420}
-                                loading="lazy"
-                                className={cn(
-                                    'object-cover px-4 shrink-1'
-                                )}
-                            />
-                            <div className="absolute inset-0 bg-blue-200 bg-opacity-50 opacity-0  origin-center group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-lg p-2"> {/*  hover:scale-95 bug-shaked-border */}
 
-                                <div className="space-x-1 inline-flex shrink-1">
-                                    <ProjectsRefactorButton variant="secondary" asChild>
-                                        <a href={repo.githubLink} target="_blank" rel="noopener noreferrer">Code</a>
-                                    </ProjectsRefactorButton>
-                                    <ProjectsRefactorButton variant="secondary" asChild>
-                                        <a href={repo.demoLink} target="_blank" rel="noopener noreferrer">Website</a>
-                                    </ProjectsRefactorButton>
-                                    <ProjectsRefactorButton variant="secondary" asChild>
-                                        <BackdropModal id={repo.id} />
-                                        { /* <a href={repo.detailsLink} target="_blank" rel="noopener noreferrer">Details</a>*/}
-                                    </ProjectsRefactorButton>
+                <nav className="mb-8">
+                    <ul className="flex flex-wrap gap-2">
+                        {technologies.map(tech => (
+                            <li key={tech}>
+                                <ProjectsRefactorButton
+                                    variant={selectedTech === tech ? "default" : "secondary"}
+                                    onClick={() => setSelectedTech(tech)}
+                                >
+                                    {tech}
+                                </ProjectsRefactorButton>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8 md:mt-16">
+                    {filteredRepos.slice(0, visibleRepos).map(repo => (
+                        <div key={repo.id} className="bg-slate-800/[0.8] border border-slate-700 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[290px] lg:max-w-[310px] mx-auto">
+                            <div className="relative group"> {/* min-h-36 md:h-64 lg:h-72 */}
+                                <Image
+                                    src={repo.img}
+                                    alt={repo.title}
+                                    fill={false}
+                                    //objectFit="cover"
+                                    width={520}
+                                    height={420}
+                                    loading="lazy"
+                                    className={cn(
+                                        'object-cover px-4 shrink-1'
+                                    )}
+                                />
+                                <div className="absolute inset-0 bg-blue-200 bg-opacity-50 opacity-0  origin-center group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-lg p-2"> {/*  hover:scale-95 bug-shaked-border */}
+
+                                    <div className="space-x-1 inline-flex shrink-1">
+                                        <ProjectsRefactorButton variant="secondary" asChild>
+                                            <a href={repo.githubLink} target="_blank" rel="noopener noreferrer">Code</a>
+                                        </ProjectsRefactorButton>
+                                        <ProjectsRefactorButton variant="secondary" asChild>
+                                            <a href={repo.demoLink} target="_blank" rel="noopener noreferrer">Website</a>
+                                        </ProjectsRefactorButton>
+                                        <ProjectsRefactorButton variant="secondary" asChild>
+                                            <BackdropModal id={repo.id} />
+                                            { /* <a href={repo.detailsLink} target="_blank" rel="noopener noreferrer">Details</a>*/}
+                                        </ProjectsRefactorButton>
+                                    </div>
+
                                 </div>
-
+                            </div>
+                            <div className="p-4">
+                                <h3 className="max-sm:text-sm text-xl font-semibold mb-4 text-white-100">{repo.title}</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {(repo.technologies ?? []).map(tech => (
+                                        <span key={tech} className="text-xs lg:text-sm bg-slate-700 max-sm:px-3 max-sm:py-1 px-4 py-1.5 rounded">
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
-                        <div className="p-4">
-                            <h3 className="max-sm:text-sm text-xl font-semibold mb-4 text-white-100">{repo.title}</h3>
-                            <div className="flex flex-wrap gap-2">
-                                {(repo.technologies ?? []).map(tech => (
-                                    <span key={tech} className="text-xs lg:text-sm bg-slate-700 max-sm:px-3 max-sm:py-1 px-4 py-1.5 rounded">
-                                        {tech}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
-
-            {visibleRepos < filteredRepos.length && (
-                <div className="mt-8 text-center">
-                    <ProjectsRefactorButton onClick={handleLoadMore}>Load More</ProjectsRefactorButton>
+                    ))}
                 </div>
-            )}
-        </div>
+
+                {visibleRepos < filteredRepos.length && (
+                    <div className="mt-8 text-center">
+                        <ProjectsRefactorButton onClick={handleLoadMore}>Load More</ProjectsRefactorButton>
+                    </div>
+                )}
+            </div>
+        </>
     )
 }

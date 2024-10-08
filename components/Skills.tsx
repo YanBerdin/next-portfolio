@@ -8,11 +8,11 @@ import Image from "next/image";
 export const Skills = () => {
   return (
     <>
-      <div className="h-20"></div>
+      <div className="h-30 "></div>
 
       <section className="mx-auto max-sm:w-11/12 mb-24">
         <div className="flex flex-col pointer-events-none">
-          <h2 className="text-2xl lg:text-3xl font-bold text-center mb-4 text-white-100">
+          <h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mb-4 text-white-100 mt-36">
             Spécialisé en
             <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
               {" "}
