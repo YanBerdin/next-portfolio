@@ -10,7 +10,7 @@ export const Skills = () => {
     <>
       <div className="h-30 "></div>
 
-      <section className="mx-auto max-sm:w-11/12 mb-24">
+      <section className="mx-auto w-11/12 mb-24">
         <div className="flex flex-col pointer-events-none">
           <h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mb-4 text-white-100 mt-36">
             Spécialisé en
@@ -24,7 +24,8 @@ export const Skills = () => {
               React.js
             </span>
           </h2>
-          <div className="w-full mt-4 md:mt-6 grid md:grid-cols-2 xl:grid-cols-4 gap-2">
+
+          <div className=" sm:w-9/12 lg:w-full mx-auto mt-4 md:mt-6 grid lg:grid-cols-2 xl:grid-cols-3 gap-2">
             {mySkills.map((card) => (
               <Button
                 key={card.id}
@@ -57,7 +58,7 @@ export const Skills = () => {
                     // blurDataURL={card.thumbnail} // For dynamic images, provide the blurDataURL
                     aria-hidden="true"
                   />
-                  <div className="max-w-[430px]"> {/*ms-5*/}
+                  <div className="w-full"> {/*ms-5*/}
                     <h3 className="text-center text-black dark:text-white text-lg font-bold">
                       {card.title}
                     </h3>
@@ -67,7 +68,7 @@ export const Skills = () => {
                   </p>
                   */}
                     <div className="space-y-4 text-start text-white-100 mt-6 font-semibold">
-                      {card.skillsList && card.skillsList.map((skills: string) => (
+                      {card.skillsList && card.skillsList.filter((skills): skills is string => skills !== undefined).map((skills: string) => (
                         <span key={skills} className="flex">
                           <Check className="text-green-500 min-w-[20px]" />{" "}
                           <p className="ml-2 text-sm md:text-base max-w-[380px]">{skills}</p>

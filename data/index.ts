@@ -32,15 +32,13 @@ interface mySkills {
       title: "Développement Frontend",
       desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
       skillsList: [
-        "Spécialisation React",
+        "Maîtrise de React et Next.js, Redux",
         "Création de wireframes et de maquettes d'application.",
         "Développement d'interfaces dynamiques et responsives.",
-        "Programmation orientée objet (POO).",
-        "Programmation fonctionnelle et déclarative.",
         "Utilisation avancée d'ES6+.",
-        "Gestion du state avec Redux.",
         "Résolution efficace d'algorithmes.",
-        // "Creation, installation, and activation of WordPress themes.",
+        "Respect des normes d'accessibilité web (WCAG) et des bonnes pratiques SEO.",
+        "Expérience avec le Shell et les commandes SSH."
     ],
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
@@ -51,50 +49,46 @@ interface mySkills {
       desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
       skillsList: [
         "Création de l'infrastructure back-end sécurisée d'applications web",
-        "Modélisation de base de données en fonction des besoins de l'application.",
-        "Gestion de bases de données et développement de composants d'accès aux données.",
-        "Maîtrise des frameworks Laravel et Express.",
-        "Maîtrise de Socket.io pour les fonctionnalités temps réel.",
+        "Programmation orientée objet (POO) fonctionnelle et déclarative.",
+        "Modélisation et gestion de base de données relationnelle.",
+        "Développement de composants d'accès aux données.",
         "Conception d'API REST.",
+        "Respect des normes de sécurité des données (RGPD) et des meilleures pratiques (OWASP).",
+        // "Maîtrise des frameworks Laravel, Node.js, Express et Socket.io."
       ],
-      className: "md:col-span-2", // change to md:col-span-2
+      className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
-    //{
-    //  id: 3,
-    //  title: "Freelance App Dev Project",
-    //  desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    //  className: "md:col-span-2", // change to md:col-span-2
-    //  thumbnail: "/exp3.svg",
-    //},
+    /*
     {
       id: 3,
       title: "Transverse",
       desc: "Developed and maintained user-facing features using modern frontend technologies.",
       skillsList: [
-        "Connaissance approfondie des normes d'accessibilité web (WCAG) et des bonnes pratiques SEO.",
-        "Respect des normes de sécurité des données (RGPD) et des meilleures pratiques de sécurité des applications web (OWASP).",
-        "Expérience avec le Shell et les commandes SSH.",
-        "Maîtrise de Git/GitHub pour la gestion de versions et la collaboration.",
-        "Utilisation agile de Scrum pour la gestion de projet.",
+        "Respect des normes d'accessibilité web (WCAG) et des bonnes pratiques SEO.",
+       // "Respect des normes de sécurité des données (RGPD) et des meilleures pratiques (OWASP).",
+       // "Expérience avec le Shell et les commandes SSH.",
+       // "Maîtrise de Git/GitHub pour la gestion de versions et la collaboration.",
+       // "Utilisation agile de Scrum pour la gestion de projet.",
       ],
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
+    */
     {
       id: 4,
       title: "Wordpress",
       desc: "Installation de WordPress et configuration initiale.",
       skillsList: [
-        "Installation de WordPress.",
-        "configuration initiale",
-        "Gestion des sidebars pour personnaliser la mise en page.",
-        "Création de thèmes personnalisés.",
+        "Edition de contenu (Gutenberg).",
+        "Installation, parametrage et personnalisation de thème.",
         "Configuration de plugins pour étendre les fonctionnalités de WordPress.",
         "Modification des options de WordPress via l'interface d'administration pour adapter le site aux besoins du client.",
+        "Maîtrise de Git/GitHub pour la gestion de versions et la collaboration.",
+        "Utilisation agile de Scrum pour la gestion de projet."
       ],
-      className: "md:col-span-2", // change to md:col-span-2
-     thumbnail: "/exp3.svg",
+      className: "md:col-span-2",
+     thumbnail: "/exp4.svg", //"/exp3.svg",
 
     },
   ];

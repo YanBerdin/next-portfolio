@@ -115,7 +115,7 @@ export const Repositories = [
       width: 220,
       height: 100,
       spareImg: "",
-      demoLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php",
+      demoLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php", //TODO Deployer
       githubLink: "https://github.com/YanBerdin/shoes-shop-frontoffice-php",
       technologies: ['Html', 'Css', 'JS', 'PHP', 'Composer', 'Bootstrap', 'Apache', 'Singleton', 'Active Record'],
     },
@@ -157,7 +157,7 @@ export const Repositories = [
       width: 220,
       height: 100,
       spareImg: "",
-      demoLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php",
+      demoLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php", //TODO Deployer
       githubLink: "https://github.com/YanBerdin/shoes-shop-frontoffice-php",
       technologies: ['Html', 'Css', 'PHP', 'MySQL', 'Composer', 'Bootstrap', 'Apache', 'Singleton', 'Active Record'],
     },
@@ -189,7 +189,7 @@ export const Repositories = [
       height: 100,
       spareImg: "",
       demoLink: "https://yanberdins-projects.vercel.app/",
-      githubLink: "",
+      githubLink: "https://github.com/YanBerdin/next-portfolio",
       technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind', 'Typescript' , 'Framer-Motion' , 'Axios' , 'PostCss' , 'Aceternity', 'Shadcn'],
       },
    
@@ -227,8 +227,8 @@ export const Repositories = [
       width: 220,
       height: 100,
       spareImg: "",
-      demoLink: "https://yanberdins-projects.vercel.app/",
-      githubLink: "",
+      demoLink: "https://yanberdin.github.io/React_Widget_Meteo/",
+      githubLink: "https://github.com/YanBerdin/React_Widget_Meteo",
       technologies: ['Html', 'Css', 'JS', 'React', 'PropTypes', 'Axios', 'Sass'],
     }, 
     {
@@ -268,8 +268,8 @@ export const Repositories = [
       width: 320,
       height: 200,
       spareImg: "",
-      demoLink: "https://script-runner-demo-link.com",
-      githubLink: "https://github.com/username/script-runner",
+      demoLink: "https://yanberdin.github.io/script-runner-game-js",
+      githubLink: "https://github.com/YanBerdin/script-runner-game-js",
       technologies: ['Html', 'Css', 'JS', 'DOMPurify']
     },
 
@@ -307,8 +307,8 @@ export const Repositories = [
       width: 320,
       height: 200,
       spareImg: "",
-      demoLink: "https://pokedex-demo-link.com",
-      githubLink: "https://github.com/username/pokedex",
+      demoLink: "https://github.com/YanBerdin/Pokedex-php-yanberdin", //TODO A Deployer
+      githubLink: "https://github.com/YanBerdin/Pokedex-php-yanberdin",
       technologies: ['Apache', 'PHP', 'MySQL', 'Html', 'Css', 'Composer', 'AltoRouter', 'Bootstrap']
     },
 
@@ -343,8 +343,8 @@ export const Repositories = [
       width: 320,
       height: 200,
       spareImg: "",
-      demoLink: "https://audio-api-text-to-speech-demo-link.com",
-      githubLink: "https://github.com/username/audio-api-text-to-speech",
+      demoLink: "https://yanberdin.github.io/text_to_speech_web_app",
+      githubLink: "https://github.com/YanBerdin/text_to_speech_web_app",
       technologies: ['Html', 'Css', 'JS', 'DOMPurify']
     },
 
@@ -377,53 +377,13 @@ export const Repositories = [
       width: 320,
       height: 200,
       spareImg: "",
-      demoLink: "https://mixing-table-demo-link.com",
-      githubLink: "https://github.com/username/mixing-table",
+      demoLink: "https://yanberdin.github.io/soundpad-js-vanilla",
+      githubLink: "https://github.com/YanBerdin/soundpad-js-vanilla",
       technologies: ['Html', 'Css', 'JS']
   },
 
   {
-    id:11,
-    title: "Spotify Controller 🎵",
-    description: "🛠️ Technologies Utilisées : React | Vite | Axios | Styled-components",
-    explanationList: [
-        "🎙️ Description : Soundify est une application web qui permet aux utilisateurs de se connecter à leur compte Spotify, de visualiser leurs playlists, de lire des morceaux, et de gérer la lecture (lecture/pause, piste suivante/précédente).",
-        " ",
-        "Les utilisateurs peuvent : Se connecter à leur compte Spotify, Visualiser leurs playlists, Lire des morceaux, Gérer la lecture (lecture/pause, piste suivante/précédente).",
-        " ",
-        "💡 La sécurisation de notre application s’attache à 3 aspects :",
-        "🔒 Authentification OAuth, Gestion des Tokens, Sanitization des Entrées",
-        " ",
-        "🚧 Défi : Gestion des Tokens Expirés.",
-        "✅ Implémentation de la gestion des erreurs pour détecter les tokens expirés et rediriger l'utilisateur vers la page de connexion.",
-        " ",
-        "🚧 Défi : Récupération des Données en Temps Réel.",
-        "✅ Utilisation de `useEffect` pour récupérer les données de l'utilisateur et l'état de lecture en temps réel.",
-        " ",
-        "🚧 Défi : Gestion des Erreurs.",
-        "✅ Utilisation d'un contexte de notification pour afficher des messages d'erreur à l'utilisateur de manière cohérente.",
-        " ",
-        "🚧 Défi : Performance.",
-        "✅ Utilisation de `useCallback` pour optimiser les fonctions et éviter les rendus inutiles.",
-        " ",
-        "🎯 Résultat : L'application Soundify permet aux utilisateurs de se connecter à leur compte Spotify, de visualiser et de gérer leurs playlists, et de contrôler la lecture de la musique. Les utilisateurs peuvent voir les informations de leur compte, les playlists disponibles, et contrôler la lecture directement depuis l'application.",
-        "Application est encore en cours de developpement."
-    ],
-    className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
-    imgClassName: "w-full h-full object-cover h-auto",
-    titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-    img: "/projectRefactor-assets/spotify-cont.png",
-    alt: "illustration de l'application Spotify-Controller",
-    width: 320,
-    height: 200,
-    spareImg: "",
-    demoLink: "https://soundify-demo-link.com",
-    githubLink: "https://github.com/username/soundify",
-    technologies: ['Html', 'Css', 'JS', 'React', 'Vite', 'Axios', 'Styled-components']
-  },
-
-  {
-    id: 12,
+    id: 11,
     title: "Task-Manager 📝",
     description: "🛠️ Technologies Utilisées : HTML | CSS | JS | Laravel | PHP | Eloquent | MySQL | Rest API",
     explanationList: [
@@ -453,10 +413,50 @@ export const Repositories = [
     width: 320,
     height: 200,
     spareImg: "",
-    demoLink: "https://task-manager-demo-link.com",
-    githubLink: "https://github.com/username/task-manager",
+    demoLink: "https://github.com/YanBerdin/Laravel-Vanilla_JS-Task_Manager", //TODO Deployer
+    githubLink: "https://github.com/YanBerdin/Laravel-Vanilla_JS-Task_Manager",
     technologies: ['Html', 'Css', 'PHP', 'Laravel', 'Eloquent', 'MySQL', 'Rest API','JS']
   }
 
+  /*
+  {
+    id:12,
+    title: "Spotify Controller 🎵",
+    description: "🛠️ Technologies Utilisées : React | Vite | Axios | Styled-components",
+    explanationList: [
+        "🎙️ Description : En construction ! Soundify est une application web qui permet aux utilisateurs de se connecter à leur compte Spotify, de visualiser leurs playlists, de lire des morceaux, et de gérer la lecture (lecture/pause, piste suivante/précédente).",
+        " ",
+        "Les utilisateurs peuvent : Se connecter à leur compte Spotify, Visualiser leurs playlists, Lire des morceaux, Gérer la lecture (lecture/pause, piste suivante/précédente).",
+        " ",
+        "💡 La sécurisation de notre application s’attache à 3 aspects :",
+        "🔒 Authentification OAuth, Gestion des Tokens, Sanitization des Entrées",
+        " ",
+        "🚧 Défi : Gestion des Tokens Expirés.",
+        "✅ Implémentation de la gestion des erreurs pour détecter les tokens expirés et rediriger l'utilisateur vers la page de connexion.",
+        " ",
+        "🚧 Défi : Récupération des Données en Temps Réel.",
+        "✅ Utilisation de `useEffect` pour récupérer les données de l'utilisateur et l'état de lecture en temps réel.",
+        " ",
+        "🚧 Défi : Gestion des Erreurs.",
+        "✅ Utilisation d'un contexte de notification pour afficher des messages d'erreur à l'utilisateur de manière cohérente.",
+        " ",
+        "🚧 Défi : Performance.",
+        "✅ Utilisation de `useCallback` pour optimiser les fonctions et éviter les rendus inutiles.",
+        " ",
+        "🎯 Résultat : L'application Soundify permet aux utilisateurs de se connecter à leur compte Spotify, de visualiser et de gérer leurs playlists, et de contrôler la lecture de la musique. Les utilisateurs peuvent voir les informations de leur compte, les playlists disponibles, et contrôler la lecture directement depuis l'application."
+    ],
+    className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
+    imgClassName: "w-full h-full object-cover h-auto",
+    titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
+    img: "/projectRefactor-assets/spotify-cont.png",
+    alt: "illustration de l'application Spotify-Controller",
+    width: 320,
+    height: 200,
+    spareImg: "",
+    demoLink: "https://github.com/YanBerdin/spotify-controller", //TODO Deployer
+    githubLink: "https://github.com/YanBerdin/spotify-controller",
+    technologies: ['Html', 'Css', 'JS', 'React', 'Vite', 'Axios', 'Styled-components']
+  },
+*/
 ];
   

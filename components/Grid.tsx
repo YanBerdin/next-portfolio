@@ -1,3 +1,4 @@
+/*
 import { gridItems } from "@/data/index";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
@@ -6,8 +7,10 @@ export const Grid = () => {
         <>
             <div className="h-12 md:h-20"></div>
             <section >
-                <BentoGrid className="w-full max-sm:p-4"> {/* lg:p-4 mb-30 */}
-                    {gridItems.map((item, i) => (
+                <BentoGrid className="w-full max-sm:p-4"> */
+                {/* lg:p-4 mb-30 */}
+                /*
+                                    {gridItems.map((item, i) => (
                         <BentoGridItem
                             id={item.id}
                             key={i}
@@ -29,5 +32,5 @@ export const Grid = () => {
         </>
     );
 };
-
+*/
 // export default Grid;
