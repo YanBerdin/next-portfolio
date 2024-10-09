@@ -9,7 +9,7 @@ import BlurImage from "./ui/BlurImage";
 const Footer = () => {
   return (
     <>
-      <div className="h-24 w-full lg:h-44"></div>
+      <div className="md:h-24 w-full lg:h-44"></div>
       <footer className="w-full pt-10 pb-10">
         {/* background grid */}
         <div className="w-full h-auto absolute left-0 -bottom-4 min-h-96 mt-10"> {/*  max-h-[900px]*/}
@@ -33,7 +33,8 @@ const Footer = () => {
 
           <MagicButton
             title="Contactez-moi"
-            icon={<FaLocationArrow />}
+            // icon={<FaLocationArrow />}
+            icon={""}
             position="right"
             href="#contact"
           />

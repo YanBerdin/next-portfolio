@@ -10,9 +10,9 @@ export const Skills = () => {
     <>
       <div className="h-30 "></div>
 
-      <section className="mx-auto w-11/12 mb-24">
+      <section className="mx-auto w-11/12 mb-5 lg:mb-52">
         <div className="flex flex-col pointer-events-none">
-          <h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mb-4 text-white-100 mt-36">
+          <h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mb-4 text-white-100 mt-16">
             Spécialisé en
             <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
               {" "}
@@ -71,7 +71,7 @@ export const Skills = () => {
                       {card.skillsList && card.skillsList.filter((skills): skills is string => skills !== undefined).map((skills: string) => (
                         <span key={skills} className="flex">
                           <Check className="text-green-500 min-w-[20px]" />{" "}
-                          <p className="ml-2 text-sm md:text-base max-w-[380px]">{skills}</p>
+                          <p className="ml-2 text-base md:text-base max-w-[380px]">{skills}</p>
                         </span>
                       ))}
                     </div>

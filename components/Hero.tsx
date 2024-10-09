@@ -8,7 +8,7 @@ import { MagicButton } from "./MagicButton";
 
 export const Hero = () => {
     return (
-        <section className="pb-20 pt-36">
+        <section className="md:pb-5 lg:pb-20 pt-36">
             <div>
                 <Spotlight className="-top-10 -left-10 md:-left-32 md:-top-20 h-svh" fill="white" aria-hidden="true" /> {/** h-screen */}
                 <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" aria-hidden="true" />
@@ -30,7 +30,7 @@ export const Hero = () => {
                 />
 
             </div>
-            <div className="flex justify-center gap-32 lg:gap-10 relative my-28 md:my-60 lg:my-36 z-10"> {/*flex-wrap md:justify-around*/}
+            <div className="flex justify-center gap-32 lg:gap-10 relative my-36 md:my-60  z-10"> {/*flex-wrap md:justify-around*/}
                 <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
@@ -51,14 +51,15 @@ export const Hero = () => {
                         // gradientClass="bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text"
                     />
                      */}
-                    <h1 className="md:tracking-wider my-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center">
+                    <h1 className="md:tracking-wider my-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center text-white-100">
                         Bienvenue, je suis Yan, développeur Php Javascript & React.js
                     </h1>
 
 
                     <MagicButton
                         title="Voir mes réalisations"
-                        icon={<FaLocationArrow />}
+                        // icon={<FaLocationArrow />}
+                        icon={""}
                         position="right"
                         // handleClick={() => console.log('Button clicked!')}
                         otherClasses="custom-class hover:opacity-90"

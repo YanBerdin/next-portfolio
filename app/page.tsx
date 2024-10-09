@@ -27,10 +27,10 @@ export default function Home() {
         </div>
 
         <div id="skills" style={{ marginTop: "30px", paddingTop: "-30px", marginBottom: "20rem" }}>
-          <Skills /> {/*  pas besoin de passer en props mySkills ? */}
+          <Skills />
         </div>
 
-        <div id="projects" style={{ marginTop: "-30px", paddingTop: "-40px", marginBottom: "40rem" }}>
+        <div id="projects" style={{ marginTop: "-30px", paddingTop: "-40px", marginBottom: "15rem" }}>
           <ProjectsRefactor />
         </div>
         {/*
@@ -38,7 +38,7 @@ export default function Home() {
           <Grid />
         </div>
 */}
-        <div id="about" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
+        <div id="about" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "15rem" }}>
           <About />
         </div>
         {/*<Timeline />*/}
@@ -48,7 +48,7 @@ export default function Home() {
           <TimelineRefacto />
         </div>
         */}
-        <div id="contact" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "25rem" }}>
+        <div id="contact" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
           <Contact />
         </div>
         <div id="footer" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "" }}>

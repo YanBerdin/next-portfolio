@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Label }  from "@/components/ui/Label";
+import { Label } from "@/components/ui/Label";
 import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea"
 import { cn } from "@/lib/utils/cn";
@@ -17,10 +17,10 @@ import { FaLocationArrow } from "react-icons/fa6";
 * Link : https://ui.aceternity.com/components/signup-form
 **/
 export function Contact() {
-//  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-//    e.preventDefault();
-//    console.log("Form submitted");
-//  };
+  //  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //    e.preventDefault();
+  //    console.log("Form submitted");
+  //  };
   return (
     <>
       <div className="h-10 md:h-44 lg:h-24"></div>
@@ -52,9 +52,9 @@ export function Contact() {
 
             <h2 className="font-bold text-lg lg:text-xl text-neutral-800 dark:text-neutral-200">
               <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-  
+
               </span>{" "}
-              Je suis impatient d’en apprendre davantage sur votre projet.
+              Discutons de votre projet.
             </h2>
 
             <p className="text-neutral-600 text-md lg:text-lg max-w-sm mt-4 dark:text-neutral-300">
@@ -94,7 +94,7 @@ export function Contact() {
                 <Textarea
                   name="message"
                   id="message"
-                  placeholder='...'
+                  placeholder=''
                   className="block w-full rounded-md border-0 px-3.5 py-2 h-20 outline-none focus:outline-none"
                   defaultValue={''}
                   required
@@ -118,7 +118,7 @@ export function Contact() {
               <button
                 className="bg-gradient-to-br relative group/btn from-black dark:from-slate-900 dark:to-slate-900 to-neutral-600 block dark:bg-slate-800 w-full text-white rounded-md h-10 font-medium lg:text-lg shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--slate-800)_inset,0px_-1px_0px_0px_var(--slate-800)_inset]"
                 type="submit"
-           
+
               >
                 Envoyer
                 <FaLocationArrow className="h-4 w-4 text-neutral-800 dark:text-neutral-300 ml-2 inline bold" />
@@ -165,7 +165,7 @@ export function Contact() {
           </div>
         </div>
       </section>
-      <div className="h-10 md:h-72"></div>
+      <div className="h-10 lg:h-60"></div> {/* h-10 md:h-72 */}
     </>
   );
 }

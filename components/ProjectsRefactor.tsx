@@ -62,7 +62,7 @@ export default function ProjectsRefactor() {
 
     return (
         <>
-            <div className="h-12 md:h-20"></div>
+            <div className="h-16 sm:h-20 md:mt-96"></div>
 
             <div className="flex flex-col pointer-events-none">
                 <h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mt-3 mb-10 text-white-100">
@@ -146,6 +146,7 @@ export default function ProjectsRefactor() {
                     </div>
                 )}
             </div>
+            <div className="h-0 lg:h-48"></div>
         </>
     )
 }

@@ -49,8 +49,8 @@ export const About = () => {
             {/*<Statistics />*/}
           </div>
         </div>
-
       </section>
+      <div className="h-0 lg:h-96"></div>
     </>
   );
 };
