@@ -416,9 +416,8 @@ export const Repositories = [
     demoLink: "https://github.com/YanBerdin/Laravel-Vanilla_JS-Task_Manager", //TODO Deployer
     githubLink: "https://github.com/YanBerdin/Laravel-Vanilla_JS-Task_Manager",
     technologies: ['Html', 'Css', 'PHP', 'Laravel', 'Eloquent', 'MySQL', 'Rest API','JS']
-  }
+  },
 
-  /*
   {
     id:12,
     title: "Spotify Controller 🎵",
@@ -428,7 +427,7 @@ export const Repositories = [
         " ",
         "Les utilisateurs peuvent : Se connecter à leur compte Spotify, Visualiser leurs playlists, Lire des morceaux, Gérer la lecture (lecture/pause, piste suivante/précédente).",
         " ",
-        "💡 La sécurisation de notre application s’attache à 3 aspects :",
+        "💡 La sécurisation de l'application :",
         "🔒 Authentification OAuth, Gestion des Tokens, Sanitization des Entrées",
         " ",
         "🚧 Défi : Gestion des Tokens Expirés.",
@@ -457,6 +456,6 @@ export const Repositories = [
     githubLink: "https://github.com/YanBerdin/spotify-controller",
     technologies: ['Html', 'Css', 'JS', 'React', 'Vite', 'Axios', 'Styled-components']
   },
-*/
+
 ];
   

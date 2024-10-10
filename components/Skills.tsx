@@ -25,7 +25,7 @@ export const Skills = () => {
             </span>
           </h2>
 
-          <div className=" sm:w-9/12 lg:w-full mx-auto mt-4 md:mt-6 grid lg:grid-cols-2 xl:grid-cols-3 gap-2">
+          <div className="mx-auto mt-4 md:mt-6 grid lg:grid-cols-2 xl:grid-cols-3 gap-2"> {/* "w-11/12 lg:w-full */}
             {mySkills.map((card) => (
               <Button
                 key={card.id}

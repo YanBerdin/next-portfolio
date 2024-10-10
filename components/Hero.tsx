@@ -31,7 +31,7 @@ export const Hero = () => {
 
             </div>
             <div className="flex justify-center gap-32 lg:gap-10 relative my-36 md:my-60  z-10"> {/*flex-wrap md:justify-around*/}
-                <div className="max-w-[89vh] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+                <div className="max-w-[89vh] md:max-w-2xl lg:max-w-11/12 flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
                     </p>*/}
@@ -41,12 +41,12 @@ export const Hero = () => {
                      *  change md:text-6xl, add more responsive code
                      */}
                     <TextGenerateEffect
-                        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center" // remove text-[30px]
-                        words="Créateur de solutions Elégantes et intuitives"
+                        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-11/12 text-center" // remove text-[30px]
+                        words="Créateur de solutions élégantes et sécurisées"
                     />
                     {   /**
                     <TextGenerateEffect
-                        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center" // remove text-[30px]
+                        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center" // remove text[30px]
                         words="Elégantes et intuitives"
                         // gradientClass="bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text"
                     />

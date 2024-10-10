@@ -78,12 +78,13 @@ interface mySkills {
     {
       id: 4,
       title: "Wordpress",
-      desc: "Installation de WordPress et configuration initiale.",
+      desc: "Création de site sécurisé, configuration et maintenance.",
       skillsList: [
+        "Création de site sécurisé, configuration et maintenance.",
+        "Installation, paramétrage et personnalisation de thème.",
         "Edition de contenu (Gutenberg).",
-        "Installation, parametrage et personnalisation de thème.",
-        "Configuration de plugins pour étendre les fonctionnalités de WordPress.",
-        "Modification des options de WordPress via l'interface d'administration pour adapter le site aux besoins du client.",
+        "Configuration de plugins.",
+        // "Modification des options de WordPress via l'interface d'administration pour adapter le site aux besoins du client.",
         "Maîtrise de Git/GitHub pour la gestion de versions et la collaboration.",
         "Utilisation agile de Scrum pour la gestion de projet."
       ],
