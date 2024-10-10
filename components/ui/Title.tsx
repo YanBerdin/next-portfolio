@@ -1,3 +1,4 @@
+{/* Speed Test with TextGenerateEffect */}
 {/*
 "use client";
 

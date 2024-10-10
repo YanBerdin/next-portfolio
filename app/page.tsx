@@ -12,6 +12,7 @@ import { About } from "../components/About";
 import Footer from "@/components/Footer";
 //import Projects from "@/components/Projects";
 import ProjectsRefactor from "@/components/ProjectsRefactor";
+import { IconCloudComp } from "@/components/ui/IconCloudComp";
 
 
 export default function Home() {
@@ -30,6 +31,12 @@ export default function Home() {
           <Skills />
         </div>
 
+
+        <div id="" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
+          <IconCloudComp />
+        </div>
+
+
         <div id="projects" style={{ marginTop: "-30px", paddingTop: "-40px", marginBottom: "15rem" }}>
           <ProjectsRefactor />
         </div>
@@ -37,7 +44,8 @@ export default function Home() {
         <div id="projects" style={{ marginTop: "-40px", paddingTop: "-40px",  marginBottom:"20rem" }}>
           <Grid />
         </div>
-*/}
+        */}
+
         <div id="about" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "15rem" }}>
           <About />
         </div>

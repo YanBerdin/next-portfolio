@@ -42,7 +42,7 @@ export const Hero = () => {
                      */}
                     <TextGenerateEffect
                         className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center" // remove text-[30px]
-                        words="Créateur de solutions Web Elégantes et intuitives"
+                        words="Créateur de solutions Elégantes et intuitives"
                     />
                     {   /**
                     <TextGenerateEffect
@@ -52,7 +52,7 @@ export const Hero = () => {
                     />
                      */}
                     <h1 className="md:tracking-wider my-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center text-white-100">
-                        Bienvenue, je suis Yan, développeur Php Javascript & React.js
+                        Bienvenue, je suis Yan, développeur d&apos;applications Web et mobile
                     </h1>
 
 

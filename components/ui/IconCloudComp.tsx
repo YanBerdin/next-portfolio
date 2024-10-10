@@ -55,8 +55,8 @@ const slugs = [
 export function IconCloudComp() {
 
     return (
-        <div className="flex h-full w-full max-w-[34rem] items-center justify-center overflow-hidden bg-transparent p-3 md:max-w-[26rem] min-w-[16rem] md:min-w-[24rem] xl:min-w-[30rem] my-auto mx-auto pt-0"> {/*flex rounded-lg border*/}
-             <IconCloud iconSlugs={slugs} />
+        <div className="flex h-full w-full items-center justify-center overflow-hidden bg-transparent p-3  my-auto mx-auto pt-0"> {/*flex rounded-lg border  min-w-[16rem] max-w-[34rem] md:min-w-[24rem] md:max-w-[26rem] xl:min-w-[30rem]*/}
+            <IconCloud iconSlugs={slugs} />
         </div>
     );
 }
