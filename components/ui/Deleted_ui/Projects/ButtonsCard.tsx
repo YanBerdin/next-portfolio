@@ -1,3 +1,4 @@
+/*
 import React, { ReactNode, MouseEventHandler } from 'react';
 
 interface ButtonsCardProps {
@@ -10,3 +11,4 @@ export const ButtonsCard = (props: ButtonsCardProps) => {
     // Your ButtonsCard component code here
         return <div>{props.children}</div>;
 };
+*/

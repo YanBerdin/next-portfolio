@@ -25,8 +25,7 @@ export function Contact() {
     <>
       <div className="h-10 md:h-44 lg:h-24"></div>
       <section
-
-        // id="contact"
+         id="contact"
         className="w-11/12 mx-auto mt-10"
       >
         <div className="md:px-8 pb-20">

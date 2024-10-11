@@ -1,3 +1,4 @@
+/*
 "use client";
 import { cn } from "@/lib/utils/cn";
 import { useEffect, useRef, useState } from "react";
@@ -181,3 +182,5 @@ export const BackgroundGradientAnimation = ({
     </div>
   );
 };
+
+*/

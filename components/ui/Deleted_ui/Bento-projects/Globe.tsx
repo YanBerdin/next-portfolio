@@ -1,3 +1,4 @@
+/*
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -11,12 +12,13 @@ declare module "@react-three/fiber" {
     threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
   }
 }
+*/
 
 /**
  * UI : Github Globe
  * Link : https://ui.aceternity.com/components/github-globe
  */
-
+/*
 extend({ ThreeGlobe });
 
 const RING_PROPAGATION_SPEED = 3;
@@ -313,3 +315,4 @@ export function genRandomNumbers(min: number, max: number, count: number) {
 
   return arr;
 }
+*/

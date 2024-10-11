@@ -1,3 +1,4 @@
+/*
 import { FunctionComponent } from "react";
 import { Category } from "../../types";
 
@@ -32,3 +33,5 @@ const ProjectsNavbar: FunctionComponent<{
 };
 
 export default ProjectsNavbar;
+
+*/

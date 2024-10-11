@@ -1,3 +1,4 @@
+/*
 import { useState, useEffect, FunctionComponent } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
@@ -63,3 +64,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+*/

@@ -10,7 +10,7 @@ export const Skills = () => {
     <>
       <div className="h-30 "></div>
 
-      <section className="mx-auto w-11/12 mb-5 lg:mb-52">
+      <section className="mx-auto w-11/12 mb-5 lg:mb-52" id="skills">
         <div className="flex flex-col pointer-events-none">
           <h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mb-4 text-white-100 mt-16">
             Spécialisé en

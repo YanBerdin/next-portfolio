@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
 
-        <div id="" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
+        <div id="tools" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
           <IconCloudComp />
         </div>
 

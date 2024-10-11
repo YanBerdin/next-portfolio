@@ -1,4 +1,6 @@
 "use client";
+
+// For IconCloudComp.tsx
 import IconCloud from "./Icon-cloud";
 
 const slugs = [

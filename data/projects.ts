@@ -1,5 +1,6 @@
 //! data from test with Projects.tsx
 
+/*
 import { Technology } from '@/types'
 
 
@@ -13,6 +14,8 @@ function getRandomTechnologies(count: number): Technology[] {
   const shuffled = [...technologies].sort(() => 0.5 - Math.random())
   return shuffled.slice(0, count)
 }
+
+*/
 
 /** Fake Projects */
 /*
