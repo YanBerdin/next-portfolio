@@ -1,3 +1,4 @@
+/*
 import { FunctionComponent } from "react";
 
 import { Skill } from "../../types";
@@ -20,3 +21,4 @@ const Bar: FunctionComponent<{ value: Skill }> = ({
   );
 };
 export default Bar;
+*/
