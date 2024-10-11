@@ -23,27 +23,27 @@ export const About = () => {
                 placeholder={"blur"} // permet d'avoir une version floutée très basse résolution  de l'image finale pendant le chargement
               /> {/**  lg:max-w-[180px] xl:max-w-[200px] lg:max-h-[207px] xl:max-h-[212px] */}
 
-              <p className="text-sm sm:text-base xl:text-lg text-muted-foreground">
+              <p className="text-sm sm:text-base lg:text-xl text-muted-foreground">
                 Fort d&apos;une formation Fullstack et d&apos;une expérience pratique acquise à travers plusieurs projets, j&apos;ai réorienté ma carrière du e-commerce vers le développement web.
               </p>
 
-              <p className="text-sm sm:text-base xl:text-lg text-muted-foreground mt-4">
+              <p className="text-sm sm:text-base lg:text-xl text-muted-foreground mt-4">
                 Je suis aujourd&apos;hui déterminé à poursuivre cette montée en compétences et à intégrer une entreprise où je pourrai m&apos;investir pleinement. Je porte une attention particulière à la sécurité des données, à la maintenabilité, ainsi qu&apos;à l&apos;accessibilité des applications.
               </p>
 
-              <p className="text-sm sm:text-base xl:text-lg text-muted-foreground mt-4">Mon expérience dans le domaine de la vente et du e-commerce a profondément influencé mon approche centrée sur l&apos;utilisateur. </p>
+              <p className="text-sm sm:text-base lg:text-xl text-muted-foreground mt-4">Mon expérience dans le domaine de la vente et du e-commerce a profondément influencé mon approche centrée sur l&apos;utilisateur. </p>
 
-              <p className="text-sm sm:text-base xl:text-lg text-muted-foreground mt-4">
+              <p className="text-sm sm:text-base lg:text-xl text-muted-foreground mt-4">
                 <strong>Gestion de projets, analyse de données et relation client</strong> : J&apos;ai piloté avec succès la croissance d&apos;une activité en ligne générant 15 000 commandes annuelles, optimisé les processus et assuré une relation client de qualité.
               </p>
 
-              <p className="text-sm sm:text-base xl:text-lg text-muted-foreground mt-4">
+              <p className="text-sm sm:text-base lg:text-xl text-muted-foreground mt-4">
                 <strong>Agilité, collaboration et optimisation de processus</strong> : Manager de Levi&apos;s Store, j&apos;ai animé une équipe de 8 collaborateurs et contribué à une augmentation du chiffre d&apos;affaires de 15% par an grâce à des stratégies d&apos;optimisation des processus et d&apos;amélioration de la satisfaction client.
               </p>
 
-              <p className="text-sm sm:text-base xl:text-lg text-muted-foreground mt-4"><strong>Adaptabilité et apprentissage continu</strong> : Mon parcours m&apos;a permis de développer une grande adaptabilité et une capacité à apprendre rapidement de nouvelles compétences. De la vente à la gestion d&apos;une activité en ligne, j&apos;ai su m&apos;adapter à de nouveaux environnements et relever de nouveaux défis.</p>
+              <p className="text-sm sm:text-base lg:text-xl text-muted-foreground mt-4"><strong>Adaptabilité et apprentissage continu</strong> : Mon parcours m&apos;a permis de développer une grande adaptabilité et une capacité à apprendre rapidement de nouvelles compétences. De la vente à la gestion d&apos;une activité en ligne, j&apos;ai su m&apos;adapter à de nouveaux environnements et relever de nouveaux défis.</p>
 
-              <p className="text-sm sm:text-base xl:text-lg text-muted-foreground mt-4">Ces compétences combinées à ma passion pour la technologie, inspirée par mon frère architecte de solutions, me permettent de contribuer efficacement aux projets d&apos;équipe et de rester focalisé sur les objectifs métiers.</p>
+              <p className="text-sm sm:text-base lg:text-xl text-muted-foreground mt-4">Ces compétences combinées à ma passion pour la technologie, inspirée par mon frère architecte de solutions, me permettent de contribuer efficacement aux projets d&apos;équipe et de rester focalisé sur les objectifs métiers.</p>
             </div>
             {/*<IconCloudComp />*/}
             {/*<Statistics />*/}

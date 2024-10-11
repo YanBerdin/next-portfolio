@@ -270,7 +270,7 @@ export const Repositories = [
       spareImg: "",
       demoLink: "https://yanberdin.github.io/script-runner-game-js",
       githubLink: "https://github.com/YanBerdin/script-runner-game-js",
-      technologies: ['Html', 'Css', 'JS', 'DOMPurify']
+      technologies: ['Html', 'Css', 'JS']
     },
 
     {
@@ -345,7 +345,7 @@ export const Repositories = [
       spareImg: "",
       demoLink: "https://yanberdin.github.io/text_to_speech_web_app",
       githubLink: "https://github.com/YanBerdin/text_to_speech_web_app",
-      technologies: ['Html', 'Css', 'JS', 'DOMPurify']
+      technologies: ['Html', 'Css', 'JS']
     },
 
     {

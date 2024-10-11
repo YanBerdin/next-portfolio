@@ -9,7 +9,7 @@ import { Repositories } from "@/data/projectRefactoData";
 //import { DemoIcon, GithubIcon2 } from "./ui/Icon";
 
 
-type Technology = 'Html' | 'Css' | 'JS' | 'PHP' | 'Singleton' | 'Typescript' | 'React' | 'Next' | 'Laravel' | 'Symfony' | 'Node.js' | 'Tailwind' | 'Shadcn' | 'MySQL' | 'Heroku' | 'Vercel' | 'Aceternity' | 'PostCss' | 'Framer-Motion' | 'Sass' | 'DOMPurify' | 'Axios' | 'Composer' | 'Bootstrap' | 'Apache' | 'Active Record' | 'Eloquent' | 'Semantic UI' | 'PropTypes' | 'Rest API' | 'Redux' | 'AltoRouter' | 'Styled-components' | 'Vite'
+type Technology = 'Html' | 'Css' | 'JS' | 'PHP' | 'Singleton' | 'Typescript' | 'React' | 'Next' | 'Laravel' | 'Symfony' | 'Node.js' | 'Tailwind' | 'Shadcn' | 'MySQL' | 'Heroku' | 'Vercel' | 'Aceternity' | 'PostCss' | 'Framer-Motion' | 'Sass' | 'Axios' | 'Composer' | 'Bootstrap' | 'Apache' | 'Active Record' | 'Eloquent' | 'Semantic UI' | 'PropTypes' | 'Rest API' | 'Redux' | 'AltoRouter' | 'Styled-components' | 'Vite'
 
 interface Repository {
     id: number
@@ -34,7 +34,7 @@ interface Repository {
     technologies: string[]
 }
 
-const technologies: Technology[] = ['Html', 'Css', 'JS', 'PHP', 'Singleton', 'Typescript', 'React', 'Next', 'Laravel', 'Symfony', 'Node.js', 'Tailwind', 'Shadcn', 'MySQL', 'Heroku', 'Vercel', 'Aceternity', 'PostCss', 'Framer-Motion', 'Sass', 'DOMPurify', 'Axios', 'Composer', 'Bootstrap', 'Apache', 'Active Record', 'Eloquent', 'Semantic UI', 'PropTypes', 'Rest API', 'Redux', 'AltoRouter', 'Styled-components', 'Vite']
+const technologies: Technology[] = ['Html', 'Css', 'JS', 'Typescript', 'Sass', 'PostCss', 'React', 'Redux', 'Next', 'Framer-Motion', 'Vite', 'Axios', 'Node.js', 'PHP', 'Apache', 'Rest API', 'Singleton', 'Laravel', 'Symfony', 'AltoRouter', 'Composer', 'MySQL', 'Active Record', 'Eloquent', 'Bootstrap', 'Tailwind', 'Semantic UI']
 
 
 const myRepositories: Repository[] = Repositories.map(repo => ({
