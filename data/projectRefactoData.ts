@@ -79,7 +79,7 @@ export const Repositories = [
       spareImg:"",
       demoLink:"https://new-react-github-explorer.vercel.app/",
       githubLink:"https://github.com/YanBerdin/create-react-github-explorer",
-      technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'Semantic UI', 'PropTypes', 'Sass'],
+      technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'Semantic UI', 'Sass'],
     },
   
     {
@@ -190,7 +190,7 @@ export const Repositories = [
       spareImg: "",
       demoLink: "https://yanberdins-projects.vercel.app/",
       githubLink: "https://github.com/YanBerdin/next-portfolio",
-      technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind', 'Typescript' , 'Framer-Motion' , 'Axios' , 'PostCss' , 'Aceternity', 'Shadcn'],
+      technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind', 'Typescript', 'Framer-Motion', 'Axios', 'PostCss'],
       },
    
     {
@@ -229,7 +229,7 @@ export const Repositories = [
       spareImg: "",
       demoLink: "https://yanberdin.github.io/React_Widget_Meteo/",
       githubLink: "https://github.com/YanBerdin/React_Widget_Meteo",
-      technologies: ['Html', 'Css', 'JS', 'React', 'PropTypes', 'Axios', 'Sass'],
+      technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'Sass'],
     }, 
     {
       id: 7,
@@ -454,7 +454,7 @@ export const Repositories = [
     spareImg: "",
     demoLink: "https://github.com/YanBerdin/spotify-controller", //TODO Deployer
     githubLink: "https://github.com/YanBerdin/spotify-controller",
-    technologies: ['Html', 'Css', 'JS', 'React', 'Vite', 'Axios', 'Styled-components']
+    technologies: ['Html', 'Css', 'JS', 'React', 'Vite', 'Axios']
   },
 
 ];
