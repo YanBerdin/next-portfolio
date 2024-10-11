@@ -1,3 +1,4 @@
+/*
 "use client";
 
 import { useState } from "react";
@@ -103,7 +104,11 @@ export const BentoGridItem = ({
                     "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
         >
+*/
+
             {/* add img divs */}
+
+/*
             <div className={`${id === 6 && "flex justify-center"} h-full`}>
                 <div className="w-full h-full absolute ">
                     {img && (
@@ -137,7 +142,10 @@ export const BentoGridItem = ({
                 {id === 6 && (
                     // add background animation , remove the p tag
                     <BackgroundGradientAnimation aria-hidden="true">
-                        <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-2 pointer-events-none text-center"></div> {/*  text-xl md:text-xl lg:text-2xl lg:text-7xl */}
+                        <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-2 pointer-events-none text-center"></div> 
+*/
+                        {/*  text-xl md:text-xl lg:text-2xl lg:text-7xl */}
+/*
                     </BackgroundGradientAnimation>
                 )}
 
@@ -147,34 +155,45 @@ export const BentoGridItem = ({
                         "group-hover/bento:brightness-125 transition duration-200 relative h-full flex flex-col px-5 p-3 sm:p-5"
                     )} //  min-h-30 lg:p-10  [text-md md:text-lg lg:text-2xl] => moved to index.ts
                 >
+*/
                     {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
+/*
                     <div className="font-sans font-light w-full text-[#C1C2D3] z-10 text-xs md:text-sm lg:text-base">
                         {description}
                     </div>
+*/
                     {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
                     {/* remove mb-2 mt-2 md:text-xs md:max-w-32 */}
+/*
                     <div
                         className={`font-sans max-w-96 font-bold z-10 mt-1`} // text-md lg:text-xl
                     >
                         {title}
 
                     </div>
-
+*/
                     {/* for the github 3d globe */}
                     {/* {id === 2 && <GridGlobe aria-hidden="true" />} */}
+/*
                     {id === 2}
-
+*/
                     {/* Tech stack list div */}
+/*
                     {id === 3 && (
                         <div className="flex gap-1 lg:gap-3 w-fit absolute right-3 lg:mr-2" aria-haspopup="true">
+*/
                             {/* tech stack lists */}
+/*
                             <div className="flex flex-col gap-1 md:gap-2">
                                 {leftList.map((item, i) => (
                                     <span
                                         key={i}
                                         className="py-1 px-2 text-sm opacity-50 
                     lg:opacity-100 rounded-xs text-center bg-[#10132E]" // lg:py-2 lg:px-3 
-                                    > {/* rounded-lg */}
+                                    > 
+*/
+                                    {/* rounded-lg */}
+/*
                                         {item}
                                     </span>
                                 ))}
@@ -200,7 +219,10 @@ export const BentoGridItem = ({
                                         key={i}
                                         className="py-1 px-1 text-sm opacity-50 
                     lg:opacity-100 rounded-xs text-center bg-[#10132E]" // lg:py-2 lg:px-3 
-                                    > {/* rounded-lg */}
+                                    > 
+*/ 
+                                    {/* rounded-lg */}
+/*
                                         {item}
                                     </span>
                                 ))}
@@ -214,12 +236,13 @@ export const BentoGridItem = ({
                             <BackdropModal id={id} />
                         </div>
                     )}
-
+*/
 
                     {/* for the email copy */}
-
+/*
                     {id === 6 && (
                         <div className="">
+*/
                             {/* button border magic from tailwind css buttons  */}
                             {/* add rounded-md h-8 md:h-8, remove rounded-full */}
                             {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
@@ -241,6 +264,7 @@ export const BentoGridItem = ({
                                 handleClick={handleCopy}
                                 otherClasses="!bg-[#161A31]"
                             /> */}
+/*                           
                             <MagicButton
                                 title="Visitez mon Github"
                                 icon={<GithubIcon2 />}
@@ -255,3 +279,5 @@ export const BentoGridItem = ({
         </div>
     );
 };
+
+*/
