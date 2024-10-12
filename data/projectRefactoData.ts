@@ -115,7 +115,7 @@ export const Repositories = [
       width: 220,
       height: 100,
       spareImg: "",
-      demoLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php", //TODO Deployer
+      demoLink: "", //TODO Deployer
       githubLink: "https://github.com/YanBerdin/shoes-shop-frontoffice-php",
       technologies: ['Html', 'Css', 'JS', 'PHP', 'Composer', 'Bootstrap', 'Apache', 'Singleton', 'Active Record'],
     },
@@ -157,7 +157,7 @@ export const Repositories = [
       width: 220,
       height: 100,
       spareImg: "",
-      demoLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php", //TODO Deployer
+      demoLink: "", //TODO Deployer
       githubLink: "https://github.com/YanBerdin/shoes-shop-frontoffice-php",
       technologies: ['Html', 'Css', 'PHP', 'MySQL', 'Composer', 'Bootstrap', 'Apache', 'Singleton', 'Active Record'],
     },
@@ -188,7 +188,7 @@ export const Repositories = [
       width: 220,
       height: 100,
       spareImg: "",
-      demoLink: "https://yanberdins-projects.vercel.app/",
+      demoLink: "https://www.yanberdin.com",
       githubLink: "https://github.com/YanBerdin/next-portfolio",
       technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind', 'Typescript', 'Framer-Motion', 'Axios', 'PostCss'],
       },
@@ -307,7 +307,7 @@ export const Repositories = [
       width: 320,
       height: 200,
       spareImg: "",
-      demoLink: "https://github.com/YanBerdin/Pokedex-php-yanberdin", //TODO A Deployer
+      demoLink: "", //TODO A Deployer
       githubLink: "https://github.com/YanBerdin/Pokedex-php-yanberdin",
       technologies: ['Apache', 'PHP', 'MySQL', 'Html', 'Css', 'Composer', 'AltoRouter', 'Bootstrap']
     },
@@ -413,7 +413,7 @@ export const Repositories = [
     width: 320,
     height: 200,
     spareImg: "",
-    demoLink: "https://github.com/YanBerdin/Laravel-Vanilla_JS-Task_Manager", //TODO Deployer
+    demoLink: "", //TODO Deployer
     githubLink: "https://github.com/YanBerdin/Laravel-Vanilla_JS-Task_Manager",
     technologies: ['Html', 'Css', 'PHP', 'Laravel', 'Eloquent', 'MySQL', 'Rest API','JS']
   },
@@ -452,7 +452,7 @@ export const Repositories = [
     width: 320,
     height: 200,
     spareImg: "",
-    demoLink: "https://github.com/YanBerdin/spotify-controller", //TODO Deployer
+    demoLink: "", //TODO Deployer
     githubLink: "https://github.com/YanBerdin/spotify-controller",
     technologies: ['Html', 'Css', 'JS', 'React', 'Vite', 'Axios']
   },

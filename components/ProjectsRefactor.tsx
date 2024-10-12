@@ -115,9 +115,11 @@ export default function ProjectsRefactor() {
                                         <ProjectsRefactorButton variant="secondary" asChild>
                                             <a href={repo.githubLink} target="_blank" rel="noopener noreferrer">Code</a>
                                         </ProjectsRefactorButton>
-                                        <ProjectsRefactorButton variant="secondary" asChild>
-                                            <a href={repo.demoLink} target="_blank" rel="noopener noreferrer">Website</a>
-                                        </ProjectsRefactorButton>
+                                        {repo.demoLink && (
+                                            <ProjectsRefactorButton variant="secondary" asChild>
+                                                <a href={repo.demoLink} target="_blank" rel="noopener noreferrer">Website</a>
+                                            </ProjectsRefactorButton>
+                                        )}
                                         <ProjectsRefactorButton variant="secondary" asChild>
                                             <BackdropModal id={repo.id} />
                                             { /* <a href={repo.detailsLink} target="_blank" rel="noopener noreferrer">Details</a>*/}
