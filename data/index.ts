@@ -2,14 +2,12 @@ import { GithubIcon2, ResumeIcon } from '@/components/ui/Icon';
 
 export const navItems = [
 
-  { name: "Skills", link: "#skills", title:"Voir mes compétences" },
-  { name: "Réalisations", link: "#projects", title:"Voir mes réalisations" },
-  { name: "A-propos", link: "#about", title:"Voir ma présentation" },
-  { name: "Contact", link: "#contact" },
-  { name: "", link: "#experience", icon: ResumeIcon, title:"Mon CV" },
-  // { name: "Experience", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/CV_Yan_Berdin.docx", target:"_blank" },
-  //https://YanBerdin.github.io/resume 
-  { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon2, title:"Mon Github" },
+  { name: "Skills", link: "#skills", title:"Compétences" },
+  { name: "Réalisations", link: "#projects", title:"Réalisations" },
+  { name: "A-propos", link: "#about", title:"A-propos" },
+  { name: "Contact", link: "#contact", title:"Contact" },
+  { name: "", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/Yan_Berdin.pdf", target:"_blank", icon: ResumeIcon, title:"CV" },
+  { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon2, title:"Github" },
   // { name: "Testimonials", link: "#testimonials" },
 ];
 

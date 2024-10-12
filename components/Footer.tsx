@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="md:h-24 w-full lg:h-44"></div>
       <footer className="w-full pt-10 pb-10">
         {/* background grid */}
-        <div className="w-full h-auto absolute left-0 -bottom-4 min-h-96 mt-10"> {/*  max-h-[900px]*/}
+        <div className="w-full h-auto max-h-[900px] absolute left-0 -bottom-4 min-h-96 mt-10"> {/*  max-h-[900px]*/}
           <Image
             src="/footer-grid.svg"
             alt="grid"
