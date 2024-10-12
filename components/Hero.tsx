@@ -30,7 +30,7 @@ export const Hero = () => {
                 />
 
             </div>
-            <div className="flex justify-center gap-10 relative my-36 md:my-60  z-10"> {/*flex-wrap md:justify-around*/}
+            <div className="flex justify-center gap-10 relative my-36 md:my-44 z-10"> {/*flex-wrap md:justify-around*/}
                 <div className="max-sm:w-full w-11/12 lg:w-9/12 flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
