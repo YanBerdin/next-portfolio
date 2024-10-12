@@ -23,7 +23,7 @@ export default function Home() {
 
         {/*<h1>Yan&apos;s Portfolio</h1>*/}
         <FloatingNav navItems={navItems} />
-        <div id="hero" style={{ marginBottom: "16rem" }}>
+        <div id="hero" style={{ marginBottom: "18rem" }}>
           <Hero />
         </div>
 
