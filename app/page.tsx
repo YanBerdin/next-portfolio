@@ -17,7 +17,7 @@ import { IconCloudComp } from "@/components/ui/IconCloudComp";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto px-2 sm:px-10 min-w-screen min-h-svh" > {/*px-5 min-h-screen */}
+    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto px-2 sm:px-10 min-w-screen min-h-dvh" > {/*px-5 min-h-screen */}
       {/*<Cursor />*/}
       <div className="max-width-7xl w-full">
 

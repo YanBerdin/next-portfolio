@@ -6,7 +6,7 @@ import { IconCloudComp } from "./ui/IconCloudComp";
 export const About = () => {
   return (
     <>
-      <div className="h-8 sm:h-24 lg:h-32"></div>
+      <div className="h-8 sm:h-24"></div>
       {/* bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased */}
       <section
         className="bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl rounded-lg justify-center w-11/12 mx-auto h-full">
