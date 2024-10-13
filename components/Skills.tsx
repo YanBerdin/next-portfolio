@@ -8,7 +8,7 @@ import Image from "next/image";
 export const Skills = () => {
   return (
     <>
-      <div className="h-30 "></div>
+      <div className="h-8"></div>
 
       <section className="mx-auto w-11/12 mb-5 lg:mb-52" id="skills">
         <div className="flex flex-col pointer-events-none">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 // import pilot from "../public/pilot.png";
 import Portrait from "../public/portrait.png";
-import { IconCloudComp } from "./ui/IconCloudComp";
+// import { IconCloudComp } from "./ui/IconCloudComp";
 
 export const About = () => {
   return (

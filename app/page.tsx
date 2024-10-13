@@ -23,7 +23,7 @@ export default function Home() {
 
         {/*<h1>Yan&apos;s Portfolio</h1>*/}
         <FloatingNav navItems={navItems} />
-        <div id="hero" style={{ marginBottom: "18rem" }}>
+        <div id="hero" style={{ marginBottom: "20rem" }}>
           <Hero />
         </div>
 
@@ -40,6 +40,7 @@ export default function Home() {
         <div id="projects" style={{ marginTop: "-30px", paddingTop: "-40px", marginBottom: "15rem" }}>
           <ProjectsRefactor />
         </div>
+        
         {/*
         <div id="projects" style={{ marginTop: "-40px", paddingTop: "-40px",  marginBottom:"20rem" }}>
           <Grid />
