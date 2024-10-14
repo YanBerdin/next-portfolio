@@ -158,7 +158,7 @@ export const Repositories = [
       height: 100,
       spareImg: "",
       demoLink: "", //TODO Deployer
-      githubLink: "https://github.com/YanBerdin/shoes-shop-frontoffice-php",
+      githubLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php",
       technologies: ['Html', 'Css', 'PHP', 'MySQL', 'Composer', 'Bootstrap', 'Apache', 'Singleton', 'Active Record'],
     },
 

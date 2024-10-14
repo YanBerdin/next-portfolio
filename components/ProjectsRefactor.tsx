@@ -57,7 +57,7 @@ export default function ProjectsRefactor() {
         : myRepositories
 
     const handleLoadMore = () => {
-        setVisibleRepos(prev => prev + 3)
+        setVisibleRepos(numVisibleRepos => numVisibleRepos + 3)
     }
 
     return (
@@ -84,7 +84,8 @@ export default function ProjectsRefactor() {
                             <li key={tech}>
                                 <ProjectsRefactorButton
                                     variant={selectedTech === tech ? "default" : "secondary"}
-                                    onClick={() => setSelectedTech(tech)}
+                                    // onClick={() => setSelectedTech(tech)}
+                                    onClick={() => setSelectedTech(currentTech => currentTech === tech ? null : tech)}
                                 >
                                     {tech}
                                 </ProjectsRefactorButton>
