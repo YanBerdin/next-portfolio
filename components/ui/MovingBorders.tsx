@@ -111,7 +111,14 @@ export const MovingBorder = ({
     (val) => pathRef.current?.getPointAtLength(val).y
   );
 
-  const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
+  //* Error: CSS: transform: undefinedpx is not a transform value.
+  // Ajout des valeurs par défaut pour x et y
+  const xValue = x ?? 0;
+  const yValue = y ?? 0;
+
+
+  //const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
+  const transform = useMotionTemplate`translateX(${xValue}px) translateY(${yValue}px) translateX(-50%) translateY(-50%)`;
 
   return (
     <>
