@@ -57,24 +57,9 @@ interface mySkills {
       className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
-    /*
+
     {
       id: 3,
-      title: "Transverse",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
-      skillsList: [
-        "Respect des normes d'accessibilité web (WCAG) et des bonnes pratiques SEO.",
-       // "Respect des normes de sécurité des données (RGPD) et des meilleures pratiques (OWASP).",
-       // "Expérience avec le Shell et les commandes SSH.",
-       // "Maîtrise de Git/GitHub pour la gestion de versions et la collaboration.",
-       // "Utilisation agile de Scrum pour la gestion de projet.",
-      ],
-      className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
-    },
-    */
-    {
-      id: 4,
       title: "Wordpress",
       desc: "Création de site sécurisé, configuration et maintenance.",
       skillsList: [

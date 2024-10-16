@@ -81,21 +81,21 @@ export default function BackdropModal({ id }: { id: number }) {
             borderRadius: `calc(1.75rem* 0.96)`,
           }}
           // remove bg-white dark:bg-slate-900
-          className=" border-neutral-200 dark:border-slate-800 w-10/12 md:max-w-[80vw] lg:max-w-[70vw] max-h-[10/12] xl:max-h-max "
+          className=" border-neutral-200 dark:border-slate-800 w-10/12 md:max-w-[80vw] lg:max-w-[70vw] max xl:max-h-max "
         >
           {(onClose) => (
             <BackgroundGradient className="rounded-[22px] bg-white dark:bg-zinc-900 p-3 text-md">
               <ModalHeader className="flex flex-col py-4 px-4">
-                <h2 className="text-xl">{title}</h2>
+                <h2 className="text-[#123af0] text-xl brightness-200">{title}</h2>
               </ModalHeader>
-              <ModalBody className="max-h-[70vh] overflow-y-auto gap-1 scrollbar max-sm:px-3 max-sm:text-sm">
-                <h3 className="mb-2 text-md">{description}</h3>
+              <ModalBody className="text-slate-100 max-h-[70vh] overflow-y-auto gap-1 scrollbar max-sm:px-3 max-sm:text-sm">
+                <h3 className="mb-2 text-[#123af0] brightness-200 text-md">{description}</h3>
                 {explanationList.map((explanation, index) => (
                   <p className="text-xs md:text-sm lg:text-base" key={index}>{explanation}</p>
                 ))}
               </ModalBody>
               <ModalFooter className="max-sm:px-2">
-                <button className="shadow-[0_0_0_2px_#581010_inset] px-4 py-1 bg-transparent border border-red-800 dark:border-red-800 dark:text-red-400 text-red-400 rounded-lg transform hover:scale-90 transition duration-200 font-medium max-md:px-3 max-md:py-1 max-sm:text-sm" onClick={onClose}>{/*   max-md:pt-1 max-md:pb-1*/}
+                <button className=" px-3  py-1 bg-transparent border border-red-800 dark:border-red-800 dark:text-slate-300 text-red-400 rounded-lg transform hover:scale-90 transition duration-200 font-medium text-sm focus:outline-none focus:ring-1 focus:ring-offset-2 max-h-80" onClick={onClose}>{/*   max-md:pt-1 max-md:pb-1*/}
                   X
                 </button>
                 {/*
