@@ -61,7 +61,7 @@ export function Contact() {
               yet */}
             </p>
 
-            <form target="" action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" method="POST" className="my-8" > {/** action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" */}
+            <form target="_self" action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" method="POST" className="my-8" > {/** action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" */}
               <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4 gap-2">
                 <LabelInputContainer>
                   <Label htmlFor="firstname" >Prénom</Label>

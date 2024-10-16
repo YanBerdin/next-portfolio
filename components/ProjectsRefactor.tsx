@@ -110,7 +110,7 @@ export default function ProjectsRefactor() {
                                         'object-cover px-4 shrink-1'
                                     )}
                                 />
-                                <div className="absolute inset-0 bg-blue-200 bg-opacity-50 opacity-0  origin-center group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-lg p-2"> {/*  hover:scale-95 bug-shaked-border */}
+                                <div className="absolute inset-0 bg-blue-200 bg-opacity-50 opacity-0 origin-center group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-lg p-2  group-hover:scale-95 ease-in-out ">
 
                                     <div className="space-x-1 inline-flex shrink-1">
                                         <ProjectsRefactorButton variant="secondary" asChild>
