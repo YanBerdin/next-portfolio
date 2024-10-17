@@ -94,27 +94,29 @@ export default function BackdropModal({ id }: { id: number }) {
                   <p className="text-xs md:text-sm lg:text-base" key={index}>{explanation}</p>
                 ))}
               </ModalBody>
-              <ModalFooter className="max-sm:px-2">
-                <button className=" px-3  py-1 bg-transparent border border-red-800 dark:border-red-800 dark:text-slate-300 text-red-400 rounded-lg transform hover:scale-90 transition duration-200 font-medium text-sm focus:outline-none focus:ring-1 focus:ring-offset-2 max-h-80" onClick={onClose}>{/*   max-md:pt-1 max-md:pb-1*/}
-                  X
-                </button>
+              <ModalFooter className="max-sm:px-3 flex flex-wrap">
                 {/*
-                *---------------------- A SUPPRIMER ------------------------
+                ---------------------- A SUPPRIMER ------------------------
                 
-                <button className="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-red-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-red-50">
-                  Close
+                <button className="max-sm:w-full px-3 py-1 bg-transparent border border-red-800 dark:border-red-800 dark:text-slate-300 text-red-400 rounded-md transform hover:scale-90 transition duration-200 font-medium text-sm focus:outline-none focus:ring-1 focus:ring-offset-2" onClick={onClose}>
+                  X
                 </button>
                 */}
                 {/*
                 *---------------------- FIN DE A SUPPRIMER ------------------------
                 */}
-                {demoLink && (<button className="inline-flex h-10 animate-shimmer items-center justify-center rounded-lg border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-300 transform hover:scale-90 max-sm:text-sm" onClick={handleDemoClick}>{/* max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
+                <button className="max-sm:w-full inline-flex h-10 items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-red-50 transform hover:scale-95 ease-in-out hover:brightness-150  max-sm:text-sm">
+                  Close
+                </button>
+
+
+                {demoLink && (<button className="max-sm:w-full inline-flex h-10 animate-shimmer items-center justify-center rounded-lg border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-300 transform hover:scale-95 ease-in-out hover:brightness-150 max-sm:text-sm " onClick={handleDemoClick}>{/* max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
                   <span className="mr-2">
                     Démo
                   </span>
                   <DemoIcon />
                 </button>)}
-                <button className="inline-flex h-10 animate-shimmer items-center justify-center rounded-lg border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-300 transform hover:scale-90 max-sm:text-sm" onClick={handleCodeClick}>{/* max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
+                <button className="max-sm:w-full inline-flex h-10 animate-shimmer items-center justify-center rounded-lg border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-300 transform hover:scale-95 ease-in-out hover:brightness-150 max-sm:text-sm" onClick={handleCodeClick}>{/* max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
                   <span className="mr-2">Code</span> <GithubIcon2 />
                 </button>
               </ModalFooter>

@@ -103,18 +103,19 @@
 }
 
 .scrollbar::-webkit-scrollbar {
-  width: 2px;
+  width: 4px;
   /*height: 20px;*/
-  
+  border-radius: 1.5rem;
 }
 .scrollbar::-webkit-scrollbar-track {
-  /* border-radius: 100vh; */
-  background: #e0dfea;
+  border-radius: 1.5rem;
+  background: #4b5563;
+  width: 4px;
 }
 .scrollbar::-webkit-scrollbar-thumb {
-  background: #123af0;
-  filter: brightness(200%); 
-  border-radius: 100vh;
+  background: #d1d5db;
+  /* filter: brightness(150%); */
+  border-radius: 1.5rem;
   /* border: 3px solid #f6f7ed; */
 }
 
