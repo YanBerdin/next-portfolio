@@ -18,7 +18,7 @@ export default function BackdropModal({ id }: { id: number }) {
   const [backdrop, setBackdrop] = React.useState<"blur" | "transparent" | "opaque" | "backdrop-blur-md" | undefined>('transparent') as any[];
   const [size, setSize] = React.useState('xl')
   const sizes = ["xs", "sm", "md", "lg", "xl", "2xl", "3xl", "4xl", "5xl", "full"];
-  const [scrollBehavior, setScrollBehavior] = React.useState("inside");
+  //const [scrollBehavior, setScrollBehavior] = React.useState("inside");
 
   const [title, settitle] = React.useState("");
   const [description, setDescription] = React.useState("");
@@ -69,7 +69,7 @@ export default function BackdropModal({ id }: { id: number }) {
         ))}
       </div>
 
-      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose} size={size as "lg" | "xs" | "sm" | "md" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "full"} placement="center" className="mt-28" scrollBehavior={"inside"}>
+      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose} size={size as "lg" | "xs" | "sm" | "md" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "full"} placement="center" className="max-sm:mt-24" scrollBehavior={"inside"}>
         <ModalContent
           style={{
             //   generate the color from https://cssgradient.io/
@@ -103,7 +103,7 @@ export default function BackdropModal({ id }: { id: number }) {
                 {/*
                 *---------------------- FIN DE A SUPPRIMER ------------------------
                 */}
-                <button className="max-sm:w-full inline-flex h-10 items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-red-50 transform hover:scale-95 ease-in-out hover:brightness-150  max-sm:text-sm">
+                <button className="max-sm:w-full inline-flex h-10 items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-red-50 transform hover:scale-95 ease-in-out hover:brightness-150  max-sm:text-sm" onClick={onClose}>
                   Close
                 </button>
 
