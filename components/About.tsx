@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import pilot from "../public/pilot.png";
 import Portrait from "../public/portrait.png";
 // import { IconCloudComp } from "./ui/IconCloudComp";
 
@@ -20,7 +19,7 @@ export const About = () => {
                 alt="Portrait de Yan souriant"
                 className=" max-w-[100px] md:max-w-[130px] object-cover rounded-lg mx-auto max-h-[108px] md:max-h-[150px] flex-shrink-2 sm:float-start flex sm:mr-4 max-sm:mb-4"
                 loading="lazy"
-                placeholder={"blur"} // permet d'avoir une version floutée très basse résolution  de l'image finale pendant le chargement
+                placeholder={"blur"} // (only SSR) blur pendant le chargement 
               /> {/**  lg:max-w-[180px] xl:max-w-[200px] lg:max-h-[207px] xl:max-h-[212px] */}
 
               <p className="text-sm sm:text-base lg:text-xl text-muted-foreground">

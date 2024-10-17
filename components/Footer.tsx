@@ -1,9 +1,7 @@
-import { FaLocationArrow } from "react-icons/fa6";
-
 import { socialMedia } from "@/data/index";
 import { MagicButton } from "./MagicButton";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import BlurImage from "./ui/BlurImage";
 
 const Footer = () => {
@@ -13,7 +11,7 @@ const Footer = () => {
       <footer className="w-full pt-10 pb-10">
         {/* background grid */}
         <div className="w-full h-auto max-h-[900px] absolute left-0 -bottom-4 min-h-96 mt-10"> {/*  max-h-[900px]*/}
-          <Image
+          <BlurImage
             src="/footer-grid.svg"
             alt="grid"
             className="w-full opacity-50"
@@ -33,8 +31,7 @@ const Footer = () => {
 
           <MagicButton
             title="Contactez-moi"
-            // icon={<FaLocationArrow />}
-            icon={""}
+            icon={""} // icon={<FaLocationArrow />}
             position="right"
             href="#contact"
           />
@@ -62,9 +59,9 @@ const Footer = () => {
                   width={24}
                   height={24}
                   loading="lazy"
-                  // fetchPriority="high"
-                  // rel="preload"
-                  // aria-hidden="true"
+                // fetchPriority="high"
+                // rel="preload"
+                // aria-hidden="true"
                 />
               </Link>
             ))}

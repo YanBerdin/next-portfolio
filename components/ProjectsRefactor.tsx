@@ -2,9 +2,10 @@
 
 import React, { useState } from 'react'
 import cn from 'classnames'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { ProjectsRefactorButton } from "@/components/ui/ProjectsRefactorButton"
-import BackdropModal from "@/components/ui/BackdropModal"; // Add this line
+import BackdropModal from "@/components/ui/BackdropModal";
+import BlurImage from "@/components/ui/BlurImage";
 import { Repositories } from "@/data/projectRefactoData";
 //import { DemoIcon, GithubIcon2 } from "./ui/Icon";
 
@@ -98,11 +99,10 @@ export default function ProjectsRefactor() {
                     {filteredRepos.slice(0, visibleRepos).map(repo => (
                         <div key={repo.id} className="bg-slate-800/[0.8] border border-slate-700 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[290px] lg:max-w-[310px] mx-auto">
                             <div className="relative group"> {/* min-h-36 md:h-64 lg:h-72 */}
-                                <Image
+                                <BlurImage
                                     src={repo.img}
                                     alt={repo.title}
                                     fill={false}
-                                    //objectFit="cover"
                                     width={520}
                                     height={420}
                                     loading="lazy"
@@ -110,6 +110,7 @@ export default function ProjectsRefactor() {
                                         'object-cover px-4 shrink-1 group-hover:scale-95 transition-transform duration-300 ease-in-out',
                                     )}
                                 />
+
                                 <div className="absolute inset-0 bg-blue-200 bg-opacity-50 opacity-0 origin-center group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-lg p-2 ease-in-out">
 
                                     <div className="space-x-1 inline-flex shrink-1">

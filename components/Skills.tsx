@@ -2,8 +2,8 @@ import React from "react";
 import { mySkills } from "@/data/index";
 import { Button } from "./ui/MovingBorders";
 import { Check } from "lucide-react";
-import Image from "next/image";
-// import BlurImage from './ui/BlurImage';
+// import Image from "next/image";
+import BlurImage from "./ui/BlurImage";
 
 export const Skills = () => {
   return (
@@ -45,7 +45,7 @@ export const Skills = () => {
                 className="flex-1 border-neutral-200 dark:border-slate-800 p-4"
               >
                 <div className="flex flex-col lg:items-center p-2 md:p-3 gap-5"> {/*remove lg:flex-raw*/}
-                  <Image
+                  <BlurImage
                     src={card.thumbnail}
                     //alt={card.thumbnail}
                     alt={card.thumbnail} // Remplacer card.thumbnail par card.title pour un alt plus descriptif 

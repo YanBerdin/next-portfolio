@@ -1,42 +1,14 @@
-// "use client"
+"use client"
 
-import Image from 'next/image';
-// import { useState } from 'react';
+import { useState } from 'react';
+import Image, { StaticImageData } from 'next/image';
 
 function cn(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
-/*
-interface BlurImageProps {
-  src: string;
-  [key: string]: any;
-}
-
-function BlurImage({ src, ...props }: BlurImageProps) {
-  const [isLoading, setLoading] = useState(true);
-
-  return (
-    <Image
-      {...props}
-      src={src}
-      alt='Blur Image'
-      //layout="fill"
-      fill
-      objectFit="cover"
-      className={cn(
-        'duration-700 ease-in-out',
-        isLoading
-          ? 'grayscale blur-2xl scale-110'
-          : 'grayscale-0 blur-0 scale-100'
-      )}
-      onLoadingComplete={() => setLoading(false)}
-    />
-  );
-}
-*/
 
 interface BlurImageProps {
-  src: string;
+  src: string | StaticImageData
   alt?: string;
   width: number;
   height: number;
@@ -44,18 +16,25 @@ interface BlurImageProps {
 }
 
 function BlurImage({ src, alt = '', width, height, ...props }: BlurImageProps) {
+  const [isLoading, setLoading] = useState(true);
+
   return (
     <Image
+      {...props}
       src={src}
       alt={alt}
-      {...props}
       width={width}
       height={height}
       // fill={true}
       // objectFit="cover" // deprecated
       className={cn(
-        'duration-700 ease-in-out grayscale-0 blur-0 scale-100'
+        'duration-700 ease-in-out',
+        isLoading
+          ? 'grayscale blur-2xl scale-105'
+          : 'grayscale-0 blur-0 scale-100',
+        props.className // passer les props de BlurImage à Image pour les classes CSS
       )}
+      onLoad={() => setLoading(false)}
     />
   );
 }

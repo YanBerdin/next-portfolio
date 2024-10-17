@@ -80,7 +80,7 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-muted-foreground brightness-110 items-center flex space-x-0.5 sm:space-x-1 text-neutral-600 hover:text-white-300 hover:bg-slate-800 hover:scale-95 transition-transform duration-300 ease-in-out rounded-md !cursor-pointer"
+              "relative dark:text-muted-foreground brightness-110 items-center flex space-x-0.5 sm:space-x-1 text-neutral-600 hover:brightness-200 hover:scale-95 transition-transform duration-300 ease-in-out rounded-md !cursor-pointer"
             )}
             target={navItem.target}
             rel="noopener noreferrer"
