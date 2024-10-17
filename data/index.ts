@@ -2,10 +2,10 @@ import { GithubIcon2, ResumeIcon } from '@/components/ui/Icon';
 
 export const navItems = [
 
-  { name: "Skills", link: "#skills", title:"Compétences" },
-  { name: "Réalisations", link: "#projects", title:"Réalisations" },
-  { name: "A-propos", link: "#about", title:"A-propos" },
-  { name: "Contact", link: "#contact", title:"Contact" },
+  { name: "Skills", link: "#skills", title:"" },
+  { name: "Réalisations", link: "#projects", title:"" },
+  { name: "A-propos", link: "#about", title:"" },
+  { name: "Contact", link: "#contact", title:"" },
   { name: "", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/Yan_Berdin.pdf", target:"_blank", icon: ResumeIcon, title:"CV" },
   { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon2, title:"Github" },
   // { name: "Testimonials", link: "#testimonials" },
@@ -86,7 +86,7 @@ export const gridItems = [
       " ",
       "Les utilisateurs peuvent : Rechercher des artistes ou des albums, Explorer différents genres musicaux, Créer leurs propres playlists.",
       " ",
-      "💡 La sécurisation de notre application s’attache à 6 aspects :",
+      "💡 La sécurisation de l'application s’attache à 6 aspects :",
       "🔒 L’authentification, Le contrôle d’accès, L’intégrité des données, La confidentialité des données, La non-répudiation (envoi et réception de messages incontestables), La protection contre l’analyse du trafic",
       " ",
       "🚧 Défi : Gérer efficacement l'état global de l'application pour synchroniser les données entre les différents composants.",

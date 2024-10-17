@@ -88,20 +88,28 @@
   }
 }
 
-/* Cursor shadow */
-.cursor {
-  position: absolute;
-  background: hsl(var(--foreground) / 70%);
-  /*background: rgba(255, 255, 255, 0.99); /* Set a visible background color */
-  border-radius: 50%;
-  rotate: 35deg;
-  width: 260px;
-  height: 260px;
-  filter: blur(280px);
-  /*animation: shadow-slide infinite 4s linear alternate;*/
-  transform: translate(-50%, -50%); /* Center the shadow */
-}
-
+    /* Cursor shadow */
+/**
+    .cursor {
+      position: absolute;
+      background: hsl(var(--foreground) / 70%);
+*/  
+    /*background: rgba(255, 255, 255, 0.99); /** Set a visible background color */
+/**
+    border-radius: 50%;
+    rotate: 35deg;
+    width: 260px;
+    height: 260px;
+    filter: blur(280px);
+*/
+    /*animation: shadow-slide infinite 4s linear alternate;*/
+    /* Center the shadow */
+/**
+    transform: translate(-50%, -50%);
+*/
+/**
+    }
+*/
 .scrollbar::-webkit-scrollbar {
   width: 4px;
   /*height: 20px;*/
@@ -119,151 +127,164 @@
   /* border: 3px solid #f6f7ed; */
 }
 
-/* Error with Firefox webkit-scrollbar-thumb:hover*/
-/*
-.scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #c0a0b9; 
-}
+    /* Error with Firefox webkit-scrollbar-thumb:hover*/
+/**
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #c0a0b9; 
+    }
 */
 
-/*
-@keyframes shadow-slide {
-  from {
-    background: hsl(var(--primary) / 0%);
-    right: 460px;
-  }
-  to {
-    background: hsl(var(--primary) / 50%);
-    right: 160px;
-  }
-}
+/**
+    @keyframes shadow-slide {
+      from {
+        background: hsl(var(--primary) / 0%);
+        right: 460px;
+      }
+      to {
+        background: hsl(var(--primary) / 50%);
+        right: 160px;
+      }
+    }
 */
 
-/* Timeline */
-@keyframes moveline {
-  0% {
-    height: 0;
-  }
-  20% {
-    height: 20%;
-  }
-  40% {
-    height: 40%;
-  }
-  60% {
-    height: 60%;
-  }
-  80% {
-    height: 80%;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
-.container {
-  animation: movedown 1s linear forwards;
-  will-change: transform; /* Promote elements that I plan to animate */
-}
-
-.container:nth-child(1) {
-  animation-delay: 1s;
-}
-.container:nth-child(2) {
-  animation-delay: 1.5s;
-}
-.container:nth-child(3) {
-  animation-delay: 2s;
-}
-.container:nth-child(4) {
-  animation-delay: 2.5s;
-}
-.container:nth-child(5) {
-  animation-delay: 3s;
-}
-.container:nth-child(6) {
-  animation-delay: 4s;
-}
-.container:nth-child(7) {
-  animation-delay: 4.5s;
-}
-
-@keyframes movedown {
-  0% {
-    opacity: 1;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-.animate {
-  /*background-color: yellow;*/ /* test animation */
-  animation: movedown 1s linear forwards;
-}
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 100%;
-  background: #fff;
-  top: 0;
-  left: 50%;
-  margin-left: -3px;
-  z-index: 1;
-  animation: moveline 4s linear forwards;
-}
-
-.text-box p::before {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  margin-left: -3px;
-  z-index: 1;
-}
-
-.text-box p::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  margin-left: -3px;
-  z-index: -1;
-}
-
-@media screen and (max-width: 600px) {
-  .timeline::after {
-    left: 31px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .cursor {
-    /*top: 70px;*/
-    width: 400px;
-    height: 400px; /* Adjust the height to match the width */
-  }
-  /*
-  @keyframes shadow-slide {
-    from {
-      background: hsl(var(--primary) / 20%);
-      right: 460px;
+    /* Timeline */
+/**
+    @keyframes moveline {
+      0% {
+        height: 0;
+      }
+      20% {
+        height: 20%;
+      }
+      40% {
+        height: 40%;
+      }
+      60% {
+        height: 60%;
+      }
+      80% {
+        height: 80%;
+      }
+      100% {
+        height: 100%;
+      }
     }
-    to {
-      background: hsl(var(--primary) / 50%);
-      right: 160px;
+
+
+    .container {
+      animation: movedown 1s linear forwards;
+*/
+    /* Promote elements that I plan to animate */
+/**
+    will-change: transform; 
     }
-  }
- */
-}
+
+    .container:nth-child(1) {
+      animation-delay: 1s;
+    }
+    .container:nth-child(2) {
+      animation-delay: 1.5s;
+    }
+    .container:nth-child(3) {
+      animation-delay: 2s;
+    }
+    .container:nth-child(4) {
+      animation-delay: 2.5s;
+    }
+    .container:nth-child(5) {
+      animation-delay: 3s;
+    }
+    .container:nth-child(6) {
+      animation-delay: 4s;
+    }
+    .container:nth-child(7) {
+      animation-delay: 4.5s;
+    }
+
+    @keyframes movedown {
+      0% {
+        opacity: 1;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    .animate {
+*/
+      /*background-color: yellow;*/ /* test animation */
+/**
+    animation: movedown 1s linear forwards;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 100%;
+      background: #fff;
+      top: 0;
+      left: 50%;
+      margin-left: -3px;
+      z-index: 1;
+      animation: moveline 4s linear forwards;
+    }
+
+    .text-box p::before {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      margin-left: -3px;
+      z-index: 1;
+    }
+
+    .text-box p::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      margin-left: -3px;
+      z-index: -1;
+    }
+
+    @media screen and (max-width: 600px) {
+      .timeline::after {
+        left: 31px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .cursor {
+*/
+         /*top: 70px;*/
+/**
+        width: 400px;
+        height: 400px; 
+      }
+*/
+      /*
+      @keyframes shadow-slide {
+        from {
+          background: hsl(var(--primary) / 20%);
+          right: 460px;
+        }
+        to {
+          background: hsl(var(--primary) / 50%);
+          right: 160px;
+        }
+      }
+    */
+/**
+        }
+    }
+*/
 
 @media (max-width: 768px) {
   .cursor {
