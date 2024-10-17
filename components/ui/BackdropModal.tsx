@@ -69,24 +69,22 @@ export default function BackdropModal({ id }: { id: number }) {
         ))}
       </div>
 
-      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose} size={size as "lg" | "xs" | "sm" | "md" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "full"} placement="center" className="" scrollBehavior={"inside"}>
+      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose} size={size as "lg" | "xs" | "sm" | "md" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "full"} placement="center" className="mt-28" scrollBehavior={"inside"}>
         <ModalContent
           style={{
-            //   add these two
-            //   generate the color from here https://cssgradient.io/
-            // background: "rgb(4,7,29)",
+            //   generate the color from https://cssgradient.io/
             background:
               "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             // add this border radius to make it more rounded so that the moving border is more realistic
             borderRadius: `calc(1.75rem* 0.96)`,
           }}
           // remove bg-white dark:bg-slate-900
-          className=" border-neutral-200 dark:border-slate-800 w-10/12 md:max-w-[80vw] lg:max-w-[70vw] max xl:max-h-max "
+          className="border-neutral-200 dark:border-slate-800 w-10/12 md:max-w-[80vw] lg:max-w-[70vw]"
         >
           {(onClose) => (
             <BackgroundGradient className="rounded-[22px] bg-white dark:bg-zinc-900 p-3 text-md">
               <ModalHeader className="flex flex-col py-4 px-4">
-                <h2 className="text-[#123af0] text-xl brightness-200">{title}</h2>
+                <h2 className="px-3 text-[#123af0] text-xl brightness-200">{title}</h2>
               </ModalHeader>
               <ModalBody className="text-slate-100 max-h-[70vh] overflow-y-auto gap-1 scrollbar max-sm:px-3 max-sm:text-sm">
                 <h3 className="mb-2 text-[#123af0] brightness-200 text-md">{description}</h3>
