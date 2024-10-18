@@ -22,16 +22,16 @@ export default function Home() {
 
         {/*<h1>Yan&apos;s Portfolio</h1>*/}
         <FloatingNav navItems={navItems} />
-        <div id="hero" className="xl:pt-10 xl:mt-20">
+        <div id="hero" className="xl:pt-10 mt-20">
           {/** style={{ marginTop: "20px", paddingTop: "20px", marginBottom: "20rem" }} */}
           <Hero />
         </div>
 
-        <div id="skills" style={{ marginTop: "30px", paddingTop: "30px", marginBottom: "20rem" }}>
+        <div id="skills" style={{ marginTop: "30px", paddingTop: "30px", marginBottom: "10rem" }}>
           <Skills />
         </div>
 
-        <div id="tools" style={{ marginTop: "40px", paddingTop: "40px", marginBottom: "20rem" }}>
+        <div id="tools" style={{ marginTop: "20px", paddingTop: "40px", marginBottom: "10rem" }}>
           <IconCloudComp />
         </div>
 

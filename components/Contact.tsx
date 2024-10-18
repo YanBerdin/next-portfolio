@@ -65,11 +65,20 @@ export function Contact() {
               <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4 gap-2">
                 <LabelInputContainer>
                   <Label htmlFor="firstname" >Prénom</Label>
-                  <Input id="firstname" placeholder="e.g. Fred" type="text" required />
+                  <Input
+                    id="firstname"
+                    placeholder="e.g. Fred"
+                    type="text"
+                    autoComplete="firstname"
+                    required />
                 </LabelInputContainer>
                 <LabelInputContainer>
                   <Label htmlFor="lastname">Nom</Label>
-                  <Input id="lastname" placeholder="e.g. Livrézon" type="text" />
+                  <Input
+                    id="lastname"
+                    placeholder="e.g. Livrézon"
+                    type="text"
+                    autoComplete="lastname" />
                 </LabelInputContainer>
               </div>
               <LabelInputContainer className="mb-4">
@@ -77,6 +86,7 @@ export function Contact() {
                 <Input id="email" placeholder="e.g. fred@hello.com"
                   name="email"
                   type="email"
+                  autoComplete="email"
                   required
                 />
 
@@ -84,7 +94,11 @@ export function Contact() {
               <div>
                 <LabelInputContainer className="mb-4">
                   <Label htmlFor="Subject">Objet</Label>
-                  <Input id="Subject" placeholder="e.g. Let's Connect !" type="text" />
+                  <Input
+                    id="Subject"
+                    placeholder="e.g. Let's Connect !"
+                    type="text"
+                  />
                 </LabelInputContainer>
               </div>
               <LabelInputContainer className="mb-4" aria-labelledby="message">

@@ -21,7 +21,7 @@ export const Hero = () => {
             *  0.2 to 0.03
             */}
 
-            <div className="min-h-dvh w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0" aria-hidden="true"> {/** min-h-screen */}
+            <div className="min-h-dvh max-h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0" aria-hidden="true"> {/** min-h-screen */}
 
                 {/* Radial gradient for the container to give a faded look */}
 

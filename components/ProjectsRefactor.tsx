@@ -63,9 +63,9 @@ export default function ProjectsRefactor() {
 
     return (
         <>
-            <div className="h-12 sm:h-20"></div>
+            <div className="h-10"></div>
 
-            <div className="flex flex-col pointer-events-none">
+            <div className="flex flex-col pointer-events-none w-11/12">
                 <h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mt-3 mb-10 text-white-100">
                     Découvrez
                     <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
@@ -150,7 +150,7 @@ export default function ProjectsRefactor() {
                     </div>
                 )}
             </div>
-            <div className="h-0 lg:h-48"></div> {/*  */}
+            <div className="h-0 lg:h-24 xl:h-48"></div> {/* 48 */}
         </>
         //TODO remove h-0 <div></div>
     )

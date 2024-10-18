@@ -49,7 +49,7 @@ export const About = () => {
           </div>
         </div>
       </section>
-      <div className="h-0 lg:h-64 xl:h-96"></div>
+      <div className="h-0 lg:h-32"></div>
     </>
   );
 };
