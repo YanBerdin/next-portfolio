@@ -313,7 +313,7 @@ export const socialMedia = [
     id: 1,
     img: "/githubicon.svg",
     alt:"Icone de Github ",
-    title: "lien vers le profil Github de Yan",
+    title: "Github",
     link: "https://github.com/YanBerdin",
     target: "_blank",
     rel: "noopener noreferrer"
@@ -322,7 +322,7 @@ export const socialMedia = [
     id: 2,
     img: "/link.svg",
     alt:"Icone de Linkedin",
-    title: "lien vers le profil Linkedin de Yan",
+    title: "Linkedin",
     link: "https://www.linkedin.com/in/yan-berdin",
     target: "_blank",
     rel: "noopener noreferrer"

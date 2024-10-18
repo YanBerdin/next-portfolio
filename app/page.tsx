@@ -14,7 +14,6 @@ import Footer from "@/components/Footer";
 import ProjectsRefactor from "@/components/ProjectsRefactor";
 import { IconCloudComp } from "@/components/ui/IconCloudComp";
 
-
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto px-2 sm:px-10 min-w-screen min-h-dvh" > {/*px-5 min-h-screen */}
@@ -23,44 +22,44 @@ export default function Home() {
 
         {/*<h1>Yan&apos;s Portfolio</h1>*/}
         <FloatingNav navItems={navItems} />
-        <div id="hero" style={{ marginBottom: "20rem" }}>
+        <div id="hero" className="xl:pt-10 xl:mt-10">
+          {/** style={{ marginTop: "20px", paddingTop: "20px", marginBottom: "20rem" }} */}
           <Hero />
         </div>
 
-        <div id="skills" style={{ marginTop: "30px", paddingTop: "-30px", marginBottom: "20rem" }}>
+        <div id="skills" style={{ marginTop: "30px", paddingTop: "30px", marginBottom: "20rem" }}>
           <Skills />
         </div>
 
-
-        <div id="tools" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
+        <div id="tools" style={{ marginTop: "40px", paddingTop: "40px", marginBottom: "20rem" }}>
           <IconCloudComp />
         </div>
 
-
-        <div id="projects" style={{ marginTop: "-30px", paddingTop: "-40px", marginBottom: "15rem" }}>
+        <div id="projects" style={{ marginTop: "30px", paddingTop: "40px", marginBottom: "15rem" }}>
           <ProjectsRefactor />
         </div>
-        
+
         {/*
         <div id="projects" style={{ marginTop: "-40px", paddingTop: "-40px",  marginBottom:"20rem" }}>
           <Grid />
         </div>
         */}
 
-        <div id="about" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "15rem" }}>
+        <div id="about" style={{ marginTop: "40px", paddingTop: "40px", marginBottom: "15rem" }}>
           <About />
         </div>
+
         {/*<Timeline />*/}
+
         {/*
         <div id="experience" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
-          
           <TimelineRefacto />
         </div>
         */}
-        <div id="contact" style={{ marginTop: "-40px", paddingTop: "-40px", marginBottom: "20rem" }}>
+        <div id="contact" style={{ marginTop: "40px", paddingTop: "40px", marginBottom: "20rem" }}>
           <Contact />
         </div>
-        <div id="footer" style={{ marginTop: "60px", paddingTop: "-40px", marginBottom: "" }}>
+        <div id="footer" style={{ marginTop: "60px", paddingTop: "40px", marginBottom: "0px" }}>
           {/* <Projects /> */}
           <Footer />
         </div>

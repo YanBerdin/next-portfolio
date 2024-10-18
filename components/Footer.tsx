@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="md:h-24 w-full lg:h-44"></div>
       <footer className="w-full pt-10 pb-10">
         {/* background grid */}
-        <div className="w-full h-auto max-h-[900px] absolute left-0 -bottom-4 min-h-96 mt-10"> {/*  max-h-[900px]*/}
+        <div className="w-full max-h-6/12 absolute left-0 -bottom-4 min-h-96 mt-10"> {/*  max-h-[900px]*/}
           <BlurImage
             src="/footer-grid.svg"
             alt="grid"
@@ -49,7 +49,7 @@ const Footer = () => {
                 href={info.link}
                 target={info.target}
                 rel={info.rel}
-                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-50 bg-black-200 rounded-lg border border-black-300 hover:scale-95 hover:brightness-150"
+                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-50 bg-black-200 rounded-md border border-black-300 hover:scale-95 hover:brightness-150"
                 title={info.title}
                 aria-label={info.alt}
               >
