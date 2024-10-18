@@ -22,7 +22,7 @@ export default function Home() {
 
         {/*<h1>Yan&apos;s Portfolio</h1>*/}
         <FloatingNav navItems={navItems} />
-        <div id="hero" className="xl:pt-10 xl:mt-10">
+        <div id="hero" className="xl:pt-10 xl:mt-20">
           {/** style={{ marginTop: "20px", paddingTop: "20px", marginBottom: "20rem" }} */}
           <Hero />
         </div>

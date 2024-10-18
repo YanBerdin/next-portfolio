@@ -8,7 +8,7 @@ import BlurImage from "./ui/BlurImage";
 export const Skills = () => {
   return (
     <>
-      <div className="h-8"></div>
+      <div className="h-24 mt-10"></div>
 
       <section className="mx-auto w-11/12 mb-5 lg:mb-52" id="skills">
         <div className="flex flex-col pointer-events-none">
