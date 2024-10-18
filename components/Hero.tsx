@@ -8,7 +8,7 @@ import { MagicButton } from "./MagicButton";
 
 export const Hero = () => {
     return (
-        <section className="md:pb-5 lg:pb-20 pt-36">
+        <section className="md:pb-5 lg:pb-20 pt-24">
             <div>
                 <Spotlight className="-top-10 -left-10 md:-left-32 md:-top-20 h-dvh" fill="white" aria-hidden="true" /> {/** h-screen */}
                 <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" aria-hidden="true" />
@@ -30,7 +30,7 @@ export const Hero = () => {
                 />
 
             </div>
-            <div className="flex justify-center gap-10 relative my-36 md:my-44 z-10"> {/*flex-wrap md:justify-around*/}
+            <div className="flex justify-center gap-10 relative max-sm:mt-28 mb-32 mt-36 z-10"> {/*flex-wrap md:justify-around*/}
                 <div className="max-sm:w-full w-11/12 lg:w-9/12 flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
