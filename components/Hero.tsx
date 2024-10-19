@@ -62,7 +62,7 @@ export const Hero = () => {
                         icon={""}
                         position="right"
                         // handleClick={() => console.log('Button clicked!')}
-                        otherClasses="custom-class hover:opacity-90"
+                        otherClasses="custom-class"
                         href="#projects"
                     />
                     {/*<Title />*/}

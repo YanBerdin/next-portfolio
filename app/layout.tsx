@@ -29,6 +29,9 @@ export default function RootLayout({
     <html lang="fr" suppressHydrationWarning>
       {/* Pour conserver votre statut de propriétaire confirmé, ne supprimez pas la balise Meta, même une fois la validation effectuée. */}
       <meta name="google-site-verification" content="qElH7ZIqIo2a83PF-VyjSq-F_8M13Q6QaTbyu7bvgnU" />
+      <link rel="icon" type="image/png" href="/favicon.png"/>
+      <link rel="icon" type="image/png" href="https://yanberdin.com/favicon.png"/>
+
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
