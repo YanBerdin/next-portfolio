@@ -1,8 +1,11 @@
+import crypto from 'crypto';
+
 /** @type {import('next').NextConfig} */
 // const nextConfig = {};
 
 const nextConfig = {
   async headers() {
+    const nonce = crypto.randomBytes(16).toString('base64');
     return [
       {
         source: '/(.*)', // Appliquer les en-têtes à toutes les routes
@@ -17,7 +20,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live; style-src 'self' 'unsafe-inline' https://vercel.live; img-src 'self' data: https://cdn.jsdelivr.net https://vercel.com; connect-src 'self' https://cdn.jsdelivr.net https://raw.githubusercontent.com https://vercel.live https://vercel.com wss://ws-us3.pusher.com https://sockjs-us3.pusher.com https://api.openweathermap.org; frame-src 'self' https://vercel.live; object-src 'self' data:;" // Politique de sécurité du contenu
+            value: ` img-src 'self' data: https://cdn.jsdelivr.net https://vercel.com https://www.yanberdin.com; connect-src 'self' https://cdn.jsdelivr.net https://raw.githubusercontent.com https://vercel.live https://vercel.com wss://ws-us3.pusher.com https://sockjs-us3.pusher.com; frame-src 'self' https://vercel.live; object-src 'self' data:;`, // Politique de sécurité du contenu
           },
           {
             key: 'X-Content-Type-Options',
@@ -29,7 +32,7 @@ const nextConfig = {
           },
           {
             key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin',
+            value: 'strict-origin-when-cross-origin',
           },
           {
             key: 'Strict-Transport-Security',
@@ -38,6 +41,10 @@ const nextConfig = {
           {
             key: 'X-XSS-Protection',
             value: '1; mode=block', // Activer la protection XSS
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'geolocation=(), microphone=(), camera=()', // Politique de permissions
           },
         ],
       },
