@@ -10,7 +10,7 @@ import { Repositories } from "@/data/projectRefactoData";
 //import { DemoIcon, GithubIcon2 } from "./ui/Icon";
 
 
-type Technology = 'Html' | 'Css' | 'JS' | 'PHP' | 'Singleton' | 'Typescript' | 'React' | 'Next' | 'Laravel' | 'Symfony' | 'Node.js' | 'Tailwind' | 'Shadcn' | 'MySQL' | 'Heroku' | 'Vercel' | 'Aceternity' | 'PostCss' | 'Framer-Motion' | 'Sass' | 'Axios' | 'Composer' | 'Bootstrap' | 'Apache' | 'Active Record' | 'Eloquent' | 'Semantic UI' | 'PropTypes' | 'Rest API' | 'Redux' | 'AltoRouter' | 'Styled-components' | 'Vite'
+type Technology = 'Html' | 'Css' | 'JS' | 'PHP' | 'Singleton' | 'Typescript' | 'React' | 'Next' | 'Laravel' | 'Symfony' | 'Node.js' | 'Tailwind' | 'Shadcn' | 'MySQL' | 'Heroku' | 'Vercel' | 'Aceternity' | 'PostCss' | 'Framer-Motion' | 'Sass' | 'Axios' | 'Composer' | 'Bootstrap' | 'Apache' | 'Active Record' | 'Eloquent' | 'Semantic UI' | 'PropTypes' | 'Redux' | 'AltoRouter' | 'Styled-components' | 'Vite'
 
 interface Repository {
     id: number
@@ -35,7 +35,7 @@ interface Repository {
     technologies: string[]
 }
 
-const technologies: Technology[] = ['Html', 'Css', 'JS', 'Typescript', 'Sass', 'PostCss', 'React', 'Redux', 'Next', 'Framer-Motion', 'Vite', 'Axios', 'Node.js', 'PHP', 'Apache', 'Rest API', 'Singleton', 'Laravel', 'Symfony', 'AltoRouter', 'Composer', 'MySQL', 'Active Record', 'Eloquent', 'Bootstrap', 'Tailwind', 'Semantic UI']
+const technologies: Technology[] = ['Html', 'Css', 'PHP', 'JS', 'Typescript', 'Sass', 'PostCss', 'React', 'Redux', 'Next', 'Framer-Motion', 'Vite', 'Axios', 'Node.js', 'Apache', 'Singleton', 'Laravel', 'Symfony', 'AltoRouter', 'Composer', 'MySQL', 'Active Record', 'Eloquent', 'Bootstrap', 'Tailwind', 'Semantic UI']
 
 
 const myRepositories: Repository[] = Repositories.map(repo => ({
@@ -46,12 +46,11 @@ const myRepositories: Repository[] = Repositories.map(repo => ({
 export default function ProjectsRefactor() {
     const [selectedTech, setSelectedTech] = useState<Technology | null>(null)
     const [visibleRepos, setVisibleRepos] = useState(6)
+    const [visibleTechCount, setVisibleTechCount] = useState(12); // Affiche seulement 9 technologies au départ
 
-    {/*
-     const filteredRepos = selectedTech
-        ? mockRepositories.filter(repo => repo.technologies.includes(selectedTech))
-        : mockRepositories
- */}
+    const handleLoadMoreTechnologies = () => {
+        setVisibleTechCount(technologies.length); // Affiche toutes les technologies
+    };
 
     const filteredRepos = selectedTech
         ? myRepositories.filter(repo => repo.technologies && repo.technologies.includes(selectedTech))
@@ -78,10 +77,10 @@ export default function ProjectsRefactor() {
             </ div>
             <div className="min-h-screen w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-white p-8 mx-auto">
 
-
+                {/* Navbar des technologies */}
                 <nav className="mb-8">
-                    <ul className="flex flex-wrap gap-2">
-                        {technologies.map(tech => (
+                    <ul className="flex flex-wrap gap-2 justify-center">
+                        {technologies.slice(0, visibleTechCount).map(tech => (
                             <li key={tech}>
                                 <ProjectsRefactorButton
                                     variant={selectedTech === tech ? "default" : "secondary"}
@@ -92,9 +91,18 @@ export default function ProjectsRefactor() {
                                 </ProjectsRefactorButton>
                             </li>
                         ))}
+                        {visibleTechCount < technologies.length && (
+                            <li>
+                                <ProjectsRefactorButton onClick={handleLoadMoreTechnologies}>
+                                    Plus de Technos
+                                </ProjectsRefactorButton>
+                            </li>
+                        )}
                     </ul>
+
                 </nav>
 
+                {/* Liste des projets filtrés */}
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8 md:mt-16">
                     {filteredRepos.slice(0, visibleRepos).map(repo => (
                         <div key={repo.id} className="bg-slate-800/[0.8] border border-slate-700 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[290px] lg:max-w-[310px] mx-auto">
@@ -146,12 +154,11 @@ export default function ProjectsRefactor() {
 
                 {visibleRepos < filteredRepos.length && (
                     <div className="mt-8 text-center">
-                        <ProjectsRefactorButton onClick={handleLoadMore}>Load More</ProjectsRefactorButton>
+                        <ProjectsRefactorButton onClick={handleLoadMore}>Voir tous les projets</ProjectsRefactorButton>
                     </div>
                 )}
             </div>
             <div className="h-0 lg:h-24 xl:h-48"></div> {/* 48 */}
         </>
-        //TODO remove h-0 <div></div>
     )
 }

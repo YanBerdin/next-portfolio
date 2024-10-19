@@ -7,13 +7,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 ease-in-out hover:scale-95  duration-700",
+        default: "bg-primary text-primary-foreground hover:bg-primary/50 ease-in-out hover:scale-95 duration-700 origin-center",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90 ease-in-out hover:scale-95  duration-700",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 ease-in-out hover:scale-95 duration-700 origin-center",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground ease-in-out hover:scale-95 duration-700",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground ease-in-out hover:scale-95 duration-400 origin-center",
         secondary:
-          "bg-slate-800 text-secondary-foreground duration-700 origin-center ease-in-out hover:scale-95 hover:opacity-90",
+          "bg-slate-800 text-secondary-foreground duration-700 origin-center ease-in-out hover:scale-95  hover:brightness-150",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },
