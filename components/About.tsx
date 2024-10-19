@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Portrait from "../public/portrait.png";
+import Portrait from "../public/about-assets/portrait.png";
 // import { IconCloudComp } from "./ui/IconCloudComp";
 
 export const About = () => {

@@ -3,8 +3,8 @@
 import React, { useState } from 'react'
 import cn from 'classnames'
 // import Image from 'next/image'
-import { ProjectsRefactorButton } from "@/components/ui/ProjectsRefactorButton"
-import BackdropModal from "@/components/ui/BackdropModal";
+import { ProjectsRefactorButton } from "@/components/ui/Projects_ui/ProjectsRefactorButton"
+import BackdropModal from "@/components/ui/Projects_ui/BackdropModal";
 import BlurImage from "@/components/ui/BlurImage";
 import { Repositories } from "@/data/projectRefactoData";
 //import { DemoIcon, GithubIcon2 } from "./ui/Icon";
@@ -65,7 +65,7 @@ export default function ProjectsRefactor() {
         <>
             <div className="h-10"></div>
 
-            <div className="flex flex-col pointer-events-none w-11/12">
+            <div className="flex flex-col pointer-events-none w-11/12 mx-auto">
                 <h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mt-3 mb-10 text-white-100">
                     Découvrez
                     <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">

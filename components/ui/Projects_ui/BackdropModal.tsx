@@ -2,9 +2,9 @@ import React from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 
 // import { gridItems } from "../../data/index"; //TODO @/data/index
-import { Repositories } from "../../data/projectRefactoData";
-import { BackgroundGradient } from "./Background-gradient";
-import { DemoIcon, GithubIcon2 } from "./Icon";
+import { Repositories } from "../../../data/projectRefactoData";
+import { BackgroundGradient } from "../Background-gradient";
+import { DemoIcon, GithubIcon2 } from "../Icon";
 //import { ButtonsCard } from "./tailwindcss-buttons";
 
 // Afficher le contenu de gridItems dans un modal 

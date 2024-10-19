@@ -1,7 +1,7 @@
 import React from "react";
 // import { FaLocationArrow } from "react-icons/fa6";
-import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { Spotlight } from "./ui/Hero_ui/Spotlight";
+import { TextGenerateEffect } from "./ui/Hero_ui/TextGenerateEffect";
 import { MagicButton } from "./MagicButton";
 // import { OrbitingCirclesLg } from "./ui/OrbitingCirclesLg";
 // import Title from "./ui/Title";

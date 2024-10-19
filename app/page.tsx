@@ -12,7 +12,7 @@ import { About } from "../components/About";
 import Footer from "@/components/Footer";
 //import Projects from "@/components/Projects";
 import ProjectsRefactor from "@/components/ProjectsRefactor";
-import { IconCloudComp } from "@/components/ui/IconCloudComp";
+import { IconCloudComp } from "@/components/ui/Tools_ui/IconCloudComp";
 
 export default function Home() {
   return (

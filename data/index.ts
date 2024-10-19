@@ -39,7 +39,7 @@ interface mySkills {
         "Expérience avec le Shell et les commandes SSH."
     ],
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: "/skills-assets/exp1.svg",
     },
     {
       id: 2,
@@ -55,7 +55,7 @@ interface mySkills {
         // "Maîtrise des frameworks Laravel, Node.js, Express et Socket.io."
       ],
       className: "md:col-span-2",
-      thumbnail: "/exp2.svg",
+      thumbnail: "/skills-assets/exp2.svg",
     },
 
     {
@@ -72,7 +72,7 @@ interface mySkills {
         "Utilisation agile de Scrum pour la gestion de projet."
       ],
       className: "md:col-span-2",
-     thumbnail: "/exp4.svg", //"/exp3.svg",
+     thumbnail: "/skills-assets/exp4.svg", //"/exp3.svg",
 
     },
   ];
@@ -254,7 +254,7 @@ export const timelineData = [
       company: "Développeur React.js - O'clock",
       period: 'Juin 2023 - Juill. 2023',
       description: "Conception du site Disc'Otech. Implémentation de fonctionnalités utilisateur Incluant la gestion de profil et la personnalisation des favoris.",
-      imageUrl: '/Logo.png',
+      imageUrl: '/timelineData-assets/Logo.png',
       alt:"Logo du site DiscO'tech"
   },
   {
@@ -262,7 +262,7 @@ export const timelineData = [
       company: 'Vendeur Atelier - Dafy Moto',
       period: 'Janv. 2022 - Avr. 2022',
       description: 'Booste les ventes entretien réparation.',
-      imageUrl: '/dafy-logo-300.png',
+      imageUrl: '/timelineData-assets/dafy-logo-300.png',
       alt:"Logo de la marque Dafy Moto"
   },
   {
@@ -270,7 +270,7 @@ export const timelineData = [
       company: 'Vendeur Web - Holding de Marché aux Affaires',
       period: 'Janv. 2017 - Avr. 2017',
       description: 'Expertise en vente sur eBay & Amazon.',
-      imageUrl: '/maa-logo-300.png',
+      imageUrl: '/timelineData-assets/maa-logo-300.png',
       alt:"Logo de la marque Marché aux Affaires"
   },
   {
@@ -278,7 +278,7 @@ export const timelineData = [
       company: 'Gérant e-commerce - eBay & Amazon',
       period: 'Janv. 2010 - Mars 2017',
       description: 'Gestion de 15k commandes/an.',
-      imageUrl: '/ebay-logo-208.jpeg',
+      imageUrl: '/timelineData-assets/ebay-logo-208.jpeg',
       alt:"Logo de la marque eBay"
   },
   {
@@ -286,7 +286,7 @@ export const timelineData = [
     company: 'Responsable - Levi’s Store',
     period: 'Mars 2006 - Mars 2009',
     description: "Leadership proactif d'une équipe de 8 collaborateurs, axé sur la performance.",
-    imageUrl: '/levis_logo.png',
+    imageUrl: '/timelineData-assets/levis_logo.png',
       alt:"Logo de la marque Levi's"
 },
   {
@@ -294,7 +294,7 @@ export const timelineData = [
       company: 'Cogérant - Blackmoon Records',
       period: 'Janv. 2000 - Févr. 2003',
       description: 'Spécialiste en import de vinyles musique électronique.',
-      imageUrl: '/levis_logo.png',
+      imageUrl: '/timelineData-assets/levis_logo.png',
       alt:"Logo de la marque Levi's"
 
   },
@@ -303,7 +303,7 @@ export const timelineData = [
     company: 'Assistant Responsable - Levi’s Store',
     period: 'Janv. 1998 - Févr. 2006',
     description: "Dynamisation et leadership d'une équipe de 8 collaborateurs.",
-    imageUrl: '/levis_logo.png',
+    imageUrl: '/timelineData-assets/levis_logo.png',
     alt:"Logo de la marque Levi's"
 },
 ];
@@ -311,7 +311,7 @@ export const timelineData = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/githubicon.svg",
+    img: "/socialMedia-assets/githubicon.svg",
     alt:"Icone de Github ",
     title: "Github",
     link: "https://github.com/YanBerdin",
@@ -320,7 +320,7 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/link.svg",
+    img: "/socialMedia-assets/link.svg",
     alt:"Icone de Linkedin",
     title: "Linkedin",
     link: "https://www.linkedin.com/in/yan-berdin",
