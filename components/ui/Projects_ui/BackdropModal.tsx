@@ -53,7 +53,7 @@ export default function BackdropModal({ id }: { id: number }) {
 
 
   return (
-    <article className="">
+    <div className="details">
       <div className="flex flex-wrap gap-2">
         {backdrops.map((b) => (
           <Button
@@ -123,6 +123,6 @@ export default function BackdropModal({ id }: { id: number }) {
         </ModalContent>
       </Modal>
 
-    </article>
+    </div>
   );
 }

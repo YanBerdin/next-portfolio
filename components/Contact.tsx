@@ -66,7 +66,7 @@ export function Contact() {
                 <LabelInputContainer>
                   <Label htmlFor="firstname" >Prénom</Label>
                   <Input
-                    id="firstname"
+                    id="given-name"
                     placeholder="e.g. Fred"
                     type="text"
                     autoComplete="firstname"
@@ -75,7 +75,7 @@ export function Contact() {
                 <LabelInputContainer>
                   <Label htmlFor="lastname">Nom</Label>
                   <Input
-                    id="lastname"
+                    id="family-name"
                     placeholder="e.g. Livrézon"
                     type="text"
                     autoComplete="lastname" />
