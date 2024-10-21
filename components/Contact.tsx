@@ -66,19 +66,19 @@ export function Contact() {
                 <LabelInputContainer>
                   <Label htmlFor="firstname" >Prénom</Label>
                   <Input
-                    id="given-name"
+                    id="firstname"
                     placeholder="e.g. Fred"
                     type="text"
-                    autoComplete="firstname"
+                    autoComplete="given-name"
                     required />
                 </LabelInputContainer>
                 <LabelInputContainer>
                   <Label htmlFor="lastname">Nom</Label>
                   <Input
-                    id="family-name"
+                    id="lastname"
                     placeholder="e.g. Livrézon"
                     type="text"
-                    autoComplete="lastname" />
+                    autoComplete="family-name" />
                 </LabelInputContainer>
               </div>
               <LabelInputContainer className="mb-4">
