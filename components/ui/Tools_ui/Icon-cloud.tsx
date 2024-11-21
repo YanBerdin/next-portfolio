@@ -53,12 +53,14 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
         fallbackHex,
         minContrastRatio,
         size: 40,
+        /*
         aProps: {
             href: undefined,
             target: undefined,
             rel: undefined,
             onClick: (e: any) => e.preventDefault(),
         },
+        */
     });
 };
 

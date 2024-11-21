@@ -31,13 +31,13 @@ const slugs = [
     "sass",
     "mysql",
     "redux",
+    "nodedotjs",
+    "nextdotjs"
 ];
 // "dart",
 // "java",
 // "flutter",
 // "android",
-// "nodedotjs",
-// "nextdotjs",
 // "amazonaws",
 // "nginx",
 // "cypress",
