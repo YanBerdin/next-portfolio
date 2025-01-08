@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 // import { FaLocationArrow } from "react-icons/fa6";
 import { Spotlight } from "./ui/Hero_ui/Spotlight";
@@ -5,6 +6,7 @@ import { TextGenerateEffect } from "./ui/Hero_ui/TextGenerateEffect";
 import { MagicButton } from "./MagicButton";
 // import { OrbitingCirclesLg } from "./ui/OrbitingCirclesLg";
 // import Title from "./ui/Title";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
     return (
@@ -51,20 +53,29 @@ export const Hero = () => {
                         // gradientClass="bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text"
                     />
                      */}
-                    <h1 className="md:tracking-wider my-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center text-white-100">
+                    <motion.h1 className="md:tracking-wider my-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center text-white-100"
+                        initial={{ y: -40, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1.5 }}
+                    >
                         Bienvenue, je suis Yan, développeur d&apos;applications Web et mobile
-                    </h1>
+                    </motion.h1>
 
-
-                    <MagicButton
-                        title="Voir mes réalisations"
-                        // icon={<FaLocationArrow />}
-                        icon={""}
-                        position="right"
-                        // handleClick={() => console.log('Button clicked!')}
-                        otherClasses="custom-class"
-                        href="#projects"
-                    />
+                    <motion.div
+                        initial={{ scale: 0, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 1.5 }}
+                    >
+                        <MagicButton
+                            title="Voir mes réalisations"
+                            // icon={<FaLocationArrow />}
+                            icon={""}
+                            position="right"
+                            // handleClick={() => console.log('Button clicked!')}
+                            otherClasses="custom-class"
+                            href="#projects"
+                        />
+                    </motion.div>
                     {/*<Title />*/}
                 </div>
 
