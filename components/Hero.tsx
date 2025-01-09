@@ -32,7 +32,7 @@ export const Hero = () => {
                 />
 
             </div>
-            <div className="flex justify-center gap-10 relative max-sm:mt-28 mb-32 mt-36 z-10"> {/*flex-wrap md:justify-around*/}
+            <div className="flex justify-center gap-10 relative max-sm:mt-20 mb-32 mt-36 z-10"> {/*flex-wrap md:justify-around*/}
                 <div className="max-sm:w-full w-11/12 lg:w-9/12 flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
@@ -62,9 +62,9 @@ export const Hero = () => {
                     </motion.h1>
 
                     <motion.div
-                        initial={{ scale: 0, opacity: 0 }}
-                        whileInView={{ scale: 1, opacity: 1 }}
-                        transition={{ duration: 1.5 }}
+                        initial={{ y: 30, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, delay: 1.2 }}
                     >
                         <MagicButton
                             title="Voir mes réalisations"

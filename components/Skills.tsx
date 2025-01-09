@@ -19,7 +19,7 @@ export const Skills = () => {
           <motion.h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mb-4 text-white-100 mt-16"
             initial={{ y: -30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1 }}
           >
             Spécialisé en
             <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
@@ -34,9 +34,9 @@ export const Skills = () => {
           </motion.h2>
           <motion.div
             //key={card.id}
-            initial={{ scale: 0.8, opacity: 0.3 }}
+            initial={{ scale: 0.9, opacity: 0.5 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 1, delay: 0.2 }}
           >
             <div className="mx-auto mt-4 md:mt-6 grid lg:grid-cols-2 xl:grid-cols-3 gap-2"> {/* "w-11/12 lg:w-full */}
               {mySkills.map((card) => (

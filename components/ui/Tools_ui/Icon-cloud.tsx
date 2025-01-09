@@ -58,8 +58,8 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
             target: undefined,
             rel: undefined,
             onClick: (e: any) => e.preventDefault(),
+            title: icon.slug,
         },
-        
     });
 };
 
@@ -85,11 +85,11 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
         );
     }, [data, theme]);
 
-   // console.log(data);
-    console.log(renderedIcons);
+    // console.log(data);
+    console.log("renderedIcons", renderedIcons); //TODO Remove this line
     //console.log(theme);
     //console.log(iconSlugs);
-   
+
 
 
     return (
