@@ -124,8 +124,8 @@ export default function ProjectsRefactor() {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8 md:mt-16">
                     {filteredRepos.slice(0, visibleRepos).map(repo => (
                         <motion.div key={repo.id} className="bg-slate-800/[0.8] border border-slate-700 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[290px] lg:max-w-[310px] mx-auto"
-                            initial={{ scale: 0, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
+                            initial={{ scale: 0.5, opacity: 0 }}
+                            whileInView={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5 }}
                         >
                             <div className="relative group"> {/* min-h-36 md:h-64 lg:h-72 */}

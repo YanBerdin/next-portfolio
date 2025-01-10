@@ -44,7 +44,7 @@ export const Hero = () => {
                      */}
                     <TextGenerateEffect
                         className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-center w-full" // remove text-[30px]
-                        words="Créateur de solutions élégantes et sécurisées"
+                        words="Créateur de solutions sécurisées et adaptées à vos besoins"
                     />
                     {   /**
                     <TextGenerateEffect
@@ -58,7 +58,7 @@ export const Hero = () => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
                     >
-                        Bienvenue, je suis Yan, développeur d&apos;applications Web et mobile
+                        Bienvenue, je suis Yan, développeur d&apos;applications Web
                     </motion.h1>
 
                     <motion.div
