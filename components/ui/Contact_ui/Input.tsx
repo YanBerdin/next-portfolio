@@ -36,9 +36,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         onMouseEnter={() => setVisible(true)}
         onMouseLeave={() => setVisible(false)}
         className="p-[2px] rounded-lg transition duration-300 group/input"
-        initial={{ scale: 0.5, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
       >
         <input
           type={type}
