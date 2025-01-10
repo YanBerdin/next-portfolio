@@ -82,7 +82,7 @@ export function Contact() {
                   <Label htmlFor="firstname" >Prénom</Label>
                   <Input
                     id="firstname"
-                    placeholder="e.g. Fred"
+                    placeholder=""
                     type="text"
                     autoComplete="given-name"
                     required />
@@ -91,14 +91,14 @@ export function Contact() {
                   <Label htmlFor="lastname">Nom</Label>
                   <Input
                     id="lastname"
-                    placeholder="e.g. Livrézon"
+                    placeholder=""
                     type="text"
                     autoComplete="family-name" />
                 </LabelInputContainer>
               </div>
               <LabelInputContainer className="mb-4">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" placeholder="e.g. fred@hello.com"
+                <Input id="email" placeholder=""
                   name="email"
                   type="email"
                   autoComplete="email"
@@ -111,7 +111,7 @@ export function Contact() {
                   <Label htmlFor="Subject">Objet</Label>
                   <Input
                     id="Subject"
-                    placeholder="e.g. Let's Connect !"
+                    placeholder=""
                     type="text"
                   />
                 </LabelInputContainer>
