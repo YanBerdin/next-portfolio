@@ -1,10 +1,15 @@
+"use client";
+
 import { socialMedia } from "@/data/index";
 import { MagicButton } from "./MagicButton";
 import Link from "next/link";
 // import Image from "next/image";
 import BlurImage from "./ui/BlurImage";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <div className="md:h-24 w-full lg:h-44"></div>
@@ -24,22 +29,30 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <h2 className="heading text-white-100">
+          <motion.h2 className="heading text-white-100"
+            initial={{ x: -30, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             Ma passion et mon expertise <br /> <span className="text-purple"> A votre service  </span>
-          </h2>
+          </motion.h2>
           <p className="text-white-200 md:mt-10 my-5 text-center"></p>
-
-          <MagicButton
-            title="Contactez-moi"
-            icon={""} // icon={<FaLocationArrow />}
-            position="right"
-            href="#contact"
-          />
-
+          <motion.div
+            initial={{ x: 30, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <MagicButton
+              title="Contactez-moi"
+              icon={""} // icon={<FaLocationArrow />}
+              position="right"
+              href="#contact"
+            />
+          </motion.div>
         </div>
         <div className="flex mt-16 md:flex-row flex-col-reverse justify-between items-center">
           <p className="md:text-base text-sm md:font-normal font-light mt-4">
-            Copyright © 2024 Yan Berdin
+            Copyright © {currentYear} Yan Berdin
           </p>
 
           <div className="flex items-center md:gap-3 gap-6">
