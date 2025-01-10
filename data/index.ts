@@ -33,7 +33,6 @@ interface mySkills {
         "Maîtrise de React et Next.js, Redux",
         "Création de wireframes et de maquettes d'application.",
         "Développement d'interfaces dynamiques et responsives.",
-        "Utilisation avancée d'ES6+.",
         "Résolution efficace d'algorithmes.",
         "Respect des normes d'accessibilité web (WCAG) et des bonnes pratiques SEO.",
         "Expérience avec le Shell et les commandes SSH."
@@ -51,7 +50,7 @@ interface mySkills {
         "Modélisation et gestion de base de données relationnelle.",
         "Développement de composants d'accès aux données.",
         "Conception d'API REST.",
-        "Respect des normes de sécurité des données (RGPD) et des meilleures pratiques (OWASP).",
+        "Sécurité des données selon RGPD et OWASP.",
         // "Maîtrise des frameworks Laravel, Node.js, Express et Socket.io."
       ],
       className: "md:col-span-2",

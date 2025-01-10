@@ -17,14 +17,14 @@ export const Skills = () => {
       <section className="mx-auto w-11/12 mb-5 lg:mb-52" id="skills">
         <div className="flex flex-col pointer-events-none">
           <motion.h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mb-4 text-white-100 mt-16"
-            initial={{ y: -30, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
+            initial={{ y: -20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }} // whileInView=
+            transition={{ duration: 0.6 }}
           >
             Spécialisé en
             <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
               {" "}
-              PHP & Javascript
+              Javascript, Typescript & PHP
               {" "}
             </span>
             avec un focus sur{" "}
@@ -32,11 +32,12 @@ export const Skills = () => {
               React.js
             </span>
           </motion.h2>
+
           <motion.div
             //key={card.id}
-            initial={{ scale: 0.9, opacity: 0.5 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            initial={{ scale: 0.95, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }} // whileInView / animate
+            transition={{ duration: 0.5, delay: 0.1 }}
           >
             <div className="mx-auto mt-4 md:mt-6 grid lg:grid-cols-2 xl:grid-cols-3 gap-2"> {/* "w-11/12 lg:w-full */}
               {mySkills.map((card) => (

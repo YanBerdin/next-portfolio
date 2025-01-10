@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 
@@ -6,6 +7,7 @@ import { Repositories } from "../../../data/projectRefactoData";
 import { BackgroundGradient } from "../Background-gradient";
 import { DemoIcon, GithubIcon2 } from "../Icon";
 //import { ButtonsCard } from "./tailwindcss-buttons";
+import { motion } from "framer-motion";
 
 // Afficher le contenu de gridItems dans un modal 
 
@@ -83,46 +85,65 @@ export default function BackdropModal({ id }: { id: number }) {
         >
           {(onClose) => (
             <BackgroundGradient className="rounded-[22px] bg-white dark:bg-zinc-900 p-3 text-md">
-              <ModalHeader className="flex flex-col py-4 px-4">
-                <h2 className="px-3 text-[#123af0] text-xl brightness-200">{title}</h2>
-              </ModalHeader>
-              <ModalBody className="text-slate-100 max-h-[70vh] overflow-y-auto gap-1 scrollbar max-sm:px-3 max-sm:text-sm">
-                <h3 className="mb-2 text-[#123af0] brightness-200 text-md">{description}</h3>
-                {explanationList.map((explanation, index) => (
-                  <p className="text-xs md:text-sm lg:text-base" key={index}>{explanation}</p>
-                ))}
-              </ModalBody>
-              <ModalFooter className="max-sm:px-3 flex flex-wrap">
-                {/*
+              <motion.div
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <ModalHeader className="flex flex-col py-4 px-4">
+                  <h2 className="px-3 text-[#123af0] text-xl brightness-200">{title}</h2>
+                </ModalHeader>
+                <ModalBody className="text-slate-100 max-h-[70vh] overflow-y-auto gap-1 scrollbar max-sm:px-3 max-sm:text-sm">
+                  <h3 className="mb-2 text-[#123af0] brightness-200 text-md">{description}</h3>
+                  {explanationList.map((explanation, index) => (
+                    <p className="text-xs md:text-sm lg:text-base" key={index}>{explanation}</p>
+                  ))}
+                </ModalBody>
+                <ModalFooter className="max-sm:px-3 flex flex-wrap">
+                  {/*
                 ---------------------- A SUPPRIMER ------------------------
                 
                 <button className="max-sm:w-full px-3 py-1 bg-transparent border border-red-800 dark:border-red-800 dark:text-slate-300 text-red-400 rounded-md transform hover:scale-90 transition duration-200 font-medium text-sm focus:outline-none focus:ring-1 focus:ring-offset-2" onClick={onClose}>
                   X
                 </button>
                 */}
-                {/*
+                  {/*
                 *---------------------- FIN DE A SUPPRIMER ------------------------
                 */}
-                <button className="max-sm:w-full inline-flex h-10 items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-red-50 transform hover:scale-95 ease-in-out hover:brightness-150  max-sm:text-sm" onClick={onClose}>
-                  Close
-                </button>
+
+                  <motion.button
+                    className="max-sm:w-full inline-flex h-10 items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-red-50 transform hover:scale-95 ease-in-out hover:brightness-150  max-sm:text-sm"
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8 }}
+                    onClick={onClose}>
+                    Close
+                  </motion.button>
 
 
-                {demoLink && (<button className="max-sm:w-full inline-flex h-10 animate-shimmer items-center justify-center rounded-lg border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-300 transform hover:scale-95 ease-in-out hover:brightness-150 max-sm:text-sm " onClick={handleDemoClick}>{/* max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
-                  <span className="mr-2">
-                    Démo
-                  </span>
-                  <DemoIcon />
-                </button>)}
-                <button className="max-sm:w-full inline-flex h-10 animate-shimmer items-center justify-center rounded-lg border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-300 transform hover:scale-95 ease-in-out hover:brightness-150 max-sm:text-sm" onClick={handleCodeClick}>{/* max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
-                  <span className="mr-2">Code</span> <GithubIcon2 />
-                </button>
-              </ModalFooter>
+                  {demoLink && (<motion.button className="max-sm:w-full inline-flex h-10 animate-shimmer items-center justify-center rounded-lg border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-300 transform hover:scale-95 ease-in-out hover:brightness-150 max-sm:text-sm "
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8 }}
+                    onClick={handleDemoClick}>{/* max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
+                    <span className="mr-2">
+                      Démo
+                    </span>
+                    <DemoIcon />
+                  </motion.button>)}
+                  <motion.button className="max-sm:w-full inline-flex h-10 animate-shimmer items-center justify-center rounded-lg border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-300 transition-colors focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-300 transform hover:scale-95 ease-in-out hover:brightness-150 max-sm:text-sm"
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.8 }}
+                    onClick={handleCodeClick}>{/* max-md:text-sm max-md:px-4 max-md:pt-1 max-md:pb-1 max-md:max-h-[30px]*/}
+                    <span className="mr-2">Code</span> <GithubIcon2 />
+                  </motion.button>
+                </ModalFooter>
+              </motion.div>
             </BackgroundGradient>
           )}
         </ModalContent>
       </Modal>
-
     </div>
   );
 }

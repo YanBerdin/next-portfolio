@@ -1,13 +1,14 @@
 // Label component extends from shadcnui - https://ui.shadcn.com/docs/components/label
 
 "use client";
+
 import * as React from "react";
 import * as LabelPrimitive from "@radix-ui/react-label";
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils/cn";
 
 
-const labelVariants = cva(
+const labelVariants = cva( //TODO check if this is correct
   "leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
 );
 

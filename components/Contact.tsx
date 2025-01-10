@@ -11,6 +11,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 //  IconBrandGoogle,
 //  IconBrandOnlyfans,
 // } from "@tabler/icons-react";
+import { motion } from "framer-motion";
 
 /** 
 * UI: Contact Form
@@ -27,9 +28,14 @@ export function Contact() {
       <section
         className="w-11/12 mx-auto mt-10"
       >
-        <div className="md:px-8 pb-20">
-          <header className="mx-auto text-center">
-            {/*
+        <motion.div className="md:px-8 pb-20"
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.2 }}
+        >
+
+          {/*
+           <header className="mx-auto text-center">
             <h3 className="w-full text-2xl font-bold tracking-tight text-foreground md:text-2xl lg:text-3xl"> // text-[40px]  lg:text-6xl
             
               <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
@@ -37,29 +43,38 @@ export function Contact() {
               </span>{" "}
               for taking the time to reach out.</h3>
               */}
-            {/*
+          {/*
           <h4 className="my-5 text-md md:text-xl leading-8 text-foreground">
             How can I help you today ?
           </h4>
+                    </header>
           */}
-          </header>
+
           {/*Form*/}
           <div className="max-w-2xl w-full mx-auto rounded-xl md:rounded-2xl p-4 md:p-8 shadow-input bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl " >
 
             {/*Form Header*/}
 
-            <h2 className="font-bold text-lg lg:text-xl text-neutral-800 dark:text-neutral-200">
+            <motion.h2 className="font-bold text-lg lg:text-xl text-neutral-800 dark:text-neutral-200"
+              initial={{ y: -20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
 
               </span>{" "}
               Discutons de votre projet.
-            </h2>
+            </motion.h2>
 
-            <p className="text-neutral-600 text-md lg:text-lg max-w-sm mt-4 dark:text-neutral-300">
+            <motion.p className="text-neutral-600 text-md lg:text-lg max-w-sm mt-4 dark:text-neutral-300"
+              initial={{ y: -20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
               Comment puis-je vous aider ?
               {/*} Login to aceternity if you can because we don&apos;t have a login flow
               yet */}
-            </p>
+            </motion.p>
 
             <form target="_self" action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" method="POST" className="my-8" > {/** action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" */}
               <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4 gap-2">
@@ -127,15 +142,17 @@ export function Contact() {
               />
               </LabelInputContainer>
               */ }
-              <button
+              <motion.button
                 className="bg-gradient-to-br relative group/btn from-black dark:from-slate-900 dark:to-slate-900 to-neutral-600 block dark:bg-slate-800 w-full text-white rounded-md h-10 font-medium lg:text-lg shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--slate-800)_inset,0px_-1px_0px_0px_var(--slate-800)_inset]"
                 type="submit"
-
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
               >
                 Envoyer
                 <FaLocationArrow className="h-4 w-4 text-neutral-800 dark:text-neutral-300 ml-2 inline bold" />
                 <BottomGradient />
-              </button>
+              </motion.button>
               {/*
               <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 
@@ -175,7 +192,7 @@ export function Contact() {
              */}
             </form>
           </div>
-        </div>
+        </motion.div>
       </section>
       <div className="h-10 lg:h-60"></div> {/* h-10 md:h-72 */}
     </>
