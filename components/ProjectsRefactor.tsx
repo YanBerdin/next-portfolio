@@ -1,13 +1,14 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react'
-import cn from 'classnames'
+import React, { useState } from 'react';
+import cn from 'classnames';
 // import Image from 'next/image'
-import { ProjectsRefactorButton } from "@/components/ui/Projects_ui/ProjectsRefactorButton"
+import { ProjectsRefactorButton } from "@/components/ui/Projects_ui/ProjectsRefactorButton";
 import BackdropModal from "@/components/ui/Projects_ui/BackdropModal";
 import BlurImage from "@/components/ui/BlurImage";
 import { Repositories } from "@/data/projectRefactoData";
 //import { DemoIcon, GithubIcon2 } from "./ui/Icon";
+import { motion } from 'framer-motion';
 
 
 type Technology = 'Html' | 'Css' | 'JS' | 'PHP' | 'Singleton' | 'Typescript' | 'React' | 'Next' | 'Laravel' | 'Symfony' | 'Node.js' | 'Express' | 'Tailwind' | 'Shadcn' | 'MySQL' | 'Heroku' | 'Vercel' | 'Aceternity' | 'PostCss' | 'Framer-Motion' | 'Sass' | 'Axios' | 'Composer' | 'Bootstrap' | 'Apache' | 'Active Record' | 'Eloquent' | 'Semantic UI' | 'PropTypes' | 'Redux' | 'AltoRouter' | 'Styled-components' | 'Vite' | 'CORS' | 'JWT' | 'Swagger'
@@ -42,11 +43,11 @@ const myRepositories: Repository[] = Repositories.map(repo => ({
     ...repo,
     technologies: repo.technologies ?? []
 }));
-// 
+
 export default function ProjectsRefactor() {
     const [selectedTech, setSelectedTech] = useState<Technology | null>(null)
-    const [visibleRepos, setVisibleRepos] = useState(6)
-    const [visibleTechCount, setVisibleTechCount] = useState(12); // Affiche seulement 9 technologies au départ
+    const [visibleRepos, setVisibleRepos] = useState(3)
+    const [visibleTechCount, setVisibleTechCount] = useState(10); // Affiche seulement 9 technologies au départ
 
     const handleLoadMoreTechnologies = () => {
         setVisibleTechCount(technologies.length); // Affiche toutes les technologies
@@ -65,7 +66,11 @@ export default function ProjectsRefactor() {
             <div className="h-10"></div>
 
             <div className="flex flex-col pointer-events-none w-11/12 mx-auto">
-                <h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mt-3 mb-10 text-white-100">
+                <motion.h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mt-3 mb-10 text-white-100"
+                    initial={{ y: -30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                >
                     Découvrez
                     <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
                         {" "}
@@ -73,15 +78,28 @@ export default function ProjectsRefactor() {
                         {" "}
                     </span>
                     récents
-                </h2>
+                </motion.h2>
             </ div>
-            <div className="min-h-screen w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-white p-8 mx-auto">
+            <motion.div className=" w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-white p-8 mx-auto"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+            >
 
                 {/* Navbar des technologies */}
                 <nav className="mb-8">
-                    <ul className="flex flex-wrap gap-2 justify-center">
+                    <motion.ul className="flex flex-wrap gap-2 justify-center"
+                        initial={{ scale: 0, opacity: 0 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 0.3, delay: 0.1 }}
+                    >
                         {technologies.slice(0, visibleTechCount).map(tech => (
-                            <li key={tech}>
+                            <motion.li
+                                key={tech}
+                                initial={{ scale: 0, opacity: 0 }}
+                                whileInView={{ scale: 1, opacity: 1 }}
+                                transition={{ duration: 0.8, delay: 0.2 }}
+                            >
                                 <ProjectsRefactorButton
                                     variant={selectedTech === tech ? "default" : "secondary"}
                                     // onClick={() => setSelectedTech(tech)}
@@ -89,23 +107,27 @@ export default function ProjectsRefactor() {
                                 >
                                     {tech}
                                 </ProjectsRefactorButton>
-                            </li>
+                            </motion.li>
                         ))}
                         {visibleTechCount < technologies.length && (
-                            <li>
+                            <motion.li>
                                 <ProjectsRefactorButton onClick={handleLoadMoreTechnologies}>
                                     Plus de Technos
                                 </ProjectsRefactorButton>
-                            </li>
+                            </motion.li>
                         )}
-                    </ul>
+                    </motion.ul>
 
                 </nav>
 
                 {/* Liste des projets filtrés */}
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8 md:mt-16">
                     {filteredRepos.slice(0, visibleRepos).map(repo => (
-                        <div key={repo.id} className="bg-slate-800/[0.8] border border-slate-700 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[290px] lg:max-w-[310px] mx-auto">
+                        <motion.div key={repo.id} className="bg-slate-800/[0.8] border border-slate-700 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[290px] lg:max-w-[310px] mx-auto"
+                            initial={{ scale: 0, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                        >
                             <div className="relative group"> {/* min-h-36 md:h-64 lg:h-72 */}
                                 <BlurImage
                                     src={repo.img}
@@ -148,16 +170,20 @@ export default function ProjectsRefactor() {
                                     ))}
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 
                 {visibleRepos < filteredRepos.length && (
-                    <div className="mt-8 text-center">
+                    <motion.div className="mt-8 text-center"
+                        initial={{ y: 30, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
+                    >
                         <ProjectsRefactorButton onClick={handleLoadMore}>Voir tous les projets</ProjectsRefactorButton>
-                    </div>
+                    </motion.div>
                 )}
-            </div>
+            </motion.div>
             <div className="h-0 lg:h-24 xl:h-48"></div> {/* 48 */}
         </>
     )
