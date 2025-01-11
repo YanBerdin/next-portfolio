@@ -28,25 +28,28 @@ export const About = () => {
                 placeholder={"blur"} // (only SSR) blur pendant le chargement 
               /> {/**  lg:max-w-[180px] xl:max-w-[200px] lg:max-h-[207px] xl:max-h-[212px] */}
 
-              <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-muted-foreground mt-4">
-
-                <strong>💻 Concepteur d’applications</strong> performantes et sécurisées, j’allie curiosité et rigueur pour répondre aux besoins techniques et métiers. Je porte une attention particulière à la maintenabilité et l&apos;accessibilité.
+              <p className="text-sm sm:text-base md:text-xl lg:text-xl text-muted-foreground">
+                <strong>💻 Concepteur d’applications</strong> performantes et sécurisées, j’allie curiosité et rigueur pour répondre aux besoins techniques et métiers.
               </p>
 
-              <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-muted-foreground mt-4">🌐 Mon expérience dans le domaine de la vente et du e-commerce a profondément influencé mon approche centrée sur l&apos;utilisateur. </p>
+              <p className="text-sm sm:text-base md:text-xl lg:text-xl text-muted-foreground mt-4">
+                🛠️ Réalisation de Landing Page, site vitrine, site e-commerce, SaaS, CRM, API Rest, BackOffice...
+              </p>
 
-              <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-muted-foreground mt-4">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mt-4">🌐 Mon expérience de la vente et du e-commerce a profondément influencé mon approche centrée sur l&apos;utilisateur. </p>
+
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mt-4">
                 <strong>Gestion de projets</strong> : Pilotage d&apos;une activité en ligne générant 15 000 commandes annuelles.
               </p>
 
-              <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-muted-foreground mt-4">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mt-4">
                 <strong>Stratégies collaboratives</strong> :
-                Animation d&apos;une équipe de 8 collaborateurs en tant que manager chez Levi’s Store, avec une augmentation de 15 % du chiffre d&apos;affaires annuel grâce à l&apos;amélioration continue des processus et de la satisfaction client.
+                Animation d&apos;une équipe de 8 collaborateurs en tant que manager chez Levi’s Store, avec une augmentation constante de 15 % du chiffre d&apos;affaires annuel grâce à l&apos;amélioration continue des processus et de la satisfaction client.
               </p>
 
-              <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-muted-foreground mt-4">Collaborer avec une équipe passionnée et engagée, serait une opportunité exceptionnelle pour continuer à évoluer professionnellement.</p>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mt-4">Collaborer avec une équipe passionnée et engagée, serait une opportunité exceptionnelle pour continuer à évoluer professionnellement.</p>
 
-              <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-muted-foreground mt-4">Hobbies : 💿 Créativité musicale (DJing) | 🏍️ Moto | 🎮 Video-game
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mt-4">Hobbies : 💿 Créativité musicale (DJing) | 🏍️ Moto | 🎮 Video-game
               </p>
 
             </div>

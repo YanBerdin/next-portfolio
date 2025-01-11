@@ -29,9 +29,9 @@ export function Contact() {
         className="w-11/12 mx-auto mt-10"
       >
         <motion.div className="md:px-8 pb-20"
-          initial={{ scale: 0, opacity: 0 }}
+          initial={{ scale: 0.8, opacity: 0.6 }}
           whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.9 }}
         >
 
           {/*
@@ -58,7 +58,7 @@ export function Contact() {
             <motion.h2 className="font-bold text-lg lg:text-xl text-neutral-800 dark:text-neutral-200"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
             >
               <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
 
@@ -69,7 +69,7 @@ export function Contact() {
             <motion.p className="text-neutral-600 text-md lg:text-lg max-w-sm mt-4 dark:text-neutral-300"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
             >
               Comment puis-je vous aider ?
               {/*} Login to aceternity if you can because we don&apos;t have a login flow
@@ -77,7 +77,12 @@ export function Contact() {
             </motion.p>
 
             <form target="_self" action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" method="POST" className="my-8" > {/** action="https://formsubmit.co/7eda150ffd3bdfbb5cb58c14affa14d2" */}
-              <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4 gap-2">
+
+              <motion.div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4 gap-2"
+                initial={{ x: -20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
                 <LabelInputContainer>
                   <Label htmlFor="firstname" >Prénom</Label>
                   <Input
@@ -87,6 +92,7 @@ export function Contact() {
                     autoComplete="given-name"
                     required />
                 </LabelInputContainer>
+
                 <LabelInputContainer>
                   <Label htmlFor="lastname">Nom</Label>
                   <Input
@@ -95,18 +101,30 @@ export function Contact() {
                     type="text"
                     autoComplete="family-name" />
                 </LabelInputContainer>
-              </div>
-              <LabelInputContainer className="mb-4">
-                <Label htmlFor="email">Email</Label>
-                <Input id="email" placeholder=""
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  required
-                />
+              </motion.div>
 
-              </LabelInputContainer>
-              <div>
+              <motion.div
+                initial={{ x: -20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
+                <LabelInputContainer className="mb-4">
+                  <Label htmlFor="email">Email</Label>
+                  <Input id="email" placeholder=""
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    required
+                  />
+                </LabelInputContainer>
+              </motion.div>
+
+              <motion.div
+                className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4 gap-2"
+                initial={{ x: 20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
                 <LabelInputContainer className="mb-4">
                   <Label htmlFor="Subject">Objet</Label>
                   <Input
@@ -115,18 +133,25 @@ export function Contact() {
                     type="text"
                   />
                 </LabelInputContainer>
-              </div>
-              <LabelInputContainer className="mb-4" aria-labelledby="message">
-                <Label htmlFor="message">Message</Label>
-                <Textarea
-                  name="message"
-                  id="message"
-                  placeholder=''
-                  className="block w-full rounded-md border-0 px-3.5 py-2 h-20 outline-none focus:outline-none"
-                  defaultValue={''}
-                  required
-                />
-              </LabelInputContainer>
+              </motion.div>
+
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
+                <LabelInputContainer className="mb-4" aria-labelledby="message">
+                  <Label htmlFor="message">Message</Label>
+                  <Textarea
+                    name="message"
+                    id="message"
+                    placeholder=''
+                    className="block w-full rounded-md border-0 px-3.5 py-2 h-20 outline-none focus:outline-none"
+                    defaultValue={''}
+                    required
+                  />
+                </LabelInputContainer>
+              </motion.div>
               {/*
               <LabelInputContainer className="mb-4">
               <Label htmlFor="password">Password</Label>
@@ -145,9 +170,9 @@ export function Contact() {
               <motion.button
                 className="bg-gradient-to-br relative group/btn from-black dark:from-slate-900 dark:to-slate-900 to-neutral-600 block dark:bg-slate-800 w-full text-white rounded-md h-10 font-medium lg:text-lg shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--slate-800)_inset,0px_-1px_0px_0px_var(--slate-800)_inset]"
                 type="submit"
-                initial={{ y: 50, opacity: 0 }}
+                initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
               >
                 Envoyer
                 <FaLocationArrow className="h-4 w-4 text-neutral-800 dark:text-neutral-300 ml-2 inline bold" />
