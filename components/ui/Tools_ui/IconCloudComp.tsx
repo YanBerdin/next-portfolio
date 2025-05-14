@@ -32,7 +32,13 @@ const slugs = [
     "mysql",
     "redux",
     "nodedotjs",
-    "nextdotjs"
+    "nextdotjs",
+    "nuxtdotjs",
+    "vuedotjs",
+    "strapi",
+    "mongodb",
+    "expo",
+    "supabase"
 ];
 // "dart",
 // "java",
