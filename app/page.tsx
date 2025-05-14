@@ -27,7 +27,7 @@ export default function Home() {
           <Hero />
         </div>
 
-        <div id="skills" style={{ marginTop: "30px", paddingTop: "30px", marginBottom: "10rem" }}>
+        <div id="skills" style={{ marginTop: "30px", paddingTop: "50px", marginBottom: "10rem" }}>
           <Skills />
         </div>
 
