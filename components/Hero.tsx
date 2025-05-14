@@ -33,7 +33,7 @@ export const Hero = () => {
 
             </div>
             <div className="flex justify-center gap-10 relative max-sm:mt-20 mb-32 mt-36 z-10"> {/*flex-wrap md:justify-around*/}
-                <div className="max-sm:w-full w-11/12 lg:w-9/12 flex flex-col items-center justify-center">
+                <div className="max-sm:w-11/12 w-10/12 flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
                     </p>*/}
@@ -44,7 +44,7 @@ export const Hero = () => {
                      */}
                     <TextGenerateEffect
                         className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-center w-full" // remove text-[30px]
-                        words="Je réalise votre site web sécurisé selon vos besoins"
+                        words="Yan, développeur Web & mobile"
                     />
                     {   /**
                     <TextGenerateEffect
@@ -53,12 +53,12 @@ export const Hero = () => {
                         // gradientClass="bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text"
                     />
                      */}
-                    <motion.h1 className="md:tracking-wider my-4 md:mb-10 text-md md:text-lg lg:text-2xl text-center text-white-100"
+                    <motion.h1 className="md:tracking-wider my-4 md:mb-10 text-md md:text-lg lg:text-xl xl:text-3xl text-center text-white-100"
                         initial={{ y: -40, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
                     >
-                        Bienvenue, je suis Yan, développeur Fullstack
+                        Spécialisé dans la conception d’interfaces intuitives et de systèmes sécurisés.
                     </motion.h1>
 
                     <motion.div
@@ -67,7 +67,7 @@ export const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.5 }}
                     >
                         <MagicButton
-                            title="Voir mes réalisations"
+                            title="Découvrez mes projets"
                             // icon={<FaLocationArrow />}
                             icon={""}
                             position="right"

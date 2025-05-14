@@ -27,31 +27,36 @@ interface mySkills {
   export const mySkills = [
     {
       id: 1,
-      title: "Développement Frontend",
+      title: "Frontend",
       desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
       skillsList: [
-        "Maîtrise de React et Next.js, Redux",
-        "Création de wireframes et de maquettes d'application.",
-        "Développement d'interfaces dynamiques et responsives.",
-        "Résolution efficace d'algorithmes.",
-        "Respect des normes d'accessibilité web (WCAG) et des bonnes pratiques SEO.",
-        "Expérience avec le Shell et les commandes SSH."
+        "SPA avec React.js, Next.js, Nuxt.js",
+        "Apps mobiles : React Native / Expo",
+        "Gestion d'état : Redux, Pinia",
+        "Styles : Tailwind CSS, SCSS (responsive)",
+        "Protection des données côté client",
+        "SEO, UX & accessibilité (WCAG 2.1)",
+        "Wireframes et prototypage", 
+        // "Écrire et exécuter des tests unitaires front‑end."
+    
     ],
       className: "md:col-span-2",
       thumbnail: "/skills-assets/exp1.svg",
     },
     {
       id: 2,
-      title: "Développement Backend",
+      title: "Backend",
       desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
       skillsList: [
-        "Création de l'infrastructure back-end sécurisée d'applications web",
-        "Programmation orientée objet (POO) fonctionnelle et déclarative.",
-        "Modélisation et gestion de base de données relationnelle.",
-        "Développement de composants d'accès aux données.",
-        "Conception d'API REST.",
-        "Sécurité des données selon RGPD et OWASP.",
-        // "Maîtrise des frameworks Laravel, Node.js, Express et Socket.io."
+        "Node.js (Express) et PHP (Laravel)",
+        //"Développer des APIs sécurisées & documentées.",
+        "Protection des données côté serveur",
+        "POO, avec bases SQL/NoSQL",
+        //"Debug & algorithmes complexes",
+        "Strapi (headless) & Supabase (BaaS)",
+        "Automatisation : scripts, MCP server, GitHub Actions",
+        "WordPress : Thèmes et plugins sur mesure",
+        // "Écrire et exécuter des tests unitaires back‑end.",
       ],
       className: "md:col-span-2",
       thumbnail: "/skills-assets/exp2.svg",
@@ -59,16 +64,16 @@ interface mySkills {
 
     {
       id: 3,
-      title: "Wordpress",
+      title: "Méthodologie",
       desc: "Création de site sécurisé, configuration et maintenance.",
       skillsList: [
-        "Création de site sécurisé, configuration et maintenance.",
-        "Installation, paramétrage et personnalisation de thème.",
-        "Edition de contenu (Gutenberg).",
-        "Configuration de plugins.",
-        // "Modification des options de WordPress via l'interface d'administration pour adapter le site aux besoins du client.",
-        "Maîtrise de Git/GitHub pour la gestion de versions et la collaboration.",
-        "Utilisation agile de Scrum pour la gestion de projet."
+        "Analyse besoins & specs fonctionnelles",
+        "Maintenance & évolutions en Agile/Scrum",
+        "Pair programming & code review",
+        //"CI/CD (Vercel, Heroku)",
+        "Git/GitHub, Trello, Discord, Slack",
+        "Documentation et tests utilisateurs",
+        "Veille techno & bonnes pratiques"
       ],
       className: "md:col-span-2",
      thumbnail: "/skills-assets/exp4.svg", //"/exp3.svg",

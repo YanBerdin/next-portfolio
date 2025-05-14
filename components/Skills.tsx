@@ -15,19 +15,19 @@ export const Skills = () => {
       <div className="h-4 mt-10"></div>
 
       <section className="mx-auto w-11/12 mb-5 lg:mb-52" id="skills">
-        <div className="flex flex-col pointer-events-none">
-          <motion.h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mb-4 text-white-100 mt-16"
+        <div className="flex flex-col pointer-events-none items-center">
+          <motion.h2 className="max-sm:text-2xl text-3xl lg:text-4xl xl:text-5xl font-bold text-center mb-4 text-white-100 mt-16"
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }} // whileInView=
             transition={{ duration: 0.6 }}
           >
-            Spécialisé en
+            Fullstack
             <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
               {" "}
-              Javascript, Typescript & PHP
+              Javascript & Php
               {" "}
             </span>
-            avec un focus sur{" "}
+            spécialiste{" "}
             <span className="inline bg-gradient-to-r from-[#cf96f5]  to-[#8f47d2] text-transparent bg-clip-text edge:text-purple">
               React.js
             </span>
@@ -74,10 +74,10 @@ export const Skills = () => {
                       aria-hidden="true"
                     />
                     <div className="w-full"> {/*ms-5*/}
-                      <h3 className="text-center text-black dark:text-white text-lg font-bold">
+                      <h3 className="text-center text-black dark:inline bg-gradient-to-r from-[#fcb69f] to-[#ff9472] text-transparent bg-clip-text text-2xl xl:text-3xl font-bold">
                         {card.title}
                       </h3>
-                      {/*                  
+                      {/*                  [#f77062] to-[#fe5196]
                   <p className="text-start text-white-100 mt-3 font-semibold">
                     {card.desc}
                   </p>
@@ -86,7 +86,7 @@ export const Skills = () => {
                         {card.skillsList && card.skillsList.filter((skills): skills is string => skills !== undefined).map((skills: string) => (
                           <span key={skills} className="flex">
                             <Check className="text-green-500 min-w-[20px]" />{" "}
-                            <p className="ml-2 text-base md:text-base max-w-[380px]">{skills}</p>
+                            <p className="ml-2 text-lg md:text-xl">{skills}</p>
                           </span>
                         ))}
                       </div>
