@@ -188,7 +188,7 @@ export const projects: IProject[] = [
       "Redux",
       "Firebase Auth",
       "YouTube API",
-      "Sass",
+      "SCSS",
       "Bootstrap",
     ],
   },
@@ -200,6 +200,6 @@ export const projects: IProject[] = [
     category: ["react"],
     description:
       "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-    key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
+    key_techs: ["React", "Redux", "Firebase Auth", "API", "SCSS", "Bootstrap"],
   },
 ];

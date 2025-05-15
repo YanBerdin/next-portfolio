@@ -196,7 +196,7 @@ export const Repositories = [
     {
       id: 6,
       title: "Shoes-Shop 👠",
-      description: "🛠️	Technologies Utilisées : PHP | Apache | Singleton | Active Record | Composer | Bootstrap | Html | CSS",
+      description: "🛠️	Technologies Utilisées : PHP | Apache | Active Record | Composer | Bootstrap | Html | CSS",
       explanationList: [ " ",
       "🎙️ Description : Site e-commerce de vente de chaussures",
       " ",
@@ -228,13 +228,13 @@ export const Repositories = [
       spareImg: "",
       demoLink: "", //TODO Deployer
       githubLink: "https://github.com/YanBerdin/shoes-shop-frontoffice-php",
-      technologies: ['Html', 'Css', 'JS', 'PHP', 'Composer', 'Bootstrap', 'Apache', 'Singleton', 'Active Record'],
+      technologies: ['Html', 'Css', 'JS', 'PHP', 'Composer', 'Bootstrap', 'Apache'],
     },
     
     {
       id: 7,
       title: "Shoes BackOffice 👠",
-      description: "🛠️	Technologies Utilisées : PHP | MySQL | Apache | Singleton | Active Record | Composer | Bootstrap | Html | Css",
+      description: "🛠️	Technologies Utilisées : PHP | MySQL | Apache | Composer | Bootstrap | Html | Css",
       explanationList: [ " ",
       "🎙️ Description : BackOffice du Site e-commerce de vente de chaussures Shoes-Shop .",
       " ",
@@ -270,7 +270,7 @@ export const Repositories = [
       spareImg: "",
       demoLink: "", //TODO Deployer
       githubLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php",
-      technologies: ['Html', 'Css', 'PHP', 'MySQL', 'Composer', 'Bootstrap', 'Apache', 'Singleton', 'Active Record'],
+      technologies: ['Html', 'Css', 'PHP', 'MySQL', 'Composer', 'Bootstrap', 'Apache'],
     },
 
     {
@@ -385,7 +385,7 @@ export const Repositories = [
     {
       id: 11,
       title: "Github Explorer 🔎",
-      description: "🛠️	Technologies Utilisées : React | Axios | Semantic UI | PropTypes | Sass",
+      description: "🛠️	Technologies Utilisées : React | Axios | Semantic UI | PropTypes | SCSS",
       explanationList: [
         "🎙️ Description : Github Explorer permet de rechercher et d’explorer les dépôts GitHub..",
         "",
@@ -422,7 +422,7 @@ export const Repositories = [
       spareImg:"",
       demoLink:"https://new-react-github-explorer.vercel.app/",
       githubLink:"https://github.com/YanBerdin/create-react-github-explorer",
-      technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'Semantic UI', 'Sass'],
+      technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'Semantic UI', 'SCSS'],
     },
 
     {
@@ -467,7 +467,7 @@ export const Repositories = [
     {
       id: 13,
       title: "Weather Widget 🌦️",
-      description: "🛠️	Technologies Utilisées : React | Axios | JS | Sass | PropTypes",
+      description: "🛠️	Technologies Utilisées : React | Axios | JS | SCSS | PropTypes",
       explanationList: [
         "🎙️ Description : L'application présente 2 'Widgets Meteo' qui affichent les informations météorologiques actuelles. l'un par saisie de code postal, l'autre par géolocalisation",
         "💡 Sécurisation de l'application :",
@@ -500,7 +500,7 @@ export const Repositories = [
       spareImg: "",
       demoLink: "https://yanberdin.github.io/React_Widget_Meteo/",
       githubLink: "https://github.com/YanBerdin/React_Widget_Meteo",
-      technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'Sass'],
+      technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'SCSS'],
     }, 
 
     {

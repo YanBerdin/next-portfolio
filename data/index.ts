@@ -198,7 +198,7 @@ export const gridItems = [
   {
     id: 5,
     title: "Shoes-Shop & BackOffice 👠",
-    description: "🛠️	Technologies Utilisées : PHP | MySQL | Apache | Singleton | Active Record | Bootstrap",
+    description: "🛠️	Technologies Utilisées : PHP | MySQL | Apache | Active Record | Bootstrap",
     explanationList: [ " ",
     "🎙️ Description : Site e-commerce de vente de chaussures & BackOffice.",
     " ",

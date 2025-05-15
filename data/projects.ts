@@ -5,7 +5,7 @@ import { Technology } from '@/types'
 
 
 const technologies: Technology[] = [
-  'Html', 'Css', 'JS', 'PHP', 'Singleton', 'Typescript', 'React', 'Next', 'Laravel', 'Symfony', 
+  'Html', 'Css', 'JS', 'PHP', 'Typescript', 'React', 'Next', 'Laravel', 'Symfony', 
   'Node.js', 'Tailwind', 'Sql', 'MariaDb', 'Mysql', 'Redis', 'Firebase', 'React Native', 
   'DigitalOcean', 'Heroku', 'Vercel'
 ]
