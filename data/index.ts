@@ -32,7 +32,7 @@ interface mySkills {
       skillsList: [
         "SPA avec React.js, Next.js, Nuxt.js",
         "Apps mobiles : React Native / Expo",
-        "Gestion d'état : Redux, Pinia",
+        //"Gestion d'état : Redux, Pinia",
         "Styles : Tailwind CSS, SCSS (responsive)",
         "Protection des données côté client",
         "SEO, UX & accessibilité (WCAG 2.1)",
@@ -69,7 +69,7 @@ interface mySkills {
       skillsList: [
         "Analyse besoins & specs fonctionnelles",
         "Maintenance & évolutions en Agile/Scrum",
-        "Pair programming & code review",
+        "Pair programming",
         //"CI/CD (Vercel, Heroku)",
         "Git/GitHub, Trello, Discord, Slack",
         "Documentation et tests utilisateurs",
