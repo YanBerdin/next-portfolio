@@ -4,7 +4,7 @@ export const navItems = [
 
   { name: "Skills", link: "#skills", title:"" },
   { name: "Réalisations", link: "#projects", title:"" },
-  { name: "A-propos", link: "#about", title:"" },
+  { name: "Profil", link: "#about", title:"" },
   { name: "Contact", link: "#contact", title:"" },
   { name: "", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/Yan_Berdin.pdf", target:"_blank", icon: ResumeIcon, title:"CV" },
   { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon2, title:"Github" },

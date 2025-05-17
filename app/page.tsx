@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         */}
 
-        <div id="about" style={{ marginTop: "40px", paddingTop: "40px", marginBottom: "15rem" }}>
+        <div id="about" style={{ marginTop: "15px", paddingTop: "40px", marginBottom: "15rem" }}>
           <About />
         </div>
 
