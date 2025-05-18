@@ -80,7 +80,7 @@ export default function ProjectsRefactor() {
                     récents
                 </motion.h2>
             </ div>
-            <motion.div className=" w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-white p-8 mx-auto"
+            <motion.div className=" w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-slate-100 p-8 mx-auto"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.3 }}

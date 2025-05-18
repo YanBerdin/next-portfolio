@@ -39,7 +39,7 @@ export default function WebDevCommandments() {
             </div>
             <div className="flip-card-back">
               <p className="title">Lisibilité</p>
-              <p>Mon code doit être clair, structuré, avec des noms explicites, pour être compréhensible facilement par un autre dev.</p>
+              <p className="text-white-100 text-md">Mon code doit être clair, structuré, avec des noms explicites, pour être compréhensible facilement par un autre dev.</p>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function WebDevCommandments() {
             </div>
             <div className="flip-card-back">
               <p className="title">Simplicité</p>
-              <p>Mon code doit éviter toute complexité inutile, en se concentrant uniquement sur l&apos;essentiel.</p>
+              <p className="text-white-100 text-md">Mon code doit éviter toute complexité inutile, en se concentrant uniquement sur l&apos;essentiel.</p>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function WebDevCommandments() {
             </div>
             <div className="flip-card-back">
               <p className="title">Performance</p>
-              <p>Mon code doit être efficace, en optimisant l’utilisation des ressources.</p>
+              <p className="text-white-100 text-md">Mon code doit être efficace, en optimisant l’utilisation des ressources.</p>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function WebDevCommandments() {
             </div>
             <div className="flip-card-back">
               <p className="title">Sécurité</p>
-              <p>Mon code doit protéger contre les vulnérabilités et garantir la sûreté des données et des interactions.</p>
+              <p className="text-white-100 text-md">Mon code doit protéger contre les vulnérabilités et garantir la sûreté des données et des interactions.</p>
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function WebDevCommandments() {
             </div>
             <div className="flip-card-back">
               <p className="title">Robustesse</p>
-              <p>Mon code doit gérer les erreurs, valider les entrées, et garantir sa fiabilité.</p>
+              <p className="text-white-100 text-md">Mon code doit gérer les erreurs, valider les entrées, et garantir sa fiabilité.</p>
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function WebDevCommandments() {
             </div>
             <div className="flip-card-back">
               <p className="title">Modularité</p>
-              <p>Mon code doit être organisé en parties indépendantes et réutilisables, chacune ayant une responsabilité claire.</p>
+              <p className="text-white-100 text-md">Mon code doit être organisé en parties indépendantes et réutilisables, chacune ayant une responsabilité claire.</p>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@ export default function WebDevCommandments() {
             </div>
             <div className="flip-card-back">
               <p className="title">Scalabilité</p>
-              <p>Mon code doit être conçu pour permettre des évolutions ou des ajouts sans nécessiter de réécrire l’ensemble.</p>
+              <p className="text-white-100 text-md">Mon code doit être conçu pour permettre des évolutions ou des ajouts sans nécessiter de réécrire l’ensemble.</p>
             </div>
           </div>
         </div>
@@ -165,7 +165,7 @@ export default function WebDevCommandments() {
             </div>
             <div className="flip-card-back">
               <p className="title">Conformité</p>
-              <p>Mon code doit respecter les standards et conventions de codage adoptés par la communauté ou l’équipe.</p>
+              <p className="text-white-100 text-md">Mon code doit respecter les standards et conventions de codage adoptés par la communauté ou l’équipe.</p>
             </div>
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function WebDevCommandments() {
             </div>
             <div className="flip-card-back">
               <p className="title">Documentation</p>
-              <p>Mon code doit être accompagné d’instructions claires qui facilitent son utilisation, sa compréhension et sa maintenance.</p>
+              <p className="text-white-100 text-md">Mon code doit être accompagné d’instructions claires qui facilitent son utilisation, sa compréhension et sa maintenance.</p>
             </div>
           </div>
         </div>
@@ -201,7 +201,7 @@ export default function WebDevCommandments() {
             </div>
             <div className="flip-card-back">
               <p className="title">Testabilité</p>
-              <p>Mon code doit être facilement testable, idéalement avec des tests automatisés qui assurent son bon fonctionnement.</p>
+              <p className="text-white-100 text-md">Mon code doit être facilement testable, idéalement avec des tests automatisés qui assurent son bon fonctionnement.</p>
             </div>
           </div>
         </div>
