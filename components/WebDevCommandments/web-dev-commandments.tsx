@@ -1,6 +1,6 @@
 "use client"
 
-import { Code, Accessibility, Zap, Lock, Smartphone, Layers, Search, Wrench, Repeat, Users } from "lucide-react"
+import { Code, Minimize, Zap, Lock, Shield, Layers, Scale, FileCheck, FileText, TestTube } from "lucide-react"
 import { motion } from "framer-motion"
 import "@/app/web-dev-commandments.css"
 
@@ -8,7 +8,7 @@ export default function WebDevCommandments() {
   return (
     <div className="info">
 
-      <motion.h2 className="heading mb-10 text-white-100 mt-16"
+      <motion.h2 className="heading mb-16 text-white-100 mt-16"
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }} // whileInView=
         transition={{ duration: 0.6 }}
@@ -48,7 +48,7 @@ export default function WebDevCommandments() {
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <div className="icon-container">
-                <Accessibility className="icon" />
+                <Minimize className="icon" />
               </div>
               <h5 className="title">
                 {/*  2. <br /> */} Simplicité
@@ -102,7 +102,7 @@ export default function WebDevCommandments() {
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <div className="icon-container">
-                <Smartphone className="icon" />
+                <Shield className="icon" />
               </div>
               <h5 className="title">
                 {/*  5. <br /> */} Robustesse
@@ -138,7 +138,7 @@ export default function WebDevCommandments() {
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <div className="icon-container">
-                <Search className="icon" />
+                <Scale className="icon" />
               </div>
               <h5 className="title">
                 {/*  7. <br /> */} Scalabilité
@@ -156,7 +156,7 @@ export default function WebDevCommandments() {
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <div className="icon-container">
-                <Wrench className="icon" />
+                <FileCheck className="icon" />
               </div>
               <h5 className="title">
                 {/*  8. <br /> */} Conformité
@@ -174,7 +174,7 @@ export default function WebDevCommandments() {
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <div className="icon-container">
-                <Repeat className="icon" />
+                <FileText className="icon" />
               </div>
               <h5 className="title">
                 {/*  9. <br />*/} Documentation
@@ -192,7 +192,7 @@ export default function WebDevCommandments() {
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <div className="icon-container">
-                <Users className="icon" />
+                <TestTube className="icon" />
               </div>
               <h5 className="title">
                 {/* 10. <br /> */} Testabilité
