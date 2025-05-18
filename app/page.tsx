@@ -13,6 +13,7 @@ import Footer from "@/components/Footer";
 //import Projects from "@/components/Projects";
 import ProjectsRefactor from "@/components/ProjectsRefactor";
 import { IconCloudComp } from "@/components/ui/Tools_ui/IconCloudComp";
+import WebDevCommandments from "@/components/WebDevCommandments/web-dev-commandments"
 
 export default function Home() {
   return (
@@ -47,6 +48,10 @@ export default function Home() {
 
         <div id="about" style={{ marginTop: "15px", paddingTop: "40px", marginBottom: "15rem" }}>
           <About />
+        </div>
+
+        <div id="about" style={{ marginTop: "15px", paddingTop: "40px", marginBottom: "15rem" }}>
+          <WebDevCommandments />
         </div>
 
         {/*<Timeline />*/}

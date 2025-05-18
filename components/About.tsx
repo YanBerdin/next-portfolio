@@ -57,7 +57,7 @@ export const About = () => {
               <div className="flex flex-col items-center text-center space-y-4 p-2" >
 
                 {/* Image flottante avec effet d'elevation */}
-                <div className="relative mb-6 float-right ml-6 md:ml-8 shadow-xl">
+                <div className="relative float-right shadow-xl">
                   <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full blur opacity-30"></div>
                   <Image
                     src={Portrait}
@@ -71,7 +71,25 @@ export const About = () => {
                 {/*<div className="bg-primary/10 p-3 rounded-full">
               <CodeIcon className="h-10 w-10 text-primary" />
             </div>*/}
-                <h2 className="max-sm:text-xl text-2xl lg:text-3xl font-bold tracking-tight">Qui suis-je ? ☺️</h2>
+
+                <motion.h2 className="heading mb-10 text-white-100 mt-16"
+                  initial={{ y: -20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }} // whileInView=
+                  transition={{ duration: 0.6 }}
+                >
+                  A
+                  <span className="heading bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple tracking-tight">
+                    {" "}
+                    propos
+                    {" "}
+                  </span>
+                  de{" "}
+                  <span className="heading inline bg-gradient-to-r from-[#cf96f5]  to-[#8f47d2] text-transparent bg-clip-text edge:text-purple">
+                    moi{" "}
+                  </span>
+                  ☺️
+                </motion.h2>
+
                 {/*<p className="max-sm:text-sm sm:text-base md:text-xl lg:text-xl text-muted-foreground max-w-2xl">
                   Développeur Web depuis une reconversion réussie après 20 ans dans le commerce
                 </p>*/}
@@ -105,7 +123,7 @@ export const About = () => {
 
                 <motion.p variants={item} className="leading-relaxed relative px-4 py-8 bg-slate-800/30 rounded-lg border border-slate-700/50">
                   <span className="block text-center px-6 ">Ma maxime favorite</span>
-                  <span className="block text-center font-semibold text-blue-300 max-sm:text-sm sm:text-base md:text-md lg:text-lg mt-2">« Il ne faut pas espérer pour entreprendre, ni réussir pour persévérer »</span>
+                  <span className="block text-center font-semibold text-blue-300 max-sm:text-sm sm:text-base md:text-md lg:text-lg mt-2">« Il n&apos;est pas nécessaire d&apos;espérer pour entreprendre, ni de réussir pour persévérer. »</span>
                   <span className="absolute right-2 bottom-0 text-5xl text-blue-500/80"></span>
                 </motion.p>
 

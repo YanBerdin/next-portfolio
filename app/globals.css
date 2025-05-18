@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ajout pour les effets 3D des cartes */
+@layer utilities {
+  .perspective-card {
+    perspective: 1000px;
+  }
+  
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -80,7 +99,7 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-2xl lg:text-4xl text-center;
+    @apply font-bold max-sm:text-2xl text-3xl lg:text-4xl text-center;
   }
 
   .black-gradient {
@@ -336,4 +355,12 @@ body {
     text-wrap: balance;
   }
 }
+
+dark:text-muted-foreground brightness-110 text-neutral-600 hover:brightness-200 hover:scale-95 transition-transform duration-300 ease-in-out
 */
+
+@layer components {
+  .nav-icon {
+    @apply w-5 h-5 dark:text-muted-foreground brightness-110 text-neutral-600 hover:brightness-200 hover:scale-95 transition-transform duration-300 ease-in-out !important;
+  }
+}

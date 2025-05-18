@@ -28,6 +28,17 @@ const config = {
     "./src/**/*.{ts,tsx}",
     "./data/**/*.{ts,tsx}",
   ],
+  //? https://tailwindcss.com/docs/content-configuration#safelist
+  safelist: [
+    'nav-icon',
+    'icon',
+    'w-5',
+    'h-5',
+    'text-white',
+    'hover:text-cyan-300',
+    'w-10',
+    'h-10',
+  ],
   // prefix: "",
   theme: {
     container: {

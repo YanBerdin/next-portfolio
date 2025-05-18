@@ -1,0 +1,503 @@
+.info {
+  padding: 2rem;
+  text-align: center;
+}
+
+.info h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f8f9fa;
+}
+
+.commandments-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .commandments-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .commandments-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .commandments-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .commandments-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1536px) {
+  .commandments-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 256px; /* Réduit de 320px à 256px (~20%) */
+  perspective: 1000px;
+  margin-bottom: 1rem;
+}
+
+/* Effets d'ombre néon et relief */
+@keyframes neonGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(138, 180, 248, 0.5),
+      0 0 10px rgba(74, 107, 175, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(138, 180, 248, 0.8),
+      0 0 25px rgba(74, 107, 175, 0.6),
+      0 0 35px rgba(74, 107, 175, 0.4);
+  }
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  animation: neonGlow 3s infinite;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem; /* Réduit de 1.5rem à 1.2rem (~20%) */
+}
+
+.flip-card-front {
+  background-color: #1a1e2e;
+  color: #e0e0ff;
+}
+
+/* Variantes de couleurs pour les cartes frontales */
+.flip-card:nth-child(1) .flip-card-front {
+  background: linear-gradient(145deg, #1a1e2e, #2a2e3e);
+  box-shadow: inset 0 0 10px #4a6baf, 0 0 5px rgba(74, 107, 175, 0.5);
+}
+
+.flip-card:nth-child(2) .flip-card-front {
+  background: linear-gradient(145deg, #1e1a2e, #2e2a3e);
+  box-shadow: inset 0 0 10px #8a4aaf, 0 0 5px rgba(138, 74, 175, 0.5);
+}
+
+.flip-card:nth-child(3) .flip-card-front {
+  background: linear-gradient(145deg, #1a2e1e, #2a3e2e);
+  box-shadow: inset 0 0 10px #4aaf6b, 0 0 5px rgba(74, 175, 107, 0.5);
+}
+
+.flip-card:nth-child(4) .flip-card-front {
+  background: linear-gradient(145deg, #2e1a1a, #3e2a2a);
+  box-shadow: inset 0 0 10px #af4a4a, 0 0 5px rgba(175, 74, 74, 0.5);
+}
+
+.flip-card:nth-child(5) .flip-card-front {
+  background: linear-gradient(145deg, #1a262e, #2a363e);
+  box-shadow: inset 0 0 10px #4a9eaf, 0 0 5px rgba(74, 158, 175, 0.5);
+}
+
+.flip-card:nth-child(6) .flip-card-front {
+  background: linear-gradient(145deg, #2e2a1a, #3e3a2a);
+  box-shadow: inset 0 0 10px #af9e4a, 0 0 5px rgba(175, 158, 74, 0.5);
+}
+
+.flip-card:nth-child(7) .flip-card-front {
+  background: linear-gradient(145deg, #2e1e1a, #3e2e2a);
+  box-shadow: inset 0 0 10px #af6b4a, 0 0 5px rgba(175, 107, 74, 0.5);
+}
+
+.flip-card:nth-child(8) .flip-card-front {
+  background: linear-gradient(145deg, #2e1a26, #3e2a36);
+  box-shadow: inset 0 0 10px #af4a8a, 0 0 5px rgba(175, 74, 138, 0.5);
+}
+
+.flip-card:nth-child(9) .flip-card-front {
+  background: linear-gradient(145deg, #1a1a2e, #2a2a3e);
+  box-shadow: inset 0 0 10px #574aaf, 0 0 5px rgba(87, 74, 175, 0.5);
+}
+
+.flip-card:nth-child(10) .flip-card-front {
+  background: linear-gradient(145deg, #221a2e, #322a3e);
+  box-shadow: inset 0 0 10px #7a4aaf, 0 0 5px rgba(122, 74, 175, 0.5);
+}
+
+.flip-card-back {
+  background-color: #4a6baf;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Variantes de couleurs pour les cartes arrières */
+.flip-card:nth-child(1) .flip-card-back {
+  background: linear-gradient(145deg, #2a3b6f, #1a2b5f);
+  box-shadow: inset 0 0 10px rgba(122, 155, 223, 0.8);
+}
+
+.flip-card:nth-child(2) .flip-card-back {
+  background: linear-gradient(145deg, #5a2a6f, #4a1a5f);
+  box-shadow: inset 0 0 10px rgba(186, 122, 223, 0.8);
+}
+
+.flip-card:nth-child(3) .flip-card-back {
+  background: linear-gradient(145deg, #2a6f3b, #1a5f2b);
+  box-shadow: inset 0 0 10px rgba(122, 223, 155, 0.8);
+}
+
+.flip-card:nth-child(4) .flip-card-back {
+  background: linear-gradient(145deg, #6f2a2a, #5f1a1a);
+  box-shadow: inset 0 0 10px rgba(223, 122, 122, 0.8);
+}
+
+.flip-card:nth-child(5) .flip-card-back {
+  background: linear-gradient(145deg, #2a5e6f, #1a4e5f);
+  box-shadow: inset 0 0 10px rgba(122, 207, 223, 0.8);
+}
+
+.flip-card:nth-child(6) .flip-card-back {
+  background: linear-gradient(145deg, #6f5e2a, #5f4e1a);
+  box-shadow: inset 0 0 10px rgba(223, 206, 122, 0.8);
+}
+
+.flip-card:nth-child(7) .flip-card-back {
+  background: linear-gradient(145deg, #6f3b2a, #5f2b1a);
+  box-shadow: inset 0 0 10px rgba(223, 155, 122, 0.8);
+}
+
+.flip-card:nth-child(8) .flip-card-back {
+  background: linear-gradient(145deg, #6f2a4a, #5f1a3a);
+  box-shadow: inset 0 0 10px rgba(223, 122, 186, 0.8);
+}
+
+.flip-card:nth-child(9) .flip-card-back {
+  background: linear-gradient(145deg, #372a6f, #271a5f);
+  box-shadow: inset 0 0 10px rgba(135, 122, 223, 0.8);
+}
+
+.flip-card:nth-child(10) .flip-card-back {
+  background: linear-gradient(145deg, #4a2a6f, #3a1a5f);
+  box-shadow: inset 0 0 10px rgba(170, 122, 223, 0.8);
+}
+
+.icon-container {
+  background-color: rgba(30, 35, 45, 0.8);
+  border-radius: 50%;
+  width: 64px; /* Réduit de 80px à 64px (~20%) */
+  height: 64px; /* Réduit de 80px à 64px (~20%) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.8rem; /* Réduit de 1rem à 0.8rem */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 32px; /* Réduit de 40px à 32px (~20%) */
+  height: 32px; /* Réduit de 40px à 32px (~20%) */
+  color: inherit;
+}
+
+/* Couleurs spécifiques pour chaque icône */
+.flip-card:nth-child(1) .icon {
+  color: #7a9bdf;
+}
+
+.flip-card:nth-child(2) .icon {
+  color: #ba7adf;
+}
+
+.flip-card:nth-child(3) .icon {
+  color: #7adf9b;
+}
+
+.flip-card:nth-child(4) .icon {
+  color: #df7a7a;
+}
+
+.flip-card:nth-child(5) .icon {
+  color: #7acfdf;
+}
+
+.flip-card:nth-child(6) .icon {
+  color: #dfce7a;
+}
+
+.flip-card:nth-child(7) .icon {
+  color: #df9b7a;
+}
+
+.flip-card:nth-child(8) .icon {
+  color: #df7aba;
+}
+
+.flip-card:nth-child(9) .icon {
+  color: #877adf;
+}
+
+.flip-card:nth-child(10) .icon {
+  color: #aa7adf;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Réduit de 0.5rem à 0.4rem */
+  font-size: 1.2rem; /* Réduit de 1.2rem à 1rem */
+}
+
+.flip-card-front .title {
+  margin-top: 0.5rem; /* Réduit de 0.5rem à 0.4rem */
+}
+
+.flip-card-front h6 {
+  font-size: 1rem; /* Réduit de 1rem à 0.85rem */
+  color: #6c757d;
+}
+
+.flip-card-back .title {
+  font-size: 1.05rem; /* Réduit de 1.3rem à 1.05rem */
+  margin-bottom: 1rem; /* Réduit de 1rem à 0.8rem */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0.5rem; /* Réduit de 0.5rem à 0.4rem */
+  width: 100%;
+}
+
+.flip-card-back p {
+  margin-bottom: 0.5rem; /* Réduit de 0.5rem à 0.4rem */
+  font-size: 0.9rem; /* Réduit de 0.9rem à 0.75rem */
+  text-align: left;
+}
+
+/* Effet de relief/ombre */
+.flip-card {
+  transition: transform 0.3s ease;
+}
+
+.flip-card:hover {
+  transform: translateY(-8px);
+}
+
+.flip-card-inner {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation d'icône au survol */
+.flip-card:hover .icon-container {
+  transform: scale(1.1);
+  animation: neonGlow 2s infinite;
+}
+
+/* Effets spécifiques par carte */
+.flip-card:nth-child(1):hover .flip-card-inner {
+  box-shadow: 0 15px 30px rgba(74, 107, 175, 0.2), 0 10px 10px rgba(74, 107, 175, 0.1);
+}
+
+.flip-card:nth-child(2):hover .flip-card-inner {
+  box-shadow: 0 15px 30px rgba(138, 74, 175, 0.2), 0 10px 10px rgba(138, 74, 175, 0.1);
+}
+
+.flip-card:nth-child(3):hover .flip-card-inner {
+  box-shadow: 0 15px 30px rgba(74, 175, 107, 0.2), 0 10px 10px rgba(74, 175, 107, 0.1);
+}
+
+.flip-card:nth-child(4):hover .flip-card-inner {
+  box-shadow: 0 15px 30px rgba(175, 74, 74, 0.2), 0 10px 10px rgba(175, 74, 74, 0.1);
+}
+
+.flip-card:nth-child(5):hover .flip-card-inner {
+  box-shadow: 0 15px 30px rgba(74, 158, 175, 0.2), 0 10px 10px rgba(74, 158, 175, 0.1);
+}
+
+.flip-card:nth-child(6):hover .flip-card-inner {
+  box-shadow: 0 15px 30px rgba(175, 158, 74, 0.2), 0 10px 10px rgba(175, 158, 74, 0.1);
+}
+
+.flip-card:nth-child(7):hover .flip-card-inner {
+  box-shadow: 0 15px 30px rgba(175, 107, 74, 0.2), 0 10px 10px rgba(175, 107, 74, 0.1);
+}
+
+.flip-card:nth-child(8):hover .flip-card-inner {
+  box-shadow: 0 15px 30px rgba(175, 74, 138, 0.2), 0 10px 10px rgba(175, 74, 138, 0.1);
+}
+
+.flip-card:nth-child(9):hover .flip-card-inner {
+  box-shadow: 0 15px 30px rgba(87, 74, 175, 0.2), 0 10px 10px rgba(87, 74, 175, 0.1);
+}
+
+.flip-card:nth-child(10):hover .flip-card-inner {
+  box-shadow: 0 15px 30px rgba(122, 74, 175, 0.2), 0 10px 10px rgba(122, 74, 175, 0.1);
+}
+
+/* Animation de brillance pour les icônes */
+@keyframes glowPulse1 {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(74, 107, 175, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(74, 107, 175, 0.8));
+  }
+}
+@keyframes glowPulse2 {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(138, 74, 175, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(138, 74, 175, 0.8));
+  }
+}
+@keyframes glowPulse3 {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(74, 175, 107, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(74, 175, 107, 0.8));
+  }
+}
+@keyframes glowPulse4 {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(175, 74, 74, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(175, 74, 74, 0.8));
+  }
+}
+@keyframes glowPulse5 {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(74, 158, 175, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(74, 158, 175, 0.8));
+  }
+}
+@keyframes glowPulse6 {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(175, 158, 74, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(175, 158, 74, 0.8));
+  }
+}
+@keyframes glowPulse7 {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(175, 107, 74, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(175, 107, 74, 0.8));
+  }
+}
+@keyframes glowPulse8 {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(175, 74, 138, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(175, 74, 138, 0.8));
+  }
+}
+@keyframes glowPulse9 {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(87, 74, 175, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(87, 74, 175, 0.8));
+  }
+}
+@keyframes glowPulse10 {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(122, 74, 175, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(122, 74, 175, 0.8));
+  }
+}
+
+.flip-card:nth-child(1):hover .icon {
+  animation: glowPulse1 1.5s infinite ease-in-out;
+}
+.flip-card:nth-child(2):hover .icon {
+  animation: glowPulse2 1.5s infinite ease-in-out;
+}
+.flip-card:nth-child(3):hover .icon {
+  animation: glowPulse3 1.5s infinite ease-in-out;
+}
+.flip-card:nth-child(4):hover .icon {
+  animation: glowPulse4 1.5s infinite ease-in-out;
+}
+.flip-card:nth-child(5):hover .icon {
+  animation: glowPulse5 1.5s infinite ease-in-out;
+}
+.flip-card:nth-child(6):hover .icon {
+  animation: glowPulse6 1.5s infinite ease-in-out;
+}
+.flip-card:nth-child(7):hover .icon {
+  animation: glowPulse7 1.5s infinite ease-in-out;
+}
+.flip-card:nth-child(8):hover .icon {
+  animation: glowPulse8 1.5s infinite ease-in-out;
+}
+.flip-card:nth-child(9):hover .icon {
+  animation: glowPulse9 1.5s infinite ease-in-out;
+}
+.flip-card:nth-child(10):hover .icon {
+  animation: glowPulse10 1.5s infinite ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .commandments-container {
+    gap: 1rem;
+  }
+
+  .flip-card {
+    height: 240px; /* Réduit de 300px à 240px (~20%) */
+  }
+}

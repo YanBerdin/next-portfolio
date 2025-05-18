@@ -66,7 +66,7 @@ export default function ProjectsRefactor() {
             <div className="h-10"></div>
 
             <div className="flex flex-col pointer-events-none w-11/12 mx-auto">
-                <motion.h2 className="max-sm:text-2xl text-3xl lg:text-4xl font-bold text-center mt-3 mb-10 text-white-100"
+                <motion.h2 className="heading font-bold text-center mt-3 mb-10 text-white-100"
                     initial={{ y: -30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5 }}

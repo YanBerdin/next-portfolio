@@ -55,7 +55,7 @@ export function Contact() {
 
             {/*Form Header*/}
 
-            <motion.h2 className="font-bold text-lg lg:text-xl text-neutral-800 dark:text-neutral-200"
+            <motion.h2 className="heading text-neutral-800 dark:text-neutral-300"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -66,7 +66,7 @@ export function Contact() {
               Discutons de votre projet.
             </motion.h2>
 
-            <motion.p className="text-neutral-600 text-md lg:text-lg max-w-sm mt-4 dark:text-neutral-300"
+            <motion.p className="text-neutral-600 text-md lg:text-lg max-w-sm mt-4 dark:text-neutral-200"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}

@@ -16,7 +16,7 @@ export const Skills = () => {
 
       <section className="mx-auto w-11/12 mb-5 lg:mb-52" id="skills">
         <div className="flex flex-col pointer-events-none items-center">
-          <motion.h2 className="max-sm:text-2xl text-3xl lg:text-4xl xl:text-5xl font-bold text-center mb-4 text-white-100 mt-16"
+          <motion.h2 className="heading mb-4 text-white-100 mt-16"
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }} // whileInView=
             transition={{ duration: 0.6 }}

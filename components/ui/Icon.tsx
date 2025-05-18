@@ -9,7 +9,7 @@ interface IconProps extends SVGProps<SVGSVGElement> {
 
 export const Icon = ({ icon, className = '', ...rest }: IconProps) => {
   const SvgIcon = icon;
-  return <SvgIcon className={`w-full h-auto ${className}`} {...rest} />;
+  return <SvgIcon className={className} {...rest} style={{ width: '100%', height: '100%' }} />;
 };
 
 
@@ -33,15 +33,15 @@ const GithubIcon = (props: SVGProps<SVGSVGElement>) => (
 const GithubIcon2 = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    className='icon icon-tabler icon-tabler-brand-github'
-    width='22'
-    height='22'
+    width="24"
+    height="24"
     viewBox='0 0 24 24'
     strokeWidth='2'
     stroke='currentColor'
     fill='none'
     strokeLinecap='round'
     strokeLinejoin='round'
+    {...props}
   >
     <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
     <path
@@ -73,15 +73,15 @@ const DemoIcon = (props: SVGProps<SVGSVGElement>) => (
 const ResumeIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    className='icon icon-tabler icon-tabler-file-certificate'
-    width='24'
-    height='24'
+    width="24"
+    height="24"
     viewBox='0 0 24 24'
     strokeWidth='2'
     stroke='currentColor'
     fill='none'
     strokeLinecap='round'
     strokeLinejoin='round'
+    {...props}
   >
     <path stroke='none' d='M0 0h24v24H0z' fill='none'/>
     <path d='M14 3v4a1 1 0 0 0 1 1h4'/>

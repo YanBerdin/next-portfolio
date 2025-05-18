@@ -34,7 +34,7 @@ const Footer = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Ma passion et mon expertise <br /> <span className="text-purple"> A votre service  </span>
+            Ma passion et mon expertise <br /> <span className="heading text-purple"> A votre service  </span>
           </motion.h2>
           <p className="text-white-200 md:mt-10 my-5 text-center"></p>
           <motion.div
