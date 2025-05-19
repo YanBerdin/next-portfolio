@@ -109,7 +109,7 @@ export default function WebDevCommandments() {
         </span>
       </motion.h2>
 
-      <motion.div className=" w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-slate-100 p-12 mx-auto"
+      <motion.div className=" w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-slate-100 p-6 sm:p-10 md:p-16 mx-auto"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
@@ -148,7 +148,7 @@ export default function WebDevCommandments() {
                   aria-labelledby={`card-title-${item.id}`}
                 >
                   {/*<p className="title text-md md:text-lg lg:text-xl">{item.title}</p>*/}
-                  <p className="text-white-100 text-sm md:text-md xl:text-lg">{item.description}</p>
+                  <p className="text-white-100  text-md md:text-lg">{item.description}</p>
                 </div>
               </div>
             </div>
