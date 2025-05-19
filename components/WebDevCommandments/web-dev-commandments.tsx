@@ -36,13 +36,13 @@ export default function WebDevCommandments() {
       id: 2,
       title: "Simplicité",
       icon: <Minimize className="icon" />,
-      description: "Mon code doit éviter toute complexité inutile, en se concentrant uniquement sur l&apos;essentiel."
+      description: "Mon code doit éviter toute complexité inutile, en se concentrant uniquement sur l'essentiel."
     },
     {
       id: 3,
       title: "Performance",
       icon: <Zap className="icon" />,
-      description: "Mon code doit être efficace, en optimisant l&apos;utilisation des ressources."
+      description: "Mon code doit être efficace, en optimisant l'utilisation des ressources."
     },
     {
       id: 4,
@@ -66,19 +66,19 @@ export default function WebDevCommandments() {
       id: 7,
       title: "Scalabilité",
       icon: <Scale className="icon" />,
-      description: "Mon code doit être conçu pour permettre des évolutions ou des ajouts sans nécessiter de réécrire l&apos;ensemble."
+      description: "Mon code doit être conçu pour permettre des évolutions ou des ajouts sans nécessiter de réécrire l'ensemble."
     },
     {
       id: 8,
       title: "Conformité",
       icon: <FileCheck className="icon" />,
-      description: "Mon code doit respecter les standards et conventions de codage adoptés par la communauté ou l&apos;équipe."
+      description: "Mon code doit respecter les standards et conventions de codage adoptés par la communauté ou l'équipe."
     },
     {
       id: 9,
       title: "Documentation",
       icon: <FileText className="icon" />,
-      description: "Mon code doit être accompagné d&apos;instructions claires qui facilitent son utilisation, sa compréhension et sa maintenance."
+      description: "Mon code doit être accompagné d'instructions claires qui facilitent sa compréhension et sa maintenance."
     },
     {
       id: 10,
@@ -133,7 +133,7 @@ export default function WebDevCommandments() {
                 <div className="icon-container" aria-hidden="true">
                   {item.icon}
                 </div>
-                <h5 className="title" id={`card-title-${item.id}`}>
+                <h5 className="title text-2xl text-slate-600" id={`card-title-${item.id}`}>
                   {item.title}
                 </h5>
               </div>
@@ -142,8 +142,8 @@ export default function WebDevCommandments() {
                 id={`card-content-${item.id}`}
                 aria-labelledby={`card-title-${item.id}`}
               >
-                <p className="title">{item.title}</p>
-                <p className="text-white-100 text-md">{item.description}</p>
+                <p className="title text-xl">{item.title}</p>
+                <p className="text-white-100 text-lg">{item.description}</p>
               </div>
             </div>
           </div>
