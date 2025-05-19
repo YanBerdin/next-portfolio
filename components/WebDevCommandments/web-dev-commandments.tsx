@@ -3,15 +3,99 @@
 import { Code, Minimize, Zap, Lock, Shield, Layers, Scale, FileCheck, FileText, TestTube } from "lucide-react"
 import { motion } from "framer-motion"
 import "@/app/web-dev-commandments.css"
+import "@/app/accessibility-cards.css"
+import { useState } from "react"
 
 export default function WebDevCommandments() {
+  // État pour suivre la carte active (retournée)
+  const [activeCard, setActiveCard] = useState<number | null>(null);
+
+  // Gestionnaire pour les événements clavier et clic
+  const handleCardInteraction = (e: React.KeyboardEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>, index: number) => {
+    // Si c'est un événement clavier, on vérifie que c'est Enter ou Espace
+    if ('key' in e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        setActiveCard(activeCard === index ? null : index);
+      }
+    } else {
+      // Si c'est un événement clic
+      setActiveCard(activeCard === index ? null : index);
+    }
+  };
+
+  // Données des commandements
+  const commandements = [
+    {
+      id: 1,
+      title: "Lisibilité",
+      icon: <Code className="icon" />,
+      description: "Mon code doit être clair, structuré, avec des noms explicites, pour être compréhensible facilement par un autre dev."
+    },
+    {
+      id: 2,
+      title: "Simplicité",
+      icon: <Minimize className="icon" />,
+      description: "Mon code doit éviter toute complexité inutile, en se concentrant uniquement sur l&apos;essentiel."
+    },
+    {
+      id: 3,
+      title: "Performance",
+      icon: <Zap className="icon" />,
+      description: "Mon code doit être efficace, en optimisant l&apos;utilisation des ressources."
+    },
+    {
+      id: 4,
+      title: "Sécurité",
+      icon: <Lock className="icon" />,
+      description: "Mon code doit protéger contre les vulnérabilités et garantir la sûreté des données et des interactions."
+    },
+    {
+      id: 5,
+      title: "Robustesse",
+      icon: <Shield className="icon" />,
+      description: "Mon code doit gérer les erreurs, valider les entrées, et garantir sa fiabilité."
+    },
+    {
+      id: 6,
+      title: "Modularité",
+      icon: <Layers className="icon" />,
+      description: "Mon code doit être organisé en parties indépendantes et réutilisables, chacune ayant une responsabilité claire."
+    },
+    {
+      id: 7,
+      title: "Scalabilité",
+      icon: <Scale className="icon" />,
+      description: "Mon code doit être conçu pour permettre des évolutions ou des ajouts sans nécessiter de réécrire l&apos;ensemble."
+    },
+    {
+      id: 8,
+      title: "Conformité",
+      icon: <FileCheck className="icon" />,
+      description: "Mon code doit respecter les standards et conventions de codage adoptés par la communauté ou l&apos;équipe."
+    },
+    {
+      id: 9,
+      title: "Documentation",
+      icon: <FileText className="icon" />,
+      description: "Mon code doit être accompagné d&apos;instructions claires qui facilitent son utilisation, sa compréhension et sa maintenance."
+    },
+    {
+      id: 10,
+      title: "Testabilité",
+      icon: <TestTube className="icon" />,
+      description: "Mon code doit être facilement testable, idéalement avec des tests automatisés qui assurent son bon fonctionnement."
+    }
+  ];
+
   return (
     <div className="info">
-
-      <motion.h2 className="heading mb-16 text-white-100 mt-16"
+      <motion.h2 
+        className="heading mb-16 text-white-100 mt-16"
         initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }} // whileInView=
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
+        aria-label="Les 10 commandements du développeur web"
       >
         Les
         <span className="heading bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
@@ -25,186 +109,45 @@ export default function WebDevCommandments() {
         </span>
       </motion.h2>
 
-      <section className="commandments-container">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <div className="icon-container">
-                <Code className="icon" />
+      <section 
+        className="commandments-container" 
+        role="list" 
+        aria-label="Liste des 10 commandements du développeur web"
+      >
+        {commandements.map((item, index) => (
+          <div 
+            className="flip-card" 
+            role="listitem" 
+            key={`commandment-${item.id}`}
+          >
+            <div 
+              className={`flip-card-inner ${activeCard === index ? 'flipped' : ''}`}
+              tabIndex={0} 
+              aria-label={`Carte de la ${item.title}, ${activeCard === index ? 'actuellement retournée' : 'cliquez ou appuyez sur Entrée pour voir la description'}`}
+              aria-expanded={activeCard === index ? "true" : "false"}
+              aria-controls={`card-content-${item.id}`}
+              onKeyDown={(e) => handleCardInteraction(e, index)}
+              onClick={(e) => handleCardInteraction(e, index)}
+            >
+              <div className="flip-card-front">
+                <div className="icon-container" aria-hidden="true">
+                  {item.icon}
+                </div>
+                <h5 className="title" id={`card-title-${item.id}`}>
+                  {item.title}
+                </h5>
               </div>
-              <h5 className="title">
-                {/* 1. <br /> */} Lisibilité
-              </h5>
-              {/* <h6>Tu écriras</h6> */}
-            </div>
-            <div className="flip-card-back">
-              <p className="title">Lisibilité</p>
-              <p className="text-white-100 text-md">Mon code doit être clair, structuré, avec des noms explicites, pour être compréhensible facilement par un autre dev.</p>
+              <div 
+                className="flip-card-back" 
+                id={`card-content-${item.id}`}
+                aria-labelledby={`card-title-${item.id}`}
+              >
+                <p className="title">{item.title}</p>
+                <p className="text-white-100 text-md">{item.description}</p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <div className="icon-container">
-                <Minimize className="icon" />
-              </div>
-              <h5 className="title">
-                {/*  2. <br /> */} Simplicité
-              </h5>
-              {/* <h6>Tu respecteras</h6> */}
-            </div>
-            <div className="flip-card-back">
-              <p className="title">Simplicité</p>
-              <p className="text-white-100 text-md">Mon code doit éviter toute complexité inutile, en se concentrant uniquement sur l&apos;essentiel.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <div className="icon-container">
-                <Zap className="icon" />
-              </div>
-              <h5 className="title">
-                {/*  3. <br /> */} Performance
-              </h5>
-              {/* <h6>Tu optimiseras</h6> */}
-            </div>
-            <div className="flip-card-back">
-              <p className="title">Performance</p>
-              <p className="text-white-100 text-md">Mon code doit être efficace, en optimisant l’utilisation des ressources.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <div className="icon-container">
-                <Lock className="icon" />
-              </div>
-              <h5 className="title">
-                {/*  4. <br /> */} Sécurité
-              </h5>
-              {/* <h6>Tu garantiras</h6> */}
-            </div>
-            <div className="flip-card-back">
-              <p className="title">Sécurité</p>
-              <p className="text-white-100 text-md">Mon code doit protéger contre les vulnérabilités et garantir la sûreté des données et des interactions.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <div className="icon-container">
-                <Shield className="icon" />
-              </div>
-              <h5 className="title">
-                {/*  5. <br /> */} Robustesse
-              </h5>
-              {/* <h6>Tu concevras</h6> */}
-            </div>
-            <div className="flip-card-back">
-              <p className="title">Robustesse</p>
-              <p className="text-white-100 text-md">Mon code doit gérer les erreurs, valider les entrées, et garantir sa fiabilité.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <div className="icon-container">
-                <Layers className="icon" />
-              </div>
-              <h5 className="title">
-                {/*  6. <br /> */} Modularité
-              </h5>
-              {/* <h6>Tu planifieras</h6> */}
-            </div>
-            <div className="flip-card-back">
-              <p className="title">Modularité</p>
-              <p className="text-white-100 text-md">Mon code doit être organisé en parties indépendantes et réutilisables, chacune ayant une responsabilité claire.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <div className="icon-container">
-                <Scale className="icon" />
-              </div>
-              <h5 className="title">
-                {/*  7. <br /> */} Scalabilité
-              </h5>
-              {/* <h6>Tu favoriseras</h6>  */}
-            </div>
-            <div className="flip-card-back">
-              <p className="title">Scalabilité</p>
-              <p className="text-white-100 text-md">Mon code doit être conçu pour permettre des évolutions ou des ajouts sans nécessiter de réécrire l’ensemble.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <div className="icon-container">
-                <FileCheck className="icon" />
-              </div>
-              <h5 className="title">
-                {/*  8. <br /> */} Conformité
-              </h5>
-              {/* <h6>Tu écriras</h6> */}
-            </div>
-            <div className="flip-card-back">
-              <p className="title">Conformité</p>
-              <p className="text-white-100 text-md">Mon code doit respecter les standards et conventions de codage adoptés par la communauté ou l’équipe.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <div className="icon-container">
-                <FileText className="icon" />
-              </div>
-              <h5 className="title">
-                {/*  9. <br />*/} Documentation
-              </h5>
-              {/* <h6>Tu maintiendras</h6> */}
-            </div>
-            <div className="flip-card-back">
-              <p className="title">Documentation</p>
-              <p className="text-white-100 text-md">Mon code doit être accompagné d’instructions claires qui facilitent son utilisation, sa compréhension et sa maintenance.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <div className="icon-container">
-                <TestTube className="icon" />
-              </div>
-              <h5 className="title">
-                {/* 10. <br /> */} Testabilité
-              </h5>
-              {/*  <h6>Tu privilégieras</h6> */}
-            </div>
-            <div className="flip-card-back">
-              <p className="title">Testabilité</p>
-              <p className="text-white-100 text-md">Mon code doit être facilement testable, idéalement avec des tests automatisés qui assurent son bon fonctionnement.</p>
-            </div>
-          </div>
-        </div>
+        ))}
       </section>
     </div>
   )

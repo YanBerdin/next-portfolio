@@ -4,7 +4,9 @@
 }
 
 .title {
-color: #e0e0ff;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 } 
 
 .commandments-container {
@@ -81,7 +83,19 @@ color: #e0e0ff;
   animation: neonGlow 3s infinite;
 }
 
+.flip-card-inner:focus {
+  outline: 3px solid #9c64ff;
+  box-shadow: 0 0 10px rgba(156, 100, 255, 0.9);
+  border-radius: 10px;
+  z-index: 1;
+}
+
 .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Aussi activer au focus pour l'accessibilité clavier, mais c'est géré par l'état React */
+.flip-card-inner:focus {
   transform: rotateY(180deg);
 }
 
@@ -102,7 +116,8 @@ color: #e0e0ff;
 
 .flip-card-front {
   background-color: #1a1e2e;
-  color: #e0e0ff;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Variantes de couleurs pour les cartes frontales */

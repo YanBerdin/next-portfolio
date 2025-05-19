@@ -1,0 +1,56 @@
+/* Classe pour les cartes activées via état dans React */
+.flipped {
+  transform: rotateY(180deg) !important;
+}
+
+/* Amélioration de l'accessibilité pour les utilisateurs qui désactivent les animations */
+@media (prefers-reduced-motion: reduce) {
+  .flip-card-inner {
+    transition: none;
+  }
+  
+  .flip-card:hover {
+    transform: none;
+  }
+  
+  .flip-card:hover .icon-container {
+    transform: none;
+    animation: none;
+  }
+  
+  .flip-card:nth-child(1):hover .icon,
+  .flip-card:nth-child(2):hover .icon,
+  .flip-card:nth-child(3):hover .icon,
+  .flip-card:nth-child(4):hover .icon,
+  .flip-card:nth-child(5):hover .icon,
+  .flip-card:nth-child(6):hover .icon,
+  .flip-card:nth-child(7):hover .icon,
+  .flip-card:nth-child(8):hover .icon,
+  .flip-card:nth-child(9):hover .icon,
+  .flip-card:nth-child(10):hover .icon {
+    animation: none;
+  }
+}
+
+/* Amélioration des contrastes pour une meilleure lisibilité */
+.flip-card-back p {
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.5;
+}
+
+.flip-card-back .title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Style de focus amélioré pour la navigation au clavier */
+.flip-card-inner:focus-visible {
+  outline: 3px solid #b388ff;
+  box-shadow: 0 0 15px rgba(179, 136, 255, 0.9);
+  border-radius: 10px;
+}
