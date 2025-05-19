@@ -42,7 +42,7 @@ export const TextGenerateEffect = ({
               // className="dark:text-white text-white opacity-0"
 
               //! Move the gradient style to the parent component < Hero />  
-              className={` ${idx > 0 ? "bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text" : "dark:text-white-100 text-white-100"
+              className={` ${idx > 0 ? "bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text" : "inline bg-gradient-to-r from-[#cf96f5]  to-[#8f47d2] text-transparent bg-clip-text edge:text-purple"
                 } opacity-0`}
             //className={`opacity-0 ${gradientClass}`}
 

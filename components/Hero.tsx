@@ -44,7 +44,7 @@ export const Hero = () => {
                      */}
                     <TextGenerateEffect
                         className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-center w-full" // remove text-[30px]
-                        words="Yan, développeur Web & mobile"
+                        words="Yan Développeur Web & Mobile"
                     />
                     {   /**
                     <TextGenerateEffect
@@ -78,13 +78,6 @@ export const Hero = () => {
                     </motion.div>
                     {/*<Title />*/}
                 </div>
-
-                {/* 
-                <div className="max-sm:hidden sm:min-w-[414px] sm:max-w-[450px]"> */}{/* max-sm:hidden  */}
-                {/* <OrbitingCirclesLg /> */}
-                {/*
-                </div>
-                */}
             </div>
         </section>
 

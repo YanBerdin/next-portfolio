@@ -74,7 +74,7 @@ export const Skills = () => {
                       aria-hidden="true"
                     />
                     <div className="w-full"> {/*ms-5*/}
-                      <h3 className="text-center text-black dark:inline bg-gradient-to-r from-[#fcb69f] to-[#ff9472] text-transparent bg-clip-text text-2xl xl:text-3xl font-bold">
+                      <h3 className="text-center text-black dark:inline bg-gradient-to-r from-[#f8bda9] to-[#f8997c] text-transparent bg-clip-text text-2xl xl:text-3xl font-bold">
                         {card.title}
                       </h3>
                       {/*                  [#f77062] to-[#fe5196]

@@ -41,7 +41,7 @@ export const About = () => {
 
   return (
     <>
-      <div className="h-8 sm:h-20"></div>
+      <div className="h-10 lg:h-20"></div>
 
       <motion.div
         className="bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl rounded-lg justify-center w-11/12 mx-auto h-full"
@@ -49,10 +49,10 @@ export const About = () => {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="flex flex-col lg:flex-row gap-4 px-6 md:px-4">
+        <div className="flex flex-col lg:flex-row px-6 md:px-4">
 
           <div className="flex justify-around max-lg:flex-col">
-            <div className="min-w-2/3 mx-auto py-4 px-8 relative">
+            <div className="min-w-2/3 mx-auto max-sm:px-2 px-8 relative">
 
               <div className="flex flex-col items-center text-center space-y-4 p-2" >
 
@@ -95,7 +95,7 @@ export const About = () => {
                 </p>*/}
               </div>
 
-              <motion.div className="space-y-4 text-foreground max-sm:text-sm sm:text-base md:text-md lg:text-lg mt-6 mb-6" variants={container} initial="hidden"
+              <motion.div className="space-y-4 text-foreground max-sm:text-sm sm:text-base md:text-md lg:text-lg mt-6 mb-6 text-white-100" variants={container} initial="hidden"
                 animate="visible">
                 <motion.p variants={item} className="leading-relaxed">
                   Fasciné par la programmation depuis l&apos;enfance, passion transmise par mon frère architecte technique, j&apos;ai toujours été attiré par la logique algorithmique et le Web.
@@ -121,18 +121,18 @@ export const About = () => {
                   Curieux, rigoureux et profondément motivé, je suis enthousiaste à l&apos;idée de participer à la conception, la maintenance et l&apos;évolution de vos applications.<br />
                 </motion.p>
 
-                <motion.p variants={item} className="leading-relaxed relative px-4 py-8 bg-slate-800/30 rounded-lg border border-slate-700/50">
-                  <span className="block text-center px-6 ">Ma maxime favorite</span>
-                  <span className="block text-center font-semibold text-blue-300 max-sm:text-sm sm:text-base md:text-md lg:text-lg mt-2">« Il n&apos;est pas nécessaire d&apos;espérer pour entreprendre, ni de réussir pour persévérer. »</span>
+                <motion.p variants={item} className="leading-relaxed relative px-4 py-4 bg-slate-800/30 rounded-lg border border-slate-700/50">
+                  <span className="block text-center px-6 text-white-100">Ma maxime favorite</span>
+                  <span className="block text-center font-semibold text-white-100 max-sm:text-sm sm:text-base md:text-md lg:text-lg mt-2">« Il n&apos;est pas nécessaire d&apos;espérer pour entreprendre, ni de réussir pour persévérer. »</span>
                   <span className="absolute right-2 bottom-0 text-5xl text-blue-500/80"></span>
                 </motion.p>
 
                 {/* Badges de compétences */}
-                <div className="flex flex-wrap justify-center gap-4 mt-10 mb-10">
+                <div className="flex flex-wrap justify-center gap-4 mb-8">
                   <Badge variant="outline" className="border-blue-600/80 text-blue-300 hover:bg-blue-800 hover:text-white">Rigueur</Badge>
                   <Badge variant="outline" className="border-green-600/80 text-green-300 hover:bg-green-800 hover:text-white">Curiosité</Badge>
                   <Badge variant="outline" className="border-pink-600/80 text-pink-300 hover:bg-pink-800 hover:text-white">Communication</Badge>
-                  <Badge variant="outline" className="border-yellow-500/50 text-yellow-300 hover:bg-yellow-800 hover:text-white">Collaboration</Badge>
+                  <Badge variant="outline" className="border-violet-500/50 text-violet-300 hover:bg-violet-800 hover:text-white">Collaboration</Badge>
 
                   {/* <Badge variant="default" className="bg-pink-600/80 hover:bg-pink-600">Fullstack</Badge> */}
                 </div>
