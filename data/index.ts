@@ -85,7 +85,7 @@ export const gridItems = [
   {
     id: 1,
     title: "DiscO'tech 💿",
-    description: "🛠️ Technologies Utilisées : React.js | Redux | Axios | Interceptor | Rest API | PropTypes",
+    description: "🛠️ Technologies Utilisées : React.js | Redux | Axios | Interceptors | Rest API | PropTypes",
       explanationList: ["🎙️ Description : DiscO'tech, un hommage à l'école O’clock, est une application de référencement musical.",
       " ",
       "Les utilisateurs peuvent : Rechercher des artistes ou des albums, Explorer différents genres musicaux, Créer leurs propres playlists.",

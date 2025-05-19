@@ -52,7 +52,7 @@ export const Repositories = [
       spareImg: "",
       demoLink: "https://discotech-git-master-yanberdins-projects.vercel.app/",
       githubLink: "https://github.com/YanBerdin/discOtech",
-      technologies: ['Html', 'Css', 'JS', 'React', 'Redux', 'Axios', 'Interceptor', 'Rest API', 'PropTypes'],
+      technologies: ['Html', 'Css', 'JS', 'React', 'Redux', 'Axios', 'Interceptors', 'Rest API', 'PropTypes'],
   },
 
 

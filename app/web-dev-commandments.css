@@ -4,7 +4,7 @@
 }
 
 .title {
-  color: #ffffff;
+  color: #1a1e2e;
   font-weight: 600;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 } 
@@ -52,7 +52,7 @@
 .flip-card {
   background-color: transparent;
   width: 100%;
-  height: 256px;
+  height: 256px; /* Réduit de 320px à 256px (~20%) */
   perspective: 1000px;
   margin-bottom: 1rem;
 }
@@ -94,7 +94,7 @@
   transform: rotateY(180deg);
 }
 
-/* Aussi activer au focus pour l'accessibilité clavier, mais géré par l'état React */
+/* Aussi activer au focus pour l'accessibilité clavier, mais c'est géré par l'état React */
 .flip-card-inner:focus {
   transform: rotateY(180deg);
 }
@@ -111,12 +111,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.2rem;
+  padding: 1.2rem; /* Réduit de 1.5rem à 1.2rem (~20%) */
 }
 
 .flip-card-front {
   background-color: #1a1e2e;
-  color: #ffffff;
+  color: #1a1e2e;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -173,7 +173,7 @@
 
 .flip-card-back {
   background-color: #4a6baf;
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 
@@ -288,16 +288,13 @@
   color: #9c64ff;
 }
 
-/*
 .title {
-  font-weight: bold;
-  margin-bottom: 0.5rem; 
-  font-size: 1.2rem; 
+  /*font-weight: bold; */
+  /*font-size: 1.3rem; */
 }
-*/
 
 .flip-card-front .title {
-  margin-top: 0.5rem; 
+  margin-top: 0.5rem; /* Réduit de 0.5rem à 0.4rem */
 }
 
 .flip-card-front h6 {

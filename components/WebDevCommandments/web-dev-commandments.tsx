@@ -90,7 +90,7 @@ export default function WebDevCommandments() {
 
   return (
     <div className="info">
-      <motion.h2 
+      <motion.h2
         className="heading mb-16 text-white-100 mt-16"
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -109,46 +109,52 @@ export default function WebDevCommandments() {
         </span>
       </motion.h2>
 
-      <section 
-        className="commandments-container" 
-        role="list" 
-        aria-label="Liste des 10 commandements du développeur web"
+      <motion.div className=" w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-slate-100 p-12 mx-auto"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
       >
-        {commandements.map((item, index) => (
-          <div 
-            className="flip-card" 
-            role="listitem" 
-            key={`commandment-${item.id}`}
-          >
-            <div 
-              className={`flip-card-inner ${activeCard === index ? 'flipped' : ''}`}
-              tabIndex={0} 
-              aria-label={`Carte de la ${item.title}, ${activeCard === index ? 'actuellement retournée' : 'cliquez ou appuyez sur Entrée pour voir la description'}`}
-              aria-expanded={activeCard === index ? "true" : "false"}
-              aria-controls={`card-content-${item.id}`}
-              onKeyDown={(e) => handleCardInteraction(e, index)}
-              onClick={(e) => handleCardInteraction(e, index)}
+        <section
+          className="commandments-container"
+          role="list"
+          aria-label="Liste des 10 commandements du développeur web"
+        >
+          {commandements.map((item, index) => (
+            <div
+              className="flip-card"
+              role="listitem"
+              key={`commandment-${item.id}`}
             >
-              <div className="flip-card-front">
-                <div className="icon-container" aria-hidden="true">
-                  {item.icon}
-                </div>
-                <h5 className="title text-2xl text-slate-600" id={`card-title-${item.id}`}>
-                  {item.title}
-                </h5>
-              </div>
-              <div 
-                className="flip-card-back" 
-                id={`card-content-${item.id}`}
-                aria-labelledby={`card-title-${item.id}`}
+              <div
+                className={`flip-card-inner ${activeCard === index ? 'flipped' : ''}`}
+                tabIndex={0}
+                aria-label={`Carte de la ${item.title}, ${activeCard === index ? 'actuellement retournée' : 'cliquez ou appuyez sur Entrée pour voir la description'}`}
+                aria-expanded={activeCard === index ? "true" : "false"}
+                aria-controls={`card-content-${item.id}`}
+                onKeyDown={(e) => handleCardInteraction(e, index)}
+                onClick={(e) => handleCardInteraction(e, index)}
               >
-                <p className="title text-xl">{item.title}</p>
-                <p className="text-white-100 text-lg">{item.description}</p>
+                <div className="flip-card-front">
+                  <div className="icon-container" aria-hidden="true">
+                    {item.icon}
+                  </div>
+                  <h5 className="title max-sm:text-xl text-2xl" id={`card-title-${item.id}`}>
+                    {item.title}
+                  </h5>
+                </div>
+                <div
+                  className="flip-card-back"
+                  id={`card-content-${item.id}`}
+                  aria-labelledby={`card-title-${item.id}`}
+                >
+                  {/*<p className="title text-md md:text-lg lg:text-xl">{item.title}</p>*/}
+                  <p className="text-white-100 text-sm md:text-md xl:text-lg">{item.description}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </section>
+          ))}
+        </section>
+      </motion.div>
     </div>
   )
 }
