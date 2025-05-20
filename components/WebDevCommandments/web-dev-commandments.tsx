@@ -109,7 +109,7 @@ export default function WebDevCommandments() {
         </span>
       </motion.h2>
 
-      <motion.div className=" w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-slate-100 p-12 mx-auto"
+      <motion.div className=" w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-slate-100 p-8 md:p-14 mx-auto"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
