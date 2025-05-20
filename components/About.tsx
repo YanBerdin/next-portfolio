@@ -49,10 +49,10 @@ export const About = () => {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="flex flex-col lg:flex-row px-6 md:px-4">
+        <div className="flex flex-col lg:flex-row px-6 md:px-4 justify-center">
 
           <div className="flex justify-around max-lg:flex-col">
-            <div className="min-w-2/3 mx-auto max-sm:px-2 px-8 relative">
+            <div className="min-w-2/3 mx-auto max-sm:px-2 px-8 py-8 relative">
 
               <div className="flex flex-col items-center text-center space-y-4 p-2" >
 
@@ -102,7 +102,11 @@ export const About = () => {
                 </motion.p>
 
                 <motion.p variants={item} className="leading-relaxed">
-                  Après 20 ans d&apos;expérience dans le commerce, dont plusieurs années à piloter une activité e-commerce (15 000 commandes/an), j&apos;ai ressenti le besoin de relever un nouveau défi. J&apos;ai donc décidé de transformer ma curiosité de toujours en véritable compétence en me lançant dans une reconversion en développement web.
+                  Après 20 ans d&apos;expérience dans le commerce, dont plusieurs années à piloter une activité e-commerce (15 000 commandes/an), j&apos;ai ressenti le besoin de relever un nouveau défi.
+                </motion.p>
+
+                <motion.p variants={item} className="leading-relaxed">
+                  J&apos;ai donc décidé de transformer ma curiosité de toujours en véritable compétence en me lançant dans une reconversion en développement web.
                 </motion.p>
 
                 <motion.p variants={item} className="leading-relaxed">
@@ -117,18 +121,18 @@ export const About = () => {
                   Conseiller de vente, manager, gérant, j&apos;ai appris à comprendre les besoins utilisateurs, à communiquer efficacement, et à toujours chercher la solution la plus adaptée.
                 </motion.p>
 
-                <motion.p variants={item} className="leading-relaxed">
+                <motion.p variants={item} className="leading-relaxed pb-4">
                   Curieux, rigoureux et profondément motivé, je suis enthousiaste à l&apos;idée de participer à la conception, la maintenance et l&apos;évolution de vos applications.<br />
                 </motion.p>
 
-                <motion.p variants={item} className="leading-relaxed relative px-4 py-4 bg-slate-800/30 rounded-lg border border-slate-700/50">
+                <motion.p variants={item} className="leading-relaxed relative px-4 py-4 bg-slate-800/30 rounded-lg border border-slate-600/50 xl:w-3/4 mx-auto">
                   <span className="block text-center px-6 text-white-100">Ma maxime favorite</span>
-                  <span className="block text-center font-semibold text-white-100 max-sm:text-sm sm:text-base md:text-md lg:text-lg mt-2">« Il n&apos;est pas nécessaire d&apos;espérer pour entreprendre, ni de réussir pour persévérer. »</span>
+                  <span className="block text-center text-white-100 max-sm:text-sm sm:text-base md:text-md lg:text-lg mt-2">« Il n&apos;est pas nécessaire d&apos;espérer pour entreprendre, ni de réussir pour persévérer. »</span>
                   <span className="absolute right-2 bottom-0 text-5xl text-blue-500/80"></span>
                 </motion.p>
 
                 {/* Badges de compétences */}
-                <div className="flex flex-wrap justify-center gap-4 mb-8">
+                <div className="flex flex-wrap justify-center gap-4 pt-4">
                   <Badge variant="outline" className="border-blue-600/80 text-blue-300 hover:bg-blue-800 hover:text-white">Rigueur</Badge>
                   <Badge variant="outline" className="border-green-600/80 text-green-300 hover:bg-green-800 hover:text-white">Curiosité</Badge>
                   <Badge variant="outline" className="border-pink-600/80 text-pink-300 hover:bg-pink-800 hover:text-white">Communication</Badge>

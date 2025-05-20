@@ -19,7 +19,7 @@
   padding: 1rem;
 }
 
-@media (min-width: 690px) {
+@media (min-width: 640px) {
   .commandments-container {
     grid-template-columns: repeat(2, 1fr);
   }
