@@ -38,7 +38,8 @@ const slugs = [
     "strapi",
     "mongodb",
     "expo",
-    "supabase"
+    "supabase",
+    "python"
 ];
 // "dart",
 // "java",

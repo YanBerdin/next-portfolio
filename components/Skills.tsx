@@ -74,7 +74,7 @@ export const Skills = () => {
                       aria-hidden="true"
                     />
                     <div className="w-full"> {/*ms-5*/}
-                      <h3 className="text-center text-black dark:inline bg-gradient-to-r from-[#f8bda9] to-[#f8997c] text-transparent bg-clip-text text-2xl xl:text-3xl font-bold">
+                      <h3 className="text-center text-black dark:inline bg-gradient-to-r from-[#f8bda9] to-[#f8997c] text-transparent bg-clip-text max-sm:text-xl text-2xl xl:text-2xl font-bold">
                         {card.title}
                       </h3>
                       {/*                  [#f77062] to-[#fe5196]
@@ -86,7 +86,7 @@ export const Skills = () => {
                         {card.skillsList && card.skillsList.filter((skills): skills is string => skills !== undefined).map((skills: string) => (
                           <span key={skills} className="flex">
                             <Check className="text-green-500 min-w-[20px]" />{" "}
-                            <p className="ml-2 text-lg md:text-xl">{skills}</p>
+                            <p className="ml-2 max-sm:text-sm sm:text-base md:text-md lg:text-lg">{skills}</p>
                           </span>
                         ))}
                       </div>
