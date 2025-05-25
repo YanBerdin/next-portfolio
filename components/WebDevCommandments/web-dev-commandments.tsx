@@ -114,10 +114,13 @@ export default function WebDevCommandments() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
       >
-        <section
+        <motion.section
           className="commandments-container"
           role="list"
           aria-label="Liste des 10 commandements du développeur web"
+          initial={{ scale: 0.7, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5 }}
         >
           {commandements.map((item, index) => (
             <div
@@ -153,7 +156,7 @@ export default function WebDevCommandments() {
               </div>
             </div>
           ))}
-        </section>
+        </motion.section>
       </motion.div>
     </div>
   )
