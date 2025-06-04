@@ -94,7 +94,7 @@ export default function WebDevCommandments() {
         className="heading mb-16 text-white-100 mt-16"
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.9 }}
         aria-label="Les 10 commandements du développeur web"
       >
         Les
@@ -110,9 +110,9 @@ export default function WebDevCommandments() {
       </motion.h2>
 
       <motion.div className=" w-11/12 bg-slate-900/[0.9] border border-slate-800 backdrop-blur-xl rounded-lg text-slate-100 p-8 md:p-14 mx-auto"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
+        initial={{ scale: 0.8, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.4 }}
       >
         <motion.section
           className="commandments-container"
@@ -120,13 +120,16 @@ export default function WebDevCommandments() {
           aria-label="Liste des 10 commandements du développeur web"
           initial={{ scale: 0.7, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.4}}
         >
           {commandements.map((item, index) => (
-            <div
+            <motion.div
               className="flip-card"
               role="listitem"
               key={`commandment-${item.id}`}
+              initial={{ scale: 0.7, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8 }}
             >
               <div
                 className={`flip-card-inner ${activeCard === index ? 'flipped' : ''}`}
@@ -154,7 +157,7 @@ export default function WebDevCommandments() {
                   <p className="text-white-100 text-sm md:text-md xl:text-lg">{item.description}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </motion.section>
       </motion.div>
