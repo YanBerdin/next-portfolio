@@ -1,0 +1,9 @@
+// This file is used to configure the MCP server for GitHub Copilot in VS Code.
+
+{
+  "servers": {
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+  }
+}
