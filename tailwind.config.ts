@@ -196,6 +196,7 @@ const config = {
   },
   plugins: [
     require("tailwindcss-animate"),
+    require('./touch-hitbox-plugin.js'),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(

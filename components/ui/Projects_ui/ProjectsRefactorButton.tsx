@@ -3,17 +3,18 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils/cn";
 
 const buttonVariants = cva(
+  // Parent: pas d'effet de scale ici (touch-hitbox => shrink sur enfant)
   "inline-flex items-center justify-center rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 text-xs lg:text-sm",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/50 ease-in-out hover:scale-95 duration-700 origin-center",
+        default: "bg-primary text-primary-foreground hover:bg-primary/50 ease-in-out duration-700 origin-center",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90 ease-in-out hover:scale-95 duration-700 origin-center",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 ease-in-out duration-700 origin-center",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground ease-in-out hover:scale-95 duration-400 origin-center",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground ease-in-out duration-400 origin-center",
         secondary:
-          "bg-slate-800 text-secondary-foreground duration-700 origin-center ease-in-out hover:scale-95  hover:brightness-150",
+          "bg-slate-800 text-secondary-foreground duration-700 origin-center ease-in-out hover:brightness-150",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },
@@ -38,14 +39,31 @@ export interface ButtonProps
 }
 
 const ProjectsRefactorButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, asChild = false, children, ...props }, ref) => {
     const Comp = asChild ? 'span' : "button"
     return (
       <Comp
-        className={cn(buttonVariants({ variant, size, className }))}
+        className={cn(
+          "group touch-hitbox overflow-hidden", // hitbox stable + group pour focus-visible
+          buttonVariants({ variant, size }),
+          className
+        )}
         ref={ref}
         {...props}
-      />
+      >
+        <span
+          className={cn(
+            // shrink appliqué sur l'enfant pour éviter le tremblement
+            "block w-full h-full transition-transform duration-150",
+            // animations
+            "group-hover:scale-95 group-focus-visible:scale-95",
+            // alignement du contenu
+            "flex items-center justify-center"
+          )}
+        >
+          {children}
+        </span>
+      </Comp>
     )
   }
 )

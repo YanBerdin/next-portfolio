@@ -80,7 +80,7 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-muted-foreground brightness-110 items-center flex space-x-0.5 sm:space-x-1 text-neutral-600 hover:brightness-200 hover:scale-95 transition-transform duration-300 ease-in-out rounded-md !cursor-pointer"
+              "relative dark:text-muted-foreground brightness-110 items-center flex space-x-0.5  text-neutral-600 hover:brightness-200 hover:bg-slate-800 p-1 transition-transform duration-300 ease-in-out rounded-md !cursor-pointer"
             )}
             target={navItem.target}
             rel="noopener noreferrer"
@@ -89,7 +89,7 @@ export const FloatingNav = ({
             {/** navItem.icon && <Icon icon={navItem.icon} /> */}
             {/** navItem.icon est une référence à un composant (GithubIcon2), et non une instance d’un composant. Je ne peux pas l’utiliser directement comme un enfant dans JSX.*/}
             {/*<span className="block sm:hidden">{navItem.icon}</span>*/}
-            <span className="block">{navItem.icon && <Icon icon={navItem.icon} className="nav-icon" />}</span>
+            <span className="block">{navItem.icon && <Icon icon={navItem.icon} />}</span>
             {/* add !cursor-pointer */}
             {/* remove hidden sm:block for the mobile responsive */}
             <span className=" text-xs sm:text-sm md:text-base !cursor-pointer">{navItem.name}</span>
