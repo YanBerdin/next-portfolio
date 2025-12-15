@@ -46,7 +46,7 @@ export default function Home() {
         </div>
         */}
 
-                    <IconCloudComp />
+        <div id="about" style={{ marginTop: "15px", paddingTop: "40px", marginBottom: "15rem" }}>
           <About />
         </div>
 
