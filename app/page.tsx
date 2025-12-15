@@ -12,11 +12,7 @@ import { About } from "../components/About";
 import Footer from "@/components/Footer";
 //import Projects from "@/components/Projects";
 import ProjectsRefactor from "@/components/ProjectsRefactor";
-import dynamic from "next/dynamic";
-const IconCloudComp = dynamic(
-  () => import("@/components/ui/Tools_ui/IconCloudComp"),
-  { ssr: false }
-);
+import { IconCloudComp } from "@/components/ui/Tools_ui/IconCloudComp";
 import WebDevCommandments from "@/components/WebDevCommandments/web-dev-commandments"
 
 export default function Home() {
@@ -50,7 +46,7 @@ export default function Home() {
         </div>
         */}
 
-        <div id="about" style={{ marginTop: "15px", paddingTop: "40px", marginBottom: "15rem" }}>
+                    <IconCloudComp />
           <About />
         </div>
 
