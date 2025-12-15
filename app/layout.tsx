@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 //import Script from "next/script";
 import ClientClarity from "./ClientClarity";
+import ConsentBanner from "@/components/ConsentBanner";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
@@ -41,6 +42,8 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* Clarity tracking côté client */}
         <ClientClarity />
+        {/* Banner for analytics consent (calls enableClarity on accept) */}
+        <ConsentBanner />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

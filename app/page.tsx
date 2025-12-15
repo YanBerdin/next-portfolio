@@ -12,7 +12,7 @@ import { About } from "../components/About";
 import Footer from "@/components/Footer";
 //import Projects from "@/components/Projects";
 import ProjectsRefactor from "@/components/ProjectsRefactor";
-import { IconCloudComp } from "@/components/ui/Tools_ui/IconCloudComp";
+import IconCloudClient from "@/components/ui/Tools_ui/IconCloudClient";
 import WebDevCommandments from "@/components/WebDevCommandments/web-dev-commandments"
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
         </div>
 
         <div id="tools" style={{ marginTop: "20px", paddingTop: "40px", marginBottom: "10rem" }}>
-          <IconCloudComp />
+          <IconCloudClient />
         </div>
 
         <div id="projects" style={{ marginTop: "30px", paddingTop: "40px", marginBottom: "15rem" }}>
