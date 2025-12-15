@@ -20,7 +20,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: ` img-src 'self' data: https://cdn.jsdelivr.net https://vercel.com https://www.yanberdin.com; connect-src 'self' https://cdn.jsdelivr.net https://raw.githubusercontent.com https://vercel.live https://vercel.com wss://ws-us3.pusher.com https://sockjs-us3.pusher.com https://z.clarity.ms; frame-src 'self' https://vercel.live; object-src 'self' data:;`, // Politique de sécurité du contenu
+            value: ` img-src 'self' data: https://cdn.jsdelivr.net https://vercel.com https://www.yanberdin.com; connect-src 'self' https://cdn.jsdelivr.net https://raw.githubusercontent.com https://vercel.live https://vercel.com wss://ws-us3.pusher.com https://sockjs-us3.pusher.com https://z.clarity.ms https://b.clarity.ms; frame-src 'self' https://vercel.live; object-src 'self' data:;`, // Politique de sécurité du contenu (ajout de b.clarity.ms pour Clarity collect)
           },
           {
             key: 'X-Content-Type-Options',
