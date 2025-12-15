@@ -86,9 +86,9 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     }, [data, theme]);
 
     // console.log(data);
-    console.log("renderedIcons", renderedIcons); //TODO Remove this line
-    //console.log(theme);
-    //console.log(iconSlugs);
+    // console.log("renderedIcons", renderedIcons);
+    // console.log(theme);
+    // console.log(iconSlugs);
 
 
 
