@@ -29,7 +29,7 @@
     "mini-svg-data-uri": "^1.4.4",
     "next": "^14.2.35",
     "next-themes": "^0.3.0",
-    "npx": "^3.0.0",
+    "npx": "^10.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-element-to-jsx-string": "^15.0.0",
