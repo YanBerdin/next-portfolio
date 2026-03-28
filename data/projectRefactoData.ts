@@ -2,8 +2,8 @@
 export const Repositories = [
   {
     id: 1,
-    title: "Express MongoDB REST API",
-    description: "🛠️ Technologies Utilisées : JavaScript | Express | Node | MongoDB | Mongoose | Cors | JWT | Bcrypt | Swagger",
+    title: "Express Db REST API",
+    description: "🛠️ Technologies Utilisées : JavaScript | Express | Node | MongoDb | Mongoose | Cors | JWT | Bcrypt | Swagger",
     explanationList: ["💡 Présentation du projet : API REST modulaire et sécurisée pour gérer des utilisateurs et leurs publications.",
     "Le code suit le pattern Ports/Adapters inspirée de la Clean Architecture (séparation claire entre entités, cas d’utilisation, ports et infrastructure) afin d’assurer maintenabilité, testabilité et évolutivité.",
     " ",
@@ -85,7 +85,7 @@ export const Repositories = [
     spareImg: "",
     demoLink: "",
     githubLink: "https://github.com/YanBerdin/express_mongodb_api",
-    technologies: ['JavaScript', 'Express', 'Node.js', 'MongoDB', 'Mongoose', 'JWT', 'Bcrypt', 'Swagger'],
+    technologies: ['JavaScript', 'Express', 'Node.js', 'MongoDb', 'Mongoose', 'JWT', 'Bcrypt', 'Swagger'],
     },
 
      {
@@ -138,7 +138,7 @@ export const Repositories = [
       width: 320,
       height: 200,
       spareImg: "",
-      demoLink: "https://discotech-git-master-yanberdins-projects.vercel.app/",
+      demoLink: "",
       githubLink: "https://github.com/YanBerdin/discOtech",
       technologies: ['Html', 'Css', 'JS', 'React', 'Redux', 'Axios', 'Interceptors', 'Rest API', 'PropTypes'],
   },

@@ -11,7 +11,7 @@ import { Repositories } from "@/data/projectRefactoData";
 import { motion } from 'framer-motion';
 
 
-type Technology = 'Html' | 'Css' | 'JS' | 'PHP' | 'Typescript' | 'React' | 'React Native' | 'Next' | 'Nuxt' | 'Laravel' | 'Symfony' | 'Node.js' | 'Express' | 'Tailwind' | 'Shadcn' | 'MySQL' | 'PostgreSQL' | 'Heroku' | 'Vercel' | 'Aceternity' | 'SCSS' | 'PostCss' | 'Framer-Motion' | 'Axios' | 'Composer' | 'Bootstrap' | 'Apache' | 'Eloquent' | 'Semantic UI' | 'PropTypes' | 'Redux' | 'AltoRouter' | 'Styled-components' | 'Vite' | 'CORS' | 'JWT' | 'Swagger' | 'Supabase' | 'Strapi' | 'Mongoose' | 'MongoDb'
+type Technology = 'React' | 'Next' | 'Typescript' | 'Node.js' | 'Express' | 'PHP' | 'Tailwind' | 'MySQL' | 'PostgreSQL' | 'SCSS' | 'Swagger' | 'Supabase' | 'MongoDb'
 
 interface Repository {
     id: number
@@ -30,13 +30,13 @@ interface Repository {
     width: number,
     height: number,
     spareImg: string,
-    demoLink: string,
+    demoLink?: string,
     githubLink: string,
     // technologies: Technology[]
     technologies: string[]
 }
 
-const technologies: Technology[] = ['Html', 'Css', 'PHP', 'JS', 'Typescript', 'React', 'React Native', 'Redux', 'Next', 'Nuxt', 'SCSS', 'PostCss', 'Framer-Motion', 'Vite', 'Axios', 'Node.js', 'Express', 'Apache', 'Laravel', 'Symfony', 'AltoRouter', 'Composer', 'MySQL', 'PostgreSQL', 'Eloquent', 'Bootstrap', 'Tailwind', 'Semantic UI', 'Styled-components', 'PropTypes', 'CORS', 'JWT', 'Swagger', 'Supabase', 'Strapi', 'Mongoose', 'MongoDb']
+const technologies: Technology[] = ['React', 'Next', 'Typescript', 'Node.js', 'Express', 'PHP', 'Tailwind', 'MySQL', 'PostgreSQL', 'SCSS', 'Swagger', 'Supabase', 'MongoDb']
 
 
 const myRepositories: Repository[] = Repositories.map(repo => ({
