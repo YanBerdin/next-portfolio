@@ -50,7 +50,7 @@ export const Hero = () => {
                     />
 
   
-                    <motion.h1 className="font-bold md:tracking-wider my-6 md:mb-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-center text-white-100"
+                    <motion.h1 className="font-semibold md:tracking-wider my-6 md:mb-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-center text-white-100"
                         initial={{ y: -40, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
@@ -59,7 +59,7 @@ export const Hero = () => {
                     </motion.h1>
 
                     <motion.p 
-                        className="font-semibold text-xs sm:text-sm md:text-lg lg:text-lg xl:text-2xl text-center text-white-100 leading-relaxed mb-8 sm:mb-10"
+                        className="font-semibold text-md md:text-lg lg:text-xl xl:text-2xl text-center text-white-100 leading-relaxed mb-8 sm:mb-10"
                         initial={shouldReduceMotion ? { opacity: 1 } : { y: -40, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ 
