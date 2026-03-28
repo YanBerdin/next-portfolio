@@ -296,7 +296,7 @@ export const Repositories = [
       githubLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php",
       technologies: ['Html', 'Css', 'PHP', 'MySQL', 'Composer', 'Bootstrap', 'Apache'],
     },
-
+/*
     {
     id: 7,
     title: "Task-Manager 📝",
@@ -332,7 +332,7 @@ export const Repositories = [
     githubLink: "https://github.com/YanBerdin/Laravel-Vanilla_JS-Task_Manager",
     technologies: ['Html', 'Css', 'PHP', 'Laravel', 'Eloquent', 'MySQL', 'Rest API','JS']
     },
-
+*/
     {
       id:8,
       title: "Spotify Controller 🎵",
@@ -374,7 +374,7 @@ export const Repositories = [
       githubLink: "https://github.com/YanBerdin/spotify-controller",
       technologies: ['Html', 'Css', 'JS', 'React', 'Vite', 'Axios', 'Styled-components']
     },
-
+/*
     {
       id: 9,
       title: "My Portfolio 📁",
@@ -405,7 +405,7 @@ export const Repositories = [
       githubLink: "https://github.com/YanBerdin/next-portfolio",
       technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind', 'Typescript', 'Framer-Motion', 'Axios', 'PostCss'],
     },
-  
+*/
     {
       id: 10,
       title: "Github Explorer 🔎",
@@ -448,7 +448,7 @@ export const Repositories = [
       githubLink:"https://github.com/YanBerdin/create-react-github-explorer",
       technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'Semantic UI', 'SCSS'],
     },
-
+/*
     {
       id: 11,
       title: "Pokedex MVC 📚",
@@ -487,7 +487,8 @@ export const Repositories = [
       githubLink: "https://github.com/YanBerdin/Pokedex-php-yanberdin",
       technologies: ['Apache', 'PHP', 'MySQL', 'Html', 'Css', 'Composer', 'AltoRouter', 'Bootstrap']
     },
-
+*/
+/*
     {
       id: 12,
       title: "Weather Widget 🌦️",
@@ -526,7 +527,8 @@ export const Repositories = [
       githubLink: "https://github.com/YanBerdin/React_Widget_Meteo",
       technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'SCSS'],
     }, 
-
+*/
+/*
     {
       id: 13,
       title: "Text to Speech 🎤",
@@ -562,7 +564,8 @@ export const Repositories = [
       githubLink: "https://github.com/YanBerdin/text_to_speech_web_app",
       technologies: ['Html', 'Css', 'JS']
     },
-
+*/
+/*
     {
     id: 14,
     title: "Script Runner 🏃",
@@ -604,7 +607,8 @@ export const Repositories = [
     githubLink: "https://github.com/YanBerdin/script-runner-game-js",
     technologies: ['Html', 'Css', 'JS']
     },
-
+*/
+/*
     {
       id: 15,
       title: "Soundpad-js-vanilla 🎧",
@@ -638,6 +642,6 @@ export const Repositories = [
       githubLink: "https://github.com/YanBerdin/soundpad-js-vanilla",
       technologies: ['Html', 'Css', 'JS']
     },
-
+*/
 ];
   

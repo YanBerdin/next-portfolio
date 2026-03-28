@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Portrait from "../public/about-assets/portrait.png";
+import Portrait from "../public/about-assets/a-professional-studio-portrait-of-a-man.jpeg";
 // import { IconCloudComp } from "./ui/IconCloudComp";
 import { motion } from "framer-motion";
 import { Badge } from "./ui/Badge";
@@ -62,7 +62,7 @@ export const About = () => {
                   <Image
                     src={Portrait}
                     alt="Portrait de Yan souriant"
-                    className="relative max-w-[80px] md:max-w-[120px] object-cover rounded-full mx-auto max-h-[80px] md:max-h-[120px]"
+                    className="relative max-w-[80px] md:max-w-[120px] object-cover rounded-full mx-auto max-h-[0px] md:max-h-[120px]"
                     loading="lazy"
                     placeholder={"blur"}
                   />
@@ -74,20 +74,11 @@ export const About = () => {
 
                 <motion.h2 className="heading mb-10 text-white-100 mt-16"
                   initial={{ y: -20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }} // whileInView=
+                  whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.6 }}
                 >
-                  A
-                  <span className="heading bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple tracking-tight">
-                    {" "}
-                    propos
-                    {" "}
-                  </span>
-                  de{" "}
-                  <span className="heading inline bg-gradient-to-r from-[#cf96f5]  to-[#8f47d2] text-transparent bg-clip-text edge:text-purple">
-                    moi{" "}
-                  </span>
-                  ☺️
+                  A propos de moi
+
                 </motion.h2>
 
                 {/*<p className="max-sm:text-sm sm:text-base md:text-xl lg:text-xl text-muted-foreground max-w-2xl">
@@ -95,34 +86,41 @@ export const About = () => {
                 </p>*/}
               </div>
 
-              <motion.div className="space-y-4 text-foreground max-sm:text-sm sm:text-base md:text-md lg:text-lg mt-6 mb-6 text-white-100" variants={container} initial="hidden"
+              <motion.div className="space-y-4 text-foreground max-sm:text-sm sm:text-base md:text-md lg:text-xl mt-6 mb-6 text-white-100" variants={container} initial="hidden"
                 animate="visible">
                 <motion.p variants={item} className="leading-relaxed">
-                  Fasciné par la programmation depuis l&apos;enfance, passion transmise par mon frère architecte technique, j&apos;ai toujours été attiré par la logique algorithmique et le Web.
+                  +15 ans dans le commerce et l&apos;e-commerce. Manager, puis gérant d&apos;une activité eBay/Amazon à 15 000 commandes/an. J&apos;ai vécu les pannes en pleine période de soldes, les bugs qui coûtent cher, les back-offices impossibles à utiliser.
+
                 </motion.p>
 
                 <motion.p variants={item} className="leading-relaxed">
-                  Après 20 ans d&apos;expérience dans le commerce, dont plusieurs années à piloter une activité e-commerce (15 000 commandes/an), j&apos;ai ressenti le besoin de relever un nouveau défi.
+                  Aujourd&apos;hui je développe des applications Fullstack en pensant architecture dès le départ. Pas juste pour que ça marche. Pour que ça tienne, que ça se maintienne, que ça coûte moins cher à faire évoluer.
                 </motion.p>
 
                 <motion.p variants={item} className="leading-relaxed">
-                  J&apos;ai donc décidé de transformer ma curiosité de toujours en véritable compétence en me lançant dans une reconversion en développement web.
+                  Ce que j&apos;apporte qu&apos;un junior classique n&apos;a pas :<br></br>
                 </motion.p>
 
                 <motion.p variants={item} className="leading-relaxed">
-                  Mon projet de fin d&apos;études, réalisé en équipe avec Git (branches, pull requests, merge conflicts), m&apos;a donné un aperçu concret du travail collaboratif en environnement agile.
+                  ✅  Je sais ce que peux coûter un bug<br></br>
+                  ✅  Je comprends les contraintes métier : stock, délais, conversion, fidélisation, pression client<br></br>
+                  ✅  Je traduis les contraintes métier en décisions techniques, et inversement.<br></br>
+                  ✅  J&apos;ai managé des équipes pendant 10 ans, je sais travailler en équipe et en autonomie
                 </motion.p>
 
                 <motion.p variants={item} className="leading-relaxed">
-                  Aujourd&apos;hui, je suis prêt à intégrer une équipe où je pourrai continuer à apprendre, à contribuer, et à évoluer.<br />
+                  Projet récents :<br />
+                  Rouge Cardinal Company - Next.js · TypeScript · Supabase · Architecture DDD · BackOffice complet
                 </motion.p>
 
                 <motion.p variants={item} className="leading-relaxed">
-                  Conseiller de vente, manager, gérant, j&apos;ai appris à comprendre les besoins utilisateurs, à communiquer efficacement, et à toujours chercher la solution la plus adaptée.
+                  Je cherche un CDI ou une alternance dans une agence, une startup ou une PME - idéalement avec des enjeux e-commerce ou produit. Un environnement où la qualité du code compte autant que la vitesse de livraison.
+                  Ouvert aux missions longues en freelance.<br />
                 </motion.p>
 
-                <motion.p variants={item} className="leading-relaxed pb-4">
-                  Curieux, rigoureux et profondément motivé, je suis enthousiaste à l&apos;idée de participer à la conception, la maintenance et l&apos;évolution de vos applications.<br />
+                <motion.p variants={item} className="leading-relaxed">
+                  🔧 Présentiel, hybride ou remote<br />
+                  📍 Basé près de Dijon<br />
                 </motion.p>
 
                 <motion.p variants={item} className="leading-relaxed relative px-4 py-4 bg-slate-800/30 rounded-lg border border-slate-600/50 xl:w-3/4 mx-auto">

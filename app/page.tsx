@@ -49,10 +49,12 @@ export default function Home() {
         <div id="about" style={{ marginTop: "15px", paddingTop: "40px", marginBottom: "15rem" }}>
           <About />
         </div>
-
+        
+        {/*
         <div id="webDevCommandments" style={{ marginTop: "15px", paddingTop: "40px", marginBottom: "15rem" }}>
           <WebDevCommandments />
         </div>
+        */}
 
         {/*<Timeline />*/}
 

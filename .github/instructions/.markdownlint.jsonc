@@ -1,0 +1,16 @@
+{
+  // Local overrides for instruction files (legacy setext headings allowed)
+  "MD003": false,
+  // Ignore long lines inside instruction archive — these are intentionally long
+  "MD013": false,
+  // Allow multiple top-level headings in long instruction docs
+  "MD025": false,
+  // Allow files that start with non-h1 metadata lines (front matter or YAML-like headers)
+  //"MD041": false,
+  // Keep duplicate-heading checking but only for siblings
+  "MD024": {
+    "siblings_only": true
+  },
+  // Allow blank lines inside blockquotes used for long examples
+  "MD028": false
+}

@@ -6,9 +6,11 @@ import { TextGenerateEffect } from "./ui/Hero_ui/TextGenerateEffect";
 import { MagicButton } from "./MagicButton";
 // import { OrbitingCirclesLg } from "./ui/OrbitingCirclesLg";
 // import Title from "./ui/Title";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export const Hero = () => {
+    const shouldReduceMotion = useReducedMotion();
+    
     return (
         <section className="md:pb-5 lg:pb-20 pt-24">
             <div>
@@ -32,7 +34,7 @@ export const Hero = () => {
                 />
 
             </div>
-            <div className="flex justify-center gap-10 relative max-sm:mt-20 mb-32 mt-36 z-10"> {/*flex-wrap md:justify-around*/}
+            <div className="flex justify-center gap-10 relative mt-20 sm:mt-28 md:mt-36 mb-24 sm:mb-28 z-10"> {/*flex-wrap md:justify-around*/}
                 <div className="max-sm:w-11/12 w-10/12 flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
@@ -43,28 +45,39 @@ export const Hero = () => {
                      *  change md:text-6xl, add more responsive code
                      */}
                     <TextGenerateEffect
-                        className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-center w-full" // remove text-[30px]
-                        words="Yan Développeur Web & Mobile"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center w-full mb-4"
+                        words="Yan, Développeur Fullstack"
                     />
-                    {   /**
-                    <TextGenerateEffect
-                        className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl max-w-[900px] text-center" // remove text[30px]
-                        words="Elégantes et intuitives"
-                        // gradientClass="bg-gradient-to-b from-[#9f96f5] to-[#6c47d2] text-transparent bg-clip-text"
-                    />
-                     */}
-                    <motion.h1 className="md:tracking-wider my-4 md:mb-10 text-md md:text-lg lg:text-xl xl:text-3xl text-center text-white-100"
+
+  
+                    <motion.h1 className="font-bold md:tracking-wider my-6 md:mb-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-center text-white-100"
                         initial={{ y: -40, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
                     >
-                        Spécialisé dans la conception d’interfaces intuitives et de systèmes sécurisés.
+                        React · Next.js · TypeScript · PHP
                     </motion.h1>
 
+                    <motion.p 
+                        className="font-semibold text-xs sm:text-sm md:text-lg lg:text-lg xl:text-2xl text-center text-white-100 leading-relaxed mb-8 sm:mb-10"
+                        initial={shouldReduceMotion ? { opacity: 1 } : { y: -40, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ 
+                            duration: shouldReduceMotion ? 0 : 0.8,
+                            ease: "easeOut"
+                        }}
+                    >
+                        15 ans de commerce, 2 ans à construire des applications qui tiennent en production.
+                    </motion.p>
+
                     <motion.div
-                        initial={{ y: 30, opacity: 0 }}
+                        initial={shouldReduceMotion ? { opacity: 1 } : { y: 30, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.6, delay: 0.5 }}
+                        transition={{ 
+                            duration: shouldReduceMotion ? 0 : 0.4,
+                            delay: shouldReduceMotion ? 0 : 0.3,
+                            ease: "easeOut"
+                        }}
                     >
                         <MagicButton
                             title="Découvrez mes projets"
