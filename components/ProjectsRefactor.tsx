@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import cn from 'classnames';
 // import Image from 'next/image'
 import { ProjectsRefactorButton } from "@/components/ui/Projects_ui/ProjectsRefactorButton";
@@ -11,7 +11,7 @@ import { Repositories } from "@/data/projectRefactoData";
 import { motion } from 'framer-motion';
 
 
-type Technology = 'React' | 'Next' | 'Typescript' | 'Node.js' | 'Express' | 'PHP' | 'Tailwind' | 'MySQL' | 'PostgreSQL' | 'SCSS' | 'Swagger' | 'Supabase' | 'MongoDb'
+type Technology = 'React' | 'Next' | 'Typescript' | 'Node.js' | 'Express' | 'PHP' | 'MySQL' | 'PostgreSQL' | 'Swagger' | 'Supabase' | 'MongoDb' | 'JS' | 'Axios' | 'Rest API' | 'PropTypes' | 'Redux' | 'Laravel' | 'SCSS' | 'Framer-Motion' | 'PostCss' | 'Semantic UI' | 'Tailwind' | 'Bootstrap' | 'Styled-components' | 'Zod' | 'Sentry' | 'Sharp' | 'dnd-kit'
 
 interface Repository {
     id: number
@@ -36,13 +36,13 @@ interface Repository {
     technologies: string[]
 }
 
-const technologies: Technology[] = ['React', 'Next', 'Typescript', 'Node.js', 'Express', 'PHP', 'Tailwind', 'MySQL', 'PostgreSQL', 'SCSS', 'Swagger', 'Supabase', 'MongoDb']
+const technologies: Technology[] = ['React', 'Next', 'Typescript', 'Node.js', 'Express', 'PHP', 'MySQL', 'PostgreSQL', 'Swagger', 'Supabase', 'MongoDb', 'JS', 'Axios', 'Rest API', 'PropTypes', 'Redux', 'Laravel', 'SCSS', 'Framer-Motion', 'PostCss', 'Semantic UI', 'Tailwind', 'Bootstrap', 'Styled-components', 'Zod', 'Sentry', 'Sharp', 'dnd-kit']
 
 
-const myRepositories: Repository[] = Repositories.map(repo => ({
+const myRepositories: Repository[] = Repositories?.map(repo => ({
     ...repo,
     technologies: repo.technologies ?? []
-}));
+})) ?? [];
 
 export default function ProjectsRefactor() {
     const [selectedTech, setSelectedTech] = useState<Technology | null>(null)
@@ -54,11 +54,16 @@ export default function ProjectsRefactor() {
     };
 
     const filteredRepos = selectedTech
-        ? myRepositories.filter(repo => repo.technologies && repo.technologies.includes(selectedTech))
+        ? myRepositories.filter(repo => repo.technologies?.includes(selectedTech))
         : myRepositories
 
     const handleLoadMore = () => {
         setVisibleRepos(numVisibleRepos => numVisibleRepos + 3)
+    }
+
+    // Guard clause si pas de données
+    if (!Repositories || Repositories.length === 0) {
+        return <div className="text-center text-white-100">Chargement des projets...</div>
     }
 
     return (
@@ -123,12 +128,12 @@ export default function ProjectsRefactor() {
                 {/* Liste des projets filtrés */}
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8 md:mt-16">
                     {filteredRepos.slice(0, visibleRepos).map(repo => (
-                        <motion.div key={repo.id} className="bg-slate-800/[0.8] border border-slate-700 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[290px] lg:max-w-[310px] mx-auto"
+                        <motion.div key={repo.id} className="group bg-slate-800/[0.8] border border-slate-700 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[290px] lg:max-w-[310px] mx-auto"
                             initial={{ scale: 0.5, opacity: 0 }}
                             whileInView={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <div className="relative group"> {/* min-h-36 md:h-64 lg:h-72 */}
+                            <div className="relative"> {/* min-h-36 md:h-64 lg:h-72 */}
                                 <BlurImage
                                     src={repo.img}
                                     alt={repo.title}

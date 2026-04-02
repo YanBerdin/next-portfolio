@@ -3,7 +3,7 @@ import { GithubIcon2, ResumeIcon } from '@/components/ui/Icon';
 export const navItems = [
 
   { name: "Skills", link: "#skills", title:"" },
-  { name: "Réalisations", link: "#projects", title:"" },
+  { name: "Projets", link: "#projects", title:"" },
   { name: "Profil", link: "#about", title:"" },
   { name: "Contact", link: "#contact", title:"" },
   { name: "", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/Yan_Berdin.pdf", target:"_blank", icon: ResumeIcon, title:"CV" },

@@ -16,10 +16,8 @@ import { motion } from "framer-motion";
  */
 export default function BackdropModal({ id }: { id: number }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [backdrop, setBackdrop] = React.useState<"blur" | "transparent" | "opaque" | "backdrop-blur-md" | undefined>('transparent') as any[];
-  const [size, setSize] = React.useState('xl')
-  const sizes = ["xs", "sm", "md", "lg", "xl", "2xl", "3xl", "4xl", "5xl", "full"];
-  //const [scrollBehavior, setScrollBehavior] = React.useState("inside");
+  const [backdrop, setBackdrop] = React.useState<"blur" | "transparent" | "opaque" | undefined>('blur');
+  const [size, setSize] = React.useState<'xl' | 'xs' | 'sm' | 'md' | 'lg' | '2xl' | '3xl' | '4xl' | '5xl' | 'full'>('xl');
 
   const [title, settitle] = React.useState("");
   const [description, setDescription] = React.useState("");
@@ -27,14 +25,14 @@ export default function BackdropModal({ id }: { id: number }) {
   const [demoLink, setDemoLink] = React.useState<string>("");
   const [githubLink, setGithubLink] = React.useState<string>("");
 
-  const backdrops = ["blur"];
+  const backdrops: ("blur" | "transparent" | "opaque")[] = ["blur"];
 
-  const handleOpen = (backdrop: string, id: number, size: string) => {
-    setBackdrop(backdrop);
-    setSize(size);
+  const handleOpen = (backdropValue: "blur" | "transparent" | "opaque", itemId: number, modalSize: typeof size) => {
+    setBackdrop(backdropValue);
+    setSize(modalSize);
 
     // const item = gridItems.find(item => item.id === id);
-    const item = Repositories.find(item => item.id === id);
+    const item = Repositories.find(item => item.id === itemId);
     if (item) {
       settitle(item.title);
       setDescription(item.description);
@@ -59,18 +57,23 @@ export default function BackdropModal({ id }: { id: number }) {
         {backdrops.map((b) => (
           <Button
             key={b}
-            variant="flat"
-            color="warning"
-            onPress={() => handleOpen(b, id, size)} // Pass both 'b' and 'id' as parameters
+            onPress={() => handleOpen(b, id, 'xl')}
             className="capitalize text-xs md:text-sm px-1"
           >
-            {/*{b}*/}
             Details
           </Button>
         ))}
       </div>
 
-      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose} size={size as "lg" | "xs" | "sm" | "md" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "full"} placement="center" className="max-sm:mt-24" scrollBehavior={"inside"}>
+      <Modal 
+        backdrop={backdrop} 
+        isOpen={isOpen} 
+        onClose={onClose} 
+        size={size} 
+        placement="center" 
+        className="max-sm:mt-24" 
+        scrollBehavior="inside"
+      >
         <ModalContent
           style={{
             //   generate the color from https://cssgradient.io/
@@ -92,11 +95,61 @@ export default function BackdropModal({ id }: { id: number }) {
                 <ModalHeader className="flex flex-col py-4 px-4">
                   <h2 className="px-3 text-[#123af0] text-xl brightness-200">{title}</h2>
                 </ModalHeader>
-                <ModalBody className="text-slate-100 max-h-[70vh] overflow-y-auto gap-1 scrollbar max-sm:px-3 max-sm:text-sm">
-                  <h3 className="mb-2 text-[#123af0] brightness-200 text-md">{description}</h3>
-                  {explanationList.map((explanation, index) => (
-                    <p className="text-xs md:text-sm lg:text-base" key={index}>{explanation}</p>
-                  ))}
+                <ModalBody className="text-slate-100 max-h-[70vh] overflow-y-auto gap-0 scrollbar max-sm:px-3 max-sm:text-sm">
+                  <h3 className="mb-4 text-[#123af0] brightness-200 text-md">{description}</h3>
+                  {explanationList.map((line, index) => {
+                    // Separators (═══...) → clean divider
+                    if (/^[═─=]+$/.test(line.trim())) {
+                      return <hr key={index} className="border-slate-700/40 my-3" />;
+                    }
+                    // Empty / whitespace-only lines → spacer
+                    if (line.trim() === '') {
+                      return <div key={index} className="h-3" />;
+                    }
+                    // Section headers: lines starting with a section emoji
+                    if (/^[📌🏗️🔒🚀🎯💡🎙️🏠🏭ℹ️👉]/.test(line)) {
+                      return (
+                        <p key={index} className="text-[#4a7ff5] font-semibold text-sm md:text-base mt-5 mb-2">
+                          {line}
+                        </p>
+                      );
+                    }
+                    // Continuation / solution lines (→)
+                    if (line.startsWith('→')) {
+                      return (
+                        <p key={index} className="text-slate-400 text-xs md:text-sm pl-4 leading-loose mb-1">
+                          {line}
+                        </p>
+                      );
+                    }
+                    // Bullet lines "• Label : value" → colorize the label part, strip bullet
+                    if (line.startsWith('•')) {
+                      const stripped = line.slice(2); // remove "• "
+                      const colonIdx = stripped.indexOf(' : ');
+                      if (colonIdx !== -1) {
+                        const label = stripped.slice(0, colonIdx + 3);
+                        const value = stripped.slice(colonIdx + 3);
+                        return (
+                          <p key={index} className="text-xs md:text-sm lg:text-base leading-loose mb-0.5">
+                            <span className="text-violet-300 font-medium">{label}</span>
+                            <span className="text-slate-200">{value}</span>
+                          </p>
+                        );
+                      }
+                      // Bullet without " : " separator
+                      return (
+                        <p key={index} className="text-xs md:text-sm lg:text-base leading-loose mb-0.5">
+                          {stripped}
+                        </p>
+                      );
+                    }
+                    // Regular line
+                    return (
+                      <p key={index} className="text-xs md:text-sm lg:text-base leading-loose mb-0.5">
+                        {line}
+                      </p>
+                    );
+                  })}
                 </ModalBody>
                 <ModalFooter className="max-sm:px-3 flex flex-wrap">
                   {/*

@@ -62,7 +62,7 @@ export const About = () => {
                   <Image
                     src={Portrait}
                     alt="Portrait de Yan souriant"
-                    className="relative max-w-[80px] md:max-w-[120px] object-cover rounded-full mx-auto max-h-[0px] md:max-h-[120px]"
+                    className="relative max-w-[80px] md:max-w-[120px] object-cover rounded-full mx-auto max-h-[120px] md:max-h-[120px]"
                     loading="lazy"
                     placeholder={"blur"}
                   />

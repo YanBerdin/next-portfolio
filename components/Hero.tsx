@@ -67,7 +67,7 @@ export const Hero = () => {
                             ease: "easeOut"
                         }}
                     >
-                        15 ans de commerce, 2 ans à construire des applications qui tiennent en production.
+                        Plus de 15 ans de commerce, 2 ans à construire des applications qui tiennent en production.
                     </motion.p>
 
                     <motion.div
