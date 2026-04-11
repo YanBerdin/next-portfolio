@@ -71,7 +71,7 @@ export const Repositories = [
     spareImg: "",
     demoLink: "",
     githubLink: "https://github.com/YanBerdin/rougecardinalcompany",
-    technologies: ['Next', 'React', 'Typescript', 'Tailwind', 'Supabase', 'PostgreSQL', 'Node.js', 'Zod', 'Sentry', 'Sharp', 'dnd-kit']
+    technologies: ['Next', 'React', 'Typescript', 'Tailwind', 'Supabase', 'PostgreSQL', 'Zod', 'Sentry', 'Sharp', 'dnd-kit']
   },
   {
     id: 1,
@@ -124,56 +124,7 @@ export const Repositories = [
     spareImg: "",
     demoLink: "",
     githubLink: "https://github.com/YanBerdin/express_mongodb_api",
-    technologies: ['JavaScript', 'Express', 'Node.js', 'MongoDb', 'Swagger'],
-  },
-
-  {
-    id: 2,
-    title: "DiscO'tech 💿",
-    description: "🛠️ Technologies Utilisées : React | Redux | Axios | Rest API | PropTypes",
-    explanationList: [
-      "Application de référencement musical permettant de rechercher des artistes, explorer des genres et créer des playlists personnalisées.",
-      "",
-      "═══════════════════════════════════════════════════",
-      "📌 FONCTIONNALITÉS",
-      "",
-      "• Recherche : artistes et albums par genre musical",
-      "• Playlists : création et gestion de playlists personnalisées",
-      "• État global : synchronisation Redux entre les composants",
-      "",
-      "═══════════════════════════════════════════════════",
-      "🔒 SÉCURITÉ",
-      "",
-      "• Authentification : JWT avec tokens aléatoires à usage unique",
-      "• Confidentialité : variables d'environnement et configuration stricte de CORS",
-      "• Protection XSS : échappement des données, double validation client/serveur",
-      "• Non-répudiation : tokens de synchronisation pour les méthodes d'écriture",
-      "",
-      "═══════════════════════════════════════════════════",
-      "🚀 DÉFIS & SOLUTIONS",
-      "",
-      "Synchronisation de l'état global entre composants",
-      "→ Redux pour centraliser la gestion d'état, synchronisation fluide avec le BackOffice.",
-      "",
-      "Intégrité des données utilisateur et serveur",
-      "→ Validation rigoureuse avec PropTypes, mécanismes anti-comportements imprévus.",
-      "",
-      "═══════════════════════════════════════════════════",
-      "🎯 RÉSULTAT",
-      "",
-      "Fonctionnalités clés implémentées, accessibilité améliorée, gestion d'état cohérente via Redux."
-    ],
-    className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
-    imgClassName: "w-full h-full object-cover h-auto",
-    titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-    img: "/projectRefactor-assets/discotech-transp.png",
-    alt: "illustrations des styles musicaux sur fond de palmiers au crépuscule",
-    width: 320,
-    height: 200,
-    spareImg: "",
-    demoLink: "",
-    githubLink: "https://github.com/YanBerdin/discOtech",
-    technologies: ['Html', 'Css', 'JS', 'React', 'Redux', 'Axios', 'Rest API', 'PropTypes'],
+    technologies: ['Rest API','JavaScript', 'Express', 'Node.js', 'MongoDb', 'Swagger'],
   },
 
   {
@@ -213,7 +164,7 @@ export const Repositories = [
     spareImg: "",
     demoLink: "",
     githubLink: "https://github.com/YanBerdin/Express-Recipes-API",
-    technologies: ['JavaScript', 'Express', 'Node.js', 'Axios', 'Swagger'],
+    technologies: ['Rest API','JavaScript', 'Express', 'Node.js', 'Swagger'],
   },
 
   {
@@ -259,7 +210,7 @@ export const Repositories = [
     spareImg: "",
     demoLink: "",
     githubLink: "https://github.com/YanBerdin/React-Recipes-App",
-    technologies: ['Html', 'Css', 'JS', 'React', 'Redux', 'Axios', 'Rest API', 'PropTypes'],
+    technologies: ['Javascript', 'React', 'Redux', 'PropTypes'],
   },
 
 
@@ -310,7 +261,7 @@ export const Repositories = [
     spareImg: "",
     demoLink: "", //TODO Deployer
     githubLink: "https://github.com/YanBerdin/shoes-shop-frontoffice-php",
-    technologies: ['Html', 'Css', 'JS', 'PHP', 'Bootstrap'],
+    technologies: ['PHP', 'Bootstrap', 'Javascript'],
   },
 
   {
@@ -361,9 +312,9 @@ export const Repositories = [
     spareImg: "",
     demoLink: "", //TODO Deployer
     githubLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php",
-    technologies: ['Html', 'Css', 'PHP', 'MySQL', 'Bootstrap'],
+    technologies: ['Rest API','PHP', 'MySQL', 'Bootstrap'],
   },
-  /*
+  
       {
       id: 7,
       title: "Task-Manager 📝",
@@ -397,9 +348,9 @@ export const Repositories = [
       spareImg: "",
       demoLink: "", //TODO Deployer
       githubLink: "https://github.com/YanBerdin/Laravel-Vanilla_JS-Task_Manager",
-      technologies: ['Html', 'Css', 'PHP', 'Laravel', 'Eloquent', 'MySQL', 'Rest API','JS']
+      technologies: ['Rest API','PHP', 'Laravel', 'Eloquent', 'MySQL']
       },
-  */
+
   {
     id: 8,
     title: "Spotify Controller 🎵",
@@ -450,8 +401,58 @@ export const Repositories = [
     spareImg: "",
     demoLink: "", //TODO Deployer
     githubLink: "https://github.com/YanBerdin/spotify-controller",
-    technologies: ['Html', 'Css', 'JS', 'React', 'Vite', 'Axios', 'Styled-components']
+    technologies: ['Javascript', 'React', 'Vite', 'Styled-components']
   },
+
+    {
+    id: 2,
+    title: "DiscO'tech 💿",
+    description: "🛠️ Technologies Utilisées : React | Redux | Axios | Rest API | PropTypes",
+    explanationList: [
+      "Application de référencement musical permettant de rechercher des artistes, explorer des genres et créer des playlists personnalisées.",
+      "",
+      "═══════════════════════════════════════════════════",
+      "📌 FONCTIONNALITÉS",
+      "",
+      "• Recherche : artistes et albums par genre musical",
+      "• Playlists : création et gestion de playlists personnalisées",
+      "• État global : synchronisation Redux entre les composants",
+      "",
+      "═══════════════════════════════════════════════════",
+      "🔒 SÉCURITÉ",
+      "",
+      "• Authentification : JWT avec tokens aléatoires à usage unique",
+      "• Confidentialité : variables d'environnement et configuration stricte de CORS",
+      "• Protection XSS : échappement des données, double validation client/serveur",
+      "• Non-répudiation : tokens de synchronisation pour les méthodes d'écriture",
+      "",
+      "═══════════════════════════════════════════════════",
+      "🚀 DÉFIS & SOLUTIONS",
+      "",
+      "Synchronisation de l'état global entre composants",
+      "→ Redux pour centraliser la gestion d'état, synchronisation fluide avec le BackOffice.",
+      "",
+      "Intégrité des données utilisateur et serveur",
+      "→ Validation rigoureuse avec PropTypes, mécanismes anti-comportements imprévus.",
+      "",
+      "═══════════════════════════════════════════════════",
+      "🎯 RÉSULTAT",
+      "",
+      "Fonctionnalités clés implémentées, accessibilité améliorée, gestion d'état cohérente via Redux."
+    ],
+    className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
+    imgClassName: "w-full h-full object-cover h-auto",
+    titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
+    img: "/projectRefactor-assets/discotech-transp.png",
+    alt: "illustrations des styles musicaux sur fond de palmiers au crépuscule",
+    width: 320,
+    height: 200,
+    spareImg: "",
+    demoLink: "",
+    githubLink: "https://github.com/YanBerdin/discOtech",
+    technologies: ['Javascript', 'React', 'Redux', 'Rest API', 'PropTypes'],
+  },
+  
   /*
       {
         id: 9,
@@ -481,7 +482,7 @@ export const Repositories = [
         spareImg: "",
         demoLink: "https://www.yanberdin.com",
         githubLink: "https://github.com/YanBerdin/next-portfolio",
-        technologies: ['Html', 'Css', 'JS', 'React', 'Next', 'Tailwind', 'Typescript', 'Framer-Motion', 'Axios', 'PostCss'],
+        technologies: ['Javascript', 'React', 'Next', 'Tailwind', 'Typescript', 'Framer-Motion', 'PostCss'],
       },
   */
   {
@@ -531,7 +532,7 @@ export const Repositories = [
     spareImg: "",
     demoLink: "https://new-react-github-explorer.vercel.app/",
     githubLink: "https://github.com/YanBerdin/create-react-github-explorer",
-    technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'Semantic UI', 'SCSS'],
+    technologies: ['Javascript', 'React', 'Semantic UI', 'SCSS'],
   },
   /*
       {
@@ -570,7 +571,7 @@ export const Repositories = [
         spareImg: "",
         demoLink: "", //TODO A Deployer
         githubLink: "https://github.com/YanBerdin/Pokedex-php-yanberdin",
-        technologies: ['Apache', 'PHP', 'MySQL', 'Html', 'Css', 'Composer', 'AltoRouter', 'Bootstrap']
+        technologies: ['Apache', 'PHP', 'MySQL', 'Composer', 'AltoRouter', 'Bootstrap']
       },
   */
   /*
@@ -610,7 +611,7 @@ export const Repositories = [
         spareImg: "",
         demoLink: "https://yanberdin.github.io/React_Widget_Meteo/",
         githubLink: "https://github.com/YanBerdin/React_Widget_Meteo",
-        technologies: ['Html', 'Css', 'JS', 'React', 'Axios', 'SCSS'],
+        technologies: ['Javascript', 'React', 'SCSS'],
       }, 
   */
   /*
@@ -647,7 +648,7 @@ export const Repositories = [
         spareImg: "",
         demoLink: "https://yanberdin.github.io/text_to_speech_web_app",
         githubLink: "https://github.com/YanBerdin/text_to_speech_web_app",
-        technologies: ['Html', 'Css', 'JS']
+        technologies: ['Javascript']
       },
   */
   /*
@@ -690,7 +691,7 @@ export const Repositories = [
       spareImg: "",
       demoLink: "https://yanberdin.github.io/script-runner-game-js",
       githubLink: "https://github.com/YanBerdin/script-runner-game-js",
-      technologies: ['Html', 'Css', 'JS']
+      technologies: ['Javascript']
       },
   */
   /*
@@ -725,7 +726,7 @@ export const Repositories = [
         spareImg: "",
         demoLink: "https://yanberdin.github.io/soundpad-js-vanilla",
         githubLink: "https://github.com/YanBerdin/soundpad-js-vanilla",
-        technologies: ['Html', 'Css', 'JS']
+        technologies: ['Javascript']
       },
   */
 

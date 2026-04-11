@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { mySkills } from "@/data/index";
 import { Button } from "./ui/Skills_ui/MovingBorders";
 import { Check } from "lucide-react";
@@ -22,14 +21,14 @@ export const Skills = () => {
             transition={{ duration: 0.6 }}
           >
             Fullstack
-            <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
+            <span className="bg-gradient-to-b from-[#00AAFF] to-[#0066FF] text-transparent bg-clip-text edge:text-purple">
               {" "}
               Javascript & Php
               {" "}
             </span>
             spécialiste{" "}
-            <span className="inline bg-gradient-to-r from-[#cf96f5]  to-[#8f47d2] text-transparent bg-clip-text edge:text-purple">
-              React.js
+            <span className="inline bg-gradient-to-r from-[#00AAFF] to-[#38BEFF] text-transparent bg-clip-text edge:text-purple">
+              Next.js/React.js
             </span>
           </motion.h2>
 
@@ -74,7 +73,7 @@ export const Skills = () => {
                       aria-hidden="true"
                     />
                     <div className="w-full"> {/*ms-5*/}
-                      <h3 className="text-center text-black dark:inline bg-gradient-to-r from-[#f8bda9] to-[#f8997c] text-transparent bg-clip-text max-sm:text-xl text-2xl xl:text-2xl font-bold">
+                      <h3 className="text-center text-black dark:inline bg-gradient-to-r from-[#00AAFF] to-[#38BEFF] text-transparent bg-clip-text max-sm:text-xl text-2xl xl:text-2xl font-bold">
                         {card.title}
                       </h3>
                       {/*                  [#f77062] to-[#fe5196]
@@ -85,7 +84,7 @@ export const Skills = () => {
                       <div className="space-y-4 text-start text-white-100 mt-6 font-semibold">
                         {card.skillsList && card.skillsList.filter((skills): skills is string => skills !== undefined).map((skills: string) => (
                           <span key={skills} className="flex">
-                            <Check className="text-green-500 min-w-[20px]" />{" "}
+                            <Check className="text-[#00AAFF] min-w-[20px]" />{" "}
                             <p className="ml-2 max-sm:text-sm sm:text-base md:text-md lg:text-lg">{skills}</p>
                           </span>
                         ))}

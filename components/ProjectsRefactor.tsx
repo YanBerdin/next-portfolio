@@ -11,7 +11,7 @@ import { Repositories } from "@/data/projectRefactoData";
 import { motion } from 'framer-motion';
 
 
-type Technology = 'React' | 'Next' | 'Typescript' | 'Node.js' | 'Express' | 'PHP' | 'MySQL' | 'PostgreSQL' | 'Swagger' | 'Supabase' | 'MongoDb' | 'JS' | 'Axios' | 'Rest API' | 'PropTypes' | 'Redux' | 'Laravel' | 'SCSS' | 'Framer-Motion' | 'PostCss' | 'Semantic UI' | 'Tailwind' | 'Bootstrap' | 'Styled-components' | 'Zod' | 'Sentry' | 'Sharp' | 'dnd-kit'
+type Technology = 'React' | 'Next' | 'Typescript' | 'Node.js' | 'Express' | 'PHP' | 'MySQL' | 'PostgreSQL' | 'Swagger' | 'Supabase' | 'MongoDb' | 'Javascript' | 'Rest API' | 'PropTypes' | 'Redux' | 'Laravel' | 'SCSS' | 'Framer-Motion' | 'PostCss' | 'Semantic UI' | 'Tailwind' | 'Bootstrap' | 'Styled-components' | 'Zod' | 'Sentry' | 'Sharp' | 'dnd-kit'
 
 interface Repository {
     id: number
@@ -36,7 +36,7 @@ interface Repository {
     technologies: string[]
 }
 
-const technologies: Technology[] = ['React', 'Next', 'Typescript', 'Node.js', 'Express', 'PHP', 'MySQL', 'PostgreSQL', 'Swagger', 'Supabase', 'MongoDb', 'JS', 'Axios', 'Rest API', 'PropTypes', 'Redux', 'Laravel', 'SCSS', 'Framer-Motion', 'PostCss', 'Semantic UI', 'Tailwind', 'Bootstrap', 'Styled-components', 'Zod', 'Sentry', 'Sharp', 'dnd-kit']
+const technologies: Technology[] = ['React', 'Next', 'Javascript', 'Typescript', 'Node.js', 'Express', 'MySQL', 'PostgreSQL', 'Supabase', 'Swagger', 'MongoDb', 'Rest API', 'Redux', 'PHP', 'Laravel', 'Zod', 'SCSS', 'PostCss', 'Framer-Motion', 'Semantic UI', 'Tailwind', 'Bootstrap', 'Styled-components', 'Sentry', 'Sharp', 'dnd-kit', 'PropTypes']
 
 
 const myRepositories: Repository[] = Repositories?.map(repo => ({
@@ -77,7 +77,7 @@ export default function ProjectsRefactor() {
                     transition={{ duration: 0.5 }}
                 >
                     Découvrez
-                    <span className="bg-gradient-to-b from-[#9f96f5]  to-[#6c47d2] text-transparent bg-clip-text edge:text-purple">
+                    <span className="bg-gradient-to-b from-[#00AAFF] to-[#0066FF] text-transparent bg-clip-text edge:text-purple">
                         {" "}
                         mes projets
                         {" "}
@@ -125,10 +125,23 @@ export default function ProjectsRefactor() {
 
                 </nav>
 
+                {/* Empty state */}
+                {filteredRepos.length === 0 && (
+                    <div className="flex flex-col items-center justify-center py-16 gap-3 text-center">
+                        <div className="text-[#00AAFF] text-4xl" aria-hidden="true">◈</div>
+                        <p className="text-[#BEC1DD] text-sm">Aucun projet pour cette technologie.</p>
+                        <button
+                            onClick={() => setSelectedTech(null)}
+                            className="text-xs text-[#00AAFF] underline underline-offset-2 hover:text-[#38BEFF] transition-colors"
+                        >
+                            Réinitialiser le filtre
+                        </button>
+                    </div>
+                )}
                 {/* Liste des projets filtrés */}
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8 md:mt-16">
                     {filteredRepos.slice(0, visibleRepos).map(repo => (
-                        <motion.div key={repo.id} className="group bg-slate-800/[0.8] border border-slate-700 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[290px] lg:max-w-[310px] mx-auto"
+                        <motion.div key={repo.id} className="group bg-slate-800/[0.8] border border-slate-700 hover:border-[#00AAFF]/40 backdrop-blur-xl rounded-lg overflow-hidden min-w-[180px] max-w-[290px] lg:max-w-[310px] mx-auto transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(0,170,255,0.12)]"
                             initial={{ scale: 0.5, opacity: 0 }}
                             whileInView={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5 }}
@@ -146,7 +159,7 @@ export default function ProjectsRefactor() {
                                     )}
                                 />
 
-                                <div className="absolute inset-0 bg-blue-200 bg-opacity-50 opacity-0 origin-center group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-lg p-2 ease-in-out">
+                                <div className="absolute inset-0 bg-[#00AAFF]/15 backdrop-blur-sm opacity-0 origin-center group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-lg p-2 ease-in-out">
 
                                     <div className="space-x-1 inline-flex shrink-1">
                                         <ProjectsRefactorButton variant="secondary" asChild>
@@ -169,7 +182,7 @@ export default function ProjectsRefactor() {
                                 <h3 className="max-sm:text-sm text-xl font-semibold mb-4 text-white-100">{repo.title}</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {(repo.technologies ?? []).map(tech => (
-                                        <span key={tech} className="text-xs lg:text-sm bg-slate-700 max-sm:px-3 max-sm:py-1 px-4 py-1.5 rounded">
+                                        <span key={tech} className="text-xs lg:text-sm bg-[#00AAFF]/8 text-[#93C5FD] border border-[#00AAFF]/20 max-sm:px-3 max-sm:py-1 px-4 py-1.5 rounded">
                                             {tech}
                                         </span>
                                     ))}

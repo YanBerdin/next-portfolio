@@ -50,7 +50,7 @@
 
 /* Style de focus amélioré pour la navigation au clavier */
 .flip-card-inner:focus-visible {
-  outline: 3px solid #b388ff;
-  box-shadow: 0 0 15px rgba(179, 136, 255, 0.9);
+  outline: 3px solid #93C5FD;
+  box-shadow: 0 0 15px rgba(147, 197, 253, 0.9);
   border-radius: 10px;
 }

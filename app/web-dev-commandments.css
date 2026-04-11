@@ -60,13 +60,13 @@
 @keyframes neonGlow {
   0%,
   100% {
-    box-shadow: 0 0 5px rgba(165, 138, 255, 0.5),
-      0 0 10px rgba(108, 71, 210, 0.3);
+    box-shadow: 0 0 5px rgba(103, 232, 249, 0.5),
+      0 0 10px rgba(8, 145, 178, 0.3);
   }
   50% {
-    box-shadow: 0 0 15px rgba(179, 136, 255, 0.8),
-      0 0 25px rgba(143, 71, 210, 0.6),
-      0 0 35px rgba(90, 58, 158, 0.4);
+    box-shadow: 0 0 15px rgba(165, 243, 252, 0.8),
+      0 0 25px rgba(6, 182, 212, 0.6),
+      0 0 35px rgba(14, 116, 144, 0.4);
   }
 }
 
@@ -83,8 +83,8 @@
 }
 
 .flip-card-inner:focus {
-  outline: 3px solid #9c64ff;
-  box-shadow: 0 0 10px rgba(156, 100, 255, 0.9);
+  outline: 3px solid #38BEFF;
+  box-shadow: 0 0 10px rgba(56, 190, 255, 0.9);
   border-radius: 10px;
   z-index: 1;
 }
@@ -121,53 +121,53 @@
 
 /* Variantes de couleurs pour les cartes frontales */
 .flip-card:nth-child(1) .flip-card-front {
-  background: linear-gradient(145deg, #9f96f5, #a58aff);
-  box-shadow: inset 0 0 10px #b388ff, 0 0 5px rgba(179, 136, 255, 0.5);
+  background: linear-gradient(145deg, #00AAFF, #00AAFF);
+  box-shadow: inset 0 0 10px #93C5FD, 0 0 5px rgba(147, 197, 253, 0.5);
 }
 
 .flip-card:nth-child(2) .flip-card-front {
-  background: linear-gradient(145deg, #6c47d2, #7a5dc8);
-  box-shadow: inset 0 0 10px #9c64ff, 0 0 5px rgba(156, 100, 255, 0.5);
+  background: linear-gradient(145deg, #0066FF, #0077DD);
+  box-shadow: inset 0 0 10px #38BEFF, 0 0 5px rgba(56, 190, 255, 0.5);
 }
 
 .flip-card:nth-child(3) .flip-card-front {
-  background: linear-gradient(145deg, #cf96f5, #d4b5ff);
-  box-shadow: inset 0 0 10px #b388ff, 0 0 5px rgba(179, 136, 255, 0.5);
+  background: linear-gradient(145deg, #00AAFF, #93C5FD);
+  box-shadow: inset 0 0 10px #93C5FD, 0 0 5px rgba(147, 197, 253, 0.5);
 }
 
 .flip-card:nth-child(4) .flip-card-front {
-  background: linear-gradient(145deg, #8f47d2, #9c64ff);
-  box-shadow: inset 0 0 10px #a58aff, 0 0 5px rgba(165, 138, 255, 0.5);
+  background: linear-gradient(145deg, #0077DD, #38BEFF);
+  box-shadow: inset 0 0 10px #00AAFF, 0 0 5px rgba(0, 170, 255, 0.5);
 }
 
 .flip-card:nth-child(5) .flip-card-front {
-  background: linear-gradient(145deg, #a58aff, #9c64ff);
-  box-shadow: inset 0 0 10px #b388ff, 0 0 5px rgba(179, 136, 255, 0.5);
+  background: linear-gradient(145deg, #00AAFF, #38BEFF);
+  box-shadow: inset 0 0 10px #93C5FD, 0 0 5px rgba(147, 197, 253, 0.5);
 }
 
 .flip-card:nth-child(6) .flip-card-front {
-  background: linear-gradient(145deg, #7a5dc8, #6c47d2);
-  box-shadow: inset 0 0 10px #9f96f5, 0 0 5px rgba(159, 150, 245, 0.5);
+  background: linear-gradient(145deg, #0077DD, #0066FF);
+  box-shadow: inset 0 0 10px #00AAFF, 0 0 5px rgba(0, 170, 255, 0.5);
 }
 
 .flip-card:nth-child(7) .flip-card-front {
-  background: linear-gradient(145deg, #5a3a9e, #7a5dc8);
-  box-shadow: inset 0 0 10px #8f47d2, 0 0 5px rgba(143, 71, 210, 0.5);
+  background: linear-gradient(145deg, #1D4ED8, #0077DD);
+  box-shadow: inset 0 0 10px #0077DD, 0 0 5px rgba(0, 119, 221, 0.5);
 }
 
 .flip-card:nth-child(8) .flip-card-front {
-  background: linear-gradient(145deg, #d4b5ff, #b388ff);
-  box-shadow: inset 0 0 10px #cf96f5, 0 0 5px rgba(207, 150, 245, 0.5);
+  background: linear-gradient(145deg, #93C5FD, #93C5FD);
+  box-shadow: inset 0 0 10px #00AAFF, 0 0 5px rgba(0, 170, 255, 0.5);
 }
 
 .flip-card:nth-child(9) .flip-card-front {
-  background: linear-gradient(145deg, #b388ff, #9c64ff);
-  box-shadow: inset 0 0 10px #a58aff, 0 0 5px rgba(165, 138, 255, 0.5);
+  background: linear-gradient(145deg, #93C5FD, #38BEFF);
+  box-shadow: inset 0 0 10px #00AAFF, 0 0 5px rgba(0, 170, 255, 0.5);
 }
 
 .flip-card:nth-child(10) .flip-card-front {
-  background: linear-gradient(145deg, #9f96f5, #8f47d2);
-  box-shadow: inset 0 0 10px #d4b5ff, 0 0 5px rgba(212, 181, 255, 0.5);
+  background: linear-gradient(145deg, #00AAFF, #0077DD);
+  box-shadow: inset 0 0 10px #93C5FD, 0 0 5px rgba(147, 197, 253, 0.5);
 }
 
 .flip-card-back {
@@ -178,53 +178,53 @@
 
 /* Variantes de couleurs pour les cartes arrières */
 .flip-card:nth-child(1) .flip-card-back {
-  background: linear-gradient(145deg, #6c47d2, #5a3a9e);
-  box-shadow: inset 0 0 10px rgba(179, 136, 255, 0.8);
+  background: linear-gradient(145deg, #0066FF, #1D4ED8);
+  box-shadow: inset 0 0 10px rgba(147, 197, 253, 0.8);
 }
 
 .flip-card:nth-child(2) .flip-card-back {
-  background: linear-gradient(145deg, #8f47d2, #6c47d2);
-  box-shadow: inset 0 0 10px rgba(156, 100, 255, 0.8);
+  background: linear-gradient(145deg, #0077DD, #0066FF);
+  box-shadow: inset 0 0 10px rgba(56, 190, 255, 0.8);
 }
 
 .flip-card:nth-child(3) .flip-card-back {
-  background: linear-gradient(145deg, #9c64ff, #8f47d2);
-  box-shadow: inset 0 0 10px rgba(179, 136, 255, 0.8);
+  background: linear-gradient(145deg, #38BEFF, #0077DD);
+  box-shadow: inset 0 0 10px rgba(147, 197, 253, 0.8);
 }
 
 .flip-card:nth-child(4) .flip-card-back {
-  background: linear-gradient(145deg, #7a5dc8, #5a3a9e);
-  box-shadow: inset 0 0 10px rgba(165, 138, 255, 0.8);
+  background: linear-gradient(145deg, #0077DD, #1D4ED8);
+  box-shadow: inset 0 0 10px rgba(0, 170, 255, 0.8);
 }
 
 .flip-card:nth-child(5) .flip-card-back {
-  background: linear-gradient(145deg, #8f47d2, #5a3a9e);
-  box-shadow: inset 0 0 10px rgba(179, 136, 255, 0.8);
+  background: linear-gradient(145deg, #0077DD, #1D4ED8);
+  box-shadow: inset 0 0 10px rgba(147, 197, 253, 0.8);
 }
 
 .flip-card:nth-child(6) .flip-card-back {
-  background: linear-gradient(145deg, #9f96f5, #7a5dc8);
-  box-shadow: inset 0 0 10px rgba(156, 100, 255, 0.8);
+  background: linear-gradient(145deg, #00AAFF, #0077DD);
+  box-shadow: inset 0 0 10px rgba(56, 190, 255, 0.8);
 }
 
 .flip-card:nth-child(7) .flip-card-back {
-  background: linear-gradient(145deg, #6c47d2, #5a3a9e);
-  box-shadow: inset 0 0 10px rgba(143, 71, 210, 0.8);
+  background: linear-gradient(145deg, #0066FF, #1D4ED8);
+  box-shadow: inset 0 0 10px rgba(0, 119, 221, 0.8);
 }
 
 .flip-card:nth-child(8) .flip-card-back {
-  background: linear-gradient(145deg, #9c64ff, #7a5dc8);
-  box-shadow: inset 0 0 10px rgba(207, 150, 245, 0.8);
+  background: linear-gradient(145deg, #38BEFF, #0077DD);
+  box-shadow: inset 0 0 10px rgba(0, 170, 255, 0.8);
 }
 
 .flip-card:nth-child(9) .flip-card-back {
-  background: linear-gradient(145deg, #8f47d2, #5a3a9e);
-  box-shadow: inset 0 0 10px rgba(165, 138, 255, 0.8);
+  background: linear-gradient(145deg, #0077DD, #1D4ED8);
+  box-shadow: inset 0 0 10px rgba(0, 170, 255, 0.8);
 }
 
 .flip-card:nth-child(10) .flip-card-back {
-  background: linear-gradient(145deg, #7a5dc8, #5a3a9e);
-  box-shadow: inset 0 0 10px rgba(212, 181, 255, 0.8);
+  background: linear-gradient(145deg, #0077DD, #1D4ED8);
+  box-shadow: inset 0 0 10px rgba(147, 197, 253, 0.8);
 }
 
 
@@ -248,43 +248,43 @@
 
 /* Couleurs spécifiques pour chaque icône */
 .flip-card:nth-child(1) .icon {
-  color: #d4b5ff;
+  color: #93C5FD;
 }
 
 .flip-card:nth-child(2) .icon {
-  color: #9f96f5;
+  color: #00AAFF;
 }
 
 .flip-card:nth-child(3) .icon {
-  color: #b388ff;
+  color: #93C5FD;
 }
 
 .flip-card:nth-child(4) .icon {
-  color: #a58aff;
+  color: #00AAFF;
 }
 
 .flip-card:nth-child(5) .icon {
-  color: #9c64ff;
+  color: #38BEFF;
 }
 
 .flip-card:nth-child(6) .icon {
-  color: #cf96f5;
+  color: #00AAFF;
 }
 
 .flip-card:nth-child(7) .icon {
-  color: #d4b5ff;
+  color: #93C5FD;
 }
 
 .flip-card:nth-child(8) .icon {
-  color: #9f96f5;
+  color: #00AAFF;
 }
 
 .flip-card:nth-child(9) .icon {
-  color: #b388ff;
+  color: #93C5FD;
 }
 
 .flip-card:nth-child(10) .icon {
-  color: #9c64ff;
+  color: #38BEFF;
 }
 
 .title {
@@ -382,91 +382,91 @@
 @keyframes glowPulse1 {
   0%,
   100% {
-    filter: drop-shadow(0 0 2px rgba(159, 150, 245, 0.6));
+    filter: drop-shadow(0 0 2px rgba(103, 232, 249, 0.6));
   }
   50% {
-    filter: drop-shadow(0 0 7px rgba(212, 181, 255, 0.9));
+    filter: drop-shadow(0 0 7px rgba(165, 243, 252, 0.9));
   }
 }
 @keyframes glowPulse2 {
   0%,
   100% {
-    filter: drop-shadow(0 0 2px rgba(108, 71, 210, 0.6));
+    filter: drop-shadow(0 0 2px rgba(8, 145, 178, 0.6));
   }
   50% {
-    filter: drop-shadow(0 0 7px rgba(159, 150, 245, 0.9));
+    filter: drop-shadow(0 0 7px rgba(103, 232, 249, 0.9));
   }
 }
 @keyframes glowPulse3 {
   0%,
   100% {
-    filter: drop-shadow(0 0 2px rgba(207, 150, 245, 0.6));
+    filter: drop-shadow(0 0 2px rgba(103, 232, 249, 0.6));
   }
   50% {
-    filter: drop-shadow(0 0 7px rgba(212, 181, 255, 0.9));
+    filter: drop-shadow(0 0 7px rgba(165, 243, 252, 0.9));
   }
 }
 @keyframes glowPulse4 {
   0%,
   100% {
-    filter: drop-shadow(0 0 2px rgba(143, 71, 210, 0.6));
+    filter: drop-shadow(0 0 2px rgba(6, 182, 212, 0.6));
   }
   50% {
-    filter: drop-shadow(0 0 7px rgba(156, 100, 255, 0.9));
+    filter: drop-shadow(0 0 7px rgba(34, 211, 238, 0.9));
   }
 }
 @keyframes glowPulse5 {
   0%,
   100% {
-    filter: drop-shadow(0 0 2px rgba(165, 138, 255, 0.6));
+    filter: drop-shadow(0 0 2px rgba(103, 232, 249, 0.6));
   }
   50% {
-    filter: drop-shadow(0 0 7px rgba(179, 136, 255, 0.9));
+    filter: drop-shadow(0 0 7px rgba(165, 243, 252, 0.9));
   }
 }
 @keyframes glowPulse6 {
   0%,
   100% {
-    filter: drop-shadow(0 0 2px rgba(122, 93, 200, 0.6));
+    filter: drop-shadow(0 0 2px rgba(6, 182, 212, 0.6));
   }
   50% {
-    filter: drop-shadow(0 0 7px rgba(159, 150, 245, 0.9));
+    filter: drop-shadow(0 0 7px rgba(103, 232, 249, 0.9));
   }
 }
 @keyframes glowPulse7 {
   0%,
   100% {
-    filter: drop-shadow(0 0 2px rgba(90, 58, 158, 0.6));
+    filter: drop-shadow(0 0 2px rgba(14, 116, 144, 0.6));
   }
   50% {
-    filter: drop-shadow(0 0 7px rgba(143, 71, 210, 0.9));
+    filter: drop-shadow(0 0 7px rgba(6, 182, 212, 0.9));
   }
 }
 @keyframes glowPulse8 {
   0%,
   100% {
-    filter: drop-shadow(0 0 2px rgba(212, 181, 255, 0.6));
+    filter: drop-shadow(0 0 2px rgba(165, 243, 252, 0.6));
   }
   50% {
-    filter: drop-shadow(0 0 7px rgba(207, 150, 245, 0.9));
+    filter: drop-shadow(0 0 7px rgba(103, 232, 249, 0.9));
   }
 }
 @keyframes glowPulse9 {
   0%,
   100% {
-    filter: drop-shadow(0 0 2px rgba(179, 136, 255, 0.6));
+    filter: drop-shadow(0 0 2px rgba(165, 243, 252, 0.6));
   }
   50% {
-    filter: drop-shadow(0 0 7px rgba(165, 138, 255, 0.9));
+    filter: drop-shadow(0 0 7px rgba(103, 232, 249, 0.9));
   }
 }
 @keyframes glowPulse10 {
   0%,
   100% {
-    filter: drop-shadow(0 0 2px rgba(156, 100, 255, 0.6));
+    filter: drop-shadow(0 0 2px rgba(34, 211, 238, 0.6));
   }
   50% {
-    filter: drop-shadow(0 0 7px rgba(143, 71, 210, 0.9));
+    filter: drop-shadow(0 0 7px rgba(6, 182, 212, 0.9));
   }
 }
 

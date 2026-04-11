@@ -93,10 +93,10 @@ export default function BackdropModal({ id }: { id: number }) {
                 transition={{ duration: 0.5 }}
               >
                 <ModalHeader className="flex flex-col py-4 px-4">
-                  <h2 className="px-3 text-[#123af0] text-xl brightness-200">{title}</h2>
+                  <h2 className="px-3 text-[#00AAFF] text-xl brightness-125">{title}</h2>
                 </ModalHeader>
                 <ModalBody className="text-slate-100 max-h-[70vh] overflow-y-auto gap-0 scrollbar max-sm:px-3 max-sm:text-sm">
-                  <h3 className="mb-4 text-[#123af0] brightness-200 text-md">{description}</h3>
+                  <h3 className="mb-4 text-[#24b3fa] brightness-125 text-md">{description}</h3>
                   {explanationList.map((line, index) => {
                     // Separators (═══...) → clean divider
                     if (/^[═─=]+$/.test(line.trim())) {
@@ -109,7 +109,7 @@ export default function BackdropModal({ id }: { id: number }) {
                     // Section headers: lines starting with a section emoji
                     if (/^[📌🏗️🔒🚀🎯💡🎙️🏠🏭ℹ️👉]/.test(line)) {
                       return (
-                        <p key={index} className="text-[#4a7ff5] font-semibold text-sm md:text-base mt-5 mb-2">
+                        <p key={index} className="text-[#00AAFF] font-semibold text-sm md:text-base mt-5 mb-2">
                           {line}
                         </p>
                       );
@@ -131,7 +131,7 @@ export default function BackdropModal({ id }: { id: number }) {
                         const value = stripped.slice(colonIdx + 3);
                         return (
                           <p key={index} className="text-xs md:text-sm lg:text-base leading-loose mb-0.5">
-                            <span className="text-violet-300 font-medium">{label}</span>
+                            <span className="text-[#70b0fa] font-medium">{label}</span>
                             <span className="text-slate-200">{value}</span>
                           </p>
                         );

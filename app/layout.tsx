@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 //import Script from "next/script";
 import ClientClarity from "./ClientClarity";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
   title: "Yan's Portfolio",
@@ -38,7 +38,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
 
-      <body className={inter.className}>
+      <body className={poppins.className}>
         {/* Clarity tracking côté client (auto-consent enabled) */}
         <ClientClarity />
         <ThemeProvider

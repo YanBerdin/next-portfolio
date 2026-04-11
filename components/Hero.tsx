@@ -12,10 +12,10 @@ export const Hero = () => {
     const shouldReduceMotion = useReducedMotion();
     
     return (
-        <section className="md:pb-5 lg:pb-20 pt-24">
+        <section className="relative md:pb-5 lg:pb-20 pt-24">
             <div>
                 <Spotlight className="-top-10 -left-10 md:-left-32 md:-top-20 h-dvh" fill="white" aria-hidden="true" /> {/** h-screen */}
-                <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" aria-hidden="true" />
+                <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="#00AAFF" aria-hidden="true" />
                 <Spotlight className="top-28 left-75 h-[80vh] w-[40vw]" fill="blue" aria-hidden="true" />
             </div>
 
@@ -44,6 +44,17 @@ export const Hero = () => {
                      *
                      *  change md:text-6xl, add more responsive code
                      */}
+                    <motion.div
+                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00AAFF]/30 bg-[#00AAFF]/5 backdrop-blur-sm mb-8"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: shouldReduceMotion ? 0 : 0.5 }}
+                    >
+                        <span className="w-2 h-2 rounded-full bg-[#00AAFF] animate-pulse" aria-hidden="true" />
+                        <span className="text-xs font-medium text-[#00AAFF] tracking-widest uppercase">
+                            Disponible pour de nouveaux projets
+                        </span>
+                    </motion.div>
                     <TextGenerateEffect
                         className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center w-full mb-4"
                         words="Yan, Développeur Fullstack"
@@ -67,7 +78,7 @@ export const Hero = () => {
                             ease: "easeOut"
                         }}
                     >
-                        Plus de 15 ans de commerce, 2 ans à construire des applications qui tiennent en production.
+                        Je construis des apps rapides, fiables et orientées business.
                     </motion.p>
 
                     <motion.div
@@ -92,6 +103,20 @@ export const Hero = () => {
                     {/*<Title />*/}
                 </div>
             </div>
+            <motion.div
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 z-10"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: shouldReduceMotion ? 0 : 1.5, duration: shouldReduceMotion ? 0 : 0.6 }}
+                aria-hidden="true"
+            >
+                <motion.div
+                    className="w-0.5 h-7 bg-gradient-to-b from-[#00AAFF] to-transparent rounded-full"
+                    animate={shouldReduceMotion ? {} : { scaleY: [1, 0.4, 1], opacity: [0.8, 0.2, 0.8] }}
+                    transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+                />
+
+            </motion.div>
         </section>
 
         /*
