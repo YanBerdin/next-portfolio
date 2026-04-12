@@ -12,16 +12,16 @@ const TIMELINE_ITEMS = [
     description: "Next.js · TypeScript · Supabase · DDD · BackOffice complet",
   },
   {
-    period: "2024",
-    title: "Reconversion Dev Web",
-    company: "Formation intensive",
-    description: "React, Next.js, TypeScript, PHP, Supabase",
+    period: "2023",
+    title: "Dîplôme Dev Web",
+    company: "O'clock",
+    description: "JS · React.js · PHP · Laravel · MySQL · WCAG 2.2 / RGAA",
   },
   {
-    period: "2013 – 2023",
+    period: "2012 – 2022",
     title: "Gérant e-commerce",
     company: "eBay / Amazon",
-    description: "15 000 commandes/an · Stocks & logistique",
+    description: "15 000 commandes/an · SEO · Stocks & logistique",
   },
   {
     period: "Avant",
@@ -58,7 +58,7 @@ export const About = () => {
       <div className="relative z-10 w-11/12 max-w-7xl mx-auto">
         {/* Section title */}
         <motion.h2
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-white-100"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16 text-white-100"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -103,10 +103,10 @@ export const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-2xl font-bold text-white-100 mb-4">
+          <h3 className="text-2xl lg:text-4xl font-bold text-white-100 mb-4">
             <span className="text-purple font-mono">// </span>Mon Histoire
           </h3>
-          <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+          <div className="space-y-4 text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed">
             <p>
               +15 ans dans le commerce et l&apos;e-commerce. Manager, puis
               gérant d&apos;une activité eBay/Amazon à 15&nbsp;000
@@ -122,19 +122,20 @@ export const About = () => {
               Je traduis les contraintes métier en décisions techniques, et
               inversement. 10 ans de management, ça ne s&apos;oublie pas.
             </p>
-            <p className="text-slate-400 text-xs sm:text-sm">
+            <p className="text-slate-400 text-xs sm:text-sm lg:text-base">
               🔧 Présentiel, hybride ou remote &nbsp;·&nbsp; 📍 Basé près de Dijon
             </p>
           </div>
         </motion.div>
 
         {/* Passions */}
+        {/*
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3 className="text-2xl font-bold text-white-100 mb-4">
+          <h3 className="text-2xl lg:text-4xl font-bold text-white-100 mb-4">
             <span className="text-purple font-mono">// </span>Au-delà du code
           </h3>
           <div className="grid grid-cols-3 gap-3">
@@ -164,6 +165,7 @@ export const About = () => {
             ))}
           </div>
         </motion.div>
+        */}
       </div>
 
       {/* Col 3 — Parcours timeline */}
@@ -172,7 +174,7 @@ export const About = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h3 className="text-2xl font-bold text-white-100 mb-6">
+        <h3 className="text-2xl lg:text-4xl font-bold text-white-100 mb-6">
           <span className="text-purple font-mono">// </span>Parcours
         </h3>
 
@@ -198,16 +200,16 @@ export const About = () => {
                   aria-hidden="true"
                 />
                 <div>
-                  <span className="text-xs text-purple font-mono font-semibold">
+                  <span className="text-xs lg:text-sm text-purple font-mono font-semibold">
                     {item.period}
                   </span>
-                  <p className="text-white font-semibold text-sm mt-0.5">
+                  <p className="text-white font-semibold text-sm lg:text-base mt-0.5">
                     {item.title}
                   </p>
-                  <p className="text-slate-400 text-xs font-medium">
+                  <p className="text-slate-400 text-xs lg:text-sm font-medium">
                     {item.company}
                   </p>
-                  <p className="text-slate-500 text-xs mt-1">
+                  <p className="text-slate-500 text-xs lg:text-sm mt-1">
                     {item.description}
                   </p>
                 </div>
@@ -217,6 +219,7 @@ export const About = () => {
         </div>
 
         {/* Maxime */}
+        {/* 
         <motion.blockquote
           className="mt-8 p-4 rounded-lg bg-slate-800/40 border-l-2 border-purple/60 text-white-100 text-sm italic"
           initial={{ opacity: 0 }}
@@ -226,6 +229,7 @@ export const About = () => {
           « Il n&apos;est pas nécessaire d&apos;espérer pour entreprendre,
           ni de réussir pour persévérer. »
         </motion.blockquote>
+        */}
       </motion.div>
 
     </div>

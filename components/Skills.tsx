@@ -15,21 +15,25 @@ export const Skills = () => {
 
       <section className="mx-auto w-11/12 mb-5 lg:mb-52" id="skills">
         <div className="flex flex-col pointer-events-none items-center">
-          <motion.h2 className="heading mb-4 text-white-100 mt-16"
+          <motion.h2 className="text-4xl md:text-5xl lg:text-6xl heading mb-4 text-white-100 mt-16"
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }} // whileInView=
             transition={{ duration: 0.6 }}
           >
-            Fullstack
+            Stack
             <span className="bg-gradient-to-b from-[#00AAFF] to-[#0066FF] text-transparent bg-clip-text edge:text-purple">
               {" "}
-              Javascript & Php
+              technique
               {" "}
             </span>
-            spécialiste{" "}
+            {/* 
+                        spécialiste{" "}
             <span className="inline bg-gradient-to-r from-[#00AAFF] to-[#38BEFF] text-transparent bg-clip-text edge:text-purple">
               Next.js/React.js
             </span>
+            */}
+
+
           </motion.h2>
 
           <motion.div
@@ -73,7 +77,7 @@ export const Skills = () => {
                       aria-hidden="true"
                     />
                     <div className="w-full"> {/*ms-5*/}
-                      <h3 className="text-center text-black dark:inline bg-gradient-to-r from-[#00AAFF] to-[#38BEFF] text-transparent bg-clip-text max-sm:text-xl text-2xl xl:text-2xl font-bold">
+                      <h3 className="max-sm:text-xl text-2xl lg:text-3xl xl:text-4xl font-bold text-center text-black dark:inline bg-gradient-to-r from-[#00AAFF] to-[#38BEFF] text-transparent bg-clip-text ">
                         {card.title}
                       </h3>
                       {/*                  [#f77062] to-[#fe5196]
@@ -85,7 +89,7 @@ export const Skills = () => {
                         {card.skillsList && card.skillsList.filter((skills): skills is string => skills !== undefined).map((skills: string) => (
                           <span key={skills} className="flex">
                             <Check className="text-[#00AAFF] min-w-[20px]" />{" "}
-                            <p className="ml-2 max-sm:text-sm sm:text-base md:text-md lg:text-lg">{skills}</p>
+                            <p className="ml-2 max-sm:text-sm sm:text-base md:text-lg lg:text-xl">{skills}</p>
                           </span>
                         ))}
                       </div>
