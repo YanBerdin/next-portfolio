@@ -34,7 +34,7 @@ export const Hero = () => {
                 />
 
             </div>
-            <div className="flex justify-center gap-10 relative mt-20 sm:mt-28 md:mt-36 mb-24 sm:mb-28 z-10"> {/*flex-wrap md:justify-around*/}
+            <div className="flex justify-center gap-10 relative mt-4 md:mt-28 mb-24 z-10"> {/*flex-wrap md:justify-around*/}
                 <div className="max-sm:w-11/12 w-10/12 flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
@@ -61,7 +61,7 @@ export const Hero = () => {
                     />
 
   
-                    <motion.h1 className="font-semibold md:tracking-wider my-6 md:mb-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-center text-white-100"
+                    <motion.h1 className="font-semibold md:tracking-wider my-6 md:mb-10 text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-center text-white-100"
                         initial={{ y: -40, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
@@ -78,7 +78,7 @@ export const Hero = () => {
                             ease: "easeOut"
                         }}
                     >
-                        Je construis des apps rapides, fiables et orientées business.
+                        Conversion, rétention, performance, maintenabilité et scalabilité
                     </motion.p>
 
                     <motion.div
@@ -103,20 +103,7 @@ export const Hero = () => {
                     {/*<Title />*/}
                 </div>
             </div>
-            <motion.div
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 z-10"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: shouldReduceMotion ? 0 : 1.5, duration: shouldReduceMotion ? 0 : 0.6 }}
-                aria-hidden="true"
-            >
-                <motion.div
-                    className="w-0.5 h-7 bg-gradient-to-b from-[#00AAFF] to-transparent rounded-full"
-                    animate={shouldReduceMotion ? {} : { scaleY: [1, 0.4, 1], opacity: [0.8, 0.2, 0.8] }}
-                    transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-                />
 
-            </motion.div>
         </section>
 
         /*
