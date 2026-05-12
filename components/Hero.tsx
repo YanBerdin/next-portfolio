@@ -12,7 +12,7 @@ export const Hero = () => {
     const shouldReduceMotion = useReducedMotion();
     
     return (
-        <section className="relative md:pb-5 lg:pb-20 pt-24">
+        <section className="relative md:pb-5 lg:pb-20 pt-16 ">
             <div>
                 <Spotlight className="-top-10 -left-10 md:-left-32 md:-top-20 h-dvh" fill="white" aria-hidden="true" /> {/** h-screen */}
                 <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="#00AAFF" aria-hidden="true" />
@@ -34,7 +34,7 @@ export const Hero = () => {
                 />
 
             </div>
-            <div className="flex justify-center gap-10 relative mt-4 md:mt-28 mb-24 z-10"> {/*flex-wrap md:justify-around*/}
+            <div className="flex justify-center gap-10 relative mt-0 md:mt-28 mb-24 z-10"> {/*flex-wrap md:justify-around*/}
                 <div className="max-sm:w-11/12 w-10/12 flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
