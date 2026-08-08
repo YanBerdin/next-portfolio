@@ -57,7 +57,7 @@ export const Hero = () => {
                     </motion.div>
                     <TextGenerateEffect
                         className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center w-full mb-4"
-                        words="Yan, Développeur Fullstack"
+                        words="Yan, Développeur Web"
                     />
 
   
@@ -78,7 +78,7 @@ export const Hero = () => {
                             ease: "easeOut"
                         }}
                     >
-                        Conversion, rétention, performance, maintenabilité et scalabilité
+                        Un site web performant et sécurisé, optimisé pour attirer plus de clients et développer votre activité en ligne.
                     </motion.p>
 
                     <motion.div
