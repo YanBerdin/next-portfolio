@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import type { SVGProps } from "react";
+import type { JSX, SVGProps } from "react";
 
 const FloatingNav = dynamic(
     () => import("./FloatingNavbar").then((m) => m.FloatingNav),

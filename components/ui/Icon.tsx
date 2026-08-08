@@ -1,6 +1,6 @@
 "use client";
 
-import { SVGProps } from 'react';
+import type { JSX, SVGProps } from 'react';
 
 interface IconProps extends SVGProps<SVGSVGElement> {
   icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;

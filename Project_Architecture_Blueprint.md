@@ -7,6 +7,7 @@
 ## 1. Architecture Detection and Analysis
 
 ### Stack technologique détecté
+
 - **Framework principal** : Next.js (React, Node.js)
 - **Langage** : TypeScript
 - **UI** : Tailwind CSS
@@ -15,6 +16,7 @@
 - **Outils** : Microsoft Clarity (analytics), ESLint, Prettier
 
 ### Pattern architectural détecté
+
 - **Pattern principal** : Monolithique modulaire (inspiré Layered + Feature-based)
 - **Organisation** :
   - Séparation claire entre UI, logique métier, données statiques, utilitaires, assets
@@ -28,6 +30,7 @@
 ---
 
 ## 2. Architectural Overview
+
 - **Approche** : Modularité, réutilisabilité, séparation des responsabilités, extensibilité
 - **Principes** :
   - UI découplée de la logique métier
@@ -48,7 +51,7 @@
 
 ## 3. Architecture Visualization
 
-```
+```bash
 [app/ (pages, layout, providers)]
    |
    |---> [components/ (UI, features)]
@@ -64,7 +67,7 @@
   - `components/` consomme `lib/` et `data/`
   - `public/` est consommé par tous
 
-```
+```bash
 ├── 📁 .git/ 🚫 (auto-hidden)
 ├── 📁 .next/ 🚫 (auto-hidden)
 ├── 📁 .vscode/ 🚫 (auto-hidden)
@@ -244,30 +247,35 @@
 ## 4. Core Architectural Components
 
 ### app/
+
 - **Rôle** : Point d’entrée, composition, providers globaux, styles globaux
 - **Structure** : layout.tsx, page.tsx, provider.tsx, fichiers CSS globaux
 - **Interactions** : Importe les composants, applique les providers, gère le routage
 - **Extension** : Ajout de pages, providers, middlewares
 
 ### components/
+
 - **Rôle** : UI réutilisable, widgets, features
 - **Structure** : Organisation par feature ou type, sous-dossiers pour UI, archives, etc.
 - **Interactions** : Consomme données, utilitaires, assets
 - **Extension** : Ajout de nouveaux composants, factorisation, sous-dossiers par feature
 
 ### lib/utils/
+
 - **Rôle** : Hooks personnalisés, helpers
 - **Structure** : Fichiers utilitaires (ex : clarity.ts, cn.ts)
 - **Interactions** : Utilisé par les composants et pages
 - **Extension** : Ajout de nouveaux hooks, helpers
 
 ### data/
+
 - **Rôle** : Données statiques, mocks, configs de données
 - **Structure** : Fichiers TypeScript ou JSON
 - **Interactions** : Importés dans les composants/features
 - **Extension** : Ajout de nouveaux fichiers de données
 
 ### public/
+
 - **Rôle** : Assets statiques accessibles côté client
 - **Structure** : Images, SVG, manifestes, organisation par feature
 - **Interactions** : Utilisé dans les composants, pages, styles
@@ -276,6 +284,7 @@
 ---
 
 ## 5. Architectural Layers and Dependencies
+
 - **Layers** :
   - Présentation (components/)
   - Composition (app/)
@@ -292,6 +301,7 @@
 ---
 
 ## 6. Data Architecture
+
 - **Domain model** : Données structurées dans `data/` (TS/JSON)
 - **Relations** : Agrégation via import/export, pas de relations complexes
 - **Accès** : Import statique, pas de repository pattern (pas de backend)
@@ -301,6 +311,7 @@
 ---
 
 ## 7. Cross-Cutting Concerns Implementation
+
 - **Authentification/Autorisation** : Non implémenté (portfolio public)
 - **Gestion des erreurs** : Try/catch dans hooks, gestion d’état dans les composants
 - **Logging/Monitoring** : Microsoft Clarity (analytics), pas de logging custom
@@ -310,6 +321,7 @@
 ---
 
 ## 8. Service Communication Patterns
+
 - **Boundaries** : Monolithique, pas de microservices
 - **Protocoles** : HTTP (Next.js), import statique
 - **Communication** : Synchrone, via props/import
@@ -318,7 +330,9 @@
 ---
 
 ## 9. Technology-Specific Architectural Patterns
+
 ### React/Next.js
+
 - **Composition** : Composants fonctionnels, hooks, providers
 - **State management** : State local, pas de store global
 - **Effets** : useEffect, hooks custom
@@ -327,12 +341,14 @@
 - **Optimisation** : Découpage en petits composants, lazy loading possible
 
 ### Tailwind CSS
+
 - **Pattern** : Utilisation utilitaire, classes dans JSX
 - **Organisation** : Styles globaux dans app/, spécifiques par feature
 
 ---
 
 ## 10. Implementation Patterns
+
 - **Interfaces** : Props typées, pas d’interface complexe
 - **Services** : Hooks custom (ex : useClarity)
 - **Repositories** : Non applicable
@@ -342,6 +358,7 @@
 ---
 
 ## 11. Testing Architecture
+
 - **Stratégie** : Non détectée (tests à ajouter)
 - **Recommandation** :
   - Unitaires : à côté des composants ou dans __tests__/
@@ -351,6 +368,7 @@
 ---
 
 ## 12. Deployment Architecture
+
 - **Topologie** : Déploiement statique ou serverless (Vercel, Netlify, etc.)
 - **Adaptations env** : Variables d’environnement, CSP dynamique
 - **Dépendances runtime** : Next.js, Node.js, Tailwind
@@ -360,6 +378,7 @@
 ---
 
 ## 13. Extension and Evolution Patterns
+
 - **Ajout de features** :
   - Créer un composant dans components/ ou une page dans app/
   - Organiser par feature ou type
@@ -377,6 +396,7 @@
 ## 14. Architectural Pattern Examples
 
 ### Séparation des couches
+
 ```tsx
 // components/ui/Badge.tsx
 export function Badge({ label }: { label: string }) {
@@ -392,6 +412,7 @@ export default function Home() {
 ```
 
 ### Hook custom
+
 ```ts
 // lib/utils/clarity.ts
 import { useEffect } from 'react';
@@ -403,6 +424,7 @@ export function useClarity() {
 ```
 
 ### Extension d’un composant
+
 ```tsx
 // components/ui/FloatingNavbar.tsx
 export function FloatingNavbar({ children }: { children: React.ReactNode }) {
@@ -413,6 +435,7 @@ export function FloatingNavbar({ children }: { children: React.ReactNode }) {
 ---
 
 ## 15. Architecture Governance
+
 - **Consistance** : Convention de nommage, structure de dossier, Prettier, ESLint
 - **Automatisation** : Linting, formatage, scripts de build
 - **Revue** : Documentation (ce blueprint, README), revue manuelle
@@ -420,6 +443,7 @@ export function FloatingNavbar({ children }: { children: React.ReactNode }) {
 ---
 
 ## 16. Blueprint for New Development
+
 - **Workflow** :
   - Créer un composant dans components/ ou une page dans app/
   - Ajouter les hooks dans lib/utils/

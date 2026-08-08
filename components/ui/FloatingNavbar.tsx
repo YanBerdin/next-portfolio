@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, SVGProps } from "react";
+import { useState, type JSX, type SVGProps } from "react";
 import { useScroll, useMotionValueEvent } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils/cn";
