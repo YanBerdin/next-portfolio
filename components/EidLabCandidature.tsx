@@ -1,4 +1,5 @@
 import { Coffee, Github, ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 const CAL_LINK = "https://calendly.com/yanberdin2025/30min";
 const REPO_LINK = "https://github.com/YanBerdin/rougecardinalcompany/tree/master";
@@ -92,22 +93,22 @@ export default function EidLabCandidature() {
         </div>
 
         <div className="mt-3 flex gap-4 font-mono text-xs">
-          <a
+          <Link
             href={SITE_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-stone-700 underline decoration-stone-300 underline-offset-2 hover:text-stone-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-700 focus-visible:ring-offset-2"
           >
             <ExternalLink size={12} /> Voir le site
-          </a>
-          <a
+          </Link>
+          <Link
             href={REPO_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-stone-700 underline decoration-stone-300 underline-offset-2 hover:text-stone-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-700 focus-visible:ring-offset-2"
           >
             <Github size={12} /> Voir le code
-          </a>
+          </Link>
         </div>
 
         <Divider />
@@ -133,7 +134,7 @@ export default function EidLabCandidature() {
           <span className="font-semibold text-stone-900">1 café virtuel</span>
         </div>
 
-        <a
+        <Link
           href={CAL_LINK}
           target="_blank"
           rel="noopener noreferrer"
@@ -141,8 +142,8 @@ export default function EidLabCandidature() {
           className="mt-6 flex w-full items-center justify-center gap-2 bg-stone-900 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 focus-visible:ring-offset-2"
         >
           <Coffee size={16} />
-          Réserver un café virtuel
-        </a>
+          Réserve ton café virtuel
+        </Link>
 
         <div className="mt-6">
           <Barcode />
