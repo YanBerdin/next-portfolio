@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 // import { FaLocationArrow } from "react-icons/fa6";
 import { Spotlight } from "./ui/Hero_ui/Spotlight";
 import { TextGenerateEffect } from "./ui/Hero_ui/TextGenerateEffect";
@@ -7,16 +7,19 @@ import { MagicButton } from "./MagicButton";
 // import { OrbitingCirclesLg } from "./ui/OrbitingCirclesLg";
 // import Title from "./ui/Title";
 import { motion, useReducedMotion } from "framer-motion";
+import Link from "next/link";
+
+const CASE_STUDY_URL = "/projets/rouge-cardinal";
+const ROUGE_CARDINAL_SITE_URL = "https://compagnie-rouge-cardinal.fr";
 
 export const Hero = () => {
     const shouldReduceMotion = useReducedMotion();
-    
+
     return (
-        <section className="relative md:pb-5 lg:pb-20 pt-16 ">
+        <section className="relative mb-20">
             <div>
-                <Spotlight className="-top-10 -left-10 md:-left-32 md:-top-20 h-dvh" fill="white" aria-hidden="true" /> {/** h-screen */}
-                <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="#00AAFF" aria-hidden="true" />
-                <Spotlight className="top-28 left-75 h-[80vh] w-[40vw]" fill="blue" aria-hidden="true" />
+                <Spotlight className="-top-10 -left-10 md:-left-32 md:-top-20 h-[60vh] w-[60vw]" fill="white" aria-hidden="true" />
+                <Spotlight className="top-10 left-full h-[80vh] w-[60vw]" fill="#6F9DC4" aria-hidden="true" />
             </div>
 
             {/*
@@ -25,7 +28,7 @@ export const Hero = () => {
             *  0.2 to 0.03
             */}
 
-            <div className="min-h-dvh max-h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0" aria-hidden="true"> {/** min-h-screen */}
+            <div className="h-[65vh] min-h-[420px] w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0" aria-hidden="true">
 
                 {/* Radial gradient for the container to give a faded look */}
 
@@ -34,7 +37,7 @@ export const Hero = () => {
                 />
 
             </div>
-            <div className="flex justify-center gap-10 relative mt-0 md:mt-28 mb-24 z-10"> {/*flex-wrap md:justify-around*/}
+            <div className="flex justify-center gap-10 relative mt-0 md:mt-20 mb-24 z-10"> {/*flex-wrap md:justify-around*/}
                 <div className="max-sm:w-11/12 w-10/12 flex flex-col items-center justify-center">
                     {/*<p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                         Dynamic Web Magic With Next.js
@@ -44,62 +47,80 @@ export const Hero = () => {
                      *
                      *  change md:text-6xl, add more responsive code
                      */}
+                    
                     <motion.div
-                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00AAFF]/30 bg-[#00AAFF]/5 backdrop-blur-sm mb-8"
+                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-slate-700 bg-slate-900/60 backdrop-blur-sm mt-8"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: shouldReduceMotion ? 0 : 0.5 }}
                     >
-                        <span className="w-2 h-2 rounded-full bg-[#00AAFF] animate-pulse" aria-hidden="true" />
-                        <span className="text-xs font-medium text-[#00AAFF] tracking-widest uppercase">
-                            Disponible pour de nouveaux projets
+                        <span className="w-2 h-2 rounded-full bg-purple" aria-hidden="true" />
+                        <span className="text-xs font-medium text-slate-300 tracking-widest uppercase">
+                          Yan Berdin · Disponible · CDI, alternance ou mission longue
                         </span>
                     </motion.div>
+                    
                     <TextGenerateEffect
-                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center w-full mb-4"
-                        words="Yan, Développeur Web"
+                        as="h1"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-center w-full mt-16 mb-4"
+                        words="Développeur Web fullstack"
                     />
 
-  
-                    <motion.h1 className="font-semibold md:tracking-wider my-6 md:mb-10 text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-center text-white-100"
+
+                    <motion.p className="font-medium md:tracking-wider my-8 text-lg sm:text-xl md:text-xl lg:text-2xl text-center text-slate-300"
                         initial={{ y: -40, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
                     >
-                        React · Next.js · TypeScript · PHP
-                    </motion.h1>
+                        Node.js · Next.js · React.js · TypeScript
+                    </motion.p>
 
-                    <motion.p 
-                        className="font-semibold text-md md:text-lg lg:text-xl xl:text-2xl text-center text-white-100 leading-relaxed mb-8 sm:mb-10"
+                    <motion.p
+                        className="text-sm md:text-lg text-center text-slate-400 leading-relaxed mb-6 sm:mt-8 max-w-6xl"
                         initial={shouldReduceMotion ? { opacity: 1 } : { y: -40, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ 
+                        transition={{
                             duration: shouldReduceMotion ? 0 : 0.8,
                             ease: "easeOut"
                         }}
                     >
-                        Un site web performant et sécurisé, optimisé pour attirer plus de clients et développer votre activité en ligne.
+                        J&apos;ai conçu et mis en production Rouge Cardinal, un CMS complet utilisé en conditions réelles par une compagnie de théâtre.
                     </motion.p>
 
                     <motion.div
+                        className="flex flex-col sm:flex-row items-center justify-center gap-4"
                         initial={shouldReduceMotion ? { opacity: 1 } : { y: 30, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ 
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{
                             duration: shouldReduceMotion ? 0 : 0.4,
                             delay: shouldReduceMotion ? 0 : 0.3,
                             ease: "easeOut"
                         }}
                     >
                         <MagicButton
-                            title="Découvrez mes projets"
-                            // icon={<FaLocationArrow />}
+                            title="Voir l'étude de cas Rouge Cardinal"
                             icon={""}
                             position="right"
-                            // handleClick={() => console.log('Button clicked!')}
-                            otherClasses="custom-class"
-                            href="#projects"
+                            href={CASE_STUDY_URL}
                         />
+                        <Link
+                            href={ROUGE_CARDINAL_SITE_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="touch-hitbox inline-flex h-12 min-w-[14rem] items-center justify-center rounded-lg border border-slate-600 bg-slate-950/60 px-7 text-md md:text-lg font-medium text-slate-100 transition-colors duration-200 hover:border-slate-400 hover:bg-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-200"
+                        >
+                            Voir le site en production
+                        </Link>
                     </motion.div>
+
+                    <motion.p
+                        className="mt-6 text-xs sm:text-sm md:text-base lg:text-lg text-center text-slate-300 tracking-wide"
+                        initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: shouldReduceMotion ? 0 : 0.6, delay: shouldReduceMotion ? 0 : 0.5 }}
+                    >
+                        Next.js / Supabase / PostgreSQL · 36 tables · RLS complète · CI/CD · tests E2E Playwright
+                    </motion.p>
                     {/*<Title />*/}
                 </div>
             </div>

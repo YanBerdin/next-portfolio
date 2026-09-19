@@ -37,3 +37,6 @@ next-env.d.ts
 
 # doc-perso
 /doc-perso
+
+# github prompts
+/.github/prompts

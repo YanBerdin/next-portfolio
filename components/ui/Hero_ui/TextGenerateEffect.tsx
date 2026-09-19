@@ -7,16 +7,18 @@ import { cn } from "@/lib/utils/cn";
 export const TextGenerateEffect = ({
   words,
   className,
+  as: Tag = "div",
   //gradientClass,
 }: {
   words: string;
   className?: string;
+  as?: "div" | "h1" | "h2" | "p";
   //gradientClass?: string;
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
   useEffect(() => {
-   // console.log(wordsArray);
+    // console.log(wordsArray);
     animate(
       "span",
       {
@@ -32,7 +34,7 @@ export const TextGenerateEffect = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+      <motion.span className="block" ref={scope}>
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
@@ -42,8 +44,7 @@ export const TextGenerateEffect = ({
               // className="dark:text-white text-white opacity-0"
 
               //! Move the gradient style to the parent component < Hero />  
-              className={` ${idx > 0 ? "bg-gradient-to-b from-[#00AAFF] to-[#0066FF] text-transparent bg-clip-text" : "inline bg-gradient-to-r from-[#00AAFF] to-[#38BEFF] text-transparent bg-clip-text"
-                } opacity-0`}
+              className={` ${idx > 0 ? "text-slate-300" : "text-white"} opacity-0`}
             //className={`opacity-0 ${gradientClass}`}
 
             >
@@ -51,7 +52,7 @@ export const TextGenerateEffect = ({
             </motion.span>
           );
         })}
-      </motion.div>
+      </motion.span>
     );
   };
 
@@ -60,9 +61,9 @@ export const TextGenerateEffect = ({
       {/* mt-4 to my-4 */}
       <div className="w-full">
         {/* remove  text-2xl from the original */}
-        <div className=" dark:text-white text-black leading-snug tracking-wide w-full">
+        <Tag className=" dark:text-white text-black leading-snug tracking-wide w-full">
           {renderWords()}
-        </div>
+        </Tag>
       </div>
     </div>
   );

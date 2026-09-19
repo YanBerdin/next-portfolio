@@ -2,7 +2,7 @@
 export const Repositories = [
   {
     id: 16,
-    title: "Rouge Cardinal 🎭",
+    title: "Rouge Cardinal",
     description: "Technologies : Next.js 16 | React 19 | TypeScript | Tailwind CSS | Supabase | PostgreSQL | Zod | Sentry | Sharp | dnd-kit",
     explanationList: [
       "Plateforme web full-stack production-ready pour une compagnie de théâtre professionnelle avec architecture de sécurité Defense-in-Depth (7 couches), médiathèque avancée et interface d'administration complète.",
@@ -64,7 +64,7 @@ export const Repositories = [
     className: "order-4 lg:order-3 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
     imgClassName: "w-full h-full object-cover h-auto",
     titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-    img: "/projectRefactor-assets/rouge-cardinal.png",
+    img: "/projectRefactor-assets/compagnie-rouge-cardinal.fr.jpeg",
     alt: "Site web de la compagnie de théâtre Rouge Cardinal",
     width: 520,
     height: 420,
@@ -124,12 +124,12 @@ export const Repositories = [
     spareImg: "",
     demoLink: "",
     githubLink: "https://github.com/YanBerdin/express_mongodb_api",
-    technologies: ['Rest API','JavaScript', 'Express', 'Node.js', 'MongoDb', 'Swagger'],
+    technologies: ['Rest API', 'JavaScript', 'Express', 'Node.js', 'MongoDb', 'Swagger'],
   },
 
   {
     id: 3,
-    title: "Express-Recipes-API 🍲",
+    title: "Express-Recipes-API",
     description: "🛠️ Technologies Utilisées : JavaScript | Express | Node | Axios | Swagger",
     explanationList: [
       "API REST minimaliste pour gérer des recettes culinaires, conçue pour supporter une application frontend.",
@@ -164,12 +164,12 @@ export const Repositories = [
     spareImg: "",
     demoLink: "",
     githubLink: "https://github.com/YanBerdin/Express-Recipes-API",
-    technologies: ['Rest API','JavaScript', 'Express', 'Node.js', 'Swagger'],
+    technologies: ['Rest API', 'JavaScript', 'Express', 'Node.js', 'Swagger'],
   },
 
   {
     id: 4,
-    title: "Recipes App 🍲",
+    title: "Recipes App",
     description: "🛠️ Technologies Utilisées : React | Redux | Axios | PropTypes",
     explanationList: [
       "Application web de gestion de recettes culinaires avec React, Redux et gestion des annulations API via AbortController.",
@@ -216,7 +216,7 @@ export const Repositories = [
 
   {
     id: 5,
-    title: "Shoes-Shop 👠",
+    title: "Shoes-Shop",
     description: "🛠️	Technologies Utilisées : PHP | Bootstrap | Html | CSS",
     explanationList: [
       "Site e-commerce de vente de chaussures avec FrontOffice complet, architecture MVC et sécurité renforcée.",
@@ -266,7 +266,7 @@ export const Repositories = [
 
   {
     id: 6,
-    title: "Shoes BackOffice 👠",
+    title: "Shoes BackOffice",
     description: "🛠️	Technologies Utilisées : PHP | MySQL | Bootstrap | Html | Css",
     explanationList: [
       "BackOffice du site e-commerce Shoes-Shop : gestion des produits, catégories, utilisateurs et commandes avec contrôle d'accès par rôles.",
@@ -312,48 +312,48 @@ export const Repositories = [
     spareImg: "",
     demoLink: "", //TODO Deployer
     githubLink: "https://github.com/YanBerdin/shoes-shop-backoffice-php",
-    technologies: ['Rest API','PHP', 'MySQL', 'Bootstrap'],
+    technologies: ['Rest API', 'PHP', 'MySQL', 'Bootstrap'],
   },
-  
-      {
-      id: 7,
-      title: "Task-Manager 📝",
-      description: "🛠️ Technologies Utilisées : HTML | CSS | JS | Laravel | PHP | Eloquent | MySQL | Rest API",
-      explanationList: [
-          "🎙️ Description : L'application permet aux utilisateurs de créer, gérer et suivre leurs tâches quotidiennes.",
-          " ",
-          "Les utilisateurs peuvent : Ajouter de nouvelles tâches, Les marquer comme complètes, Les supprimer si nécessaire.",
-          " ",
-          "💡 Sécurisation de l'application :",
-          "🔒 Gestion de l'état des tâches, Performance de la base de données, Interface utilisateur intuitive",
-          " ",
-          "🚧 Défi : Gestion de l'état des tâches.",
-          "✅ Utilisation des API RESTful de Laravel pour mettre à jour l'état des tâches en temps réel et AJAX pour les notifications en direct.",
-          " ",
-          "🚧 Défi : Performance de la base de données.",
-          "✅ Indexation des champs fréquemment recherchés dans MariaDB et utilisation de requêtes optimisées.",
-          " ",
-          "🚧 Défi : Interface utilisateur intuitive.",
-          "✅ Utilisation de frameworks CSS comme Bootstrap pour une mise en page réactive et des composants UI réutilisables.",
-          " ",
-          "🎯 Résultat : L'application permet aux utilisateurs de gérer leurs tâches de manière efficace et intuitive. Les utilisateurs peuvent ajouter, modifier, marquer comme complètes et supprimer des tâches avec une interface réactive et des mises à jour en temps réel. Les performances de l'application sont optimisées pour gérer un grand nombre de tâches sans compromettre la vitesse ou la réactivité."
-      ],
-      className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
-      imgClassName: "w-full h-full object-cover h-auto",
-      titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
-      img: "/projectRefactor-assets/task-manager.png",
-      alt: "illustration de l'application Task-Manager",
-      width: 320,
-      height: 200,
-      spareImg: "",
-      demoLink: "", //TODO Deployer
-      githubLink: "https://github.com/YanBerdin/Laravel-Vanilla_JS-Task_Manager",
-      technologies: ['Rest API','PHP', 'Laravel', 'Eloquent', 'MySQL']
-      },
+
+  {
+    id: 7,
+    title: "Task-Manager",
+    description: "🛠️ Technologies Utilisées : HTML | CSS | JS | Laravel | PHP | Eloquent | MySQL | Rest API",
+    explanationList: [
+      "🎙️ Description : L'application permet aux utilisateurs de créer, gérer et suivre leurs tâches quotidiennes.",
+      " ",
+      "Les utilisateurs peuvent : Ajouter de nouvelles tâches, Les marquer comme complètes, Les supprimer si nécessaire.",
+      " ",
+      "💡 Sécurisation de l'application :",
+      "🔒 Gestion de l'état des tâches, Performance de la base de données, Interface utilisateur intuitive",
+      " ",
+      "🚧 Défi : Gestion de l'état des tâches.",
+      "✅ Utilisation des API RESTful de Laravel pour mettre à jour l'état des tâches en temps réel et AJAX pour les notifications en direct.",
+      " ",
+      "🚧 Défi : Performance de la base de données.",
+      "✅ Indexation des champs fréquemment recherchés dans MariaDB et utilisation de requêtes optimisées.",
+      " ",
+      "🚧 Défi : Interface utilisateur intuitive.",
+      "✅ Utilisation de frameworks CSS comme Bootstrap pour une mise en page réactive et des composants UI réutilisables.",
+      " ",
+      "🎯 Résultat : L'application permet aux utilisateurs de gérer leurs tâches de manière efficace et intuitive. Les utilisateurs peuvent ajouter, modifier, marquer comme complètes et supprimer des tâches avec une interface réactive et des mises à jour en temps réel. Les performances de l'application sont optimisées pour gérer un grand nombre de tâches sans compromettre la vitesse ou la réactivité."
+    ],
+    className: "order-3 lg:order-2 lg:col-span-3 md:col-span-6 md:row-span-4 h-[13vh] h-auto md:min-h-[30vh] lg:min-h-[20vh] xl:min-h-[40vh]",
+    imgClassName: "w-full h-full object-cover h-auto",
+    titleClassName: "justify-end text-md md:text-lg lg:text-2xl",
+    img: "/projectRefactor-assets/task-manager.png",
+    alt: "illustration de l'application Task-Manager",
+    width: 320,
+    height: 200,
+    spareImg: "",
+    demoLink: "", //TODO Deployer
+    githubLink: "https://github.com/YanBerdin/Laravel-Vanilla_JS-Task_Manager",
+    technologies: ['Rest API', 'PHP', 'Laravel', 'Eloquent', 'MySQL']
+  },
 
   {
     id: 8,
-    title: "Spotify Controller 🎵",
+    title: "Spotify Controller",
     description: "🛠️ Technologies Utilisées : React | Vite | Axios | Styled-components",
     explanationList: [
       "Application web permettant aux utilisateurs de connecter leur compte Spotify, visualiser leurs playlists et contrôler la lecture musicale.",
@@ -404,9 +404,9 @@ export const Repositories = [
     technologies: ['Javascript', 'React', 'Vite', 'Styled-components']
   },
 
-    {
+  {
     id: 2,
-    title: "DiscO'tech 💿",
+    title: "DiscO'tech",
     description: "🛠️ Technologies Utilisées : React | Redux | Axios | Rest API | PropTypes",
     explanationList: [
       "Application de référencement musical permettant de rechercher des artistes, explorer des genres et créer des playlists personnalisées.",
@@ -452,11 +452,11 @@ export const Repositories = [
     githubLink: "https://github.com/YanBerdin/discOtech",
     technologies: ['Javascript', 'React', 'Redux', 'Rest API', 'PropTypes'],
   },
-  
+
   /*
       {
         id: 9,
-        title: "My Portfolio 📁",
+        title: "My Portfolio",
         description: "🛠️	Technologies Utilisées : Typescript | React | Next | Tailwind | Framer-Motion | Axios | PostCss | Shadcn | Aceternity | JS",
         explanationList: [
           "🎙️ Description : Portfolio personnel pour présenter mes projets et compétences.",
@@ -487,7 +487,7 @@ export const Repositories = [
   */
   {
     id: 10,
-    title: "Github Explorer 🔎",
+    title: "Github Explorer",
     description: "🛠️	Technologies Utilisées : React | Axios | Semantic UI | PropTypes | SCSS",
     explanationList: [
       "Application web pour rechercher et explorer les dépôts GitHub avec pagination, indicateur de chargement et gestion des erreurs.",
@@ -537,7 +537,7 @@ export const Repositories = [
   /*
       {
         id: 11,
-        title: "Pokedex MVC 📚",
+        title: "Pokedex MVC",
         description: "🛠️ Technologies Utilisées Apache | PHP | MySQL | Html | Css | Composer | AltoRouter | Bootstrap",
         explanationList: [
             "🎙️ Description : Cette application est un Pokédex interactif développé à des fins éducatives.",
@@ -577,7 +577,7 @@ export const Repositories = [
   /*
       {
         id: 12,
-        title: "Weather Widget 🌦️",
+        title: "Weather Widget",
         description: "🛠️	Technologies Utilisées : React | Axios | JS | SCSS | PropTypes",
         explanationList: [
           "🎙️ Description : L'application présente 2 'Widgets Meteo' qui affichent les informations météorologiques actuelles. l'un par saisie de code postal, l'autre par géolocalisation",
@@ -617,7 +617,7 @@ export const Repositories = [
   /*
       {
         id: 13,
-        title: "Text to Speech 🎤",
+        title: "Text to Speech",
         description: "🛠️ Technologies Utilisées : HTML | Css | JavaScript | API SpeechSynthesis | DOMPurify",
         explanationList: [
           "🎙️ Description : L'application 'Audio API Text to Speech' permet de convertir du texte en parole en utilisant l'API SpeechSynthesis.",
@@ -654,7 +654,7 @@ export const Repositories = [
   /*
       {
       id: 14,
-      title: "Script Runner 🏃",
+      title: "Script Runner",
       description: "🛠️ Technologies Utilisées : HTML | CSS | JavaScript | DOMPurify",
       explanationList: [
           "🎙️ Description : Script Runner est un jeu de programmation qui permet aux utilisateurs de s'initier à la programmation en s'amusant.",
@@ -697,7 +697,7 @@ export const Repositories = [
   /*
       {
         id: 15,
-        title: "Soundpad-js-vanilla 🎧",
+        title: "Soundpad-js-vanilla",
         description: "🛠️ Technologies Utilisées : HTML | CSS | JavaScript | Web Audio API",
         explanationList: [
             "🎙️ Description : L'application est une table de mixage sonore interactive qui permet aux utilisateurs de jouer différents sons en cliquant sur des pads ou en utilisant des raccourcis clavier.",

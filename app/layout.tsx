@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 //import Script from "next/script";
 import ClientClarity from "./ClientClarity";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Yan's Portfolio",
-  description: "Fort d'une formation Fullstack et d'une expérience pratique acquise à travers plusieurs projets, j'ai réorienté ma carrière du e-commerce vers le développement web...",
+  title: "Yan Berdin - Développeur fullstack Next.js / TypeScript",
+  description: "Développeur fullstack. J'ai conçu et mis en production Rouge Cardinal, une application Next.js / TypeScript / Supabase : RLS PostgreSQL, CI/CD, tests end-to-end.",
   metadataBase: new URL('https://www.yanberdin.com'),
   alternates: {
     canonical: 'https://www.yanberdin.com/',
@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   authors: [{ name: 'Yan Berdin', url: 'https://www.yanberdin.com' }],
   creator: 'Yan Berdin',
   publisher: 'Yan Berdin',
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    url: 'https://www.yanberdin.com/',
+    siteName: 'Yan Berdin',
+    title: "Yan Berdin - Développeur fullstack Next.js / TypeScript",
+    description: "Développeur fullstack. J'ai conçu et mis en production Rouge Cardinal, une application Next.js / TypeScript / Supabase : RLS PostgreSQL, CI/CD, tests end-to-end.",
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +37,7 @@ export default function RootLayout({
 }>) {
   // Suppression de l'appel direct à useClarity (hook client)
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning data-scroll-behavior="smooth">
       {/* Pour conserver votre statut de propriétaire confirmé, ne supprimez pas la balise Meta, même une fois la validation effectuée. */}
       <head>
         <meta name="google-site-verification" content="qElH7ZIqIo2a83PF-VyjSq-F_8M13Q6QaTbyu7bvgnU" />
@@ -38,7 +46,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
 
-      <body className={poppins.className}>
+      <body className={inter.className}>
         {/* Clarity tracking côté client (auto-consent enabled) */}
         <ClientClarity />
         <ThemeProvider

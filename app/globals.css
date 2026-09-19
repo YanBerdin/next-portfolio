@@ -99,7 +99,7 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold max-sm:text-2xl text-3xl lg:text-4xl text-center;
+    @apply font-bold max-sm:text-2xl text-3xl lg:text-4xl tracking-tight;
   }
 
   .black-gradient {

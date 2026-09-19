@@ -1,13 +1,12 @@
-import { GithubIcon2, ResumeIcon } from '@/components/ui/Icon';
-
 export const navItems = [
 
-  { name: "Skills", link: "#skills", title: "" },
   { name: "Projets", link: "#projects", title: "" },
+  { name: "Skills", link: "#skills", title: "" },
   { name: "Profil", link: "#about", title: "" },
   { name: "Contact", link: "#contact", title: "" },
-  { name: "", link: "https://raw.githubusercontent.com/YanBerdin/YanBerdin/master/Doc/Yan_Berdin.pdf", target: "_blank", icon: ResumeIcon, title: "CV" },
-  { name: "", link: "https://github.com/YanBerdin", target: "_blank", rel: "noopener noreferrer", icon: GithubIcon2, title: "Github" },
+  { name: "CV", link: "/cv", target: "_blank", title: "CV de Yan Berdin (PDF, nouvel onglet)" },
+  { name: "GitHub", link: "https://github.com/YanBerdin", target: "_blank", title: "Profil GitHub (nouvel onglet)" },
+  { name: "LinkedIn", link: "https://www.linkedin.com/in/yan-berdin", target: "_blank", title: "Profil LinkedIn (nouvel onglet)" },
   // { name: "Testimonials", link: "#testimonials" },
 ];
 
@@ -27,82 +26,53 @@ interface mySkills {
 export const mySkills = [
   {
     id: 1,
-    title: "Frontend",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Utilisé en production",
+    desc: "Stack de Rouge Cardinal, en ligne et maintenue.",
     skillsList: [
-      //"SPA avec React.js, Next.js, Nuxt.js",
-      //"Apps mobiles : React Native / Expo",
-      //"Gestion d'état : Redux, Pinia",
-      //"Styles : Tailwind CSS, SCSS (responsive)",
-      //"Protection des données côté client",
-      //"SEO, UX & accessibilité (WCAG 2.1)",
-      //"Wireframes et prototypage",
-      //"WordPress : Thèmes et plugins sur mesure",
-      // "Écrire et exécuter des tests unitaires front‑end."
-      "TypeScript",
-      "JavaScript",
-      "React",
       "Next.js",
+      "TypeScript",
+      "React",
+      "Supabase",
+      "PostgreSQL",
+      "Zod",
       "Tailwind CSS",
-      "Redux",
-      "Svelte",
-      "React Native"
+      "Playwright",
+      "Vite",
+      "Vitest",
+      "GitHub Actions",
+      "Resend",
+      "WCAG 2.2 / RGAA"
     ],
-    className: "md:col-span-2",
-    thumbnail: "/skills-assets/exp1.svg",
   },
   {
     id: 2,
-    title: "Backend & BDD",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Pratiqué sur projets",
+    desc: "Utilisé sur des projets personnels ou de formation, sans mise en production.",
     skillsList: [
-      // "Node.js (Express) et PHP (Laravel)",
-      // "Protection des données côté serveur",
-      // "POO, avec bases SQL/NoSQL",
-      // "Modélisation de schémas relationnels",
-      // "Debug & algorithmes complexes",
-      // "Strapi (headless) & Supabase (BaaS)",
-      // "APIs REST documentées.",
-      // "Automatisation : scripts, GitHub Actions",
-      // "Écrire et exécuter des tests unitaires back‑end.",
+      "PHP / Laravel",
+      "Docker",
+      "WordPress",
       "Node.js",
       "Express",
-      "PHP",
-      "Laravel",
-      "PostgreSQL",
-      "Supabase",
+      "Svelte",
+      "Astro",
+      "MySQL",
+      "MariaDB",
       "MongoDB",
-      "MySQL"
-
+      "Bootstrap",
+      "Semantic UI"
     ],
-    className: "md:col-span-2",
-    thumbnail: "/skills-assets/exp2.svg",
   },
-
   {
     id: 3,
-    title: " Outils & Pratiques",
-    desc: "Création de site sécurisé, configuration et maintenance.",
+    title: "En cours d'apprentissage",
+    desc: "Pas encore de projet livré avec.",
     skillsList: [
-      // "Analyse besoins & specs fonctionnelles",
-      // "Maintenance & évolutions en Agile/Scrum",
-      // "Pair programming",
-      // "Git/GitHub, Trello, Discord, Slack",
-      // "CI/CD (Vercel, Heroku)",
-      // "Documentation et tests utilisateurs",
-      // "Veille techno & bonnes pratiques",
-      "Git",
-      "GitHub Actions",
-      "Docker (Supabase CLI)",
-      "Vitest",
-      "Playwright",
-      "Figma",
-      "SEO",
-      "WCAG 2.2 / RGAA"
+      "React Native",
+      "Nuxt.js",
+      "Symfony",
+      "Python"
     ],
-    className: "md:col-span-2",
-    thumbnail: "/skills-assets/exp4.svg", //"/exp3.svg",
-
   },
 ];
 

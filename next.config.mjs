@@ -48,7 +48,24 @@ const nextConfig = {
           },
         ],
       },
+      {
+        source: '/cv',
+        headers: [
+          {
+            key: 'Content-Disposition',
+            value: 'inline; filename="Yan-Berdin-CV.pdf"',
+          },
+          {
+            key: 'Content-Type',
+            value: 'application/pdf',
+          },
+        ],
+      },
     ]
+  },
+  async rewrites() {
+    // Le CV reste servi depuis le domaine : l'URL affichée ne quitte jamais yanberdin.com.
+    return [{ source: '/cv', destination: '/Yan_Berdin.pdf' }]
   },
 }
 

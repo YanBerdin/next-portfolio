@@ -81,7 +81,7 @@ export default function EidLabCandidature() {
 
         <Divider />
 
-        <SectionLabel>Détail de la livraison — compagnie-rouge-cardinal.fr</SectionLabel>
+        <SectionLabel>Détail de la livraison - compagnie-rouge-cardinal.fr</SectionLabel>
         <div className="font-mono">
           <Row label="Auth JWT" value="2-5 ms ✓" />
           <Row label="Audit trail" value="27 tables" />

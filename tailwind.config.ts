@@ -58,13 +58,13 @@ const config = {
         },
         white: {
           DEFAULT: "#FFF",
-          100: "#BEC1DD",
-          200: "#C1C2D3",
+          100: "#E2E8F0",
+          200: "#CBD5E1",
         },
         blue: {
           "100": "#E4ECFF",
         },
-        purple: "#00AAFF",
+        purple: "#6F9DC4",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

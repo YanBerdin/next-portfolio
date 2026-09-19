@@ -14,7 +14,6 @@ const slugs = [
     "postgresql",
     "firebase",
     "vercel",
-    "jest",
     "git",
     "github",
    // "visualstudiocode",

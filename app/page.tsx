@@ -12,8 +12,8 @@ import { About } from "../components/About";
 import Footer from "@/components/Footer";
 //import Projects from "@/components/Projects";
 import ProjectsRefactor from "@/components/ProjectsRefactor";
-import IconCloudClient from "@/components/ui/Tools_ui/IconCloudClient";
-import WebDevCommandments from "@/components/WebDevCommandments/web-dev-commandments"
+// import IconCloudClient from "@/components/ui/Tools_ui/IconCloudClient";
+// import WebDevCommandments from "@/components/WebDevCommandments/web-dev-commandments"
 
 export default function Home() {
   return (
@@ -23,33 +23,33 @@ export default function Home() {
 
         {/*<h1>Yan&apos;s Portfolio</h1>*/}
         <FloatingNav navItems={navItems} />
-        <div id="hero" className="xl:pt-10 mt-20">
+        <div id="hero" className="xl:pt-16 mt-16">
           {/** style={{ marginTop: "20px", paddingTop: "20px", marginBottom: "20rem" }} */}
           <Hero />
         </div>
 
-        <div id="skills" style={{ marginTop: "30px", paddingTop: "50px", marginBottom: "10rem" }}>
-          <Skills />
-        </div>
-
-        <div id="tools" style={{ marginTop: "20px", paddingTop: "40px", marginBottom: "10rem" }}>
-          <IconCloudClient />
-        </div>
-
-        <div id="projects" style={{ marginTop: "30px", paddingTop: "40px", marginBottom: "15rem" }}>
+        <div id="projects" className="scroll-mt-24 pt-20 md:pt-28">
           <ProjectsRefactor />
         </div>
 
+        <div id="skills" className="scroll-mt-24 pt-20 md:pt-28">
+          <Skills />
+        </div>
+        {/*
+        <div id="tools" className="scroll-mt-24 pt-20 md:pt-28">
+          <IconCloudClient />
+        </div>
+        */}
         {/*
         <div id="projects" style={{ marginTop: "-40px", paddingTop: "-40px",  marginBottom:"20rem" }}>
           <Grid />
         </div>
         */}
 
-        <div id="about" style={{ marginTop: "15px", paddingTop: "40px", marginBottom: "15rem" }}>
+        <div id="about" className="scroll-mt-24 pt-20 md:pt-28">
           <About />
         </div>
-        
+
         {/*
         <div id="webDevCommandments" style={{ marginTop: "15px", paddingTop: "40px", marginBottom: "15rem" }}>
           <WebDevCommandments />
@@ -63,10 +63,10 @@ export default function Home() {
           <TimelineRefacto />
         </div>
         */}
-        <div id="contact" style={{ marginTop: "40px", paddingTop: "40px", marginBottom: "20rem" }}>
+        <div id="contact" className="scroll-mt-24 pt-20 md:pt-28">
           <Contact />
         </div>
-        <div id="footer" style={{ marginTop: "60px", paddingTop: "40px", marginBottom: "0px" }}>
+        <div id="footer" className="scroll-mt-24 pt-12">
           {/* <Projects /> */}
           <Footer />
         </div>
