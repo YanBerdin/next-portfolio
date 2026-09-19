@@ -55,7 +55,7 @@ Use this skill when the user requests:
 
 ## Project Context
 
-Rouge Cardinal Company is a professional theater company website built with:
+Rouge Cardinal is a professional theater company website built with:
 
 - **Frontend**: Next.js 16 with App Router
 - **Styling**: Tailwind CSS + shadcn/ui
