@@ -1,11 +1,8 @@
-import crypto from 'crypto'
-
 /** @type {import('next').NextConfig} */
 // const nextConfig = {};
 
 const nextConfig = {
   async headers() {
-    const nonce = crypto.randomBytes(16).toString('base64')
     return [
       {
         source: '/(.*)', // Appliquer les en-têtes à toutes les routes
@@ -20,7 +17,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: ` img-src 'self' data: https://cdn.jsdelivr.net https://vercel.com https://www.yanberdin.com; connect-src 'self' https://cdn.jsdelivr.net https://raw.githubusercontent.com https://vercel.live https://vercel.com wss://ws-us3.pusher.com https://sockjs-us3.pusher.com https://z.clarity.ms https://b.clarity.ms; frame-src 'self' https://vercel.live; object-src 'self' data:;`, // Politique de sécurité du contenu (ajout de b.clarity.ms pour Clarity collect)
+            value: ` img-src 'self' data: https://cdn.jsdelivr.net https://vercel.com https://www.yanberdin.com; connect-src 'self' https://cdn.jsdelivr.net https://raw.githubusercontent.com https://vercel.live https://vercel.com wss://ws-us3.pusher.com https://sockjs-us3.pusher.com https://*.clarity.ms; frame-src 'self' https://vercel.live; object-src 'self' data:;`,
           },
           {
             key: 'X-Content-Type-Options',

@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "format": "prettier --write .",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "check:clarity": "node scripts/check-clarity.js",
+    "check:clarity:api": "node scripts/check-clarity-api.js",
+    "check:clarity:consent": "node scripts/check-clarity-consent.js"
   },
   "dependencies": {
     "@microsoft/clarity": "^1.0.0",

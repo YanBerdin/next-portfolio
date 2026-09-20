@@ -11,7 +11,9 @@ const FloatingNav = dynamic(
 interface NavItem {
     name: string;
     link: string;
-    icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element | undefined;
+    icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+    target?: string;
+    title?: string;
 }
 
 interface FloatingNavbarClientProps {
@@ -19,6 +21,6 @@ interface FloatingNavbarClientProps {
     className?: string;
 }
 
-export default function FloatingNavbarClient({ navItems, className }: FloatingNavbarClientProps) {
+export default function FloatingNavbarClient({ navItems, className }: FloatingNavbarClientProps): JSX.Element {
     return <FloatingNav navItems={navItems} className={className} />;
 }
